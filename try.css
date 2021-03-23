@@ -94,20 +94,20 @@ h2.welcome-sentence{
     /* object-fit: cover; */
     height: 90vh;
      position: relative; 
-     /* border: 5px solid greenyellow; */
+     border: 5px solid greenyellow;
 
 }
 
 .myimage{
     margin-left: 73%;
     transform-origin:  bottom;
-
-    margin-right: auto;
-    margin-top: 16vh;
+    transform-origin: bottom;
+    /* margin-right: auto; */
+    margin-top: -42vh;
     height: 70%;
     /* max-height: 50rem;
     min-height: 20rem; */
-    /* border: 5px solid greenyellow; */
+    border: 5px solid greenyellow;
     position: absolute;
 
 }
@@ -133,10 +133,23 @@ h2.welcome-sentence{
     font-size: 2rem;
      /* text-transform: uppercase; */
     color: rgb(245, 245, 245);
-    width: 100%;
+    width: 100vw;
+    height: 70vh;
     white-space: nowrap;
+    border: 20px solid darkblue;
+    /* z-index: 66; */
+    /* overflow-x: hidden; */
+    /*  */
 }
+.skilllogo-loop1{
+    width: 100vw;
+    border: 20px solid rgb(45, 223, 199);
+    position:relative;
+    /* top: 58vh;    */
+     overflow-x: hidden;
 
+
+}
 
 .header-skill-logo{
     position:relative;
@@ -146,7 +159,7 @@ h2.welcome-sentence{
     /* left: 50%; */
     filter: grayscale(100%);
 
-    top: 31rem;
+    /* top: 31rem; */
     border-radius: 3rem;
 
     border: 3px solid rgb(245, 245, 245);
@@ -167,10 +180,10 @@ h2.welcome-sentence{
     width: 5.2rem;   
     opacity: .95;
      box-shadow: 0 9px 8px -6px rgb(100, 100, 100);
-     animation: moving-logofront 130s infinite linear;
+     /* animation: moving-logofront 130s infinite linear; */
 }
 .header-skill-logo:nth-child(2n){
-    animation: moving-logoback 130s infinite linear;
+    /* animation: moving-logoback 130s infinite linear; */
 
 }
 
