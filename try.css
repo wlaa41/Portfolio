@@ -24,10 +24,11 @@ h1{
 section{
     /* height: 100vh; */
 }
-.welcome-sentence{
+h2.welcome-sentence{
     font-family: 'Allerta Stencil' sans-serif;
     font-size: 2rem;
     color: rgb(224, 224, 224);
+    text-shadow: 0px 3px 5px rgba(5,5,5,0.52);
 }
 .welcome-sentence::after{
     content: "";
@@ -37,9 +38,11 @@ section{
     transform: translate(-50%);
     margin-top: 1rem;
     background-color: white;
+
     /* border: 5px solid white; */
 }
 .lets-talk-button{
+    text-shadow:none;
     font-size: .8rem;
     padding: 5px 23px;
     margin-top: 2rem;
@@ -52,7 +55,7 @@ section{
     border: 3px solid #ffffff ;
     position: absolute;
     border-radius: 18px;
-    transition: all .2s;
+    transition: all .2s ease-in-out;
     background-color: rgb(233, 233, 233);
     cursor: pointer;
 
@@ -60,13 +63,24 @@ section{
 .lets-talk-button:hover{
    transform: scale(1.05) translate(-50% ,-2px) ;
    border-radius: 18px;
-
    background-color: #f8f8f8;
    color: rgb(136, 136, 136);
    box-shadow: 0 10px 9px -9px rgb(100, 100, 100);
-   transition: all .2s;
+   transition: all .2s ease-in-out;
 
 }
+.lets-talk-button:active{
+    transform: scale(1.05) translate(-50% ,-2px) ;
+    border-radius: 18px;
+    transform: scale(1) translate(-50% ,0px) ;
+    box-shadow: none;
+
+    background-color: #f8f8f8;
+    color: rgb(136, 136, 136);
+    /* box-shadow: 0 10px 9px -9px rgb(100, 100, 100); */
+    /* transition: all .1s ease-in-out; */
+ 
+ }
 
 .mainpage-mainstrip{
     height: 90vh;
@@ -85,7 +99,7 @@ section{
 }
 
 .myimage{
-    margin-left: 70%;
+    margin-left: 73%;
     transform-origin:  bottom;
 
     margin-right: auto;
