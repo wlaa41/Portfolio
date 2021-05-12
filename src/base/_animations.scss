@@ -1,0 +1,188 @@
+@keyframes eyelashanimation{
+
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    21.8%{
+        opacity: 1;
+    }
+    22.5%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+
+    }
+    51%{
+        opacity: 1;
+    }
+    51.8%{
+        opacity: 1;
+    }
+    52.5%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    91%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 0;
+    }
+    96%{
+        opacity: 0;
+    }
+    97%{
+        opacity: 1;
+    }
+    98%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+@keyframes eyeanimation {
+
+        0% {
+            transform: translateX(1px);
+        }
+    
+        100% {
+            transform: translateX(-1px);
+        }
+    } 
+
+
+@keyframes moveLogo-right {
+    from{transform:translateY(-50%) translate(0);}
+    to{transform:translateY(-50%) translate(100%);}
+}
+@keyframes moveLogo-right2 {
+    from{transform:translateY(-50%) translate(-100%);}
+    to{transform:translateY(-50%) translate(0);}
+}
+
+@keyframes flashing {
+
+    0% {
+        opacity: 0;
+    }
+    
+    31% {
+        opacity: 1;
+    }
+    41% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0.6;
+    }
+    
+    51% {
+        opacity: 1;
+    }
+    61% {
+        opacity: 1;
+    }
+        
+    67% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+} 
+
+// @keyframes moveInLeft {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(-10rem);
+//     }
+
+//     80% {
+//         transform: translateX(1rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// } 
+// @keyframes wigglecardheader{
+//     0%{
+//         transform: var(--level-three) translateY( 0)   translateX( 0)    ;   
+//     }
+//     25%{
+//         transform: var(--level-three) translateY(-.7vh) translateX(.5vw) ;
+//     }
+//     75%{
+//         transform: var(--level-three) translateY(.7vh)  translateX(-.5vw) ;
+//     }
+
+//     100%{
+//         transform: var(--level-three) translateY( 0)  translateX(0vw) ;
+//     }
+// }
+// @keyframes wigglecardCircle{
+//     0%{
+//         transform: var(--level-three) translateY( 0)   translateX( 0)    ;   
+//     }
+//     25%{
+//         transform: var(--level-three) translateY(-.35vh) translateX(.35vh) ;
+//     }
+//     50%{
+//         transform: var(--level-three) translateY(-.7vh)  translateX(0) ;
+//     }
+//     75%{
+//         transform: var(--level-three) translateY(-.35vh)  translateX(-.35vh) ;
+//     }
+
+//     100%{
+//         transform: var(--level-three) translateY( 0)  translateX(0) ;
+//     }
+// }
+
+// @keyframes moveInRight {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(10rem);
+//     }
+
+//     80% {
+//         transform: translateX(-1rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// }
+
+// @keyframes moveInBottom {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(3rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// }

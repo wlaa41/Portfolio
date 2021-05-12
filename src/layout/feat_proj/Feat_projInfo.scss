@@ -1,0 +1,68 @@
+
+@import '../../abstracts/mixins';
+@import '../../base/animations';
+
+.ftStrip_canvas_infoMain{
+    
+    position:absolute;
+    height: 100%;
+    width:100%;
+    // border: 5px dashed yellowgreen;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+.ftStrip_canvas_infoCon{
+    position:absolute;
+    transform: translate(-20%);
+    padding-left: 5%;
+    // border-top: 4px solid rgba(169, 169, 169, 0.212);
+
+    &  *{
+        position:absolute;
+    }
+    height: 40%;
+    width:50%;
+
+    &_Title-vertical{
+        // text-align: center;
+        left: 1%;
+        top:-1%;
+        white-space: nowrap;
+        transform: rotate(.5turn);// translateY(50%);
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1ch;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+
+    &_Title{
+
+        margin-bottom: 1ch;
+        // text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: .34ch;
+        color: rgb(105, 105, 105);
+        position: relative;
+        &::first-letter{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    }
+    &_Body{
+       font-family:  sans-serif;
+       letter-spacing: .14ch;
+        margin-top: .2ch;
+        font-weight: 400;
+
+    
+    }
+}
+

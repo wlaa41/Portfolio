@@ -1,0 +1,35 @@
+@import '../../abstracts/variables';
+
+.Mi_container{
+    height: 100vh;
+    // border: 44px solid rgb(202, 151, 250);
+    border: 6px solid rgb(179, 255, 39);
+
+}
+.londonfull{
+    background-image: linear-gradient(115deg, rgb(135, 205, 251) , rgb(0, 130, 190));
+    height: inherit;
+    display: grid;
+    // grid-template-rows: 1fr;
+    align-content:end;
+    // border: 6px solid rgb(104, 0, 0);
+
+
+    &__imgcontainer{
+        height: $s-mainintro;
+    height: inherit;
+        
+        // border: 1ch solid blueviolet;
+        position: relative;
+    }
+    
+    &__svg {
+                object-fit: cover ;
+
+                object-position: bottom;
+        position: absolute;
+        height: inherit;
+        width: 100%;
+        left: 0;
+    }
+ }

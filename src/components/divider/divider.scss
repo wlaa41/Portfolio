@@ -1,0 +1,15 @@
+@import '../../abstracts/variables';
+
+.divider{
+    background-size: cover;
+    // filter: grayscale(1);
+        height: 15vh;
+        position: relative;
+        z-index: 999;
+        background-color: $bg-body;
+        background:
+        linear-gradient(to bottom, 
+        rgb(211, 211, 211),
+        $bg-body);
+
+}

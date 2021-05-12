@@ -1,0 +1,70 @@
+@import '../../abstracts/variables';
+@import '../../base/animations';
+ 
+.myAvatarStrip{
+    position:relative;
+
+    height: 100%;
+    width:100%;
+    // background-color: rgb(53, 0, 26);
+    // overflow: hidden;
+    z-index: 22;
+    border: 4px dashed  rgb(221, 0, 0);
+    z-index: 13;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+
+    &_spacer-right{
+        height: 220px;
+        flex: .3;
+        width:4px;
+        border: 4px dashed  rgb(88, 189, 70);
+    }
+    &_spacer-left{
+        height: 220px;
+        flex: 4;
+        width:70px;        
+        border: 4px dashed  rgb(159, 255, 142);}
+
+        &_Ava{
+            height: 100%;
+            min-width: 110px;
+            // max-width: 200px;
+            flex: 1;
+            border: 4px dashed  rgb(243, 120, 120);
+            display: flex;
+            flex-direction: column;
+            .vertical_spacer{
+                max-height: calc(60vh - 12vw);
+                
+                flex:1;
+                border: 4px dashed  rgb(156, 8, 8);
+            
+            }
+            .myAvatarContainer{
+                flex:2;
+                min-height: 40vh;
+                position: relative;
+                display: flex;
+                flex-direction: column-reverse;
+                background-color: rgba(219, 205, 0, 0.349);
+            }
+        }
+    }
+
+.myAvatar_svg{
+    // width: 10%;
+    flex:1;
+    min-height: 50vh;
+    max-height: 100%;
+    position:absolute;
+}
+
+.myAvatar-eyelash-svg {
+    animation: eyelashanimation 7s infinite;
+}
+
+.myAvatar-eyes-svg {
+    animation: eyeanimation 22s infinite alternate;
+}
