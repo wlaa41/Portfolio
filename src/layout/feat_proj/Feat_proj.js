@@ -2,7 +2,7 @@ import React ,{useState} from 'react';
 import './Feat_proj.scss';
 import './Feat_projCanvs.scss'
 import Info from './Feat_projInfo';
-import Plotly from '../../components/plotly/Plotly'
+import MyPlotly from '../../components/plotly/MyPlotly'
 
 export default function Feat_proj(){
     const [show, setShow] = useState(false)
@@ -37,7 +37,7 @@ export default function Feat_proj(){
 
                 <div className='ftStrip_canvas_Decor-1'>
                     <div className='ftStrip_canvas_Decor-2'>
-                        <Plotly></Plotly>
+                        <MyPlotly></MyPlotly>
                     </div>
                 </div>
 
