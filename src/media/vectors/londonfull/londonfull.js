@@ -1,12 +1,12 @@
 // gathering all london imges in one constant
 import   skyline3    from "./skyline3.svg"   
-import   skyline2    from "./newskyline2.svg"   
+import   skyline2    from "./skyline2.svg"   
 import   skyline1    from "./skyline1.svg"   
 // import   skyline1_spinnignWheel    from "./skyline1_spinnignWheel.svg"   
-import   skyline0    from "./smallskyline0.svg"   
-import   floor       from "./smallfloor.svg"      
-import   phonebooth  from "./smallphonebooth.svg" 
-import   myBase  from "./smallmyBase.svg" 
+import   skyline0    from "./skyline0.svg"   
+import   floor       from "./floor.svg"      
+import   phonebooth  from "./phonebooth.svg" 
+import   myBase  from "./myBase.svg" 
 
 const london_images = [
     skyline3   ,
