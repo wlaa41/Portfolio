@@ -4,21 +4,18 @@ import Mainintro from '../layout/main_intro/Mainintro'
 import CardStrip from '../layout/cardStrip/CardStrip'
 import Feat_proj from '../layout/feat_proj/Feat_proj'
 import Divider from '../components/divider/divider'
-import Skill_logo from '../layout/skill_logo/Skill_logo'
+import SkillLogo from '../layout/skill_logo/SkillLogo'
 // import Nav from './Layout/Nav'
 // import Mainintro from '../Layout/Mainintro'
 
 class Homepage extends React.Component{
-    constructor(props){
-        super(props)
-        
-    }
+
     render(){
         return(
             <div>
                 <Nav  />
                 <Mainintro/>
-                <Skill_logo/>
+                <SkillLogo/>
                 <Divider style={{height:"25vh"}} ></Divider>
                 <CardStrip></CardStrip>
                 {/* <Divider style={{height:"25vh",background: 'none', backgroundColor:'white;'}} ></Divider> */}

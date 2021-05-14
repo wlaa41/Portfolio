@@ -1,23 +1,14 @@
 
 // import React from 'react';
 import React, { useState, useEffect } from 'react';
+// import * as tf from "@tensorflow/tfjs";
 // import Plot from 'react-plotly.js';
+import {NetDraws} from './matrixSpaceManipulation/net_draws'
 import createPlotlyComponent from 'react-plotly.js/factory';
 const Plotly = window.Plotly;
 const Plot = createPlotlyComponent(Plotly);
 
-// import {NetDraws} from './matrixSpaceManipulation/net_draws'
 
-
-// function randomValues(num, mul) {
-//   const arr = [];
-//   const index = [];
-//   for (let i = 0; i < num; i++) {
-//     arr.push(Math.random() * mul)
-//     index.push(i);
-//   }
-//   return {index, arr};
-// }
 
 /**
  * Main application component
@@ -25,17 +16,44 @@ const Plot = createPlotlyComponent(Plotly);
  * @returns
  */
 function MyPlotly() {
-//  NetDraws();
-  // const traces = Array(3).fill(0).map((_, i) => {
-  //   const {index, arr} = randomValues(20, 3);
-  //   return {
-  //     x: Array(20).fill(i),
-  //     y: index,
-  //     z: arr,
-  //     type: 'scatter3d',
-  //     mode: 'lines'
-  //   }
-  // });
+  const [array, setArray] = useState([])
+    
+  // const x_parallel = 
+  // console.log(x_parallel)
+  // console.log(Promise.resolve(x_parallel.then(res=>{
+  //   console.log('res')
+  //   console.log(res)
+  // })))
+  // function update()
+  // {
+  //   let a =matrix( [[1, 2], [3, 4]])
+  //   let e =matrix( [[1, 4], [3, 4]])
+  //   let t = multiply(a,e)
+  //   setArray(t)
+
+  // }
+
+  useEffect(() => {
+      NetDraws().then(res=>setArray(res))
+      console.log('start')
+
+
+      return () => {
+        console.log('terminate')
+      }
+    }, [])
+  //       useEffect(() => {
+  //         if(Array.isArray(array)){}
+  //         else{
+  //           console.log(array._data)
+  //           if(Array.isArray(array._data)){ console.log('%c It isssssssss ','color: plum')}
+  //         }
+
+
+  //         // debugger;
+  //         console.log('rerender')
+  //       }, )
+
 
   const Ttraces = () => {
     
@@ -54,29 +72,31 @@ function MyPlotly() {
                  'white', '#b3005c', '#b3005c', 'white', '#0079ad', '#0079ad'],
            width:5
       }
+    },
+    {
+      x:array[0],
+      y: array[1],
+      z: array[2],
+      type: 'scatter3d',
+      mode: 'lines',
+     
+
+      showlegend:true,
+      name:'space',
+      line:{
+          color:[ '#8e16a0'],
+          width:5
+      }
     }]
   }
 
-  // console.log(traces)
-  // console.log(Ttraces)
-
   return (
-    // <div>Hello hello hello hello hello hello</div>
-     <Plot
+    
+     <Plot className=''
       data={Ttraces()}
       layout={
         {
-        // width: 900,
-        // height: 800,
-        // xaxis:{
-        //   showgrid: true,
-
-        //   backgroundcolor :"black",
-        //   gridcolor: '#000000',
-        //   linecolor: '#000000',
-        //   tickcolor: '#7f7f7f'
-
-        // },
+ 
         font: {
           family: 'Lato, monospace',
           size: 14,
@@ -96,21 +116,3 @@ function MyPlotly() {
 
 export default MyPlotly;
 
-  // {/* <Plot
-  //     data={Ttraces()}
-  //     layout={
-  //       {
-  //       // width: 900,
-  //       // height: 800,
-  //       xaxis:{
-  //         backgroundcolor :"black"
-  //       },
-  //       plot_bgcolor:"black",
-  //     paper_bgcolor:"#ffffff",
-  //       title: `Simple 3D Scatter`,
-  //       autosize: true
-  //     }}
-  //     useResizeHandler= {true}
-  //     style={ {width: "100%", height: "100%"}}
-
-  //   /> */}

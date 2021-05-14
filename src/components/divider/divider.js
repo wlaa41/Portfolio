@@ -1,5 +1,5 @@
 import React  from 'react'
-import brickwallSmall from './brickwallSmall2.png';
+// import brickwallSmall from './brickwallSmall2.png';
 
 import './divider.scss'
 

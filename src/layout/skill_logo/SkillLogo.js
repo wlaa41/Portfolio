@@ -1,7 +1,7 @@
 import React from 'react'
 import './Skill_logo.scss'
 
-const Skill_logo = () => {
+const SkillLogo = () => {
 
        
     function importAll(r) {
@@ -27,7 +27,8 @@ const Skill_logo = () => {
                     <div className='SL_SK_Move-1Flex-1' >
                             {images.map((elem,i)=>{
                                 return <div key={`imgCon1${i}`} info={`${keys[i]}`}  className='SL_IMGcontainer'>
-                                <img key={`img1st${keys[i]}`}  src={elem.default} className='SL_IMGcontainer_img' />
+                                <img key={`img1st${keys[i]}`}  src={elem.default} alt={`${keys[i]}`}
+                                 className='SL_IMGcontainer_img' />
 
                                 </div>
                             })}
@@ -35,7 +36,8 @@ const Skill_logo = () => {
                     <div className='SL_SK_Move-1Flex-2' >
                             {images.map((elem,i)=>{
                                 return <div key={`imgCon11${i}`} info={`${keys[i]}`}  className='SL_IMGcontainer'>
-                                <img key={`img1st1${keys[i]}`}  src={elem.default} className='SL_IMGcontainer_img' />
+                                <img key={`img1st1${keys[i]}`}  src={elem.default} alt={`${keys[i]}`}
+                                 className='SL_IMGcontainer_img' />
 
                                 </div>
                             })}
@@ -73,4 +75,4 @@ const Skill_logo = () => {
     )
 }
 
-export default Skill_logo
+export default SkillLogo

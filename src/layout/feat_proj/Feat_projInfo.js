@@ -2,15 +2,14 @@ import React ,{useState} from 'react';
 import './Feat_projInfo.scss';
 
 export default function Info(){
-    const [show, setShow] = useState(false)
+    // const [show, setShow] = useState(false)
 
-    function toggleShow(){
-        setShow((s)=>!s)
-    }
+    // function toggleShow(){
+    //     setShow((s)=>!s)
+    // }
 
     return(
         
-   
             <div className='ftStrip_canvas_infoMain'>
             <div className='ftStrip_canvas_infoCon'>
 

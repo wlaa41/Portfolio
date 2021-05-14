@@ -17,9 +17,9 @@ function Mainintro(){
         phonebooth:     0                   
     })
 
-    let counter=0
+    // let counter=0
     useEffect(() => {
-        counter++;
+        // counter++;
         // console.log('Event listner created  ',counter)
         window.addEventListener('scroll',scrollHeandle)
         return () => {
@@ -48,7 +48,7 @@ function Mainintro(){
                 <div className='londonfull'>
                     <div className="londonfull__imgcontainer">
                         { london_img_attr.map((element)=>  {
-                              return  <img src={element["img"]} 
+                              return  <img src={element["img"]} alt={element['attr'].key}
                                     style={{
                                         // top:`translateY(${YShift[element['attr'].key]}px)`
                                         transform: `translateY(${YShift[element['attr'].key]}px)`
@@ -66,7 +66,7 @@ function Mainintro(){
                                 <div className='vertical_spacer'></div>
                                 <div className='myAvatarContainer'>
                                     { myAvatar_img_attr.map((element)=>  {
-                                            return  <img src={element["img"]} 
+                                            return  <img src={element["img"]} alt={element['attr'].key}
                                                 style={{
                                                     // top:`translateY(${YShift[element['attr'].key]}px)`
                                                     transform: `translateY(${YShift[element['attr'].key]}px)`
