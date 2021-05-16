@@ -1,6 +1,6 @@
 import React from 'react';
 import './CardStrip.scss'
-import Stk_container from "../../components/stackCards/Stk_container";
+import StakContainer from "../../components/stackCards/Stk_container";
 
 export default function CardStrip(){
 
@@ -24,7 +24,7 @@ export default function CardStrip(){
             </div>
         </div>
         <div className='CardStrip_grid_TOPright-bg'>
-            <Stk_container></Stk_container>
+            <StakContainer></StakContainer>
 
         </div>
 

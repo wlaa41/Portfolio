@@ -1,0 +1,18 @@
+@import '../../abstracts/mixins';
+
+.EduStrip_info{
+    position: relative;
+    border: 3px dashed yellow;
+    font-size: 1.4rem;
+    color:white;
+    // margin-top: 77px;
+    padding-top: 10%;
+    @include respond(tab-land) { // width < 1200?
+        padding-top: 14%;
+        
+    }
+
+    &_grid{
+        // margin-top:;
+    }
+}

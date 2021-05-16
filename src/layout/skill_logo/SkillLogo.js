@@ -5,8 +5,8 @@ const SkillLogo = () => {
 
        
     function importAll(r) {
-        console.log('%cthis is the r ','color: red')
-        r.keys().map((elem)=>{
+        // console.log('%cthis is the r ','color: red')
+        r.keys().forEach((elem)=>{
            keys.push(elem.slice(2).split('.')[0])
         })
         return r.keys().map(r);

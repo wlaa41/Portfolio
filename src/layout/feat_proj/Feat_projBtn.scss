@@ -1,0 +1,71 @@
+
+@import '../../abstracts/mixins';
+@import '../../base/animations';
+
+.ftStrip{
+    &_canvas{
+        &_btnCon
+        {
+
+            &_btn{
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                color:rgb(43, 138, 216);
+                font-size: 2rem;
+                height: 41px;
+                width: 41px;
+                border-radius: 15%;
+                margin-top: 55%;
+                transform: translateX(-50%);
+                border-right: 2px solid rgba(219, 219, 219, 0.719);
+                background-color: rgb(121, 121, 121) ;
+                box-shadow: 3px 0 5px rgba(12, 12, 12, 0.404);
+                z-index: 7;
+                transition: transform .2s ,box-shadow .4s , border 1s ;
+                background:             
+                linear-gradient(to left, 
+                rgb(119, 119, 119) ,
+                rgb(94, 94, 94));
+                
+                &:first-child{
+                    margin-top: 100%;
+                    // margin-left: 90%;
+
+                }
+                &:hover{
+                    transform: translateX(-55%);
+                    box-shadow: 6px 0 9px rgba(12, 12, 12, 0.294);
+                    transition: transform .2s ,box-shadow .2s ;
+                }
+                &:focus-within,&:active{
+                    transform: translateX(-46%);
+                    box-shadow: 1px 0 4px rgb(12, 12, 12);
+                    transition: transform .2s ,box-shadow .2s , border 1s ;
+                }
+                &-info::after{
+                    position: absolute;
+                    // height: 59%;
+                    // width:  140%;
+                    background-color: rgba(0, 0, 0, 0.411);
+                    padding: 19% 2ch;
+                    margin: 3ch;
+                    white-space:nowrap;
+                    font: 64% Lato;
+                    color: white;
+                    right: 100%;
+                    opacity: 0;
+                    box-shadow: 6px 0 9px rgba(12, 12, 12, 0.294);
+
+                    transition: transform .8s ;
+                    animation: flashing  7s   infinite linear  ;
+                    text-transform: uppercase;
+                    letter-spacing: .3ch;
+                    content: 'Read More >>';
+                }
+            }
+        }
+    }
+    
+}
+

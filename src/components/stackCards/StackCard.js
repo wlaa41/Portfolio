@@ -3,7 +3,7 @@ import './StackCard.scss'
 
 export default function StackCard({info}) {
     
-    console.log(info)
+    // console.log(info)
     const {title,subtitle,brief,image} = info;
 
     return (

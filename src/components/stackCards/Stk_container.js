@@ -4,7 +4,7 @@ import info from './info/info'
 import './StackCard.scss'
 
 
-export default function Stak_container(){
+export default function StakContainer(){
     return(
     
     <div className="stackstrip_container">

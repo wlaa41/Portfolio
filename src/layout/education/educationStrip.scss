@@ -1,0 +1,78 @@
+.EduStrip{
+
+    // height: 900px ;
+    position: relative;
+    // border: 3px dashed black;
+    &_Title{
+        position:absolute;
+        &-h2{
+            color: hsl(0, 0%, 16%);
+            margin:1ch 2ch;
+            z-index: 3;
+            position:absolute;
+            font-size: 3rem;
+            white-space: nowrap;
+            text-shadow: 4px 4px 11px rgb(87, 87, 87),
+                         0px 0px 10px    white;
+        }
+    }
+    // overflow: hidden;
+
+    &_bg{
+        // border: 3px dashed black;
+        width: 100%;
+        position: absolute;
+        height: 700px ;
+        overflow: hidden;
+
+
+        &-deep{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            &-blue{
+                position: absolute;
+                right: 0;
+                // border: 3px dashed black;
+                // margin: 0 0 0 70%;
+                height: 100%;
+                width: 77vw;
+                background-color: #1d5b95;
+                clip-path: polygon(21% 0, 100% 6%, 100% 100%, 0 100% , 0% 40%);
+            }
+        }
+        &-shadow{
+            // z-index: 7;
+            position: absolute;
+            top: 9% ;
+            height: 100%;
+            width: 100vw;
+            background-color: #2e2e2ea4;
+            transform-origin: right top;
+            right: 17.5vw;
+            top: 15%;
+            transform: skew(13deg,358deg) ;//scale(.9);// translate(-8%, 5%);
+            // transform: rotate(-14deg) scale(1) translate(-8%, 5%);
+            // clip-path: polygon(82% 3%, 100% 64%, 100% 100%, 0 100%, 0 6%);
+            box-shadow:  24px -11px 27px 22px #1d1d1d8f;
+            // -webkit-box-shadow: 3px 3px 5px 6px rgb(49, 49, 49); 
+            // -moz-box-shadow:    3px 3px 5px 6px rgb(66, 66, 66); 
+            // box-shadow:         3px 3px 5px 6px rgb(77, 77, 77);  
+            
+        }
+        &-top{
+            // overflow: hidden;
+            position: absolute;
+            top: 13% ;
+            // border: 3px dashed black;
+            // margin: 0 0 0 70%;
+            height: 100%;
+            width: 100vw;
+            background-color: #4f8ac2;
+            -webkit-box-shadow: 3px 3px 5px 6px rgb(49, 49, 49); 
+            -moz-box-shadow:    3px 3px 5px 6px rgb(66, 66, 66); 
+            box-shadow:         3px 3px 5px 6px rgb(77, 77, 77);   
+            clip-path: polygon(82% 3%, 100% 64%, 100% 100%, 0 100%, 0 0);
+        }
+    }
+}
