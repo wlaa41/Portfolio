@@ -1,61 +1,21 @@
 
-// import React from 'react';
 import React, { useState, useEffect } from 'react';
-// import * as tf from "@tensorflow/tfjs";
-// import Plot from 'react-plotly.js';
 import {NetDraws} from './matrixSpaceManipulation/net_draws'
 import createPlotlyComponent from 'react-plotly.js/factory';
 const Plotly = window.Plotly;
 const Plot = createPlotlyComponent(Plotly);
 
 
-
-/**
- * Main application component
- *
- * @returns
- */
-function MyPlotly() {
-  const [array, setArray] = useState([])
-    
-  // const x_parallel = 
-  // console.log(x_parallel)
-  // console.log(Promise.resolve(x_parallel.then(res=>{
-  //   console.log('res')
-  //   console.log(res)
-  // })))
-  // function update()
-  // {
-  //   let a =matrix( [[1, 2], [3, 4]])
-  //   let e =matrix( [[1, 4], [3, 4]])
-  //   let t = multiply(a,e)
-  //   setArray(t)
-
-  // }
+function MyPlotly({mulMatrix,bgcolor="#eeeeee"}) {
+  const [spaceGrid, setSpaceGrid] = useState([])
 
   useEffect(() => {
-      NetDraws().then(res=>setArray(res))
-      console.log('start')
-
-
+      NetDraws(mulMatrix).then(res=>setSpaceGrid(res))
       return () => {
-        console.log('terminate')
       }
-    }, [])
-  //       useEffect(() => {
-  //         if(Array.isArray(array)){}
-  //         else{
-  //           console.log(array._data)
-  //           if(Array.isArray(array._data)){ console.log('%c It isssssssss ','color: plum')}
-  //         }
+    },[mulMatrix])
 
-
-  //         // debugger;
-  //         console.log('rerender')
-  //       }, )
-
-
-  const Ttraces = () => {
+  const traces = () => {
     
     return [{
       x:[4, -4, null, 0, 0, null, 0,     0],
@@ -74,36 +34,36 @@ function MyPlotly() {
       }
     },
     {
-      x:array[0],
-      y: array[1],
-      z: array[2],
+      x:spaceGrid[0],
+      y: spaceGrid[1],
+      z: spaceGrid[2],
       type: 'scatter3d',
       mode: 'lines',
-     
-
       showlegend:true,
       name:'space',
+      font: {
+        family: 'Lato, monospace',
+        size: 14,
+        color: '#7f00aa'},
       line:{
-          color:[ '#8e16a0'],
+          color: '#aaaaaa' ,
           width:5
       }
     }]
   }
 
   return (
-    
      <Plot className=''
-      data={Ttraces()}
+      data={traces()}
       layout={
         {
- 
         font: {
           family: 'Lato, monospace',
           size: 14,
           color: '#7f7f7f'
         },
-        plot_bgcolor:"black",
-      paper_bgcolor:"#000000",
+        // plot_bgcolor:"white",
+        paper_bgcolor: bgcolor,
         title: `Matrix Space Manipulation`,
         autosize: true
       }}

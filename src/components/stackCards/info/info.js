@@ -34,13 +34,3 @@ export default function info(){
 
 ])}
 
-{/* <div class="stackCard">
-<h3 class="stackCard_title" subtitle='python'>Ant Colony Simulation </h3>
-    <div class="">
-        <p className='stackCard_brief'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam lorem. Nulla euismod cursus risus ut efficitur. Curabitur enim felis, 
-        
-        </p>
-
-     </div>
-</div> */}

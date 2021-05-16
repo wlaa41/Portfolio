@@ -1,4 +1,4 @@
-import React ,{useState} from 'react';
+import React  from 'react';
 import './Feat_projInfo.scss';
 
 export default function Info(){
@@ -13,8 +13,7 @@ export default function Info(){
             <div className='ftStrip_canvas_infoMain'>
             <div className='ftStrip_canvas_infoCon'>
 
-                <div className='ftStrip_canvas_infoCon_Title-vertical'>Matrix 3D Space</div>
-                <div className='ftStrip_canvas_infoCon_Title'>Abstract:</div>
+                <div className='ftStrip_canvas_infoCon_Title'>Matrix Space Manpulation <br />Abstract:</div>
                 <div className='ftStrip_canvas_infoCon_Body'>
                 {/* <br/> */}
                 The graph shows so and so and so but I m not sure if it will ever stop and go to the next line. There is only one way to find this.

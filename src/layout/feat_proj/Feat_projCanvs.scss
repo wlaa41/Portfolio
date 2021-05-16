@@ -6,7 +6,7 @@
       
     &_canvasCon{
         flex:7;
-        border: 3px dashed red;
+        // border: 3px dashed red;
         display: flex;
         align-items: center;
 
@@ -20,15 +20,11 @@
                 border: none;
                 box-shadow: none;
                 color: rgb(77, 77, 77);
-                // content: 'x';
-
-                &-2{
+                &-info{
                     color:white;
                 }
                 &::after{
                     position: absolute;
-                    // height: 59%;
-                    // width:  140%;
                     background-color: rgba(0, 0, 0, 0.411);
                     padding: 19% 2ch;
                     margin: 3ch;
@@ -72,79 +68,8 @@
         box-shadow: -66px 0 44px 22px rgba(0, 0, 0, 0.35);
         @include respond(tab-land) { // width < 1200?
             background-color: rgb(166, 211, 18);
-            // background: linear-gradient(
-            //     to right,
-            //     rgba(94, 163, 4, 0.863),
-            //     // rgba(0, 137, 172, 0.527),
-            //     rgba(159, 250, 40, 0.849),
-            //     rgba(153, 224, 39, 0.9)
-            //     // rgba(1, 196, 255, 0.863)
-            // );
         }
 
-        &_btnCon
-        {
-            // flex: 1;
-            transition: all .8s;
-            // background-color: darkblue;
-            &_btn{
-                display: grid;
-                justify-items: center;
-                align-items: center;
-                color:rgb(43, 138, 216);
-                font-size: 3rem;
-                height: 55px;
-                width: 55px;
-                border-radius: 15%;
-                margin-top: 55%;
-                transform: translateX(-50%);
-                border-right: 4px solid rgba(219, 219, 219, 0.719);
-                background-color: rgb(121, 121, 121) ;
-                box-shadow: 3px 0 5px rgba(12, 12, 12, 0.404);
-                z-index: 7;
-                transition: transform .2s ,box-shadow .4s , border 1s ;
-                background:             
-                linear-gradient(to left, 
-                rgb(119, 119, 119) ,
-                rgb(94, 94, 94));
-                
-                &:first-child{
-                    margin-top: 900%;
-                    // margin-left: 90%;
-
-                }
-                &:hover{
-                    transform: translateX(-55%);
-                    box-shadow: 6px 0 9px rgba(12, 12, 12, 0.294);
-                    transition: transform .2s ,box-shadow .2s ;
-                }
-                &:focus,&:active{
-                    transform: translateX(-46%);
-                    box-shadow: 1px 0 4px rgb(12, 12, 12);
-                    transition: transform .2s ,box-shadow .2s , border 1s ;
-                }
-                &-2::after{
-                    position: absolute;
-                    // height: 59%;
-                    // width:  140%;
-                    background-color: rgba(0, 0, 0, 0.411);
-                    padding: 19% 2ch;
-                    margin: 3ch;
-                    white-space:nowrap;
-                    font: 64% Lato;
-                    color: white;
-                    right: 100%;
-                    opacity: 0;
-                    box-shadow: 6px 0 9px rgba(12, 12, 12, 0.294);
-
-                    transition: transform .8s ;
-                    animation: flashing  7s   infinite linear  ;
-                    text-transform: uppercase;
-                    letter-spacing: .3ch;
-                    content: 'Read More >>';
-                }
-            }
-        }
         &_Decor{
             &-1{
 
@@ -163,15 +88,14 @@
                 height: 100%;
                 width: 100%;
                 // transform:rotateX(5deg) rotateY(22deg) rotateZ(-5deg)  scale(1);
-                border: 5px solid rgb(189, 195, 197);
-                border-left-width: 33px ;
+                border: 2px solid rgb(189, 195, 197);
+                border-left-width:6px ;
 
                 border-bottom-color:  rgb(153, 155, 156);
                 border-right:none;
-                // border-bottom:none;
                 border-top:none;
                 overflow: hidden;
-                border-radius: 44px;
+                border-radius: 31px;
             }
 
 

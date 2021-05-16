@@ -33,7 +33,7 @@ const london_attr = [
 // reading the images then saving them in one var where image and attr are saved
 const london_vec =()=>{
     const arr = []
-    london_images.map((element,index)=> {
+    london_images.forEach((element,index)=> {
         arr.push( {"img": element , "attr": london_attr[index]})
         // console.log(arr[0]['img'])
     })

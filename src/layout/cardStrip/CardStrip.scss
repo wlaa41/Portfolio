@@ -6,14 +6,14 @@
     z-index: 20;
     height:600px;
     background-color: white;
-    border: 2px dashed  rgb(221, 0, 0);
+    // border: 2px dashed  rgb(221, 0, 0);
     display: flex;
     align-items:  center;
     perspective:500px;
     overflow: hidden;
 
     &_BACKGround{
-        border: 2px dashed  rgb(221, 0, 0);
+        // border: 2px dashed  rgb(221, 0, 0);
         position: absolute;
         height: 90%;
         width: 100%;
