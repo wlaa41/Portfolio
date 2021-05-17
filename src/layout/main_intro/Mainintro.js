@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect,useLayoutEffect} from 'react'
 import  london_vec  from '../../media/vectors/londonfull/londonfull'
 import  myavatar_vec  from '../../media/vectors/myavatar/myavatar'
 import './Mainintro.scss'
@@ -19,14 +19,22 @@ function Mainintro(){
 
     // let counter=0
     useEffect(() => {
-        // counter++;
-        // console.log('Event listner created  ',counter)
+        // // counter++;
+        // // console.log('Event listner created  ',counter)
+        // window.addEventListener('scroll',scrollHeandle)
+        // return () => {
+        //     window.removeEventListener('scroll',scrollHeandle)
+        // }
+    }, [])
+    useLayoutEffect(() => {
         window.addEventListener('scroll',scrollHeandle)
+        console.log('Starting')
+
         return () => {
             window.removeEventListener('scroll',scrollHeandle)
+            console.log('terminating')
         }
-    }, [])
-    
+    }, [YShift])
 
     function scrollHeandle(e)
     {
