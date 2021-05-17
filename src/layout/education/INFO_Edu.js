@@ -1,4 +1,5 @@
 import React from 'react'
+import CardEdu from './CARD_Edu'
 import './INFO_edu.scss'
 
 const EducationINFO = () => {
@@ -7,13 +8,16 @@ const EducationINFO = () => {
                 <div className='EduStrip_info_grid'>
                 
                     <div className='EduStrip_info_grid_mainFlex'>
-                        
+                            <CardEdu></CardEdu>
+                            <CardEdu></CardEdu>
+                            <CardEdu></CardEdu>
+                            <CardEdu></CardEdu>
+                            <CardEdu></CardEdu>
+                            <CardEdu></CardEdu>
+                            <CardEdu></CardEdu>
+
 
                     </div>
-                    {/* <div className='EduStrip_info_grid_blueFiller-Decoration'>
-
-                    </div>
-                 */}
                     <div className='EduStrip_info_grid_End-Decoration'>
 
                     </div>

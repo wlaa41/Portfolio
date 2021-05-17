@@ -1,0 +1,57 @@
+@import '../../abstracts/mixins';
+
+.CardEdu{
+
+    margin: 1rem;
+    // border: .1px solid white;
+    border-top-width: 1px;
+    min-height: 240px;
+    min-width: 220px;
+    max-width: 300px;
+   &_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    // gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.877);
+
+
+    &_icon{
+        flex: 77px;
+        max-width: 44px;
+        min-width: 44px;
+        height: 44px;
+        // margin: 0 1.4rem;
+        fill: white;
+    }
+
+    &_main_title{
+        font-family: 'Lato', sans-serif;
+        letter-spacing: .1ch;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: white;
+    }
+
+   }
+   &_second_title{
+       margin-top: .2rem;
+       font-size: 2rem;
+        font-family: 'Lato', sans-serif;
+        text-transform: capitalize;
+        letter-spacing: .6ch;
+        text-align: center;
+        font-weight: 500;
+    }
+    &_paragraph{
+        font-family: 'Noto Sans JP', sans-serif;
+
+        line-height: 1.6ch;
+        font-weight: 300;
+        letter-spacing: .1ch;
+        text-align: center;
+
+
+    }
+}
