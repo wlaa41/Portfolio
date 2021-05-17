@@ -7,7 +7,10 @@ const EducationStrip = () => {
         <div className='EduStrip'>
             <div className='EduStrip_Title'>
                 <h2  className='EduStrip_Title-h2 '> 
-                Educatioln and Skills
+                <span className='EduStrip_Title-h2_Experience'>Experience
+                 </span>
+                 <span clasclassName='EduStrip_Title-h2_&'> & </span>
+                  Education
                 </h2>
             </div>
                 <div className='EduStrip_bg'>

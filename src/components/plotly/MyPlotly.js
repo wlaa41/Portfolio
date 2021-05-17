@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import {NetDraws} from './matrixSpaceManipulation/net_draws'
 import createPlotlyComponent from 'react-plotly.js/factory';

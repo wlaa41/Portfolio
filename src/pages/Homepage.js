@@ -17,7 +17,7 @@ class Homepage extends React.Component{
                 <Nav  />
                 <Mainintro/>
                 <SkillLogo/>
-                <Divider style={{height:"25vh"}} ></Divider>
+                {/* <Divider style={{height:"25vh"}} ></Divider> */}
                 <CardStrip></CardStrip>
                 {/* <Divider style={{height:"25vh",background: 'none', backgroundColor:'white;'}} ></Divider> */}
                <Feat_proj></Feat_proj>
