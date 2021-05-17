@@ -6,12 +6,13 @@ const EducationStrip = () => {
     return (
         <div className='EduStrip'>
             <div className='EduStrip_Title'>
-                <h2  className='EduStrip_Title-h2 '> 
-                <span className='EduStrip_Title-h2_Experience'>Experience
-                 </span>
-                 <span clasclassName='EduStrip_Title-h2_&'> & </span>
-                  Education
-                </h2>
+                <div  className='EduStrip_Title-h2 '> 
+                <h2 className='EduStrip_Title-h2-Exp'>Experience
+                 </h2>
+                 <h2 className='EduStrip_Title-h2-and'> & </h2>
+                 <h2 className='EduStrip_Title-h2-Edu'>
+                  Education</h2>
+                </div>
             </div>
                 <div className='EduStrip_bg'>
                     <div className='EduStrip_bg-deep'>
@@ -22,8 +23,10 @@ const EducationStrip = () => {
 
                         </div>
                     </div>
-                    <div className='EduStrip_bg-shadow'>
-                
+                    <div className='EduStrip_bg-shadowWrapper'>
+                        <div className='EduStrip_bg-shadowWrapper-shadow'>
+                    
+                        </div>
                     </div>
                     <div className='EduStrip_bg-top'>
                            

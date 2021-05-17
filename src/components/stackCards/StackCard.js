@@ -10,10 +10,10 @@ export default function StackCard({info}) {
         <div className="stackCard" 
             style={{ 
             backgroundImage:`linear-gradient(to right,
-             rgba(92, 186, 241, 1) 20%,
-             rgba(92, 186, 241, .5) 60%,
-             rgba(3, 3, 3, 0.144),
-             rgba(46, 46, 46, 0.068)),
+             rgba(62, 166, 222, 1) 20%,
+             rgba(62, 166, 222, .5) 30%,
+             rgba(3, 3, 3, 0.44),
+             rgba(46, 46, 46, 0.168)),
              radial-gradient(ellipse at top right, rgb(255, 255, 255), transparent),
              url(${image})` }} >
             <h3 className="stackCard_title" subtitle={subtitle}>{title}</h3>

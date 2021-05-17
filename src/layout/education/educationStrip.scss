@@ -1,32 +1,64 @@
+@import '../../abstracts/mixins';
+
+
 .EduStrip{
     // background-color: rgb(138, 138, 138);
     // height: 900px ;
     padding: 3rem 0;
     position: relative;
     // border: 3px dashed black;
-    background: rgb(228, 228, 228);
+    background: linear-gradient(to bottom, white , lightgray);
     &_Title{
         position:absolute;
+        margin:1ch 4ch;
+        width: 70vw;
         &-h2{
-            font-family: 'Lato', sans-serif;
-            // background-color: #005db4;
-            margin:.5ch 2ch;
-            z-index: 3;
-            position:absolute;
-            mix-blend-mode:difference;
-            font-size: 1vmax;
-            white-space: nowrap;
-           
-            background: inherit;
-            -webkit-background-clip: text;
-                    background-clip: text;
-            color: rgb(59, 59, 59);
-            font: 900 4vmax  'Lato', sans-serif;
-            text-align: center;
-            filter: invert(1) grayscale(1) contrast(33);
+            & > *{
+                display: inline-block;
+                font: 300 4vw  'Lato', sans-serif;
+                // // mix-blend-mode: difference;
+                // color: rgb(233, 233, 233);
+                // background: inherit;
+                // -webkit-background-clip: text;
+                //         background-clip: text;
+                z-index: 3;
+                        
+            }
+            & > *::first-letter{
+                display: inline-block;
+                font-size: 5vw;
+                font-weight: 400;
 
-            // text-shadow: 4px 4px 11px rgb(87, 87, 87);//,
-                        //  0px 0px 10px    white;
+            }
+            &-and{
+                position: relative;
+                transform: translateY(.3ch);
+                color: rgb(83, 83, 83);
+                font: 500 11vw  'Lato', sans-serif;
+                mix-blend-mode: overlay;
+                margin: 0 -.4ch -.4ch -.4ch ;
+                z-index: 0;
+            }
+            &-Exp{
+
+                z-index: 5;
+            }
+
+ 
+            font-family: 'Lato', sans-serif;
+
+            z-index: 3;
+            margin:0ch .8ch .6ch .4ch  ;
+            text-transform: uppercase;
+            position:relative;
+            // mix-blend-mode:difference;
+            // font-size: 1vmax;
+            // white-space: nowrap;
+           
+           
+            color: rgb(250, 250, 250);
+            text-align: center;
+
         }
     }
     // overflow: hidden;
@@ -35,7 +67,7 @@
         // border: 3px dashed black;
         width: 100%;
         position: absolute;
-        height: 700px ;
+        height: 1110px ;
         overflow: hidden;
 
 
@@ -45,40 +77,64 @@
             position: absolute;
             &-blue{
                 position: absolute;
-                right: 0;
+                // right: 0;
                 // border: 3px dashed black;
                 // margin: 0 0 0 70%;
                 height: 100%;
                 width: 77vw;
                 background-color: #376fa3;
-                clip-path: polygon(21% 0, 100% 6%, 100% 100%, 0 100% , 0% 40%);
+                // clip-path: polygon(21% 0, 100% 6%, 100% 100%, 0 100% , 0% 40%);
+                clip-path: polygon(0 8% , 79% 0, 100%  40%, 100% 100% ,0 100% );//, 0 100% , 0% 40%);
+
+
+
+
+
             }
         }
-        &-shadow{
-            // z-index: 7;
+        &-shadowWrapper{
             position: absolute;
+
             height: 100%;
             width: 100vw;
-            background-color: #2e2e2ea4;
-            transform-origin: right top;
-            right: 17.5vw;
-            top: 16%;
-            transform: skew(13deg,358deg) ;
-            box-shadow:  44px -11px 44px 22px #1d1d1d55;
-        }
+            filter: drop-shadow(-22px -20px 15px rgba(0, 13, 37, 0.5));
+
+            &-shadow{
+
+            
+            // z-index: 7;
+                position: absolute;
+                height: 100%;
+                width: 100vw;
+                background-color: #2e2e2e;
+                // transform-origin: right ;
+                // left:6.1vw;
+                top: 19% ;
+
+                // transform: skew(13deg,358deg) ;
+    
+                // box-shadow:  -11px -11px 5px 5px #1d1d1db7;
+                clip-path: polygon(14% 3%, 100% 4%,100% 100%,   0 100%, 0 79%);
+
+            }
+         }
         &-top{
             // overflow: hidden;
             position: absolute;
-            top: 13% ;
+            top: 19% ;
             // border: 3px dashed black;
             // margin: 0 0 0 70%;
             height: 100%;
             width: 100vw;
-            background-color: #56a2e9;
+            // background-color: #005f96;
+            background-color: #068fdf;
             -webkit-box-shadow: 3px 3px 5px 6px rgb(49, 49, 49); 
             -moz-box-shadow:    3px 3px 5px 6px rgb(66, 66, 66); 
             box-shadow:         3px 3px 5px 6px rgb(77, 77, 77);   
-            clip-path: polygon(82% 3%, 100% 64%, 100% 100%, 0 100%, 0 0);
+            // clip-path: polygon(82% 3%, 100% 64%, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(14% 3%, 100% 0%,100% 100%,   0 100%, 0 64%);
+            // clip-path: polygon( 0 100% ,0 0%,100% 0%,100% 36%,82% 97% );
+            // clip-path: polygon( 0% 36% ,0 0%,100% 0%,100% 36%,82% 97% );
         }
     }
 }

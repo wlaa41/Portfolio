@@ -115,44 +115,56 @@
 
 
             &_txt{
+                position: relative;
                 color: rgb(255, 255, 255);
                 white-space: nowrap;
                 position:relative;
-                // border: 1px dashed rgb(255, 8, 49);
+                font-family: 'Roboto','Lato', sans-serif;
                 display: flex;
                 flex-direction: column-reverse;
-                justify-content: baseline;
-                align-items: flex-end;
+                text-transform: uppercase;
+
+                // justify-content: flex-start;
+                // align-items: center;
                 place-items: center;
                 .Training{
-
+                    position: relative;
+                    font-family: 'Roboto', sans-serif;    
+                    font-weight: 600;
                     writing-mode: vertical-rl;
                     text-orientation: mixed;
-                    margin-right: -.4ch;
-                    transform: rotate(-.5turn);
+                    margin-right: -.4ch 0 -.4ch 0 ;
+                    transform: rotate(-.5turn) translate(-20%);
                     color: rgb(255, 255, 255);
                     letter-spacing: .1ch;
-                    font-size: 2rem;
-                    
-                    // border: 3px solid pink;
-
-
+                    font-size: 1.9rem;
                 }
                 .and{
-                    color: rgb(34, 34, 34);
-                    grid-row: 2/3;
-                    font-size: 2rem;
+                    color: rgb(71, 71, 71);
+                    font-size: 1.3rem;
+                    font-weight: 600;
                     transform: rotate(-.5turn);
-                    letter-spacing: .2ch;
-                    margin: -.4ch;
+                    letter-spacing: .1ch;
+                    margin: -.4ch 0;
 
                 }
                 .Projects{
+
+                    &:not(::first-letter){
+                        color:plum;
+                    }
                     writing-mode: vertical-rl;
                     text-orientation: mixed;
-                    font-size: 6rem;
+                    font-size: 3rem;
                     transform: rotate(-.5turn);
                     font-weight: bold;
+                    position: relative;
+                    &::first-letter{
+                        position: relative;
+                        font-size: 4rem;
+                        transform: rotate(-.5turn) translate(-50%);
+                    }
+
                 }
             }
 
