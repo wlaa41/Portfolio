@@ -108,36 +108,75 @@ z-index: 55;
 }
 
 //shadow on the bottom edges of a container
-@mixin shadowbend-bottom($shadowcolor){
+@mixin shadowbend-bottom($shadowcolor: rgba(58, 58, 58, 0.952)){
     // border: 4px solid lightcoral;
     position: relative;
     // transform-style: preserve-3d;
-    z-index: 55;
-    &::after{
+    z-index: 77;
+    &:before, &:after
+    {
         content: '';
-        width: 50%;
-        height: 55px;
-        background-color: $shadowcolor;
+        background: $shadowcolor;
         position: absolute;
-        transform-origin: bottom left;
-        transform: skewY(-1.7deg) ;
-        z-index: -1;
-        box-shadow: 0 1.6rem 1rem  rgba(58, 58, 58, 0.952);
-        left:  7px;
+        width: 47.9%;
+        height: 55px;
         bottom: 1px;
+        z-index: -1;
+        box-shadow: 0 1.6rem 1rem $shadowcolor;
+        
+    }
+    &::after{
+        transform-origin: bottom left;
+        transform: translate3d(0,0,-3px) skewY(-1.7deg) ;
+        left:  7px;
     }
     &::before{
-        content: '';
-        width: 45%;
-        height: 55px;
-        background-color: $shadowcolor;
-        position: absolute;
-        bottom: 1px;
         right:  7px;
-        transform: skewY(1.7deg) ;
+        transform:translate3d(0,0,-3px) skewY(1.7deg) ;
         transform-origin: bottom right;
+    }
+}
+@mixin shadowSmooth-bottom($shadowcolor :#777)
+{
+   
+-webkit-box-shadow: 0 10px 6px -6px $shadowcolor;
+-moz-box-shadow: 0 10px 6px -6px $shadowcolor;
+     box-shadow: 0 10px 6px -6px $shadowcolor;
+}
+@mixin shadowbend-bottom2($shadowcolor :#777)
+{
+    
+        position: relative;
+      
+      &:before, &:after
+      {
         z-index: -1;
-        box-shadow: 0 1.3rem 1rem rgba(58, 58, 58, 0.952);
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width:300px;
+        background: $shadowcolor;
+        -webkit-box-shadow: 0 15px 10px $shadowcolor;
+        -moz-box-shadow: 0 15px 10px $shadowcolor;
+        box-shadow: 0 15px 10px $shadowcolor;
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        -o-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+      }
+     &:after
+    {
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        transform: rotate(3deg);
+        right: 10px;
+        left: auto;
     }
 }
 

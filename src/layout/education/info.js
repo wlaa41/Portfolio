@@ -11,7 +11,7 @@ const CardEdu = () => {
                 <use href={sprite+"#icon-graduation-cap"}>
                 </use>
                 </svg>
-                <h3 year='19-present' className="CardEdu_header_main_title">MSc Artificial  intelligance  <span className="CardEdu_header_year"> </span></h3>
+                <h3 className="CardEdu_header_main_title">MSc Artificial  intelligance  <span className="CardEdu_header_year"> </span></h3>
                 
             </div>
             <h4 className="CardEdu_second_title" >First-Class Scored</h4>
@@ -22,3 +22,9 @@ const CardEdu = () => {
 }
 
 export default CardEdu
+const info = [
+    {
+        mainTitle:"MSc Artificial  intelligance",
+        secondTitle:'First-Class Scored'
+    }
+]

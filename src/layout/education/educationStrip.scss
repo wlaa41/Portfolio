@@ -2,12 +2,11 @@
 
 
 .EduStrip{
-    // background-color: rgb(138, 138, 138);
-    // height: 900px ;
+    
     padding: 3rem 0;
     position: relative;
-    // border: 3px dashed black;
-    background: linear-gradient(to bottom, white , lightgray);
+    background:linear-gradient(to bottom, rgba(0, 0, 255, 0) 30%,
+    #005f96 30%);
     &_Title{
         position:absolute;
         margin:1ch 4ch;
@@ -38,18 +37,11 @@
                 z-index: 5;
             }
 
- 
             font-family: 'Lato', sans-serif;
-
             z-index: 3;
             margin:0ch .8ch .6ch .4ch  ;
             text-transform: uppercase;
             position:relative;
-            // mix-blend-mode:difference;
-            // font-size: 1vmax;
-            // white-space: nowrap;
-           
-           
             color: rgb(250, 250, 250);
             text-align: center;
 
@@ -109,12 +101,10 @@
             // overflow: hidden;
             position: absolute;
             top: 24% ;
-            // border: 3px dashed black;
-            // margin: 0 0 0 70%;
             height: 100%;
             width: 100vw;
-            // background-color: #005f96;
-            background-color: #068fdf;
+            background-color: #005f96;
+            // background-color: #068fdf;
             -webkit-box-shadow: 3px 3px 5px 6px rgb(49, 49, 49); 
             -moz-box-shadow:    3px 3px 5px 6px rgb(66, 66, 66); 
             box-shadow:         3px 3px 5px 6px rgb(77, 77, 77);   
