@@ -21,7 +21,8 @@ const london_images = [
 const london_attr = [
     // ,  src="./src/sky.svg"
        { key:'skyline3'  ,  className:"london-skyline3-svg londonfull__svg"   ,   alt:'pic of skyline3' },
-       { key:'skyline2'  ,  className:"london-skyline2-svg londonfull__svg"   ,   alt:'pic of skyline2' },
+        // I will do this individually as I will use css to move the item
+          { key:'skyline2'  ,  className:"london-skyline2-svg londonfull__svg"   ,   alt:'pic of skyline2' },
        { key:'skyline1'  ,  className:"london-skyline1-svg londonfull__svg"   ,   alt:'pic of skyline1' },
        { key:'skyline0'  ,  className:"london-skyline0-svg londonfull__svg"   ,   alt:'pic of skyline0' },
        { key:'floor'     ,  className:"london-floor-svg londonfull__svg"      ,   alt:'pic of floor' },

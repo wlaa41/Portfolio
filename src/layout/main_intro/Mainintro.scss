@@ -33,3 +33,22 @@
         left: 0;
     }
  }
+
+ 
+#londonWheel{
+    transform-origin:center;
+      transform-box: fill-box;
+    // opacity: 0;
+    animation: spin 100s infinite linear;
+}
+@keyframes spin{
+    from{
+        transform: rotate3d(0,0, 0, 180deg);
+        // transform:rotateY(40deg) rotateZ(0);
+    }
+    to{
+        transform: rotate3d(0, 0, 2, 180deg);
+        // transform:rotateY(40deg) rotateZ(1turn);
+
+    }
+}

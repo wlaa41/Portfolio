@@ -70,12 +70,13 @@
 
 
 @keyframes moveLogo-right {
-    from{transform:translateY(-50%) translate(0);}
-    to{transform:translateY(-50%) translate(100%);}
+    from{transform: translate3d(0,-50%,0);// translateY(-50%) translate(0);
+    }
+    to{transform:  translate3d(100%,-50%,0);}//translateY(-50%) translate(100%);}
 }
 @keyframes moveLogo-right2 {
-    from{transform:translateY(-50%) translate(-100%);}
-    to{transform:translateY(-50%) translate(0);}
+    from{transform: translate3d(-100%,-50%,0);}//translateY(-50%) translate(-100%);}
+    to{transform:translate3d(0,-50%,0);}//translateY(-50%) translate(0);}
 }
 
 @keyframes flashing {

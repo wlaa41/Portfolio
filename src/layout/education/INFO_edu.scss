@@ -32,6 +32,7 @@
             grid-template-columns: repeat(auto-fit , minmax( 300px, 1fr));
             padding: 3% 6% 2% 17%;
             margin-top: 13%;
+            perspective: 400px;
             transform-style: preserve-3d;    
             
             @include respond(tab-land) { // width < 1200?

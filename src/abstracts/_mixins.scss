@@ -108,40 +108,85 @@ z-index: 55;
 }
 
 //shadow on the bottom edges of a container
-@mixin shadowbend-bottom($shadowcolor: rgba(58, 58, 58, 0.952)){
-    // border: 4px solid lightcoral;
+@mixin shadowbend-bottom($shadowcolor: rgba(0, 0, 0, 1)){
     position: relative;
-    // transform-style: preserve-3d;
     z-index: 77;
+    // transform: translate3d(0,0,4px);
+        box-shadow: 0 10px 16px -1px rgba(26, 26, 26, 0.24);
+
     &:before, &:after
     {
+        transition: transform .4s  , box-shadow .4s;
+
         content: '';
-        background: $shadowcolor;
+        background: transparent;
         position: absolute;
         width: 47.9%;
-        height: 55px;
+        height: 3%;
         bottom: 1px;
-        z-index: -1;
-        box-shadow: 0 1.6rem 1rem $shadowcolor;
+        z-index: -14 !important;
+        box-shadow: 0 1.6rem 2rem $shadowcolor;
+
         
     }
     &::after{
         transform-origin: bottom left;
-        transform: translate3d(0,0,-3px) skewY(-1.7deg) ;
+        transform: translate3d(0,0,-3px) skewY(-2deg)  ;
         left:  7px;
     }
     &::before{
         right:  7px;
-        transform:translate3d(0,0,-3px) skewY(1.7deg) ;
+        transform:translate3d(0,0,-3px) skewY(2deg) ;
         transform-origin: bottom right;
     }
 }
-@mixin shadowSmooth-bottom($shadowcolor :#777)
+@mixin shadowSmooth-bottom($shadowcolor :rgba(26, 26, 26, 0.644))
 {
    
--webkit-box-shadow: 0 10px 6px -6px $shadowcolor;
--moz-box-shadow: 0 10px 6px -6px $shadowcolor;
-     box-shadow: 0 10px 6px -6px $shadowcolor;
+-webkit-box-shadow: 0 14px 6px -6px $shadowcolor;
+-moz-box-shadow: 0 14px 6px -6px $shadowcolor;
+     box-shadow: 0 14px 6px -6px $shadowcolor;
+}
+
+@mixin extraInfo(){
+    &::after, &:hover::after{
+
+        transition: all .3s  ;
+        content: attr(extraInfo);//'19 - Present';/
+        border-radius: 0;
+        font-family: 'Lato', sans-serif;
+        position: absolute;
+        color: #005f9665   ;
+        border: 1px solid white;
+        padding-left: 1rem;
+        font-size: 1.3rem;
+        white-space: nowrap;
+        top: -70%;
+        right: 0;
+        font-weight: 600;
+        /*   // Another way with hover effect
+        transition: all .3s  ;
+        content:attr(extraInfo);//'19 - Present';/
+        border-radius: 0;
+        opacity: 0;
+        font-family: 'Lato', sans-serif;
+        position: absolute;
+        color: #005f96  ;
+        background-color: white;
+        border: 1px solid white;
+        padding: .1rem .4rem ;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        top: -110%;
+        right: 0;
+        font-weight: 600;
+ 
+    // }
+    // &:hover::after{
+        opacity: 1;}
+         */
+    }
+   
 }
 @mixin shadowbend-bottom2($shadowcolor :#777)
 {

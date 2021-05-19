@@ -12,13 +12,56 @@
     background-color: white;
     @include shadowbend-bottom(rgba(26, 26, 26, 0.37));
 
+    & > *:nth-child(2) > *:nth-child(2)::after, &:hover> *:nth-child(2)> *:nth-child(2)::after{
+        // & >  ::after, &:hover ::after{
+        transition: all .3s  ;
+        content: attr(extraInfo);//'19 - Present';/
+        border-radius: 0;
+        font-family: 'Lato', sans-serif;
+        position: absolute;
+        color: #005f96   ;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.493);
+        padding-left: 1rem;
+        font-size: 1.3rem;
+        white-space: nowrap;
+        top: -70%;
+        opacity: 0.3;
+        right: 0;
+        font-weight: 600;
+
+    }
+    &:hover> *:nth-child(2) > *:nth-child(2)::after{
+        opacity: .9;
+    }
+
+    transition: transform .3s  , box-shadow .3s;
+
+   
+    &:hover{
+        transform: translate3d(0,0,-5px);
+        // box-shadow: 0 20px 22px -3px rgba(26, 26, 26, 0.644);
+        box-shadow: none ;
+        transition: transform .4s  , box-shadow .4s;
+        &::after, &::before{
+        box-shadow: none ;
+        transition: transform .4s  , box-shadow .4s;
+
+            transform: translate3d(0,0,-55px);// scale(.);
+        }
+
+    }
 
    &_header{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(109, 109, 109, 0.877);
+    // @include extraInfo();
+
+   
+
 
 
     &_icon{
@@ -38,46 +81,9 @@
         font-weight: 400;
         position: relative;
         // color: white;
-        // color: rgb(41, 41, 41);
         cursor: alias;
-        &::after{
-            transition: all .3s  ;
-            content: attr(year);//'19 - Present';/
-            border-radius: 11px;
-            opacity: 0;
-            font-family: 'Lato', sans-serif;
-            position: absolute;
-            color: #005f96  ;
-            background-color: white;
-            border: 1px solid white;
-            padding: .1rem .4rem ;
-            font-size: 1.5rem;
-            white-space: nowrap;
-            top: -110%;
-            right: 0;
-            font-weight: 600;
-     
-        }
-        &:hover::after{
-            transition: all .3s  ;
-            border-radius: 0;
-            opacity: 2;
-            border-radius: 7px;
-            // border-bottom-left-radius: 0;
-            font-family: 'Lato', sans-serif;
-            content: attr(year);//'19 - Present';/
-            position: absolute;
-            color: #005f96  ;
-            background-color: white;
-            border: 1px solid white;
-            padding: .1rem .4rem ;
-            font-size: 1.5rem;
-            white-space: nowrap;
-            top: -110%;
-            right:  0%;
-            font-weight: 600;
-     
-        }
+
+
     }
 
    }
