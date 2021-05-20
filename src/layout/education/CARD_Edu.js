@@ -14,12 +14,12 @@ const CardEdu = () => {
                         <img src='https://placebeard.it/640x360'></img>
                     </div>
                 </div>
-                <div extraInfo='19-present' className="CardEdu_header">
+                <div extrainfo='19-present' className="CardEdu_header">
                     <svg className="CardEdu_header_icon">
                     <use href={sprite+"#icon-graduation-cap"}>
                     </use>
                     </svg>
-                    <h3 extraInfo='19-present' className="CardEdu_header_main_title">MSc Artificial  intelligance  <span className="CardEdu_header_year"> </span></h3>
+                    <h3 extrainfo='19-present' className="CardEdu_header_main_title">MSc Artificial  intelligance  <span className="CardEdu_header_year"> </span></h3>
                     
                 </div>
                 <h4 className="CardEdu_second_title" >First-Class Scored</h4>

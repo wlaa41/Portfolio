@@ -34,7 +34,7 @@ function Mainintro(){
             window.removeEventListener('scroll',scrollHeandle)
             console.log('terminating')
         }
-    }, [YShift])
+    }, [])
 
     function scrollHeandle(e)
     {
@@ -61,7 +61,6 @@ function Mainintro(){
                                         // top:`translateY(${YShift[element['attr'].key]}px)`
                                         transform: `translateY(${YShift[element['attr'].key]}px)`
                                         } }
-                                    mad={"transform: translateY(" + Math.round(YShift[element['attr'].key]) +"px);"}
                                     {...element['attr']} />
                             }
                         )}

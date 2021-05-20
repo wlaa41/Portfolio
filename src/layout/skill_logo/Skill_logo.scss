@@ -1,8 +1,8 @@
 @import '../../base/animations';
 @import '../../abstracts/variables';
 @mixin logeSize(){
-    width: 85px;
-    height: 111px;
+    width: 45px;
+    height: 65px;
     border-radius: 3rem;
     border: .2px solid rgb(0, 166, 196);
 
@@ -12,22 +12,41 @@
 }
 
 .skill_logoStrip{
+
     margin-bottom: 80px;
-    height: 220px;
+    height: 150px;
     position: relative;
     z-index: 999;
+    transform-style: preserve-3d;
+    perspective: 1100px;
+
+    perspective-origin:0% -50%;
+
+    transform-origin:  left;
+
     background:
     linear-gradient(to bottom, 
     rgb(114, 114, 114),
     $bg-body);
 
     &-skewed{
+
+        position: absolute;
         height: 100%;
+        // top :-200%;
         width: 100%;
-        background-color: rgba(36, 36, 36, 0.39);
-        transform:skewY(5deg);
-        transform-origin: right;
-        backdrop-filter: blur(3px);
+        background-color: rgba(36, 36, 36, 0.2);
+        transform-origin: 0px ;
+        // transform: translate3d(0,-100%,0) skewY(5deg);
+        // transform:  translate3d(0,0,2px) rotate3d(0,-1,0,2deg);
+        transform:   translate3d(0,-50%,0) rotateY(-10deg);
+
+        backdrop-filter: blur(1px)  grayscale(1); 
+        border: 2px solid rgb(50, 169, 205);
+        border-right: 0;
+        border-left: 0;
+    // filter:contrast(0.5) ; 
+
             overflow: hidden;
 
     }
@@ -38,13 +57,17 @@
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
+
     
     &_Move-1{
-        @include bord;
+        // filter:  grayscale(.2); 
+
+        // @include bord;
         & > div{
             // display:inline-flexbox;
             transform: translateY(-50%);
             white-space: nowrap;
+
         }
         &Flex-1{
             
@@ -65,13 +88,20 @@
 
 .SL_IMGcontainer{
     // flex:0;
-    perspective: 299px;
-    transform-style: preserve-3d;
+
     display: inline-block;
     position: relative;
     margin: 0 22px;
+    opacity: .5;
+
+    transition: opacity .4s linear;
     &:hover{
         cursor: pointer;
+        opacity: 1;
+        transition: opacity .4s linear;
+
+
+
         
     }
     &::after{
@@ -79,23 +109,29 @@
         content: attr(info);
         white-space: nowrap;
         color: rgb(235, 235, 235);
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         bottom: 110%;
         border-radius: 9px;
         border-bottom-left-radius: 0;
         background-color: rgba(0, 0, 0, 0.671);
-        padding: 1px 4ch;
+        padding: 1px 33%;
         opacity: 0;
         transition: opacity .14s linear;
         box-shadow: 13px 0px 12px -8px rgba(0, 0, 0, 0.555);
+        animation: fadeOut 1s linear;
+
 
 
     }
     &:hover::after{
         transition: opacity .4s linear;
-        opacity: 1;
+        animation: showABit 4s linear;
+        // opacity: 1;
     }
     &_img{
+        // opacity: .5;
+// 
+
         transform:  rotate(-1deg); // just for perfection
         @include logeSize();
         box-shadow: 13px 0px 12px -8px rgba(0, 0, 0, 0.555);
@@ -104,3 +140,26 @@
 }
 
 
+@keyframes showABit {
+    0%{
+        opacity: 0.1;
+    }
+    20%{
+        opacity: 1;
+    }    
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 0.2;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}

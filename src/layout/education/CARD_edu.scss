@@ -15,7 +15,7 @@
     & > *:nth-child(2) > *:nth-child(2)::after, &:hover> *:nth-child(2)> *:nth-child(2)::after{
         // & >  ::after, &:hover ::after{
         transition: all .3s  ;
-        content: attr(extraInfo);//'19 - Present';/
+        content: attr(extrainfo);//'19 - Present';/
         border-radius: 0;
         font-family: 'Lato', sans-serif;
         position: absolute;
