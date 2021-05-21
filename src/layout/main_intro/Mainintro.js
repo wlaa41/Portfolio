@@ -1,6 +1,8 @@
 import React, {useState,useEffect,useLayoutEffect} from 'react'
 import  london_vec  from './media/londonfull/londonfull'
 import  myavatar_vec  from './media/myavatar/myavatar'
+import Nav from '../nav/Nav'
+
 import './Mainintro.scss'
 import './myAvatar.scss'
 
@@ -17,17 +19,10 @@ function Mainintro(){
         phonebooth:     0                   
     })
 
-    // let counter=0
-    useEffect(() => {
-        // // counter++;
-        // // console.log('Event listner created  ',counter)
-        // window.addEventListener('scroll',scrollHeandle)
-        // return () => {
-        //     window.removeEventListener('scroll',scrollHeandle)
-        // }
-    }, [])
+  
     useLayoutEffect(() => {
-        window.addEventListener('scroll',scrollHeandle)
+        window.addEventListener('scroll',  scrollHeandle)
+        // setInterval()
         console.log('Starting')
 
         return () => {
@@ -52,6 +47,8 @@ function Mainintro(){
         }
     }
         return(
+            <>
+            <Nav></Nav>
             <section className='Mi_container'>
                 <div className='londonfull'>
                     <div className="londonfull__imgcontainer">
@@ -94,7 +91,8 @@ function Mainintro(){
                 </div>
 
                
-            </section>
+             </section>
+            </>
         );
 
 

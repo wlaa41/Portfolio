@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../layout/nav/Nav'
+// import Nav from '../layout/nav/Nav'
 import Mainintro from '../layout/main_intro/Mainintro'
 import CardStrip from '../layout/cardStrip/CardStrip'
 import Feat_proj from '../layout/feat_proj/Feat_proj'
@@ -17,11 +17,11 @@ class Homepage extends React.Component{
 
     render(){
         return(
-            <div>
-                <Nav  />
+            <>
+                {/* <Nav  /> */}
                 {/* <CMAIN></CMAIN> */}
                 <Mainintro/>
-                <SkillLogo/>
+                {/* <SkillLogo/> */}
                 {/* <Divider style={{height:"25vh"}} ></Divider> */}
                 <CardStrip></CardStrip>
                 {/* <Divider style={{height:"25vh",background: 'none', backgroundColor:'white;'}} ></Divider> */}
@@ -37,7 +37,7 @@ class Homepage extends React.Component{
                  
                  <section style={{height: "100vh" }}></section>
 
-            </div>
+            </>
             
         );
     }

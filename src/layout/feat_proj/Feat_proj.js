@@ -45,11 +45,11 @@ export default function Feat_proj(){
 
             <div className='ftStrip_canvasCon'>ℹ
             <Info></Info>
-            <div className={'ftStrip_canvas ' + (showCanvas && ' moveOutScreen')}>
+            <div className={'ftStrip_canvas ' + (showCanvas || ' moveOutScreen')}>
                 <div className='ftStrip_canvas_btnCon' >&#8505;
                     <div className='ftStrip_canvas_btnCon_btn ftStrip_canvas_btnCon_btn-color' onClick={colorChanged}>^</div>
                     <div className='ftStrip_canvas_btnCon_btn ftStrip_canvas_btnCon_btn-info' onClick={toggleShowCanvas}>
-                    {!showCanvas? `✖` : "ℹ"}</div>
+                    {showCanvas? `✖` : "ℹ"}</div>
 
 
 

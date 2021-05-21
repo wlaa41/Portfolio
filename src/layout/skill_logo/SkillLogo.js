@@ -46,6 +46,8 @@ const SkillLogo = () => {
                 </div>
 
 
+
+
                 {/* <div className='SL_SK_Move-2'>
 
                         <div className='SL_SK_Move-2Flex-1'>

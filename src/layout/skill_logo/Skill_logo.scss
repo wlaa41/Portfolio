@@ -19,17 +19,24 @@
     z-index: 999;
     transform-style: preserve-3d;
     perspective: 1100px;
-
     perspective-origin:0% -50%;
 
     transform-origin:  left;
 
+	// overflow-x: hidden;
+	// overflow-y: visible;
     background:
     linear-gradient(to bottom, 
     rgb(114, 114, 114),
     $bg-body);
 
     &-skewed{
+        .Skewed_overFlowHidden{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border: 3px dashed deeppink;
+        }
 
         position: absolute;
         height: 100%;
@@ -37,9 +44,9 @@
         width: 100%;
         background-color: rgba(36, 36, 36, 0.2);
         transform-origin: 0px ;
-        // transform: translate3d(0,-100%,0) skewY(5deg);
+        transform: translate3d(0,-100%,0) skewY(5deg);
         // transform:  translate3d(0,0,2px) rotate3d(0,-1,0,2deg);
-        transform:   translate3d(0,-50%,0) rotateY(-10deg);
+        // transform:   translate3d(0,-50%,0) rotateY(-10deg);
 
         backdrop-filter: blur(1px)  grayscale(1); 
         border: 2px solid rgb(50, 169, 205);
@@ -126,6 +133,7 @@
     &:hover::after{
         transition: opacity .4s linear;
         animation: showABit 4s linear;
+        
         // opacity: 1;
     }
     &_img{
@@ -144,7 +152,7 @@
     0%{
         opacity: 0.1;
     }
-    20%{
+    10%{
         opacity: 1;
     }    
     60%{
