@@ -1,4 +1,4 @@
-import React, {useState,useEffect,useLayoutEffect} from 'react'
+import React, {useState,useRef,useLayoutEffect} from 'react'
 import  london_vec  from './media/londonfull/londonfull'
 import  myavatar_vec  from './media/myavatar/myavatar'
 import Nav from '../nav/Nav'
@@ -10,6 +10,11 @@ const london_img_attr =london_vec();
 const myAvatar_img_attr =myavatar_vec();
 
 function Mainintro(){
+    const talkbtnRef = useRef(null)
+    const titleRef = useRef(null)
+
+
+
     const [YShift, setYShift] = useState({
         skyline3:       0         ,
         skyline2:       0         ,
@@ -31,12 +36,17 @@ function Mainintro(){
         }
     }, [])
 
+    let classdded=false;
+
     function scrollHeandle(e)
     {
 
         const shift=window.scrollY;
-        if(shift<466){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
-        setYShift({
+        if(shift<555){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
+            if(classdded) {talkbtnRef.current.classList.remove("navGrid_BtnCon-sp1");  classdded=false}
+
+        
+            setYShift({
             skyline3:   (  shift  / 1.2   )      ,
             skyline2:   (  shift  / 1.3   )      ,
             skyline1:   (  shift  / 1.6   )      ,
@@ -45,18 +55,21 @@ function Mainintro(){
             phonebooth: (  shift  / 3.5   )                
         })
         }
+        else{
+            console.log(titleRef)
+            if(!classdded) {talkbtnRef.current.classList.add("navGrid_BtnCon-sp1"); classdded=true}
+        }
     }
         return(
             <>
-            <Nav></Nav>
+            <Nav talkbtn={talkbtnRef} title={titleRef}></Nav>
             <section className='Mi_container'>
                 <div className='londonfull'>
                     <div className="londonfull__imgcontainer">
                         { london_img_attr.map((element)=>  {
                               return  <img src={element["img"]} alt={element['attr'].key}
                                     style={{
-                                        // top:`translateY(${YShift[element['attr'].key]}px)`
-                                        transform: `translateY(${YShift[element['attr'].key]}px)`
+                                        transform: `translate3d(0,${YShift[element['attr'].key]}px,0)`
                                         } }
                                     {...element['attr']} />
                             }
@@ -71,15 +84,8 @@ function Mainintro(){
                                 <div className='myAvatarContainer'>
                                     { myAvatar_img_attr.map((element)=>  {
                                             return  <img src={element["img"]} alt={element['attr'].key}
-                                                style={{
-                                                    // top:`translateY(${YShift[element['attr'].key]}px)`
-                                                    transform: `translateY(${YShift[element['attr'].key]}px)`
-                                                    } }
-                                                mad={"transform: translateY(" + Math.round(YShift[element['attr'].key]) +"px);"}
                                                     {...element['attr']} />
-                                            }
-                                        )
-                                        }
+                                            })}
                                 </div>
                                
                               </div>
@@ -100,3 +106,4 @@ function Mainintro(){
 
 }
 export default Mainintro;
+

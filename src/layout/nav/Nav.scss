@@ -20,7 +20,7 @@
 
         grid-template-columns: 12.5% 1fr 30% 5%;
         grid-template-rows:20% 1fr 9fr 5%;
-        &  * {
+        & > div >  * {
             touch-action:auto;
             pointer-events: auto;
         }
@@ -52,7 +52,7 @@
             grid-row: 3/-2;
         
 
-            border: 4px dashed plum;
+            // border: 4px dashed plum;
             &_button{
                 position: absolute;
 
@@ -71,7 +71,7 @@
                 }
                 &-2{
                     transform: translate3d(100%,0,0);
-                    height: 2.25em;
+                    height: 2.2em;
                      width:  111px;
                     position: absolute;
                     bottom: 90%;
