@@ -14,7 +14,10 @@ body {
     padding: 0;
     box-sizing: inherit;
 }
-
+a{
+  text-decoration: none;
+  color: inherit; 
+}
 
   /* Chrome, Safari, Edge, Opera */
   input::-webkit-outer-spin-button,

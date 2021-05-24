@@ -5,21 +5,24 @@
 .ftStrip{
     overflow: hidden;
     height:800px;
-    // border: 3px dashed rgb(44, 44, 44);
     display: flex;
     perspective: 1500px;
     position: relative;
-
-    // transform-style: preserve-3d;
     &_titleCon{
         flex:2;
         // border: 3px dashed darkgreen;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-        text-align: center;
-        transform: rotateZ(.25turn);
-        margin-top: -55px;
-
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-flip{
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            text-align: center;
+            transform: rotateZ(.5turn);
+            margin-top: -55px;
+        
+        }
         & > div{
             display: inline-block;
             text-transform: uppercase;
@@ -30,16 +33,18 @@
             }
             font-size:3rem;
             letter-spacing: .3ch;
-            // margin-right: -95px;
-            // transform: translate(-px,5ch);
         }
         &-Project{
             position: relative;
-            &::first-letter{
+ 
+            & > div{
+                display: inline;
                 font-size:7rem;
-                // transform: translate(2ch,0ch);
+                position: relative;
 
             }
+            letter-spacing: .3ch;
+
             font-size: 4.9rem;
             font-weight: bold;
             transform: translate(4rem,0ch);

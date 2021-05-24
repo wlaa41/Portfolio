@@ -7,7 +7,7 @@ import Homepage from './pages/Homepage'
 ReactDOM.render(
   
     <div>
-     <Homepage visitor='fullstack' />
+     <Homepage  />
      
     </div>,
   document.getElementById('root')

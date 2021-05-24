@@ -35,10 +35,10 @@ export default function Feat_proj(){
     <section className='ftStrip'>
     
         <div className="ftStrip_titleCon">
-            <div className='ftStrip_titleCon'>
-            <div className='ftStrip_titleCon-Feature'>Feature
-                <div className='ftStrip_titleCon-Project'>Project</div>
-            </div>
+            <div className='ftStrip_titleCon-flip'>
+            <div className='ftStrip_titleCon-Feature'>Feature</div>
+                <div className='ftStrip_titleCon-Project'><div className='P'>P</div>roject</div>
+            
             
             </div>
         </div>

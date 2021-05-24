@@ -1,16 +1,19 @@
 @import '../../abstracts/mixins';
 
-
 .EduStrip{
     
-    padding: 3rem 0;
+    padding: 2rem 0;
     position: relative;
     background:linear-gradient(to bottom, rgba(0, 0, 255, 0) 30%,
     #005f96 30%);
     &_Title{
+
+                  
+
+
         position:absolute;
-        margin:1ch 4ch;
-        width: 70vw;
+        margin:1ch 2ch;
+        width: 60vw;
         &-h2{
             & > *{
                 display: inline-block;
@@ -33,8 +36,12 @@
                 z-index: 0;
             }
             &-Exp{
-
                 z-index: 5;
+            }  
+             &-Edu ,  &-Exp{
+                font-weight: 700;
+               text-shadow: 0px 0 6px rgb(46, 46, 46),
+               -2px -2px 22px rgb(33, 33, 33);
             }
 
             font-family: 'Lato', sans-serif;
@@ -46,6 +53,26 @@
             text-align: center;
 
         }
+        @include respond(big-desktop) { // width < 1200?
+
+
+            @include respond(tab-land) { // width < 1200?
+            top:3.3%;
+                @include respond(tab-port) { // width < 900px
+            top:2.3%;
+            &-h2-Edu ,  &-h2-Exp{
+                font-size: 3,3rem ;
+            }
+                    @include respond(phone) { // width < 600px
+                         top:1.5%;
+                        &-h2-Edu ,  &-h2-Exp{
+                            font-size: 3rem ;
+                        }
+                        &-h2-and{
+                            transform: translateY(.7ch);;
+                        }
+
+        }}}}
     }
     // overflow: hidden;
 
@@ -56,28 +83,16 @@
         height: 1110px ;
         overflow: hidden;
         filter: drop-shadow(-22px -20px 15px rgba(0, 13, 37, 0.3));
-
-
-
         &-deep{
             height: 100%;
             width: 100%;
             position: absolute;
             &-blue{
                 position: absolute;
-                // right: 0;
-                // border: 3px dashed black;
-                // margin: 0 0 0 70%;
                 height: 100%;
                 width: 77vw;
-                background-color: #376fa3;
-                // clip-path: polygon(21% 0, 100% 6%, 100% 100%, 0 100% , 0% 40%);
+                background-color: #1981bd ;
                 clip-path: polygon(0 8% , 79% 0, 100%  40%, 100% 100% ,0 100% );//, 0 100% , 0% 40%);
-
-
-
-
-
             }
         }
         &-shadowWrapper{
@@ -87,20 +102,34 @@
             width: 100vw;
             filter: drop-shadow(-22px -20px 15px rgba(0, 13, 37, 0.5));
 
+            
+
             &-shadow{
                 position: absolute;
                 height: 100%;
                 width: 100vw;
                 background-color: #2e2e2e;
-                top: 24% ;
                 clip-path: polygon(14% 3%, 100% 4%,100% 100%,   0 100%, 0 79%);
 
             }
          }
+
+        &-shadowWrapper-shadow,&-top{
+            top:24%;
+ 
+            @include respond(big-desktop) { // width < 1200?
+                top:20%;
+                @include respond(tab-land) { // width < 1200?
+                top:19%;
+                    @include respond(tab-port) { // width < 900px
+                        top:14%;
+                        @include respond(phone) { // width < 600px
+                  
+            }}}}
+        }
+        
         &-top{
-            // overflow: hidden;
             position: absolute;
-            top: 24% ;
             height: 100%;
             width: 100vw;
             background-color: #005f96;
@@ -110,8 +139,12 @@
             box-shadow:         3px 3px 5px 6px rgb(77, 77, 77);   
             // clip-path: polygon(82% 3%, 100% 64%, 100% 100%, 0 100%, 0 0);
             clip-path: polygon(14% 3%, 100% 0%,100% 100%,   0 100%, 0 64%);
-            // clip-path: polygon( 0 100% ,0 0%,100% 0%,100% 36%,82% 97% );
-            // clip-path: polygon( 0% 36% ,0 0%,100% 0%,100% 36%,82% 97% );
+
+            @include respond(tab-land) { // width < 1200?
+
+                @include respond(tab-port) { // width < 900px
+                    @include respond(phone) { // width < 600px
+            }}}
         }
     }
 }

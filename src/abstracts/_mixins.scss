@@ -43,7 +43,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
         @media only screen and (max-width: 75em) { @content };    //1200px
     }
     @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
+        @media only screen and (max-width: 112.5em) { @content };    //1800
     }
 }
 
@@ -83,7 +83,7 @@ z-index: 55;
     // right: -0;
 
     top: 0;
-    transform:skewX(-2deg) translateZ(-3px);
+    transform:skewX(-4deg) translateZ(-11px) rotateY(1deg) ;
     content: '';
     // height: 80%;
     // width: 50%;
@@ -97,7 +97,7 @@ z-index: 55;
     // // right: -3%;
     // right: 4%;
     bottom:  0;
-    transform:skewX(2deg) translateZ(-3px);
+    transform:skewX(4deg) translateZ(-11px) rotateY(1deg) ;
     content: '';
     // height: 80%;
     // width: 30%;

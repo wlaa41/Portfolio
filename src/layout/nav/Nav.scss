@@ -25,34 +25,34 @@
             pointer-events: auto;
         }
         &_titleCon{
-            color: white;
+            position: relative;
             
-            // grid-row: 4/5;
-            // grid-column: 3/10;
-
+            color: rgba(255, 255, 255, 1);
+            // animation: vanishText .9s   reverse linear ;
+            text-shadow: 
+            0 0 0 rgba(255, 255, 255,1),
+            0 0 0 rgba(255, 255, 255, 1);
+            transition:all .3s ;
 
             grid-row: 2/3;
             grid-column: 2/3;
-
             &_title{
                 font-family: 'Loto', sans-serif;    
-
-                font-size: 3rem;
+                
+                font-size: 3.5rem;
                 font-weight: 400;
                 text-transform:uppercase;
+                text-shadow: 4px;
 
             }
         }
 
-        // &_BtnCon
+///////////////////////////////////////////////
+/////////////////// the button effect
         .navGrid_BtnCon{
-
             position: relative;
             grid-column: 2/-2;
             grid-row: 3/-2;
-        
-
-            // border: 4px dashed plum;
             &_button{
                 position: absolute;
 
@@ -67,9 +67,13 @@
                 @include shadowbend-bottom;
 
                 &-1{
+                    position: absolute;
+                    bottom: 90%;
+
                     transform: translate3d(100%,0,0);
                 }
                 &-2{
+                    
                     transform: translate3d(100%,0,0);
                     height: 2.2em;
                      width:  111px;
@@ -92,14 +96,9 @@
               
             }
         }
-
-        
     }
 }
-
 .navGrid_BtnCon-sp1{
-
-
             .navGrid_BtnCon_button-1{
                 display: none;
             }
@@ -152,4 +151,61 @@ button{
     &:hover{
         transform: translate3d(0,3px,0);
     }
+}
+.foggyVanish{
+animation: vanishText .9s linear ;
+        color: rgba(255, 255, 255, 0.0);
+        text-shadow: 
+        12px 12px 33px rgba(255, 255, 255, 0),
+        -12px 12px 33px rgba(255, 255, 255, 0),
+        -12px -12px 33px rgba(255, 255, 255, 0);
+        visibility: hidden;
+}
+
+@keyframes vanishText{
+    0%{
+        transform: translate3d(0,0,0);
+
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 
+    0 0 0 rgba(255, 255, 255, 1),
+    0 0 0 rgba(255, 255, 255, 1),
+    0 0 0 rgba(255, 255, 255, 1);
+        visibility:visible;
+    }
+    25%{
+    color: rgba(255, 255, 255, 0.24);
+    text-shadow: 
+    3px 3px 3px rgba(255, 255, 255, 1),
+    -3px 3px 3px rgba(255, 255, 255, 1),
+    -3px -3px 3px rgba(255, 255, 255, 1);
+    }
+    50%{
+    color: rgba(255, 255, 255, 0.14);
+    text-shadow: 
+    6px 6px 9px rgba(255, 255, 255, 1),
+    -6px 6px 9px rgba(255, 255, 255, 1),
+    -6px -6px 9px rgba(255, 255, 255, 1);
+    }
+    75%{
+    color: rgba(255, 255, 255, 0.04);
+    text-shadow: 
+    12px 12px 15px rgba(255, 255, 255, .4),
+    -12px 12px 15px rgba(255, 255, 255, .4),
+    -12px -12px 15px rgba(255, 255, 255, .4);
+    }
+    99%{
+        transform: translate3d(0,-50%,0);
+        color: rgba(255, 255, 255, 0.0);
+        text-shadow: 
+        12px 12px 33px rgba(255, 255, 255, 0),
+        -12px 12px 33px rgba(255, 255, 255, 0),
+        -12px -12px 33px rgba(255, 255, 255, 0);
+        visibility: visible;
+        }
+        100%{
+
+            visibility: hidden;
+        }
+    
 }

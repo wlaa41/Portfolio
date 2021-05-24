@@ -17,13 +17,13 @@
 
     &_spacer-right{
         height: 220px;
-        flex: .3;
+        flex: .2;
         width:4px;
         // border: 4px dashed  rgb(88, 189, 70);
     }
     &_spacer-left{
         height: 220px;
-        flex: 4;
+        flex: 3.5;
         width:70px;        
         // border: 4px dashed  rgb(159, 255, 142);
     }
@@ -41,25 +41,37 @@
                 
                 flex:1;
                 // border: 4px dashed  rgb(156, 8, 8);
-            
+            // 
             }
             .myAvatarContainer{
                 flex:2;
                 min-height: 40vh;
+                
                 position: relative;
-                display: flex;
-                flex-direction: column-reverse;
+                // display: flex;
+                // flex-direction: column-reverse;
                 // background-color: rgba(219, 205, 0, 0.349);
+                // &_SVG{
+                // border: 4px dashed  rgb(100, 0, 139);
+
+                //     position:absolute;
+                //     min-height: 50vmin;
+                //     // object-fit: contain;
+                //     width: 100%;
+                // }
             }
         }
     }
 
 .myAvatar_svg{
-    // width: 10%;
-    flex:1;
-    min-height: 50vh;
-    max-height: 100%;
+    // width: 100%;
+    // flex:1;
+    min-height: 40vmin;
+    max-height: 50vmin;
+    // border: 3px dashed rgb(214, 226, 43);
+    // max-height: 100%;
     position:absolute;
+    bottom: 0px;
 }
 
 .myAvatar-eyelash-svg {

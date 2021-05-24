@@ -2,6 +2,7 @@ import React, {useState,useRef,useLayoutEffect} from 'react'
 import  london_vec  from './media/londonfull/londonfull'
 import  myavatar_vec  from './media/myavatar/myavatar'
 import Nav from '../nav/Nav'
+import { ReactComponent as Wheel} from './media/londonfull/wheel1.svg'
 
 import './Mainintro.scss'
 import './myAvatar.scss'
@@ -10,8 +11,8 @@ const london_img_attr =london_vec();
 const myAvatar_img_attr =myavatar_vec();
 
 function Mainintro(){
-    const talkbtnRef = useRef(null)
-    const titleRef = useRef(null)
+    const talkbtnRef = useRef({classList:[]})
+    const titleRef = useRef({classList:[]})
 
 
 
@@ -26,7 +27,11 @@ function Mainintro(){
 
   
     useLayoutEffect(() => {
-        window.addEventListener('scroll',  scrollHeandle)
+        // window.addEventListener('scroll',  scrollHeandle)
+        window.addEventListener('scroll',  ()=>{requestAnimationFrame(scrollHeandle)} )
+        // setInterval(()=>{requestAnimationFrame(scrollHeandle)} , 1000/60)
+        window.addEventListener('resize', handleResize)
+
         // setInterval()
         console.log('Starting')
 
@@ -36,14 +41,23 @@ function Mainintro(){
         }
     }, [])
 
+
+    let widowHieght_scrollStopThreshold = 0;
+    handleResize() 
+    function handleResize(){
+        widowHieght_scrollStopThreshold = Math.round(window.innerHeight/2.2); 
+        
+    }
     let classdded=false;
+
 
     function scrollHeandle(e)
     {
-
         const shift=window.scrollY;
-        if(shift<555){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
-            if(classdded) {talkbtnRef.current.classList.remove("navGrid_BtnCon-sp1");  classdded=false}
+        if(shift<widowHieght_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
+            if(classdded) {talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
+                            titleRef.current.classList.remove("foggyVanish");
+                            classdded=false}
 
         
             setYShift({
@@ -56,8 +70,10 @@ function Mainintro(){
         })
         }
         else{
-            console.log(titleRef)
-            if(!classdded) {talkbtnRef.current.classList.add("navGrid_BtnCon-sp1"); classdded=true}
+            // console.log(titleRef)
+            if(!classdded) {talkbtnRef?.current?.classList?.add("navGrid_BtnCon-sp1");
+                            titleRef.current.classList.add("foggyVanish");
+                            classdded=true}
         }
     }
         return(
@@ -66,12 +82,28 @@ function Mainintro(){
             <section className='Mi_container'>
                 <div className='londonfull'>
                     <div className="londonfull__imgcontainer">
-                        { london_img_attr.map((element)=>  {
-                              return  <img src={element["img"]} alt={element['attr'].key}
+                        { london_img_attr.map((element,index)=>  {
+
+                            if(element['attr'].key === 'skyline1'){
+                                return(<>
+                                    <Wheel className='london-wheel-svg londonfull__svg' key='wheel' 
+                                    style={{
+                                        transform: `translate3d(0,${YShift[element['attr'].key]}px,0)`
+                                        } } ></Wheel>
+                                    <img src={element["img"]} alt={element['attr'].key}
+                                     style={{
+                                        transform: `translate3d(0,${YShift[element['attr'].key]}px,0)`
+                                        } }
+                                    {...element['attr']} />
+                                    </>
+                                )
+                            }
+                              return <img src={element["img"]} alt={element['attr'].key}
                                     style={{
                                         transform: `translate3d(0,${YShift[element['attr'].key]}px,0)`
                                         } }
                                     {...element['attr']} />
+                                    
                             }
                         )}
                         <div className='night'></div>
@@ -83,8 +115,8 @@ function Mainintro(){
                                 <div className='vertical_spacer'></div>
                                 <div className='myAvatarContainer'>
                                     { myAvatar_img_attr.map((element)=>  {
-                                            return  <img src={element["img"]} alt={element['attr'].key}
-                                                    {...element['attr']} />
+                                         return   <img src={element["img"]} alt={element['attr'].key}
+                                                    {...element['attr']} ></img>
                                             })}
                                 </div>
                                
@@ -95,9 +127,9 @@ function Mainintro(){
                         </div>
                     </div>
                 </div>
-
-               
+       
              </section>
+  
             </>
         );
 
