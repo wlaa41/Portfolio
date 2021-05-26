@@ -1,11 +1,13 @@
 @import '../../abstracts/mixins';
+
+$cardhight:240px;
 // $shadowcolor:rgba(32, 32, 32, 0.568);
 .CardEdu{
     margin: 2rem;
     border: .1px solid rgb(139, 139, 139);
     padding: 33px;
     border-top-width: 1px;
-    min-height: 240px;
+    min-height: $cardhight;
     min-width: 300px;
     max-width: 380px;
     color: rgb(41, 41, 41);
@@ -59,10 +61,6 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(109, 109, 109, 0.877);
     // @include extraInfo();
-
-   
-
-
 
     &_icon{
         flex: 77px;

@@ -50,13 +50,28 @@ function Mainintro(){
     }
     let classdded=false;
 
+    // useLayoutEffect(() => {
+    //     const shift=window.scrollY;
+    //     if(shift<widowHieght_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
+    //         if(classdded) {talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
+    //                         titleRef.current.classList.remove("foggyVanish");
+    //                         classdded=false}
+    //     }
+    //     else{
+    //         // console.log(titleRef)
+    //         if(!classdded) {talkbtnRef?.current?.classList?.add("navGrid_BtnCon-sp1");
+    //                         titleRef.current.classList.add("foggyVanish");
+    //     }
+    //     return () => {
+    //     }
+    // }, [YShift])
 
     function scrollHeandle(e)
     {
         const shift=window.scrollY;
         if(shift<widowHieght_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
             if(classdded) {talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
-                            titleRef.current.classList.remove("foggyVanish");
+                            titleRef?.current?.classList?.remove("foggyVanish");
                             classdded=false}
 
         
@@ -72,7 +87,7 @@ function Mainintro(){
         else{
             // console.log(titleRef)
             if(!classdded) {talkbtnRef?.current?.classList?.add("navGrid_BtnCon-sp1");
-                            titleRef.current.classList.add("foggyVanish");
+                            titleRef?.current?.classList?.add("foggyVanish");
                             classdded=true}
         }
     }

@@ -17,6 +17,18 @@ button{
     outline: none;
     border: 0;
     box-shadow: none;
+
+        // font: inherit;
+        height: 2em;
+        font-size: 1.6rem;
+        position: relative;
+        outline: none;
+        border: 0;
+        border-radius: 1em;
+        padding: .2em 1em;
+        box-shadow: none;
+        white-space: nowrap;
+        
 }
 
 html {

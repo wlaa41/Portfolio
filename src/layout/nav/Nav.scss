@@ -19,7 +19,7 @@
         width: 100%;
 
         grid-template-columns: 12.5% 1fr 30% 5%;
-        grid-template-rows:20% 1fr 9fr 5%;
+        grid-template-rows:15% 1fr 9fr 5%;
         & > div >  * {
             touch-action:auto;
             pointer-events: auto;
@@ -30,8 +30,7 @@
             color: rgba(255, 255, 255, 1);
             // animation: vanishText .9s   reverse linear ;
             text-shadow: 
-            0 0 0 rgba(255, 255, 255,1),
-            0 0 0 rgba(255, 255, 255, 1);
+            0 3px 4px rgb(48, 48, 48);
             transition:all .3s ;
 
             grid-row: 2/3;
@@ -40,9 +39,10 @@
                 font-family: 'Loto', sans-serif;    
                 
                 font-size: 3.5rem;
-                font-weight: 400;
+                font-weight: 800;
                 text-transform:uppercase;
                 text-shadow: 4px;
+                margin-bottom: 2rem;
 
             }
         }
@@ -134,24 +134,7 @@
             
         
 }
-button{
-    // font: inherit;
-    height: 2em;
-    font-size: 1.6rem;
-    position: relative;
-    outline: none;
-    border: 0;
-    border-radius: 1em;
-    padding: .2em 1em;
-    box-shadow: none;
-    white-space: nowrap;
-    // touch-action:auto;
-    // pointer-events: auto;
-    
-    &:hover{
-        transform: translate3d(0,3px,0);
-    }
-}
+
 .foggyVanish{
 animation: vanishText .9s linear ;
         color: rgba(255, 255, 255, 0.0);
@@ -161,7 +144,6 @@ animation: vanishText .9s linear ;
         -12px -12px 33px rgba(255, 255, 255, 0);
         visibility: hidden;
 }
-
 @keyframes vanishText{
     0%{
         transform: translate3d(0,0,0);

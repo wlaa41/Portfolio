@@ -10,7 +10,7 @@
     margin: 2px;
     display: flex;
     // flex-flow: row;
-    &:hover > button{
+    &:hover > .inputNumber_btn{
         background-color: rgba(255,255,255,.2);
 
         opacity: 1;
