@@ -6,6 +6,7 @@ import { ReactComponent as Wheel} from './media/londonfull/wheel1.svg'
 
 import './Mainintro.scss'
 import './myAvatar.scss'
+import { electronMassDependencies } from 'mathjs'
 
 const london_img_attr =london_vec();
 const myAvatar_img_attr =myavatar_vec();
@@ -38,7 +39,7 @@ function Mainintro(){
         btnCon_Width = (talkbtnRef.current.offsetWidth - 66).toFixed(0)
         btnCon_Height = (talkbtnRef.current.offsetHeight - 66).toFixed(0)
         console.log(btnCon_Height,btnCon_Width)
-        // scrollHeandle()
+  
 
         // setInterval()
         console.log('Starting')
@@ -49,17 +50,23 @@ function Mainintro(){
         }
     }, [])
 
-
     let widowHieght_scrollStopThreshold = 0;
     let btnCon_Width = 0;
     let btnCon_Height = 0;
+    let classdded=false;
+
     handleResize() 
     function handleResize(){
         widowHieght_scrollStopThreshold = Math.round(window.innerHeight/2.2); 
         btnCon_Width = (talkbtnRef.current.offsetWidth *.9).toFixed(0)
         btnCon_Height = (talkbtnRef.current.offsetHeight *.9).toFixed(0)
+        // scrollHeandle();
+        if(classdded){
+            // setBtn_Translate([btnCon_Width,btnCon_Height,0])
+        }
+        
+        
     }
-    let classdded=false;
 
     
     function scrollHeandle(e)

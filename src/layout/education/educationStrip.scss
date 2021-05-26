@@ -140,11 +140,7 @@
             // clip-path: polygon(82% 3%, 100% 64%, 100% 100%, 0 100%, 0 0);
             clip-path: polygon(14% 3%, 100% 0%,100% 100%,   0 100%, 0 64%);
 
-            @include respond(tab-land) { // width < 1200?
 
-                @include respond(tab-port) { // width < 900px
-                    @include respond(phone) { // width < 600px
-            }}}
         }
     }
 }
