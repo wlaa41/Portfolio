@@ -11,7 +11,7 @@ export default function CardStrip(){
             <div className='CardStrip_BACKGround_left-bg'>
                
             </div>
-            <div className='CardStrip_BACKGround_mid-bg'></div>
+            {/* <div className='CardStrip_BACKGround_mid-bg'></div> */}
             <div className='CardStrip_BACKGround_right-bg'></div>
 
         </div>

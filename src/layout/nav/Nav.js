@@ -4,24 +4,22 @@ import {ReactComponent as TalkIcon} from './chat_black_24dp.svg'
 import './form.scss'
 
 
-const Nav = ({talkbtn ,title })=>{
+const Nav = ({talkbtn ,title,translate })=>{
 
+
+////#region  form
 function formExit(e){
         const ele =document.getElementById("contactCon");
         if(ele===e.target)document.getElementById("contactCon").style.display = "none";
 }function openForm(e){
         document.getElementById("contactCon").style.display = "flex";      
 }
+
 const [name, setName] = useState('')
 const [email, setEmail] = useState('')
 const [phone, setPhone] = useState('')
 const [msg, setMsg] = useState('')
 const [statusMsg, setStatusMsg] = useState('Get in touch')
-
- 
-
- 
-
 async function sendinfo(e){
         e.preventDefault();
         const body = {
@@ -58,7 +56,7 @@ async function sendinfo(e){
 
         })
 }
-
+//#endregion form
 
 
 
@@ -139,7 +137,13 @@ const showform = false;
                         </div>
                                 <div ref={talkbtn} className=' navGrid_BtnCon'> 
                                         <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1 '>Give an offer</button>
-                                        <button className='navGrid_BtnCon_button navGrid_BtnCon_button-2' onClick={openForm}>Let's Talk
+                                        <button className='navGrid_BtnCon_button navGrid_BtnCon_button-2' onClick={openForm}
+                                        style={{
+                                                position: 'relative',
+                transform: `translate3d(${translate[0]}px,${translate[1]}px,0)`
+                                        }}
+                                        
+                                        >Let's Talk
                                         <TalkIcon></TalkIcon>
                                         </button>
                                 </div>

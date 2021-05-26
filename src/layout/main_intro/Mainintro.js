@@ -11,8 +11,12 @@ const london_img_attr =london_vec();
 const myAvatar_img_attr =myavatar_vec();
 
 function Mainintro(){
+
     const talkbtnRef = useRef({classList:[]})
     const titleRef = useRef({classList:[]})
+
+    // this state to move the button of let's talk from the top to corner
+    const [btn_Translate, setBtn_Translate] = useState([0,0,0])
 
 
 
@@ -27,10 +31,14 @@ function Mainintro(){
 
   
     useLayoutEffect(() => {
-        // window.addEventListener('scroll',  scrollHeandle)
         window.addEventListener('scroll',  ()=>{requestAnimationFrame(scrollHeandle)} )
-        // setInterval(()=>{requestAnimationFrame(scrollHeandle)} , 1000/60)
         window.addEventListener('resize', handleResize)
+
+        // we calculate the movement of the Let's talk button bellow
+        btnCon_Width = (talkbtnRef.current.offsetWidth - 66).toFixed(0)
+        btnCon_Height = (talkbtnRef.current.offsetHeight - 66).toFixed(0)
+        console.log(btnCon_Height,btnCon_Width)
+        // scrollHeandle()
 
         // setInterval()
         console.log('Starting')
@@ -43,38 +51,27 @@ function Mainintro(){
 
 
     let widowHieght_scrollStopThreshold = 0;
+    let btnCon_Width = 0;
+    let btnCon_Height = 0;
     handleResize() 
     function handleResize(){
         widowHieght_scrollStopThreshold = Math.round(window.innerHeight/2.2); 
-        
+        btnCon_Width = (talkbtnRef.current.offsetWidth *.9).toFixed(0)
+        btnCon_Height = (talkbtnRef.current.offsetHeight *.9).toFixed(0)
     }
     let classdded=false;
 
-    // useLayoutEffect(() => {
-    //     const shift=window.scrollY;
-    //     if(shift<widowHieght_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
-    //         if(classdded) {talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
-    //                         titleRef.current.classList.remove("foggyVanish");
-    //                         classdded=false}
-    //     }
-    //     else{
-    //         // console.log(titleRef)
-    //         if(!classdded) {talkbtnRef?.current?.classList?.add("navGrid_BtnCon-sp1");
-    //                         titleRef.current.classList.add("foggyVanish");
-    //     }
-    //     return () => {
-    //     }
-    // }, [YShift])
-
+    
     function scrollHeandle(e)
     {
         const shift=window.scrollY;
         if(shift<widowHieght_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
-            if(classdded) {talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
+            if(classdded) {
+                console.log(talkbtnRef.offsetWidth)
+                talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
+                            setBtn_Translate([0,0,0])
                             titleRef?.current?.classList?.remove("foggyVanish");
                             classdded=false}
-
-        
             setYShift({
             skyline3:   (  shift  / 1.2   )      ,
             skyline2:   (  shift  / 1.3   )      ,
@@ -85,15 +82,19 @@ function Mainintro(){
         })
         }
         else{
-            // console.log(titleRef)
+            // the if below is for the Nav which include vanish text by adding foggyVanish class
+            // and changing the button shape by adding navGrid_BtnCon-sp1 class
+            // also moving the button by changing the setBtn_Translate state 
             if(!classdded) {talkbtnRef?.current?.classList?.add("navGrid_BtnCon-sp1");
+                            // talkbtnRef.current.offsetWidth
+                            setBtn_Translate([btnCon_Width,btnCon_Height,0])
                             titleRef?.current?.classList?.add("foggyVanish");
                             classdded=true}
         }
     }
         return(
             <>
-            <Nav talkbtn={talkbtnRef} title={titleRef}></Nav>
+            <Nav talkbtn={talkbtnRef} title={titleRef} translate={btn_Translate} ></Nav>
             <section className='Mi_container'>
                 <div className='londonfull'>
                     <div className="londonfull__imgcontainer">
