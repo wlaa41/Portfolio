@@ -1,4 +1,5 @@
 @import '../../abstracts/mixins';
+$buttonTranslateTime:all 1.8s ;
 
 .nav{
     font: 2rem 'Roboto',sans-serif;
@@ -64,7 +65,7 @@
                 border: 2px solid white;
                 // margin-right:-100%;
                 // margin-top: 3rem;
-                transition: all .9s ;
+                transition: $buttonTranslateTime ;
                 @include shadowbend-bottom;
     // border:8px dashed lightcoral;
 
@@ -84,7 +85,7 @@
                     color: rgb(82, 163, 230);
                     background-color: white;
                     & > *{
-                        transition: all .9s ;
+                        transition: $buttonTranslateTime ;
 
                         fill:rgb(82, 163, 230);
 
@@ -105,7 +106,7 @@
 
     // align-self: end;
     // justify-self: end;
-    transition: all .9s ease;
+    transition: $buttonTranslateTime ease;
 
     // border:4px dashed rgb(226, 223, 61);
 
@@ -121,7 +122,7 @@
                 font-size: 0;
 
                 & > *{
-                        transition: all .9s ;
+                        transition: $buttonTranslateTime ;
                     width:22px;
                     height:22px;
                 }

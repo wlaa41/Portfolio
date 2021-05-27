@@ -10,61 +10,24 @@
         align-items: center;
 
     }
-    .moveOutScreen{
-        transform: translate(90%);
-        transition: transform .8s ;
-        .ftStrip_canvas_btnCon{
-            .ftStrip_canvas_btnCon_btn{
-                transition: all .8s;
-                border: none;
-                box-shadow: none;
-                color: rgb(77, 77, 77);
-                &-info{
-                    color:white;
-                }
-                &::after{
-                    position: absolute;
-                    background-color: rgba(0, 0, 0, 0.411);
-                    padding: 19% 2ch;
-                    margin: 3ch;
-                    white-space:nowrap;
-                    font: 70% Lato;
-                    color: white;
-                    right: 100%;
-                    // content: 'Close >>';
-                    display: none;
-                    transition: transform .8s ;
-                    animation: none;
-
-                }
-                
-            }
-        }
-    }
+    
     &_canvas{
         position: relative;
         // margin-top: 50%;
         height: 85%;
         flex:9;
         border-radius: 42px;
-        // border-top-right-radius: 0;
-        // border-bottom-right-radius: 0;
         transform-origin: left;
-
-        background: linear-gradient(
-            to right,
-            rgba(4, 126, 163, 0.863),
-            // rgba(0, 137, 172, 0.527),
-            rgba(40, 173, 250, 0.849),
-            rgba(39, 157, 224, 0.9)
-            // rgba(1, 196, 255, 0.863)
-        );
         transform-origin: right;
-        transition: transform .8s ;
+        // transition: transform .8s ;
+        transition: transform .8s, box-shadow .8s  ;
+
         transform:rotateX(-5deg) rotateY(-11deg) rotateZ(-1deg) ;
         display: flex;
         align-items: center;
-        box-shadow: -66px 0 44px 22px rgba(0, 0, 0, 0.35);
+        // box-shadow: -66px 0 44px 22px rgba(0, 0, 0, 0.35);
+        box-shadow: -21px 22px 22px 0px rgba(0, 0, 0, 0.35);
+
         @include respond(tab-land) { // width < 1200?
             background: rgb(166, 211, 18);
         }
@@ -102,6 +65,37 @@
 
         }
 
+    }
+
+    // this class will get applied once the canvas is out
+    .moveOutScreen{
+        transform: translate(90%);
+        box-shadow: -66px 13px 44px 22px rgba(0, 0, 0, 0.35);
+
+        transition: transform .8s, box-shadow .8s  ;
+        .ftStrip_canvas_btnCon{
+            .ftStrip_canvas_btnCon_btn{
+                transition: all .8s;
+                border: none;
+                box-shadow: none;
+                & .ftP-svg{
+                    
+                    fill: rgb(56, 56, 56);
+                }
+                &-info .ftP-svg{
+                    fill: rgb(230, 230, 230);
+                }
+                & .see_the_graph_SVG{
+                    animation: flashing  7s   infinite linear  ;
+
+
+                }
+                // &::after{
+                //     animation: none;
+                // }
+                
+            }
+        }
     }
     
 }

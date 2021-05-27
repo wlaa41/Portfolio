@@ -52,7 +52,7 @@ function MyPlotly({mulMatrix,bgcolor="#eeeeee"}) {
   }
 
   return (
-     <Plot className=''
+     <Plot id='plotly'
       data={xyzAxis()}
       layout={
         {

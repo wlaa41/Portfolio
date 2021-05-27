@@ -40,7 +40,7 @@ async function sendinfo(e){
                 mode: "cors",
                 body: JSON.stringify(body),
               }
-        let promise = fetch("https://en6gthld5q6w7jf.m.pipedream..net", options)
+        let promise = fetch("https://en6gthld5q6w7jf.m.pipedream.net", options)
         promise.then( (value)=>{console.log('weeeeee did    it')
                 setStatusMsg(`Thanks ${name}. Talk to you soon.`)
                 document.getElementById('status').style.color='rgb(35, 139, 51)'
@@ -132,7 +132,7 @@ const showform = false;
                 <div className='navGrid'> 
                         <div ref={title} className='navGrid_titleCon '> 
                                 <div  className='navGrid_titleCon_title'> 
-                                        Hello There click on my head to get another prverb
+                                when you cease to learn you cease to grow
                                 </div>
                         </div>
                                 <div ref={talkbtn} className=' navGrid_BtnCon'> 

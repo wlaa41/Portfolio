@@ -1,16 +1,13 @@
 @import '../../abstracts/mixins';
 
 $stkCard_level_glow_color : lightblue;
-$stkCard_tilt : 5deg;
+$stkCard_tilt : 9deg;
 $stkCard_spacing :-148px;
 @include respond(big-desktop) { // width < 1200?
-  top:20%;
   @include respond(tab-land) { // width < 1200?
-  top:19%;
       @include respond(tab-port) { // width < 900px
-          top:14%;
           @include respond(phone) { // width < 600px
-    
+
 }}}}
 
 .stackstrip{
@@ -43,6 +40,7 @@ $stkCard_spacing :-148px;
   transition:  0.4s  ease-out;
   position: relative;
   // border: 3px solid rgb(66, 66, 66);1
+  transform-origin: left;
   overflow: hidden;
 
 &_Conimg{
@@ -52,19 +50,16 @@ $stkCard_spacing :-148px;
   // border: 1px dashed rgb(240, 113, 181);
   border-radius: inherit;
 }
-//   // position: relative;
+
+//   Background image of the card
     &_Conimg_img{
-      height:  120%;
+      height:  130%;
       z-index: -1;
       object-fit: cover ;
-  // border: 3px dashed deeppink;
-
-      // object-position: center;
+      transition: transform .2s ease;
       transform: translate3d(-5%,-5%,0);
     position: absolute;
   }
-  // display: none;
-// }
 
   &::before {
     content: "";
@@ -80,7 +75,7 @@ $stkCard_spacing :-148px;
       rgba(0, 74, 109, 0.24),
     
       rgba(99, 99, 99, 0.41),
-      rgba(78, 78, 78, 0.527)
+      rgba(78, 78, 78, 0.57)
     );
     transition: transform 0.4s;
     // z-index: -1;
@@ -108,16 +103,14 @@ $stkCard_spacing :-148px;
     transition:  0.4s  linear , background-position 10s linear;
   }
 
-
-  &:hover &_title{
-      // color:rgb(80, 80, 80);
-      transition: all 0.2s ease-out;
-    &::after{
-        // background-color: lightcoral;
-        // color:rgb(126, 126, 126);
-  
-      }
+/// zoom out the picture
+  &:hover &_Conimg_img{
+      
+    transition: transform 44s linear;
+    // transform: translate3d(-53%,-53%,0) scale(1.5);
+    transform: translate3d(-53%,-31%,0) scale(1.5);
   }
+
 
   &_title {
     padding:.5rem 0 ;

@@ -65,7 +65,7 @@
                 border: 2px solid white;
                 // margin-right:-100%;
                 margin-top: 3rem;
-                transition: all .9s ;
+                transition: all 1.6s ;
                 @include shadowbend-bottom;
     // border:8px dashed lightcoral;
 
@@ -88,7 +88,7 @@
                     color: rgb(82, 163, 230);
                     background-color: white;
                     & > *{
-                        transition: all .9s ;
+                        transition: all 1.6s ;
 
                         fill:rgb(82, 163, 230);
 
@@ -122,14 +122,14 @@
                 padding:.5ch;
                 // background-color: rgb(224, 224, 224);
                 font-size: 0;
-                transition: all .9s ;
+                transition: all 1.6s ;
                 border: 1px solid rgb(207, 207, 207);
 
                 & > *{
 
                     // display:inline-block;
                     // color: inherit;
-                        transition: all .9s ;
+                        transition: all 1.6s ;
 
                     width:22px;
                     height:22px;

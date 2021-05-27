@@ -143,9 +143,9 @@ z-index: 55;
 @mixin shadowSmooth-bottom($shadowcolor :rgba(26, 26, 26, 0.644))
 {
    
--webkit-box-shadow: 0 5px 9px -1px $shadowcolor;
--moz-box-shadow: 0 5px 9px -1px $shadowcolor;
-     box-shadow: 0 5px 9px -1px $shadowcolor;
+-webkit-box-shadow: 0 7px 9px -3px $shadowcolor;
+-moz-box-shadow: 0 7px 9px -3px $shadowcolor;
+     box-shadow: 0 7px 9px -3px $shadowcolor;
 }
 
 @mixin extraInfo(){
