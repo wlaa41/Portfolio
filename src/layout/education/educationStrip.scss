@@ -6,6 +6,10 @@
     position: relative;
     background:linear-gradient(to bottom, rgba(0, 0, 255, 0) 10%,
     #005f96 10%);
+    @include respond(tab-land){
+        background:linear-gradient(to bottom, rgba(0, 0, 255, 0) 4%,
+        #005f96 4%);
+    }
     &_Title{
 
                   

@@ -1,5 +1,6 @@
 import React from 'react'
 import './StackCard.scss'
+import './_StackCard.scss'
 
 export default function StackCard({info}) {
     
