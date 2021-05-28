@@ -1,6 +1,6 @@
 import React from 'react'
 import CardEdu from './CARD_Edu'
-import './INFO_edu.scss'
+import './CON_NFO.scss'
 
 const EducationINFO = () => {
     return (

@@ -1,6 +1,9 @@
 import React from 'react'
 import sprite from './ICON_sprite.svg'
 import './CARD_edu.scss'
+import './_CARD_edu.scss'
+
+
 import {info} from './info/info'
 
 const CardEdu = () => {
@@ -21,7 +24,7 @@ const CardEdu = () => {
 
                     <div  className="CardEdu_header">
                         {ele.icon}
-                        <h3 extrainfo='19-present' className="CardEdu_header_main_title">
+                        <h3 extrainfo={ele.date} className="CardEdu_header_main_title">
                         {ele.title}  <span className="CardEdu_header_year"> </span></h3>
                         
                     </div>

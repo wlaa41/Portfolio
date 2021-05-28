@@ -36,6 +36,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em) { @content };    //600px
     }
+    @if $breakpoint == seven {
+        @media only screen and (max-width: 43.75em) { @content };    //600px
+    }
     @if $breakpoint == tab-port {
         @media only screen and (max-width: 56.25em) { @content };     //900px
     }
@@ -45,7 +48,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == big-desktop {
         @media only screen and (max-width: 112.5em) { @content };    //1800
     }
+    
+    @if $breakpoint == flatlook {
+        @media  (hover: none) , only screen and (max-width: 43.75em) , (prefers-reduced-motion: reduce)   { @content }; // , (hover: none) , (prefers-reduced-motion: reduce) { @content };    //1800
+    }
+    @if $breakpoint == touchS {
+        @media  (hover: none)   { @content }; // , (hover: none) , (prefers-reduced-motion: reduce) { @content };    //1800
+    }
+    @if $breakpoint == v400 {
+        @media only screen and (max-width: 25em) { @content };    //600px
+    }
+
+
 }
+
 
 
 
