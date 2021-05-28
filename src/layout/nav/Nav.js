@@ -61,7 +61,6 @@ async function sendinfo(e){
 
 
 const showform = false;
-
         return(
             <nav className='nav'  >
 

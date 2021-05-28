@@ -2,6 +2,7 @@
 
 .Mi_container{
     height: 100vh;
+    position: relative;
     // border: 44px solid rgb(202, 151, 250);
     // border: 6px solid rgb(179, 255, 39);
 
@@ -18,40 +19,63 @@
 
     &__imgcontainer{
     height:70vh;
-    // height: inherit;
-        
+    width: 100%;
         // border: 3px dashed blueviolet;
         position: relative;
-                // object-position: bottom;
-                object-fit: cover ;
 
     }
     
     &__svg {
+        // z-index: 2;
                 // object-fit: cover ;
                 // height:100%;
                 // width: 100%;
                 // border: 3px dashed rgb(214, 226, 43);
-            transform-origin: center;
+            // transform-origin: center;
             // // right: 0;
             //     object-position:  center;
-        position: absolute;
+        // position: absolute;
         // height: inherit;
-        bottom:  0;
+        // bottom:  0;
 
     }
  }
 
+//  #absolute100{
+//      height: 70px;
+//      height:100%;
+//                 width: 100%;
+//     //  border: 3px dashed deeppink;
+//     // position: absolute;
+//     .londonfull__svg {
 
+//         position: relative;
+    
+//     }
 
+//  }
+ .londonfull__svg {
+    //  transform-origin: bottom;
+    // width:1129px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    // object-fit: contain;
+    // float: left;
+    //  border: 3px dashed deeppink;
 
- #whieelstand{
-			
-    transform-origin:center;
-    transform-box: fill-box;
-    transform:rotateY(50deg) ;
 
 }
+
+
+
+//  #whieelstand{
+			
+//     transform-origin:center;
+//     transform-box: fill-box;
+//     transform:rotateY(50deg) ;
+
+// }
 #waterCon *:not(#water){
 
 
@@ -68,9 +92,6 @@
 }
 
 
-// .london-wheel-svg{
-//     border: 3px dashed crimson;
-// }
 
 #group{
     transform: translate3d(-222px,69px,0);
@@ -83,7 +104,7 @@
       transform-box: fill-box;
       left: 0;
     // opacity: 0;
-     border: 22px dashed crimson;
+    //  border: 22px dashed crimson;
     animation: spin 50s infinite linear;
 }
 @keyframes spin{

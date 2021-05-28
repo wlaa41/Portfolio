@@ -9,12 +9,7 @@ const EducationINFO = () => {
                 
                     <div className='EduStrip_info_grid_mainFlex'>
                             <CardEdu></CardEdu>
-                            <CardEdu></CardEdu>
-                            <CardEdu></CardEdu>
-                            <CardEdu></CardEdu>
-                            <CardEdu></CardEdu>
-                            <CardEdu></CardEdu>
-                            <CardEdu></CardEdu>
+
 
 
                     </div>
