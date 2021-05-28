@@ -21,12 +21,12 @@
             text-align: center;
             transform: rotateZ(.5turn);
             margin-top: -55px;
+            & > div{
+                text-transform: uppercase;
+            }
         
         }
-        & > div{
-            display: inline-block;
-            text-transform: uppercase;
-        }
+
         &-Feature{
             &::first-letter{
                 font-size:3.3rem;
@@ -53,4 +53,55 @@
             
         }   
     }
+@include respond(tab-port)
+{
+    .ftStrip{
+        overflow: hidden;
+        height:auto;
+        display: block;
+        perspective: 1500px;
+        position: relative;
+        &_titleCon{
+            flex:2;
+            // border: 3px dashed darkgreen;
+            padding-left: 0;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            &-flip{
+                display: flex;
+                flex-direction: column;
 
+                writing-mode:unset;
+                text-orientation:initial;
+                text-align: center;
+                transform: rotateZ(0);
+                margin-top: 0;
+            }
+            &-Feature{
+                &::first-letter{
+                    font-size:3.3rem;
+                }
+                font-size:2rem;
+                letter-spacing: .3ch;
+            }
+            &-Project{
+                margin-top: -7rem;
+                margin-right: 4rem;
+                position: relative;
+                & > div{
+                    display: inline;
+                    font-size:7rem;
+                    position: relative;
+                    margin-right: -1rem;
+                }
+                letter-spacing: .2ch;
+                font-size: 3rem;
+                font-weight: bold;
+                transform: translate(0,0ch);
+            }
+                
+            }   
+        }
+
+}

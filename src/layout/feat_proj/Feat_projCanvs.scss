@@ -8,10 +8,17 @@
         // border: 3px dashed red;
         display: flex;
         align-items: center;
+        @include respond(tab-port)
+        {
+            position:relative;
+            display:block;
+            margin: 0 3rem;
+        }
 
     }
     
     &_canvas{
+
         position: relative;
         // margin-top: 50%;
         height: 85%;
@@ -26,23 +33,16 @@
         display: flex;
         align-items: center;
         // box-shadow: -66px 0 44px 22px rgba(0, 0, 0, 0.35);
-        box-shadow: -21px 22px 22px 0px rgba(0, 0, 0, 0.35);
-
-        @include respond(tab-land) { // width < 1200?
-            background: rgb(166, 211, 18);
-        }
+        box-shadow: -11px 11px 22px 0px rgba(0, 0, 0, 0.35);
         background: rgba(166, 211, 18, 0.849);
-
-
         &_Decor{
             &-1{
-
+                z-index: -1;
                 height: 84%;
                 flex: 6;
                 background-color: rgb(253, 253, 253);
                 transform:rotateX(5deg) rotateY(15deg) rotateZ(-1deg)  scale(.85);
                 border: 10px solid rgba(4, 126, 163, 0.863);
-                // border-left-width: px ;
                 border-right-width: 15px ;
                 border-radius: 44px;
                 position: relative;
@@ -64,14 +64,71 @@
 
 
         }
+        @include respond(tab-port)
+        {
+            position:absolute;
+            height: 500px;
+            width:  100%;
+            display: flex;
+            justify-items:center;
+            // align-items:flex-end;
+
+            flex-direction: column;
+            transform:rotateX(-0deg) rotateY(-0deg) rotateZ(-0deg) translate3d(0,-500px,0);
+            &_Decor{
+                &-1{
+                    // height: 550px;
+                    margin-bottom: 3rem;
+                border: 3px solid rgba(4, 126, 163, 0.863);
+
+                    transform:rotateX(0);// rotateY(15deg) rotateZ(-1deg)  scale(.85);
+
+                    flex: 6;
+                    height: 33%;
+                    // margin-top: -3rem;
+                    width: 80vw;
+                    overflow: hidden;
+                }      
+                &-2{
+                    // width: 88vw;
+
+                }
+    
+    
+            }
+            @include respond(v400)
+            {
+            width:  100vw;
+            margin-left: -3rem;
+            &_Decor{
+                &-1{
+                    // height: 550px;
+                    margin-bottom: 3rem;
+                border: 3px solid rgba(4, 126, 163, 0.863);
+
+                    transform:rotateX(0);// rotateY(15deg) rotateZ(-1deg)  scale(.85);
+
+                    flex: 6;
+                    height: 33%;
+                    // margin-top: -3rem;
+                    width: 94vw;
+                    overflow: hidden;
+                }      
+                // &-2{
+                    // width: 88vw;
+
+                }
+
+            }
+    
+        }
 
     }
 
     // this class will get applied once the canvas is out
     .moveOutScreen{
-        transform: translate(90%);
-        box-shadow: -66px 13px 44px 22px rgba(0, 0, 0, 0.35);
-
+        transform: translate3d(90%,0,0);
+        box-shadow: -22px 11px 34px 5px rgba(0, 0, 0, 0.5);
         transition: transform .8s, box-shadow .8s  ;
         .ftStrip_canvas_btnCon{
             .ftStrip_canvas_btnCon_btn{
@@ -84,6 +141,12 @@
                 }
                 &-info .ftP-svg{
                     fill: rgb(230, 230, 230);
+                    @include respond(tab-port){
+                       
+                            transform: rotate(0deg);
+                            transition: all .9s ;
+                        
+                    }
                 }
                 & .see_the_graph_SVG{
                     animation: flashing  7s   infinite linear  ;
@@ -95,6 +158,11 @@
                 // }
                 
             }
+        }
+        @include respond(tab-port)
+        {
+            transform: translate3d(0,-42px,0);
+
         }
     }
     

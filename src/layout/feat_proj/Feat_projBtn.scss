@@ -7,7 +7,13 @@
 
         &_btnCon
         {
-
+            @include respond(tab-port)
+            {
+                position: relative;
+                display: flex;
+                gap: 22px;
+                transform: translate3d(0,-50%,0);
+            }
             &_btn{
                 display: grid;
                 justify-items: center;
@@ -28,12 +34,20 @@
                 linear-gradient(to left, 
                 rgb(119, 119, 119) ,
                 rgb(94, 94, 94));
-
+   
                 .ftP-svg{
                     fill: rgb(224, 224, 224);
                     height: 19px;
                     width:  19px;
                 }
+
+                @include respond(tab-port){
+                    &-info .ftP-svg{
+                        transform: rotate(90deg);
+                        transition: all .9s ;
+
+                    }
+                 }
             
             
                 .see_the_graph_SVG{fill:#3f73d4;
@@ -45,10 +59,28 @@
                     top: 0;
                     opacity: 0;
                     animation: none;
+
+                     @include respond(tab-port){
+                        // fill: red;
+                        height:43vw;
+                        width:auto;
+
+                        transform: rotate(90deg) translate3d(-66%,-5%,0) ;
+
+                    }
+                    
                 }
 
                 &:first-child{
                     margin-top: 100%;
+                }
+                @include respond(tab-port)
+                {
+                    margin:0 ;
+                    &:first-child{
+                        margin-top: 0%;
+                    }
+     
                 }
                 &:hover{
                     transform: translateX(-55%);
@@ -67,7 +99,7 @@
 }
 
 
-    // #text{
-    //     fill:red;
-    // }
+
+
+
 

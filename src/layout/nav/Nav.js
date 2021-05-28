@@ -149,7 +149,6 @@ const showform = false;
                                 </div>
                 </div>
 
-                Navigation bar
             </nav>
         );
     

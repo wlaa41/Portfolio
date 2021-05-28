@@ -20,12 +20,22 @@
             grid-column: 1/-1;
             height: 51px;
             column-gap: 5rem;
-            display: grid;
-            justify-items: center;
-            grid-template-columns: repeat(auto-fit , minmax( 380px, 1fr));
+            // display: grid;
+            // justify-items: center;
+            // grid-template-columns: repeat(auto-fit , minmax( 380px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 11px;
             padding: 3% 6% 2% 17%;
             margin-top: 3%;
             // background: white;
+                &::after {
+                    content: '';
+                    flex: auto;
+                    }
+
+
 
             @include respond(big-desktop) { // width < 1200?
                 margin-top: 7%;
@@ -36,7 +46,6 @@
                 @include respond(tab-port) { // width < 900px
                     
                 padding: 3% 1%;
-                 grid-template-columns: repeat(auto-fit , minmax( 330px, 1fr));
                     margin-top: 12%;
                     @include respond(phone) { // width < 600px
                     padding: 3% 0;
@@ -49,7 +58,6 @@
             @include respond(touchS) { // width < 600px
                 // grid-template-columns: repeat(auto-fit , minmax( 330px, 1fr));
 
-                grid-template-columns: repeat(auto-fit , minmax( 280px, 1fr));
             }
 
         }

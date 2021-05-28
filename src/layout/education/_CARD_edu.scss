@@ -19,18 +19,29 @@ $time-toPopupCrd: .9s ease;
     box-shadow: none ;
     border-radius:$border-radius;
         // border: 2px solid rgb(160, 60, 60);
+        
+        // border-top-right-radius: 22px ;
+        // border-top-left-radius: 22px ;
+        border-radius: 11px ;
+
     
     overflow: hidden;
     &_IMG_Con{
-        height: 31px;
+            // z-index: 1;
+        // position: absolute;
+        // display: none;
+        height: 71px;
         object-fit: contain;
         box-shadow: none ;
-        filter: grayscale(0);// brightness(.8);
-        border: 3px solid white;
+        filter: grayscale(1);// brightness(.8);
+        // border: 1px solid white;
         
-        // border-top-left-radius: 100% -10% ;
-        border-top-right-radius: 9px ;
+        // // border-top-left-radius: 100% -10% ;
+        // border-top-right-radius: 22px ;
+        // border-top-right-radius: 22px ;
+                border-radius: 11px ;
         border-bottom-width: 1px;
+        box-shadow: 0 -9px 44px black;
 
            // // gardient cover on top of the imag <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             &:after {
@@ -40,7 +51,7 @@ $time-toPopupCrd: .9s ease;
                 width:100%;
                 top:0;
                 left:0;
-                background: linear-gradient(to right, rgba(9, 70, 128, .1),rgb(255, 255, 255)); 
+                background: linear-gradient(to right, rgba(9, 70, 128, .7) 7%,rgba(255, 255, 255, .8)); 
                 // background: rgba(80, 80, 80, 0); 
             }
             & img{
@@ -56,6 +67,8 @@ $time-toPopupCrd: .9s ease;
     }
 
     &_INFO_Con{
+        // z-index: 4;
+
         padding:1.7rem .5rem;
         .CardEdu_header .CardEdu_header_main_title:after{
             content: attr(extrainfo);//'19 - Present';/

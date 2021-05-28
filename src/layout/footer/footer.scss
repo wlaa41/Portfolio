@@ -5,7 +5,7 @@
     margin-top: -22px;
     background-color: #005f96;
     padding:0 5rem 5rem 5rem;
-    display: flex;
+    // display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
@@ -15,33 +15,39 @@
         margin: 14px 0 ;
         color: inherit;
     }
-    &_left{
-        display: grid;
-        align-items: center;
-        grid-auto-flow: column;
-            & > *{
-        // border: 4px dashed yellow;
-        margin-right: 3rem;
+    &_details{
+        display: flex;
+        column-gap: 11px;
+        // column-gap: 11px;
+        flex-wrap: wrap;
+        // flex-basis: max-content;
+        // flex-basis: content;
+
+
+        justify-content: center;
+        & > *{
+            white-space: nowrap;
 
         }
-         min-width: 300px;
+        // grid-template-columns: repeat(auto-fit, minmax(max-content, auto));
+        // grid-template-columns: repeat(auto-fill, minmax(max-content, auto) );
+        // grid-template-columns: repeat(auto-fit , minmax( 330px, 1fr));
+
+        // justify-content: center;
+        // grid-auto-flow: row;
+        //  min-width: 200px;
         font: 1.6rem  'Noto Sans JP', sans-serif;
     }
-    &_mid{
-
-        min-width: 400px;
+    &_ICON{
         display: flex;
+        gap: 33px;
         justify-content: center;
         align-items: center;
         &-con{
-            height: 33px;
             width:  33px;
-            margin: 14px;
         }
-        &-con:nth-child(n+3){
-            height: 39px;
+        &-con:nth-child(n+4){
             width:  39px;
-            margin: 8px;
         }
         &-svg{
             height: 100%;
@@ -49,20 +55,20 @@
             fill:white;
         }
     }
-    @include respond(big-desktop) { // width < 1200?
-        @include respond(tab-land) { // width < 1200?
-            &_left{
-            grid-template-columns: repeat(auto-fit , max-content  );
-            grid-auto-flow: row;
-            }
+    // @include respond(big-desktop) { // width < 1200?
+    //     @include respond(tab-land) { // width < 1200?
+    //         &_left{
+    //         grid-template-columns: repeat(auto-fit , max-content  );
+    //         grid-auto-flow: row;
+    //         }
 
-            @include respond(tab-port) { // width < 900px
-                &_left >*{
-                    text-align: center;
+    //         @include respond(tab-port) { // width < 900px
+    //             &_left >*{
+    //                 text-align: center;
                    
-                        margin: 0;
-                    }
-                @include respond(phone) { // width < 600px
+    //                     margin: 0;
+    //                 }
+    //             @include respond(phone) { // width < 600px
 
-    }}}}
+    // }}}}
 }
