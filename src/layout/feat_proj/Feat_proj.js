@@ -5,7 +5,7 @@ import Info from './Feat_projInfo';
 import './Feat_projBtn.scss';
 import './Feat_projBtn_MatEditor.scss'
 import MyPlotly from '../../components/plotly/MyPlotly'
-import NumericInput from '../../components/numericInput/NumericInput'
+import NumericInput from './numericInput/NumericInput'
 import sprite from './sprity.svg'
 import  { ReactComponent as GraphHint } from './graph_hint.svg'
 
@@ -67,7 +67,7 @@ const exit_Icon=<svg className="ftP-svg">
             </div>
         </div>
 
-            <div className='ftStrip_canvasCon'>
+        <div className='ftStrip_canvasCon'>
             <Info></Info>
             <div className={'ftStrip_canvas ' + (showCanvas || ' moveOutScreen')}>
                 <div className='ftStrip_canvas_btnCon' >

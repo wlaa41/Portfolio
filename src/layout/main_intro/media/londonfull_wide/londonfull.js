@@ -1,8 +1,6 @@
-// gathering all london imges in one constant
 import   skyline3    from "./skyline3.svg"   
 import   skyline2    from "./skyline2.svg"   
 import   skyline1    from "./skyline1.svg"   
-// import   skyline1_spinnignWheel    from "./skyline1_spinnignWheel.svg"   
 import   skyline0    from "./skyline0.svg"   
 import   floor       from "./floor.svg"      
 import   phonebooth  from "./phonebooth.svg" 
@@ -21,7 +19,6 @@ const london_images = [
 const london_attr = [
     // ,  src="./src/sky.svg"
        { key:'skyline3'  ,  className:"london-skyline3-svg londonfull__svg"   ,   alt:'pic of skyline3' },
-        // I will do this individually as I will use css to move the item
           { key:'skyline2'  ,  className:"london-skyline2-svg londonfull__svg"   ,   alt:'pic of skyline2' },
        { key:'skyline1'  ,  className:"london-skyline1-svg londonfull__svg"   ,   alt:'pic of skyline1' },
        { key:'skyline0'  ,  className:"london-skyline0-svg londonfull__svg"   ,   alt:'pic of skyline0' },

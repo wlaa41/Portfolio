@@ -1,3 +1,4 @@
 #plotly{
-    z-index: 44;
+    z-index:99;
+    transform: translate3d(0,0,0);// TO CREATE A CONTEXT ABOVE OTHERS TO FIX A PROBLEM THAT APPEAR ON THE IPAD
 }

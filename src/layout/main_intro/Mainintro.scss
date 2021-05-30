@@ -91,11 +91,10 @@
     }
 }
 
-
-
 #group{
-    transform: translate3d(-222px,69px,0);
-    fill:rgb(224, 224, 224)
+    transform: translate3d(-292px,233px,0) ;
+    fill:rgb(224, 224, 224);
+        transform-box: fill-box;
 }
 #londonWheel{
     transform-style: preserve-3d;
@@ -110,11 +109,11 @@
 @keyframes spin{
     from{
         // transform: rotate3d(0,0, 0, 180deg);
-        transform:translate3d(-222px,69px,0) scale(.7) rotateY(-55deg) rotateZ(0);
+        transform:translate3d(-292px,233px,0) scale(.6) rotateY(-15deg) rotateZ(0);
     }
     to{
         // transform: rotate3d(0, 0, 2, 180deg);
-        transform:translate3d(-222px,69px,0) scale(.7) rotateY(-55deg) rotateZ(1turn);
+        transform:translate3d(-292px,233px,0) scale(.6) rotateY(-15deg) rotateZ(1turn);
 
     }
 }

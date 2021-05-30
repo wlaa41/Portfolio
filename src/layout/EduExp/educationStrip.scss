@@ -1,0 +1,69 @@
+@import '../../abstracts/mixins';
+
+
+
+$edu__fontsize: 5rem;
+    
+.EduStrip{
+    padding-top: 11rem;
+    overflow: hidden;
+    @include respond(tab-port){
+        border-top: 6px solid rgb(138, 138, 138);
+    }
+
+    &__title{
+        font: $edu__fontsize 'Lato', sans-serif;
+        
+    }
+    &__title__Education{
+        width: 43vw;
+        transform: rotate(-5deg);
+        text-align: end;
+        font-size: $edu__fontsize - 1rem ;}
+
+    &__title__Experience{
+        color: white;
+        width: 66vw;
+        height: 16rem;
+        margin: 0 0 -8rem -6rem;
+        transform: skewX(32deg)  rotate(-5deg);
+        background-color: rgb(104, 104, 104);
+        box-shadow: inset -7px 3px 3px rgba(0, 0, 0, 0.4);
+        .remove__skew{
+            width: 56vw;
+            text-align: end;
+            position: relative;
+            transform: skewX(-32deg) translate3d(0,-10%,0) ;
+            &::after{
+                content: '&';
+                font-size: $edu__fontsize + 4rem;
+                position: absolute;
+                transform: translate3d(0,0,1px);
+                color:rgb(251, 255, 20);
+                text-shadow:  -7px 3px 3px rgba(0, 0, 0, 0.671);
+                transform: translate3d(0,-50%,0); }}}
+
+    &__blue-strip{
+        width: 150%;
+        background-color: rgba(0, 0, 0, 0.514);
+        border-radius: 50%;
+        transform:rotate(-2deg)  translate(calc(100%/-4));
+        box-shadow:  0 0 11px 11px rgba(0, 0, 0, 0.4);
+        height: 9rem;
+        margin-bottom: 6rem;
+        // SHADOW BEND
+        &::after{
+            z-index: -1;
+            height: 110%;
+            width: 200%;
+            content: '';
+            background-color: rgb(43, 137, 226);
+
+            // border-radius: 50%;
+            transform: translateY(0%);
+            position: absolute;}}
+    
+
+
+
+}

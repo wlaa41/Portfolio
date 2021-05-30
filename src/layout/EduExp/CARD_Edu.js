@@ -13,11 +13,11 @@ const CardEdu = () => {
 
     return (
             <>
-            {  info.map( (ele)=>{ return <div key={ele.title}   className='CardEdu'>
+            {  info.map( (ele)=>{ return <div key={ele.title}
+               className='CardEdu'>
                 <div className='CardEdu_IMG_Con'>
 
                         <img src={ele.image}></img>
-                        {/* <img src='https://placebeard.it/640x360'></img> */}
                     </div>
                 
                 <div className='CardEdu_INFO_Con'>

@@ -1,69 +1,59 @@
 @import '../../abstracts/mixins';
 @import '../../base/animations';
 
+
+
+
 .ftStrip{
       
     &_canvasCon{
+        // position: relative;
+        width:93vw;
         flex:10;
-        // border: 3px dashed red;
+
         display: flex;
         align-items: center;
-        @include respond(tab-port)
-        {
+        @include respond(tab-port){
             position:relative;
             display:block;
-            margin: 0 3rem;
-        }
-
-    }
-    
+            margin: 0 3rem; }}
     &_canvas{
-
         position: relative;
-        // margin-top: 50%;
         height: 85%;
+        padding: 9rem 10rem 9rem calc(10rem - 41px);
         flex:9;
         border-radius: 42px;
-        transform-origin: left;
         transform-origin: right;
-        // transition: transform .8s ;
         transition: transform .8s, box-shadow .8s  ;
-
         transform:rotateX(-5deg) rotateY(-11deg) rotateZ(-1deg) ;
         display: flex;
         align-items: center;
-        // box-shadow: -66px 0 44px 22px rgba(0, 0, 0, 0.35);
+        justify-self: center;
         box-shadow: -11px 11px 22px 0px rgba(0, 0, 0, 0.35);
-        background: rgba(166, 211, 18, 0.849);
+        background-color: rgba(166, 211, 18, 0.849);
+        // z-index: -1;
         &_Decor{
             &-1{
-                z-index: -1;
-                height: 84%;
-                flex: 6;
+                height: 100%;
+                flex: 1;
                 background-color: rgb(253, 253, 253);
-                transform:rotateX(5deg) rotateY(15deg) rotateZ(-1deg)  scale(.85);
+                // transform:rotateX(5deg) rotateY(11deg) rotateZ(-1deg);//   scale(.85);
                 border: 10px solid rgba(4, 126, 163, 0.863);
                 border-right-width: 15px ;
                 border-radius: 44px;
-                position: relative;
-            }      
+                position: relative; }      
             &-2{
                 position: absolute;
                 height: 100%;
                 width: 100%;
-                // transform:rotateX(5deg) rotateY(22deg) rotateZ(-5deg)  scale(1);
+                transform:rotate(0);// THIS IS TO ADD CONTEXT SO IT IS ON THE TOP 
                 border: 2px solid rgb(189, 195, 197);
                 border-left-width:6px ;
-
-                border-bottom-color:  rgb(153, 155, 156);
+                border-bottom-color: rgb(153, 155, 156);
                 border-right:none;
                 border-top:none;
                 overflow: hidden;
-                border-radius: 31px;
-            }
-
-
-        }
+                border-radius: 31px; }}
         @include respond(tab-port)
         {
             position:absolute;
@@ -71,8 +61,6 @@
             width:  100%;
             display: flex;
             justify-items:center;
-            // align-items:flex-end;
-
             flex-direction: column;
             transform:rotateX(-0deg) rotateY(-0deg) rotateZ(-0deg) translate3d(0,-500px,0);
             &_Decor{

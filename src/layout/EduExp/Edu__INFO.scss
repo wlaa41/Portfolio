@@ -1,0 +1,26 @@
+@import '../../abstracts/mixins';
+
+.EduStrip_info{
+    // height: 99vh;
+    position: relative;
+    font-size: 1.4rem;
+    color:white;
+
+        &_GRID{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 11px;
+            margin-top: 1%;
+        }
+        &_End-Decoration{
+            flex:1 1;
+            min-height: 39px;
+            position: relative;
+            grid-column: 1/-1;
+            grid-row: 3/4;
+            background-color: #56a2e9;
+            transform-origin: left;
+        }
+    
+}

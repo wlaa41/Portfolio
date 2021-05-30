@@ -5,9 +5,10 @@ import CardStrip from '../layout/cardStrip/CardStrip'
 import Feat_proj from '../layout/feat_proj/Feat_proj'
 // import Divider from '../components/divider/divider'
 // import SkillLogo from '../layout/skill_logo/SkillLogo'
-import EducationStrip from '../layout/education/educationStrip'
+// import EducationStrip from '../layout/education/educationStrip'
 // import  {ReactComponent as Skyline3  }  from "../layout/main_intro/media/londonfull/skyline3.svg"   
 import Foot from '../layout/footer/footer'
+import EduExpStrip from '../layout/EduExp/educationStrip'
 // import CMAIN from '../layout/main_intro/CMAIN'
 // import london_SVGs from '../layout/main_intro/media/londonfull copy/londonfull'
 // import Nav from './Layout/Nav'
@@ -25,7 +26,8 @@ class Homepage extends React.Component{
                 <CardStrip></CardStrip>
                 <Feat_proj></Feat_proj>
 
-               <EducationStrip></EducationStrip>
+                {/* <EducationStrip></EducationStrip> */}
+                <EduExpStrip></EduExpStrip>
                  <Foot></Foot>
 
 

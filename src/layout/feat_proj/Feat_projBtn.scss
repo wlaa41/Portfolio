@@ -7,6 +7,9 @@
 
         &_btnCon
         {
+            position: relative;
+            transform: translate3d(-59px,0,0);
+            z-index: 9999;
             @include respond(tab-port)
             {
                 position: relative;
@@ -34,7 +37,6 @@
                 linear-gradient(to left, 
                 rgb(119, 119, 119) ,
                 rgb(94, 94, 94));
-   
                 .ftP-svg{
                     fill: rgb(224, 224, 224);
                     height: 19px;
@@ -44,13 +46,9 @@
                 @include respond(tab-port){
                     &-info .ftP-svg{
                         transform: rotate(90deg);
-                        transition: all .9s ;
-
-                    }
-                 }
-            
-            
-                .see_the_graph_SVG{fill:#3f73d4;
+                        transition: all .9s ; }}
+                .see_the_graph_SVG{
+                    fill:#3f73d4;
                     width:57px;
                      height:227px;
                     position: absolute;
@@ -59,43 +57,28 @@
                     top: 0;
                     opacity: 0;
                     animation: none;
-
                      @include respond(tab-port){
                         // fill: red;
                         height:43vw;
                         width:auto;
-
-                        transform: rotate(90deg) translate3d(-66%,-5%,0) ;
-
-                    }
-                    
-                }
-
+                        transform: rotate(90deg) translate3d(-66%,-5%,0) ; }}
                 &:first-child{
                     margin-top: 100%;
                 }
-                @include respond(tab-port)
-                {
+                @include respond(tab-port){
                     margin:0 ;
                     &:first-child{
-                        margin-top: 0%;
-                    }
-     
-                }
+                        margin-top: 0%;}}
                 &:hover{
                     transform: translateX(-55%);
                     box-shadow: 6px 0 9px rgba(12, 12, 12, 0.294);
-                    transition: transform .2s ,box-shadow .2s ;
-                }
+                    transition: transform .2s ,box-shadow .2s ;}
                 &:focus-within,&:active{
                     transform: translateX(-46%);
                     box-shadow: 1px 0 4px rgb(12, 12, 12);
-                    transition: transform .2s ,box-shadow .2s , border 1s ;
-                }
-            }
+                    transition: transform .2s ,box-shadow .2s , border 1s ;}}
         }
     }
-    
 }
 
 

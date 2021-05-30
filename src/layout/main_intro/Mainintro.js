@@ -3,13 +3,13 @@ import  london_vec  from './media/londonfull/londonfull'
 import  myavatar_vec  from './media/myavatar/myavatar'
 import Nav from '../nav/Nav'
 import { ReactComponent as Wheel} from './media/londonfull/wheel1.svg'
-import   skyline3    from "./media/londonfull/skyline3.svg"   
-import   skyline2    from "./media/londonfull/skyline2.svg"   
-import   skyline1    from "./media/londonfull/skyline1.svg"   
-import   skyline0    from "./media/londonfull/skyline0.svg"   
-import   floor       from "./media/londonfull/floor.svg"      
-import   phonebooth  from "./media/londonfull/phonebooth.svg" 
-import   myBase      from './media/londonfull/myBase.svg'
+import   skyline3    from "./media/londonfull_wide/skyline3.svg"   
+import   skyline2    from "./media/londonfull_wide/skyline2.svg"   
+import   skyline1    from "./media/londonfull_wide/skyline1.svg"   
+import   skyline0    from "./media/londonfull_wide/skyline0.svg"   
+import   floor       from "./media/londonfull_wide/floor.svg"      
+import   phonebooth  from "./media/londonfull_wide/phonebooth.svg" 
+import   myBase      from './media/londonfull_wide/myBase.svg'
 
 import heel from './media/londonfull/wheel1.svg'
 
@@ -44,21 +44,29 @@ function Mainintro(){
         phonebooth:     0                   
     })
 
+    // THESE VARIABLE ARE TO WAIT FOR FOR THE RESIZE FUNCTIONN TO WAIT 
+    // UNTIL THE RESIZI IS FINISHED
+    var rtime;
+    var timeout = false;
+    var delta = 200;
 
 
     useLayoutEffect(() => {
         window.addEventListener('scroll',  ()=>{requestAnimationFrame(  scrollHeandle)} )
-        window.addEventListener('resize', ()=>{requestAnimationFrame( handleResize)})
+        window.addEventListener('resize', ()=>{requestAnimationFrame( ()=> {
+            rtime = new Date();
+            if (timeout === false) {
+                timeout = true;
+                setTimeout(handleResize, delta);
+            }
+        })})
 
         // we calculate the movement of the Let's talk button bellow
-        btnCon_Width = (talkbtnRef.current.offsetWidth - 66).toFixed(0)
-        btnCon_Height = (talkbtnRef.current.offsetHeight - 66).toFixed(0)
-        handleResize()
-        console.log(btnCon_Height,btnCon_Width)
-  
-  
+   
 
-        // setInterval()
+        btnCon_Width = (talkbtnRef.current.offsetWidth - 64)
+        btnCon_Height = (talkbtnRef.current.offsetHeight - 76)
+
         console.log('Starting')
 
         return () => {
@@ -74,12 +82,16 @@ function Mainintro(){
 
     // handleResize() 
     function handleResize(){
-        widowHieght_scrollStopThreshold = Math.round(window.innerHeight/2.2); 
-        btnCon_Width = (talkbtnRef.current.offsetWidth *.9).toFixed(0)
-        btnCon_Height = (talkbtnRef.current.offsetHeight *.9).toFixed(0)
-        // if(classdded){
-        //     // setBtn_Translate([btnCon_Width,btnCon_Height,0])
-        // }
+        if (new Date() - rtime < delta) {
+            setTimeout(handleResize, delta);
+        } else {
+            timeout = false;
+            widowHieght_scrollStopThreshold = Math.round(window.innerHeight/2.2); 
+            btnCon_Width = (talkbtnRef.current.offsetWidth - 64)
+            btnCon_Height = (talkbtnRef.current.offsetHeight - 76)
+            setBtn_Translate([btnCon_Width,btnCon_Height,0])
+        }   
+
         
         
     }
@@ -90,7 +102,6 @@ function Mainintro(){
         const shift=window.scrollY;
         if(shift<widowHieght_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
             if(classdded) {
-                // console.log(talkbtnRef.offsetWidth)
                 talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
                             setBtn_Translate([0,0,0])
                             titleRef?.current?.classList?.remove("foggyVanish");
@@ -122,33 +133,22 @@ function Mainintro(){
             <Nav talkbtn={talkbtnRef} title={titleRef} translate={btn_Translate} ></Nav>
             <section className='Mi_container'>
                 <div className='londonfull'>
-     
-                                    
                     <div className="londonfull__imgcontainer">
-                    {/* <div id='absolute100' key='wheelCon'   > */}
-
-
                       <img src={skyline3} 
             className='london-wheel-svg londonfull__svg' 
-            style={{
-                transform: `translate3d(0,${YShift["skyline3"]}px,0)`
+            style={{transform: `translate3d(0,${YShift["skyline3"]}px,0)`
             } } />
                     <img src={skyline2} 
             className='london-wheel-svg londonfull__svg' 
-            style={{
-                transform: `translate3d(0,${YShift["skyline2"]}px,0)`
-
+            style={{ transform: `translate3d(0,${YShift["skyline2"]}px,0)`
             } } />
-              
              <img src={skyline1} 
             className='london-wheel-svg londonfull__svg' 
-            style={{
-                transform: `translate3d(0,${YShift["skyline1"]}px,0)`
+            style={{ transform: `translate3d(0,${YShift["skyline1"]}px,0)`
             } } />
-                       <Wheel 
+            <Wheel 
             className='london-wheel-svg londonfull__svg' 
-            style={{
-                transform: `translate3d(0,${YShift["skyline1"]}px,0)`
+            style={{ transform: `translate3d(0,${YShift["skyline1"]}px,0)`
             } } >
             </Wheel>
                 <img src={skyline0} 
@@ -167,43 +167,7 @@ function Mainintro(){
                 transform: `translate3d(0,${YShift["phonebooth"]}px,0)`
             } } />
                 <img src={myBase}
-            className='london-wheel-svg londonfull__svg'  /> 
-            {/* <Wheel 
-            className='london-wheel-svg londonfull__svg' 
-            style={{
-            // transform: `translate3d(0,${YShift[element['attr'].key]}px,0)`
-            } } >
-            </Wheel>
-            {/* </div> */}
-
-                        {/* { london_img_attr.map((element,index)=>  {
-
-                            if(element['attr'].key === 'skyline1'){
-                                return(<>
-            <Wheel key={'wheel'}
-            className='london-wheel-svg londonfull__svg' 
-            style={{
-            transform: `translate3d(0,${YShift[element['attr'].key]}px,0)`
-            } } >
-            </Wheel>
-            <img src={element["img"]} key={element['attr'].key} 
-            alt={element['attr'].key}
-            style={{
-            transform: `translate3d(0,${YShift[element['attr'].key]}px,0)`
-            } }
-            {...element['attr']} />
-                                    </>
-                                )
-                            }
-                            return <img src={element["img"]} key={element['attr'].key} 
-        alt={element['attr'].key}
-        style={{
-        transform: `translate3d(0,${YShift[element['attr'].key]}px,0)`
-        } }
-        {...element['attr']} />
-                              
-                            }
-                        )} */}
+                className='london-wheel-svg londonfull__svg'/> 
                         <div className='night'></div>
                         <div className='myAvatarStrip'>    
 
