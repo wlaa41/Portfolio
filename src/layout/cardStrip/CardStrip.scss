@@ -1,37 +1,32 @@
 @import '../../abstracts/mixins';
 
 .CardStrip{
-    // overflow: hidden;
+    transform: translate(0);// TO RAISE THE CONTEXT OF IT SO MAIN INTRO DON'T COMES OVER
     position: relative;
     z-index: 20;
     height:500px;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
+    background: linear-gradient(to left, white 6%, rgb(247, 247, 247) 50%
+    , white 94%);
     width: 100vw;
     display: flex;
     align-items:  center;
     perspective:600px;
     overflow: hidden;
-    perspective-origin:   50% 20%;
-
+    // perspective-origin:  50% 20%;
 
     &_BACKGround{
-        // border: 2px dashed  rgb(221, 0, 0);
         position: absolute;
         height: 90%;
         width: 100%;
-        // flex:1;
         background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: row;
         align-items: center;
-        
-        
         &_left-bg{
             min-width: 55px;
-            flex: 1.1 3;
+            flex: 1.1 3;}
 /////////////////////////////////////////////////////////////////
-
-        }
         &_right-bg{
             height: 20%;
             align-self: flex-end;
@@ -48,17 +43,8 @@
                 height: 55px;
                 // left: -1px;
                 bottom: 105%;;
-
                 width: 110%;
-                transform:  translate3d(0,0%,0)  rotateX(7deg) scale3d(1,3,1);
-                // top: 105%;
-            }
-
-
-        }
-        
-
-    }
+                transform:  translate3d(0,0%,0)  rotateX(7deg) scale3d(1,3,1);}}}
     &_grid_TOPright-bg{
         // z-index: 23;
         flex: 8.5;
@@ -66,13 +52,8 @@
         justify-content: center;
         align-items: center;
         height: 505px;
-        position: relative;
-    }
-}
-
-
+        position: relative; }}
 .CardStrip_grid_TOPleft-bg{
-
             height: 80%;
             flex: 1;
             background-color: rgb(37, 138, 196);

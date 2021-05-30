@@ -5,7 +5,7 @@
 @include respond(tab-port){
 
 $EduExp__CRD__color:  rgb(41, 41, 41);
-$border-radius: 0px;
+$border-radius: 11px;
 $cardhight:20px;
 $time-toPopupCrd: .9s ease;
 .CardEdu{
@@ -18,26 +18,35 @@ $time-toPopupCrd: .9s ease;
     color: $EduExp__CRD__color;
     box-shadow: none ;
     border-radius:$border-radius;
-    border-radius: 11px ;
+    background: linear-gradient(to bottom, rgba(77, 76, 76, 1) ,
+     rgba(169, 169, 169, .1) 29% ,
+     rgba(169, 169, 169, 0) );
+    // border:2px dashed deeppink;
+
+
     overflow: hidden;
     &_IMG_Con{
+        // overflow: hidden;
+        // border:2px dashed deeppink;
         height: 71px;
         object-fit: contain;
         box-shadow: none ;
         filter: grayscale(1);
         border-radius: 11px ;
         border-bottom-width: 1px;
-        box-shadow: 0 -9px 44px black;
+        box-shadow: 0 33px 22px -22px rgb(71, 71, 71);
            // // gardient cover on top of the imag <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-            &:after {
-                position: absolute;
-                content:"";
-                height:100%;
-                width:100%;
-                top:0;
-                left:0;
-                background: linear-gradient(to right, rgba(9, 70, 128, .7) 7%,rgba(255, 255, 255, .8)); 
-            }
+        //     &:after {
+        //         position: absolute;
+        //         content:"";
+        //         height:100%;
+        //         width:100%;
+        //         top:0;
+        //         left:0;
+        // // border-radius: 11px ;
+
+        //         background: linear-gradient(to right, rgba(9, 70, 128, .7) 7%,rgba(255, 255, 255, .8)); 
+        //     }
             & img{
                 width: 120%;
                 height: 160%;

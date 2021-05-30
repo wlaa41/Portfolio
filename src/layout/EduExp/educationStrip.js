@@ -11,8 +11,12 @@ const EduExpStrip = () => {
                         Education
                     </div>
                     <div className='EduStrip__title__Experience EduStrip__title'>
+     
+
                         <div className='remove__skew'>
+
                         Experience
+
                         </div>
                     </div>
 
