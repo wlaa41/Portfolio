@@ -19,7 +19,6 @@
     }
 
 
-
 }
 .ftStrip_canvas_infoCon{
 
@@ -56,10 +55,7 @@
         }
 
     }
-
-   
     &_Title{
-
         margin-top: 4ch ;
         font-weight: 200;
         letter-spacing: .2ch;
@@ -94,13 +90,20 @@
             
     
         }
+
     }
     &_Body{
        font-family:  sans-serif;
        font-size: 1.5rem;
-
        letter-spacing: .1ch;
-        // margin-top: .2ch;
+       a{
+            display:inline;
+            position: relative;
+            margin: 0;
+            white-space: nowrap;
+            // outline: 1px dotted blueviolet;
+
+       }
         font-weight: 400;
         @include respond(tab-port)
         {
