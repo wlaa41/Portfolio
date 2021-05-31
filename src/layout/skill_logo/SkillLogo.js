@@ -1,6 +1,5 @@
 import React from 'react'
 import './Skill_logo.scss'
-import  { ReactComponent as Me } from './me.svg'
 
 const SkillLogo = () => {
 
@@ -14,14 +13,12 @@ const SkillLogo = () => {
       }
       const keys =[] // HOLDS THE NAME OF THE IMAGE
       const images = importAll(require.context('./img/', false, /\.(png|jpe?g|svg)$/));
+
+
     return (
         <>
-         {/* <Me className='SkillLogo__meSVG'></Me> */}
-        <div className='skill_logoStrip' >
-            <div className='skill_logoStrip__left skill_logoStrip__left-right'>
-         <Me className='SkillLogo__meSVG'></Me>
-
-            </div>
+        <div className='skill_logoStrip' title='things I am awesome with' >
+            <div className='skill_logoStrip__LEFT skill_logoStrip__left-right'></div>
             <div className='skill_logoStrip-skewed SL_SK' >
                 <div className='SL_SK_Move-1'>
                     <div className='SL_SK_Move-1Flex-1' >
@@ -72,9 +69,10 @@ const SkillLogo = () => {
                 </div> */}
 
            </div>
-           <div className='skill_logoStrip__right skill_logoStrip__left-right'></div>
-           
+           <div className='skill_logoStrip__RIGHT skill_logoStrip__left-right'></div>
+                
         </div>
+                
         </>
     )
 }

@@ -26,6 +26,7 @@ class Homepage extends React.Component{
 
                 <CardStrip></CardStrip>
                 <Feat_proj></Feat_proj>
+                
                 <SkillLogo></SkillLogo>
                 {/* <EducationStrip></EducationStrip> */}
                 <EduExpStrip></EduExpStrip>

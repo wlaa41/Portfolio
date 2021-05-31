@@ -1,119 +1,36 @@
 @import '../../abstracts/variables';
+@import '../../abstracts/mixins';
 
 .Mi_container{
     height: 80vh;
-    position: relative;
-    // border: 44px solid rgb(202, 151, 250);
-    // border: 6px solid rgb(179, 255, 39);
-
-}
+    position: relative;}
 .londonfull{
-    background-image:linear-gradient(115deg, rgb(135, 205, 251) , rgb(0, 130, 190));//,
-   // radial-gradient(circle at 0%  0% , rgb(255, 255, 255) , rgb(3, 250, 250) );
+    background-image:linear-gradient(115deg, rgb(135, 205, 251) , rgb(0, 130, 190));
     height: inherit;
     display: grid;
-    // grid-template-rows: 1fr;
     align-content:end;
-    // border: 3px dashed rgb(104, 0, 0);
-
-
     &__imgcontainer{
-    height:70vh;
-    width: 100%;
-        // border: 3px dashed blueviolet;
-        position: relative;
+        height:70vh;
+        width: 100%;
+        position: relative;}}
 
-    }
-    
-    &__svg {
-        // z-index: 2;
-                // object-fit: cover ;
-                // height:100%;
-                // width: 100%;
-                // border: 3px dashed rgb(214, 226, 43);
-            // transform-origin: center;
-            // // right: 0;
-            //     object-position:  center;
-        // position: absolute;
-        // height: inherit;
-        // bottom:  0;
-
-    }
- }
-
-//  #absolute100{
-//      height: 70px;
-//      height:100%;
-//                 width: 100%;
-//     //  border: 3px dashed deeppink;
-//     // position: absolute;
-//     .londonfull__svg {
-
-//         position: relative;
-    
-//     }
-
-//  }
- .londonfull__svg {
-    //  transform-origin: bottom;
-    // width:1129px;
+.londonfull__svg {
     width: 100%;
     bottom: 0;
-    position: absolute;
-    // object-fit: contain;
-    // float: left;
-    //  border: 3px dashed deeppink;
-
-
-}
-
-
-
-//  #whieelstand{
-			
-//     transform-origin:center;
-//     transform-box: fill-box;
-//     transform:rotateY(50deg) ;
-
-// }
-#waterCon *:not(#water){
-
-
-    animation: blur 3s infinite alternate;
-}
-@keyframes blur{
-    from{
-        filter: blur(11px);
-    }
-    to{
-        filter: blur(3px);
-
-    }
-}
-
+    position: absolute;}
 #group{
     transform: translate3d(-292px,233px,0) ;
     fill:rgb(224, 224, 224);
-        transform-box: fill-box;
-}
+    transform-box: fill-box;}
 #londonWheel{
     transform-style: preserve-3d;
     fill:rgb(224, 224, 224);
     transform-origin:center;
-      transform-box: fill-box;
-      left: 0;
-    // opacity: 0;
-    //  border: 22px dashed crimson;
-    animation: spin 50s infinite linear;
-}
+    transform-box: fill-box;
+    left: 0;
+    animation: spin 50s infinite linear;}
 @keyframes spin{
     from{
-        // transform: rotate3d(0,0, 0, 180deg);
-        transform:translate3d(-292px,233px,0) scale(.6) rotateY(-15deg) rotateZ(0);
-    }
+        transform:translate3d(-292px,233px,0) scale(.6) rotateY(-15deg) rotateZ(0); }
     to{
-        // transform: rotate3d(0, 0, 2, 180deg);
-        transform:translate3d(-292px,233px,0) scale(.6) rotateY(-15deg) rotateZ(1turn);
-
-    }
-}
+        transform:translate3d(-292px,233px,0) scale(.6) rotateY(-15deg) rotateZ(1turn);}}

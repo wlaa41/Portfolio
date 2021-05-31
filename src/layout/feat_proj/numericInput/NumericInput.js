@@ -8,28 +8,20 @@ const NumericInput = ({initvalue=1,change=null,min=-4,index=0,style={}}) => {
 useEffect(() => {
     element.current.value=initvalue
     return () => {
-        console.log("%ccleanup",'color:red')
     }
 }, [])
 
     function changeEle(e) {
         if(e.target.name === 'dec'){
-            console.log(element)
-            change((element.current.value-.1),index)
+            change((parseFloat(element.current.value)-.1).toFixed(2),index)
         }   
         else{ 
-            
             if(e.target.name === 'inc'){
-                
-                console.log(element.current.value)
-            change((parseFloat(element.current.value)+.1),index)
 
+                console.log((parseFloat(element.current.value)).toFixed(0))
+            change((parseFloat(element.current.value)+.1).toFixed(2),index)
             }
             else { 
-                // change((parseFloat(element.current.value)+.1),index)
-                console.log('hello')
-
-                console.log(e)
                 
             }
         }

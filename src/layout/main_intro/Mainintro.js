@@ -15,25 +15,20 @@ import heel from './media/londonfull/wheel1.svg'
 
 import './Mainintro.scss'
 import './myAvatar.scss'
-import { electronMassDependencies } from 'mathjs'
+import { electronMassDependencies, nullDependencies } from 'mathjs'
 
 const london_img_attr =london_vec();
 const myAvatar_img_attr =myavatar_vec();
 
 function Mainintro(){
-
-    const talkbtnRef = useRef({classList:[]})
-    const titleRef = useRef({classList:[]})
-
-    const sk3 = useRef( null )
-    const sk2 = useRef( null )
-    const sk1 = useRef( null )
-    const sk0 = useRef( null )
+    
+    // const talkbtnRef = useRef({classList:[]})//LET'S TALK BUTTON ADDING CLASS TO MAKE IT CHANGE CONTENT
+    // const titleRef = useRef({classList:[]})
+    const talkbtnRef = useRef(null)//LET'S TALK BUTTON ADDING CLASS TO MAKE IT CHANGE CONTENT
+    const titleRef = useRef(null)
 
     // this state to move the button of let's talk from the top to corner
     const [btn_Translate, setBtn_Translate] = useState([0,0,0])
-
-
 
     const [YShift, setYShift] = useState({
         skyline3:       0         ,
@@ -61,11 +56,11 @@ function Mainintro(){
             }
         })})
 
+        if(!talkbtnRef.current) talkbtnRef.current = document.getElementById('talkbtn')
+        titleRef.current = titleRef.current ||   document.getElementById('mainTitle')
+        
         // we calculate the movement of the Let's talk button bellow
-   
-
-        btnCon_Width = (talkbtnRef.current.offsetWidth - 64)
-        btnCon_Height = (talkbtnRef.current.offsetHeight - 76)
+        implementResizeAction()
 
         console.log('Starting')
 
@@ -75,9 +70,11 @@ function Mainintro(){
         }
     }, [])
 
-    let widowHieght_scrollStopThreshold = 0;
-    let btnCon_Width = 0;
-    let btnCon_Height = 0;
+    let LONDON_scrollStopThreshold = 800;
+    let Title_btn_scrollStopThreshold = 200;
+
+    let btnCon_Width = 200;
+    let btnCon_Height = 100;
     let classdded=false;
 
     // handleResize() 
@@ -86,48 +83,53 @@ function Mainintro(){
             setTimeout(handleResize, delta);
         } else {
             timeout = false;
-            widowHieght_scrollStopThreshold = Math.round(window.innerHeight/2.2); 
-            btnCon_Width = (talkbtnRef.current.offsetWidth - 64)
-            btnCon_Height = (talkbtnRef.current.offsetHeight - 76)
-            setBtn_Translate([btnCon_Width,btnCon_Height,0])
-        }   
+            implementResizeAction() 
+        }}
 
-        
-        
+    function implementResizeAction() {
+        console.log('resiezing action has been taken')
+        LONDON_scrollStopThreshold = Math.round(window.innerHeight/1.5); 
+        Title_btn_scrollStopThreshold  = Math.round(LONDON_scrollStopThreshold/4)
+        btnCon_Width = (talkbtnRef.current.offsetWidth - 64) // ??   document.getElementById()
+        btnCon_Height = (talkbtnRef.current.offsetHeight - 76)// ??
+        const shift=window.scrollY
+        if(shift<LONDON_scrollStopThreshold) setBtn_Translate([0,0,0])
+        else setBtn_Translate([btnCon_Width,btnCon_Height,0])
     }
 
     
-    function scrollHeandle(e)
-    {        
+function scrollHeandle(e){        
         const shift=window.scrollY;
-        if(shift<widowHieght_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
-            if(classdded) {
-                talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
-                            setBtn_Translate([0,0,0])
-                            titleRef?.current?.classList?.remove("foggyVanish");
-                            classdded=false}
-            // console.log(document.getElementById('sk3'))
+        if(shift<LONDON_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
             setYShift({
             skyline3:   (  shift  / 1.2   )      ,
             skyline2:   (  shift  / 1.3   )      ,
             skyline1:   (  shift  / 1.6   )      ,
             skyline0:   (  shift  / 1.9   )      ,
             floor:      (  shift  / 3.5   )      ,
-            phonebooth: (  shift  / 3.5   )                
-        })
-        }
-        else{
-
+            phonebooth: (  shift  / 3.5   ) })
+            shift<Title_btn_scrollStopThreshold ? chekclass_REMOVE() : chekclass_ADD()
+        }else{
             // the if below is for the Nav which include vanish text by adding foggyVanish class
             // and changing the button shape by adding navGrid_BtnCon-sp1 class
             // also moving the button by changing the setBtn_Translate state 
-            if(!classdded) {talkbtnRef?.current?.classList?.add("navGrid_BtnCon-sp1");
-                            // talkbtnRef.current.offsetWidth
-                            setBtn_Translate([btnCon_Width,btnCon_Height,0])
-                            titleRef?.current?.classList?.add("foggyVanish");
-                            classdded=true}
-        }
-    }
+            chekclass_ADD()}}
+
+function chekclass_ADD(){
+    if(!classdded) {talkbtnRef?.current?.classList?.add("navGrid_BtnCon-sp1");
+    setBtn_Translate([btnCon_Width,btnCon_Height,0])
+    titleRef?.current?.classList?.add("foggyVanish");
+    classdded=true}
+}
+function chekclass_REMOVE(){
+    if(classdded) {
+        talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
+                    setBtn_Translate([0,0,0])
+                    titleRef?.current?.classList?.remove("foggyVanish");
+                    classdded=false}
+}
+  
+
         return(
             <>
             <Nav talkbtn={talkbtnRef} title={titleRef} translate={btn_Translate} ></Nav>

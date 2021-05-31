@@ -13,10 +13,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-}
+    // -webkit-backface-visibility:  hidden;
+    outline: 1px dotted green;
+    -webkit-tap-highlight-color:  transparent;
+  }
 a{
   text-decoration: none;
-  color: inherit; 
+  // color: inherit; 
 }
 
   /* Chrome, Safari, Edge, Opera */

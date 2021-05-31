@@ -63,8 +63,6 @@ async function sendinfo(e){
 const showform = false;
         return(
             <nav className='nav'  >
-
-
                 <div id='contactCon' className='contactCon' onClick={formExit}>
 
                         <div id='status' className='ct_con-deco'>
@@ -113,28 +111,13 @@ const showform = false;
                 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div className='navGrid'> 
-                        <div ref={title} className='navGrid_titleCon '> 
+                        <div id='mainTitle' ref={title}  className='navGrid_titleCon '> 
                                 <div  className='navGrid_titleCon_title'> 
                                 when you cease to learn you cease to grow
                                 </div>
                         </div>
-                                <div ref={talkbtn} className=' navGrid_BtnCon'> 
+                                <div id='talkbtn' ref={talkbtn} className=' navGrid_BtnCon'> 
                                         <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1 '>Give an offer</button>
                                         <button className='navGrid_BtnCon_button navGrid_BtnCon_button-2' onClick={openForm}
                                         style={{
