@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3a8227de.chunk.css",
-    "main.js": "/Portfolio/static/js/main.d3218b76.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.d3218b76.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.17d02dda.chunk.css",
+    "main.js": "/Portfolio/static/js/main.d924369f.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.d924369f.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.eb6781d5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.eb6781d5.js.map",
-    "static/js/2.546975bf.chunk.js": "/Portfolio/static/js/2.546975bf.chunk.js",
-    "static/js/2.546975bf.chunk.js.map": "/Portfolio/static/js/2.546975bf.chunk.js.map",
+    "static/js/2.c35d8e74.chunk.js": "/Portfolio/static/js/2.c35d8e74.chunk.js",
+    "static/js/2.c35d8e74.chunk.js.map": "/Portfolio/static/js/2.c35d8e74.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.3a8227de.chunk.css.map": "/Portfolio/static/css/main.3a8227de.chunk.css.map",
-    "static/js/2.546975bf.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.546975bf.chunk.js.LICENSE.txt",
+    "static/css/main.17d02dda.chunk.css.map": "/Portfolio/static/css/main.17d02dda.chunk.css.map",
+    "static/js/2.c35d8e74.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.c35d8e74.chunk.js.LICENSE.txt",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
     "static/media/React JS.png": "/Portfolio/static/media/React JS.999601f5.png",
     "static/media/ant-walking-tree.a6e2e192.jpg": "/Portfolio/static/media/ant-walking-tree.a6e2e192.jpg",
@@ -55,13 +55,14 @@
     "static/media/sprity.1f6320f4.svg": "/Portfolio/static/media/sprity.1f6320f4.svg",
     "static/media/subtle-grey.png": "/Portfolio/static/media/subtle-grey.4035b78a.png",
     "static/media/symbol-defs.269e5004.svg": "/Portfolio/static/media/symbol-defs.269e5004.svg",
+    "static/media/tex2res4.png": "/Portfolio/static/media/tex2res4.bc36379f.png",
     "static/media/ubuntu.jpg": "/Portfolio/static/media/ubuntu.c3b6ecce.jpg",
     "static/media/wheel1.cde58292.svg": "/Portfolio/static/media/wheel1.cde58292.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.eb6781d5.js",
-    "static/js/2.546975bf.chunk.js",
-    "static/css/main.3a8227de.chunk.css",
-    "static/js/main.d3218b76.chunk.js"
+    "static/js/2.c35d8e74.chunk.js",
+    "static/css/main.17d02dda.chunk.css",
+    "static/js/main.d924369f.chunk.js"
   ]
 }
