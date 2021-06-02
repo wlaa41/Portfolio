@@ -6,6 +6,15 @@ export const Foot = (props) => {
     return (
         <footer className='ft'>
             {props.children}
+
+            <div className="ft_details" >
+            <div className="ft_details-name" > Walaa Jam </div>
+            <div className="ft_details-location" >London, UK IG1 </div>
+            <a className="ft_details-email"  href="mailto:walaa.jamous@city.ac.uk" target="_blank"  >  walaa.jamous@city.ac.uk</a>
+             </div>
+
+
+
             <div className="ft_ICON" > 
                 <a className='ft_ICON-con' name='linkedin' target="_blank" href="https://www.linkedin.com/in/smartwill/">
                     <svg className="ft_ICON-svg">
@@ -31,17 +40,7 @@ export const Foot = (props) => {
                     </use>
                     </svg>
                 </a>        
-        </div>
-
-            <div className="ft_details" >
-            <div className="ft_details-name" > Walaa Jam </div>
-            <div className="ft_details-location" >London, UK IG1 </div>
-            <a className="ft_details-email"  href="mailto:walaa.jamous@city.ac.uk" target="_blank"  >  walaa.jamous@city.ac.uk</a>
-             </div>
-            
-            
-
-            
+        </div>    
         </footer>
     )
 }

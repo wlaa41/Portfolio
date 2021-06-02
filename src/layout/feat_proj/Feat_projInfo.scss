@@ -29,32 +29,27 @@
     border-left: 0;
     border-right: 0;
     &  *{
+        text-align: justify;
         position:absolute;
-        margin: 0 8ch;
-        
-    }
+        margin: 0 11ch; }
     height: 70%;
     width:60%;
     // padding: 0 10%;
-    @include respond(tab-port)
-    {
+    @include respond(tab-land) {
+        &  *{
+            position:absolute;
+            margin: 0 3ch; }
+    @include respond(tab-port) {
         padding:0  ;
         transform: translate(0);
-
         height: 100%;
         width:100%;
         position:relative;
         &  *{
             position:relative;
             margin:2rem 8rem;
-            @include respond(phone)
-            {
-                margin:2rem;
-
-            }
-        }
-
-    }
+            @include respond(phone) {
+                margin:2rem;}}}}
     &_Title{
         margin-top: 4ch ;
         font-weight: 200;
@@ -65,33 +60,18 @@
        font-size: 1.5rem;
        line-height: 4ch;
         &::first-line{
-            // font-weight: bold;
             text-transform: uppercase;
-
             font-size: 1.8rem;
         }
-        @include respond(tab-port)
-        {
+        @include respond(tab-port){
             border-bottom: 2px dashed rgb(233, 233, 233);
-
             font-size: 1.5rem;
             margin-top: 2ch ; 
-                @include respond(v400)
-                {
+                @include respond(v400){
                     font-size: 1.3rem;
-
                     &::first-line{
-                        // font-weight: bold;
                         text-transform: uppercase;
-            
-                        font-size: unset;
-                    }
-                }
-            
-    
-        }
-
-    }
+                        font-size: unset;}}}}
     &_Body{
        font-family:  sans-serif;
        font-size: 1.5rem;
@@ -100,11 +80,11 @@
             display:inline;
             position: relative;
             margin: 0;
-            white-space: nowrap;
-            // outline: 1px dotted blueviolet;
-
-       }
+            white-space: nowrap;}
         font-weight: 400;
+        @include respond(tab-land) {
+            // padding:0 3% 0 0%;
+    
         @include respond(tab-port)
         {
             margin-bottom: 5rem;
@@ -112,9 +92,8 @@
             font-size: 1.3rem;
             @include respond(v400)
             {
-                margin-bottom: 2rem;
-            }
-        }
+                margin-bottom: 2rem;}}}
+         
     
     }
 

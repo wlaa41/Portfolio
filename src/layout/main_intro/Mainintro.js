@@ -57,7 +57,10 @@ function Mainintro(){
 
 
     useLayoutEffect(() => {
-        window.addEventListener('scroll',  ()=>{requestAnimationFrame(  scrollHeandle)} )
+        // window.addEventListener('scroll',  ()=>{requestAnimationFrame(  scrollHeandle)} )
+        setInterval(() => {
+            requestAnimationFrame(  scrollHeandle)
+        }, 1000/60);
         window.addEventListener('resize', ()=>{requestAnimationFrame( ()=> {
             rtime = new Date();
             if (timeout === false) {
@@ -115,13 +118,13 @@ function scrollHeandle(e){
         const shift=window.scrollY;
         if(shift<LONDON_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
             setYShift({
-            skyline3:   (  shift  / 1.2   )      ,
-            skyline2:   (  shift  / 1.3   )      ,
-            skyline1:   (  shift  / 1.6   )      ,
-            skyline0:   (  shift  / 1.9   )      ,
-            floor:      (  shift  / 3.5   )      ,
-            phonebooth: (  shift  / 3.5   )      ,
-            myBase:     (  70 * shift  / LONDON_scrollStopThreshold   ).toFixed(0) })
+            skyline3:   (  shift  / 1.5   )      ,
+            skyline2:   (  shift  / 1.6   )      ,
+            skyline1:   (  shift  / 1.8   )      ,
+            skyline0:   (  shift  / 2.1   )      ,
+            floor:      (  shift  / 3     )      ,
+            phonebooth: (  shift  / 3     )      ,
+            myBase:     (  shift  / 4     )      })
             shift<Title_btn_scrollStopThreshold ? chekclass_REMOVE() : chekclass_ADD()
         }else{
             // the if below is for the Nav which include vanish text by adding foggyVanish class
@@ -155,40 +158,40 @@ function chekclass_REMOVE(){
                 <div className='londonfull'>
                     <div className="londonfull__imgcontainer">
                       <img src={skyline3} 
-            className='london-wheel-svg londonfull__svg' 
+            className='londonfull__svg' 
             style={{transform: `translate3d(0,${YShift["skyline3"]}px,0)`
             } } />
                     <img src={skyline2} 
-            className='london-wheel-svg londonfull__svg' 
+            className='londonfull__svg' 
             style={{ transform: `translate3d(0,${YShift["skyline2"]}px,0)`
             } } />
              <img src={skyline1} 
-            className='london-wheel-svg londonfull__svg' 
+            className='londonfull__svg' 
             style={{ transform: `translate3d(0,${YShift["skyline1"]}px,0)`
             } } />
             <Wheel 
-            className='london-wheel-svg londonfull__svg' 
+            className='londonfull__svg' 
             style={{ transform: `translate3d(0,${YShift["skyline1"]}px,0)`
             } } >
             </Wheel>
                 <img src={skyline0} 
-            className='london-wheel-svg londonfull__svg' 
+            className='londonfull__svg' 
             style={{
                 transform: `translate3d(0,${YShift["skyline0"]}px,0)`
             } } />
                                   <img src={floor}
-            className='london-wheel-svg londonfull__svg' 
+            className='londonfull__svg' 
             style={{
                 transform: `translate3d(0,${YShift["floor"]}px,0)`
             } } />
               <img src={phonebooth}
-            className='london-wheel-svg londonfull__svg' 
+            className='londonfull__svg' 
             style={{
                 transform: `translate3d(0,${YShift["phonebooth"]}px,0)`
             } } />
-                <img src={myBase} className='london-wheel-svg londonfull__svg'
+                <img src={myBase} className='londonfull__svg'
                             style={{
-                transform: `rotateX(${YShift["myBase"]}deg)`
+                transform: `translate3d(0,${YShift["myBase"]}px,0)`
             } }/> 
                         <div className='night'></div>
                         <div className='myAvatarStrip'>    
@@ -197,7 +200,11 @@ function chekclass_REMOVE(){
                                 </div>
                                <div className='myAvatarStrip_Ava'>
                                 <div className='vertical_spacer'></div>
-                                <div className='myAvatarContainer'>
+                                <div className='myAvatarContainer' 
+                                 style={{
+                                     transform: `translate3d(0,${YShift["myBase"]}px,0)`
+                                     
+                                    } }>
                                     { myAvatar_img_attr.map((element)=>  {
                                          return   <img src={element["img"]} alt={element['attr'].key}
                                          key={element['attr'].key}

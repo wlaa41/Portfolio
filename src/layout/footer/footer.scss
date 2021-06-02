@@ -3,23 +3,25 @@
 
 .ft{
     // margin-top: -22px;
+    transform: translate(0);
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.445);
     background-color: #1b75be;
+    background:
+    radial-gradient(circle at top left , rgba(0, 0, 0, 0.219) 11%, rgba(0, 0, 0, 0) 33%),
+    radial-gradient(circle at top right , rgba(0, 0, 0, 0.219) 11%, rgba(0, 0, 0, 0) 33%),
+    radial-gradient(circle at bottom right , rgba(49, 49, 49, 0.19) , rgba(0, 0, 0, 0) 33%),
+    radial-gradient(circle at bottom left , rgba(110, 110, 110, 0.19) , rgba(0, 0, 0, 0) 33%),
+    #1b75be;
+    // linear-gradient(to right ,#16588f ,#2474b6 ,#115d9c );
     padding: 1rem 0;
     color: white;
-    // height: 200px;
-    // color: rgb(61, 61, 61);
-    // display: grid;
-    // align-items: center;
     & > *{
         color: inherit;
     }
     &_details{
-        // border: 2px dotted deeppink;
-        // flex: 2;
-        margin: 0 0 3rem 0 ;
-
+        margin: 6rem 0 2rem 0 ;
         display: flex;
-        column-gap: 22px;
+        column-gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
         & > *{
@@ -27,14 +29,14 @@
             white-space: nowrap;}
         font: 1.6rem  'Noto Sans JP', sans-serif;
         font-weight: 500;
-        letter-spacing: .1ch;
-        word-spacing: .2ch;
+        letter-spacing: .051ch;
+        word-spacing: .1ch;
     }
     &_ICON{
-        margin: 3rem 0 0 0 ;
+        margin: 0 0 5rem 0 ;
+
         height: 55px;
         display: flex;
-
         gap: 33px;
         justify-content: center;
         align-items: center;

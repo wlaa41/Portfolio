@@ -24,14 +24,15 @@ class Homepage extends React.Component{
         return(
             <>
                 <Mainintro/>
-                <div 
+                {/* <div 
                 style={{height:'10vh',
-                borderTop:'5px solid dimgray',
+                borderTop:'5px solid lightgray',
                 transform: 'translate(0)',
+                position: 'relative',
                 backgroundColor:'white' ,
                 zIndex:'99',
                 backgroundImage:`url(${bg_image})`
-                }}></div>
+                }}></div> */}
 
 
 

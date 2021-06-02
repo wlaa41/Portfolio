@@ -48,12 +48,14 @@
                         transform: rotate(90deg);
                         transition: all .9s ; }}
                 .see_the_graph_SVG{
+                   
                     fill:#3f73d4;
+                    pointer-events:none;
                     width:57px;
                      height:227px;
                     position: absolute;
                     transform-origin: top;
-                    transform: translate3d(-80%,5%,0) scale(1.2);
+                    transform: translate3d(-90%,5%,0) scale(1.2);
                     top: 0;
                     opacity: 0;
                     animation: none;

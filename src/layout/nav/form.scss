@@ -21,7 +21,9 @@
     border-radius: 5%;
     box-shadow: 0 8px 6px -4px rgba(0, 0, 0, 0.479),
      0 0px 8px  rgba(0, 0, 0, 0.579);
-    background: linear-gradient(to bottom right  ,
+    background:
+    radial-gradient(ellipse at 44% 33%, rgba(0, 204, 255, 0.1) , rgba(0, 174, 255, 0.1)),
+     linear-gradient(to bottom right  ,
      rgba(224, 224, 224, 0.3) 50%, rgba(128, 128, 128, 0.3) 50%, 
      rgba(128, 128, 128, 0.3) 100%);
     @include respond(phone){
