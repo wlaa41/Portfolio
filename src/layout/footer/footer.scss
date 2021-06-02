@@ -4,14 +4,18 @@
 .ft{
     // margin-top: -22px;
     transform: translate(0);
-    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.445);
+    box-shadow: 0 -1px 7px rgba(0, 0, 0, 0.745);
     background-color: #1b75be;
     background:
     radial-gradient(circle at top left , rgba(0, 0, 0, 0.219) 11%, rgba(0, 0, 0, 0) 33%),
     radial-gradient(circle at top right , rgba(0, 0, 0, 0.219) 11%, rgba(0, 0, 0, 0) 33%),
     radial-gradient(circle at bottom right , rgba(49, 49, 49, 0.19) , rgba(0, 0, 0, 0) 33%),
     radial-gradient(circle at bottom left , rgba(110, 110, 110, 0.19) , rgba(0, 0, 0, 0) 33%),
-    #1b75be;
+    linear-gradient(79deg,
+    rgb(37, 123, 204) ,
+    rgb(58, 132, 201) ,
+    rgb(26, 138, 243) );
+    // #1b75be;
     // linear-gradient(to right ,#16588f ,#2474b6 ,#115d9c );
     padding: 1rem 0;
     color: white;
@@ -27,7 +31,7 @@
         & > *{
             color: inherit;
             white-space: nowrap;}
-        font: 1.6rem  'Noto Sans JP', sans-serif;
+        font: 1.6rem  'Roboto', sans-serif;
         font-weight: 500;
         letter-spacing: .051ch;
         word-spacing: .1ch;
@@ -52,20 +56,4 @@
             fill:white;
         }
     }
-    // @include respond(big-desktop) { // width < 1200?
-    //     @include respond(tab-land) { // width < 1200?
-    //         &_left{
-    //         grid-template-columns: repeat(auto-fit , max-content  );
-    //         grid-auto-flow: row;
-    //         }
-
-    //         @include respond(tab-port) { // width < 900px
-    //             &_left >*{
-    //                 text-align: center;
-                   
-    //                     margin: 0;
-    //                 }
-    //             @include respond(phone) { // width < 600px
-
-    // }}}}
 }
