@@ -3,43 +3,38 @@
 
 .ft{
     // margin-top: -22px;
-    background-color: #005f96;
-    padding:0 5rem 5rem 5rem;
-    // display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
+    background-color: #1b75be;
+    padding: 1rem 0;
     color: white;
+    // height: 200px;
+    // color: rgb(61, 61, 61);
+    // display: grid;
+    // align-items: center;
     & > *{
-        margin: 14px 0 ;
         color: inherit;
     }
     &_details{
+        // border: 2px dotted deeppink;
+        // flex: 2;
+        margin: 0 0 3rem 0 ;
+
         display: flex;
-        column-gap: 11px;
-        // column-gap: 11px;
+        column-gap: 22px;
         flex-wrap: wrap;
-        // flex-basis: max-content;
-        // flex-basis: content;
-
-
         justify-content: center;
         & > *{
-            white-space: nowrap;
-
-        }
-        // grid-template-columns: repeat(auto-fit, minmax(max-content, auto));
-        // grid-template-columns: repeat(auto-fill, minmax(max-content, auto) );
-        // grid-template-columns: repeat(auto-fit , minmax( 330px, 1fr));
-
-        // justify-content: center;
-        // grid-auto-flow: row;
-        //  min-width: 200px;
+            color: inherit;
+            white-space: nowrap;}
         font: 1.6rem  'Noto Sans JP', sans-serif;
+        font-weight: 500;
+        letter-spacing: .1ch;
+        word-spacing: .2ch;
     }
     &_ICON{
+        margin: 3rem 0 0 0 ;
+        height: 55px;
         display: flex;
+
         gap: 33px;
         justify-content: center;
         align-items: center;

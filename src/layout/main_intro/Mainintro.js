@@ -22,10 +22,17 @@ const myAvatar_img_attr =myavatar_vec();
 
 function Mainintro(){
     
-    // const talkbtnRef = useRef({classList:[]})//LET'S TALK BUTTON ADDING CLASS TO MAKE IT CHANGE CONTENT
+    // const talkbtnConRef = useRef({classList:[]})//LET'S TALK BUTTON ADDING CLASS TO MAKE IT CHANGE CONTENT
     // const titleRef = useRef({classList:[]})
-    const talkbtnRef = useRef(null)//LET'S TALK BUTTON ADDING CLASS TO MAKE IT CHANGE CONTENT
+    const talkbtnConRef = useRef(null)//LET'S TALK BUTTON ADDING CLASS TO MAKE IT CHANGE CONTENT
     const titleRef = useRef(null)
+    // const tlkbtnRef = useRef(null)
+    let LONDON_scrollStopThreshold = 800;
+    let Title_btn_scrollStopThreshold = 200;
+
+    let btnCon_Width = 200;
+    let btnCon_Height = 100;
+    let classdded=false;
 
     // this state to move the button of let's talk from the top to corner
     const [btn_Translate, setBtn_Translate] = useState([0,0,0])
@@ -36,7 +43,8 @@ function Mainintro(){
         skyline1:       0         ,
         skyline0:       0         ,
         floor:          0         ,
-        phonebooth:     0                   
+        phonebooth:     0         ,
+        myBase:         0                   
     })
 
     // THESE VARIABLE ARE TO WAIT FOR FOR THE RESIZE FUNCTIONN TO WAIT 
@@ -44,6 +52,8 @@ function Mainintro(){
     var rtime;
     var timeout = false;
     var delta = 200;
+
+
 
 
     useLayoutEffect(() => {
@@ -56,9 +66,10 @@ function Mainintro(){
             }
         })})
 
-        if(!talkbtnRef.current) talkbtnRef.current = document.getElementById('talkbtn')
+        if(!talkbtnConRef.current) talkbtnConRef.current = document.getElementById('talkbtnCon')
         titleRef.current = titleRef.current ||   document.getElementById('mainTitle')
-        
+        // if(!tlkbtnRef.current) tlkbtnRef.current = document.getElementById('tlkbtn')
+
         // we calculate the movement of the Let's talk button bellow
         implementResizeAction()
 
@@ -70,13 +81,6 @@ function Mainintro(){
         }
     }, [])
 
-    let LONDON_scrollStopThreshold = 800;
-    let Title_btn_scrollStopThreshold = 200;
-
-    let btnCon_Width = 200;
-    let btnCon_Height = 100;
-    let classdded=false;
-
     // handleResize() 
     function handleResize(){
         if (new Date() - rtime < delta) {
@@ -85,16 +89,25 @@ function Mainintro(){
             timeout = false;
             implementResizeAction() 
         }}
+    
+    let CSS_moveBTN=''
 
     function implementResizeAction() {
-        console.log('resiezing action has been taken')
+
+        console.log('%cresiezing action has been %ctaken','color: red; font-weight:bold;font-size:22px;','color :green')
+        // console.log(talkbtnConRef.current)
         LONDON_scrollStopThreshold = Math.round(window.innerHeight/1.5); 
         Title_btn_scrollStopThreshold  = Math.round(LONDON_scrollStopThreshold/4)
-        btnCon_Width = (talkbtnRef.current.offsetWidth - 64) // ??   document.getElementById()
-        btnCon_Height = (talkbtnRef.current.offsetHeight - 76)// ??
+        btnCon_Width = talkbtnConRef.current?.offsetWidth ? (talkbtnConRef.current.offsetWidth - 64) :  btnCon_Width
+        btnCon_Height = talkbtnConRef.current?.offsetHeight ? (talkbtnConRef.current.offsetHeight - 76) : btnCon_Height
         const shift=window.scrollY
-        if(shift<LONDON_scrollStopThreshold) setBtn_Translate([0,0,0])
-        else setBtn_Translate([btnCon_Width,btnCon_Height,0])
+        console.log(classdded,shift,LONDON_scrollStopThreshold )
+        if(shift>=LONDON_scrollStopThreshold && classdded){
+            console.log('MOVEEE')
+            document.getElementById('tlkbtn').style=`transform: translate3d(${btnCon_Width}px,${btnCon_Height}px,0);`}
+        
+        // setBtn_Translate([0,0,0])
+        // else  setBtn_Translate([btnCon_Width,btnCon_Height,0])
     }
 
     
@@ -107,7 +120,8 @@ function scrollHeandle(e){
             skyline1:   (  shift  / 1.6   )      ,
             skyline0:   (  shift  / 1.9   )      ,
             floor:      (  shift  / 3.5   )      ,
-            phonebooth: (  shift  / 3.5   ) })
+            phonebooth: (  shift  / 3.5   )      ,
+            myBase:     (  70 * shift  / LONDON_scrollStopThreshold   ).toFixed(0) })
             shift<Title_btn_scrollStopThreshold ? chekclass_REMOVE() : chekclass_ADD()
         }else{
             // the if below is for the Nav which include vanish text by adding foggyVanish class
@@ -115,16 +129,20 @@ function scrollHeandle(e){
             // also moving the button by changing the setBtn_Translate state 
             chekclass_ADD()}}
 
-function chekclass_ADD(){
-    if(!classdded) {talkbtnRef?.current?.classList?.add("navGrid_BtnCon-sp1");
-    setBtn_Translate([btnCon_Width,btnCon_Height,0])
+function chekclass_ADD(){ // IS DOWN 
+    if(!classdded) {talkbtnConRef?.current?.classList?.add("navGrid_BtnCon-sp1");
+    // setBtn_Translate([btnCon_Width,btnCon_Height,0])
+    document.getElementById('tlkbtn').style=`transform: translate3d(${btnCon_Width}px,${btnCon_Height}px,0);`
     titleRef?.current?.classList?.add("foggyVanish");
     classdded=true}
 }
 function chekclass_REMOVE(){
-    if(classdded) {
-        talkbtnRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
-                    setBtn_Translate([0,0,0])
+    if(classdded) {  // IS UP 
+        talkbtnConRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
+                    // setBtn_Translate([0,0,0])
+
+                    document.getElementById('tlkbtn').style=`transform: translate3d(0,0,0);
+                   `
                     titleRef?.current?.classList?.remove("foggyVanish");
                     classdded=false}
 }
@@ -132,7 +150,7 @@ function chekclass_REMOVE(){
 
         return(
             <>
-            <Nav talkbtn={talkbtnRef} title={titleRef} translate={btn_Translate} ></Nav>
+            <Nav talkbtnCon={talkbtnConRef}  title={titleRef} translate={btn_Translate} ></Nav>
             <section className='Mi_container'>
                 <div className='londonfull'>
                     <div className="londonfull__imgcontainer">
@@ -168,8 +186,10 @@ function chekclass_REMOVE(){
             style={{
                 transform: `translate3d(0,${YShift["phonebooth"]}px,0)`
             } } />
-                <img src={myBase}
-                className='london-wheel-svg londonfull__svg'/> 
+                <img src={myBase} className='london-wheel-svg londonfull__svg'
+                            style={{
+                transform: `rotateX(${YShift["myBase"]}deg)`
+            } }/> 
                         <div className='night'></div>
                         <div className='myAvatarStrip'>    
 

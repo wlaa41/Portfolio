@@ -23,12 +23,11 @@ const EduExpStrip = () => {
                  <div className='EduStrip__blue-strip'>
 
                  </div>
-                    <div className='EduStrip__CardContainer'>
                             
                         <EducationINFO></EducationINFO>
 
 
-                    </div>
+  
 
 
 

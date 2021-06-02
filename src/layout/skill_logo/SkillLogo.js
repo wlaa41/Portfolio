@@ -17,9 +17,11 @@ const SkillLogo = () => {
 
     return (
         <>
-        <div className='skill_logoStrip' title='things I am awesome with' >
+
+
+        <div className='skill_logoStrip' title='Some technologies I enjoy working with' >
             <div className='skill_logoStrip__LEFT skill_logoStrip__left-right'></div>
-            <div className='skill_logoStrip-skewed SL_SK' >
+            <div id='skl-con' className='skill_logoStrip-skewed SL_SK' >
                 <div className='SL_SK_Move-1'>
                     <div className='SL_SK_Move-1Flex-1' >
                             {images.map((elem,i)=>{
@@ -70,7 +72,9 @@ const SkillLogo = () => {
 
            </div>
            <div className='skill_logoStrip__RIGHT skill_logoStrip__left-right'></div>
-                
+                {/* <div style={{position:'absolute'}}> Hello  */}
+
+                {/* there</div> */}
         </div>
                 
         </>

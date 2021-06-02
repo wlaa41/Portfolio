@@ -2,10 +2,10 @@ import React from 'react'
 import sprite from './symbol-defs.svg'
 import './footer.scss'
 
-export const Foot = () => {
+export const Foot = (props) => {
     return (
         <footer className='ft'>
-
+            {props.children}
             <div className="ft_ICON" > 
                 <a className='ft_ICON-con' name='linkedin' target="_blank" href="https://www.linkedin.com/in/smartwill/">
                     <svg className="ft_ICON-svg">

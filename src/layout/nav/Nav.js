@@ -4,13 +4,13 @@ import {ReactComponent as TalkIcon} from './chat_black_24dp.svg'
 import './form.scss'
 
 
-const Nav = ({talkbtn ,title,translate })=>{
+const Nav = ({talkbtnCon ,title,translate })=>{
 
 
 ////#region  form
 function formExit(e){
         const ele =document.getElementById("contactCon");
-        if(ele===e.target)document.getElementById("contactCon").style.display = "none";
+        if(ele===e.target || 'close' === e.target.name)document.getElementById("contactCon").style.display = "none";
 }function openForm(e){
         document.getElementById("contactCon").style.display = "flex";      
 }
@@ -98,9 +98,11 @@ const showform = false;
                                         type='text' rows="5" 
                                         placeholder='Massage' multiple={true} required>
                                         </textarea>
-
-                                        <button className='ct_sub_btn'>submit</button>
-
+                                        
+                                        <div className='ct_sub-btnCon'>
+                                        <button onClick={formExit} name='close' type="reset" className='ct_sub_btn close'>close</button>
+                                        <button  type="submit" className='ct_sub_btn'>submit</button>
+                                        </div>
 
 
                                 </form>
@@ -117,13 +119,13 @@ const showform = false;
                                 when you cease to learn you cease to grow
                                 </div>
                         </div>
-                                <div id='talkbtn' ref={talkbtn} className=' navGrid_BtnCon'> 
+                                <div id='talkbtnCon' ref={talkbtnCon} className=' navGrid_BtnCon'> 
                                         <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1 '>Give an offer</button>
-                                        <button className='navGrid_BtnCon_button navGrid_BtnCon_button-2' onClick={openForm}
-                                        style={{
-                                                position: 'relative',
-                transform: `translate3d(${translate[0]}px,${translate[1]}px,0)`
-                                        }}
+                                        <button id='tlkbtn'  className='navGrid_BtnCon_button navGrid_BtnCon_button-2' onClick={openForm}
+                //                         style={{
+                //                                 position: 'relative',
+                // transform: `translate3d(${translate[0]}px,${translate[1]}px,0)`
+                //                         }}
                                         
                                         >Let's Talk
                                         <TalkIcon></TalkIcon>

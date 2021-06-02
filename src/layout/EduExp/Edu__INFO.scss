@@ -5,16 +5,25 @@
     position: relative;
     font-size: 1.4rem;
     color:white;
+    padding-bottom: 3rem;
+    background-color:rgb(255, 255, 255);
+
+
 
         &_GRID{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            gap: 11px;
-            margin-top: 1%;
-        }
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax(400px,1fr));
+            justify-items: center;
+            margin: -5rem 0  0  0;
+            padding: 9rem 5rem 0 5rem ;     
+            @include respond(phone){
+                padding: 9rem 2rem;     
+
+             @include respond(v400){
+                grid-template-columns: repeat(auto-fit , minmax(220px,1fr));}}}
         &_End-Decoration{
-            flex:1 1;
+            // flex:1 1;
             min-height: 39px;
             position: relative;
             grid-column: 1/-1;

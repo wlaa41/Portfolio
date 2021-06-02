@@ -2,19 +2,21 @@
 
 
 
-@include respond(tab-port){
+@include respond(v400){
 
 $EduExp__CRD__color:  rgb(41, 41, 41);
 $border-radius: 11px;
 $cardhight:20px;
 $time-toPopupCrd: .9s ease;
+
+
 .CardEdu{
     margin:2.2rem 1rem;
     background: transparent;
     border-top-width: 1px;
     min-height: $cardhight;
     min-width: 220px;
-    max-width: 280px;
+    max-width: 380px;
     color: $EduExp__CRD__color;
     box-shadow: none ;
     border-radius:$border-radius;

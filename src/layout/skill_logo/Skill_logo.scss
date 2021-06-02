@@ -9,15 +9,23 @@
 }
 
 .skill_logoStrip{
-    height: 152px;
+
+    height: 132px;
     // border: 2px dashed deeppink;
+    background-color: rgb(255, 255, 255);
+    transform: translate(0);
     overflow: hidden;
     position: relative;
     z-index: 999;
-    perspective-origin:0% -50%;
+    margin-top: 2rem;
     display: flex;
-    margin: 5rem 0 0 0;
+    background-image: inherit;
+
+    // justify-content: center;
+    // align-items: center;
+    // padding: 5rem 0 0 0;
     &::after{
+        color:rgb(65, 65, 65);
         content: attr(title);
         position: absolute;
         bottom: 0;
@@ -28,12 +36,17 @@
         font-weight: 900;
         letter-spacing: .4vw;
         text-shadow: 14px 0 18px  rgba(0, 0, 0, 0.307); }
+        background-color: inherit;
 
 
     &__left-right{
         width: 5%;
         z-index: 44;
         position: relative;
+        background-image: inherit;
+        background-color: inherit;
+
+
         &::after{
             content: "";
             top: -15px;
@@ -42,6 +55,10 @@
             height: 120%;
             background-color: rgba(235, 235, 235, 0.56);
             background-color: rgba(255, 255, 255, 1);
+            background-image: inherit;
+            background-color: inherit;
+
+
             position: absolute;} }
     &__LEFT{
         border-bottom-right-radius: 20% 50%;
@@ -60,6 +77,9 @@
             left: 0;}}
 
     &-skewed{
+    // overflow: hidden;
+        transition: all .9s linear;
+        // opacity: 0;
         // background: linear-gradient(rgba(0, 0, 0, 0.374 ) ,
         //  rgba(255, 255, 255, 0.36)), lightpink;
          background: linear-gradient(
@@ -70,7 +90,7 @@
              rgba(55, 55, 55, 0.14)  66%,
           rgba(255, 255, 255, 0.3) 93%,
           rgba(255, 255, 255, 0.6)
-          ), rgba(255, 182, 193, 0.877);
+          ),var(--skl-bg-color);
         width: 90%;
         height: 100%;
         transform-origin: 0px ;

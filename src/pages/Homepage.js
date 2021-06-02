@@ -10,6 +10,8 @@ import Feat_proj from '../layout/feat_proj/Feat_proj'
 import Foot from '../layout/footer/footer'
 import EduExpStrip from '../layout/EduExp/educationStrip'
 import SkillLogo from '../layout/skill_logo/SkillLogo'
+import ColorPick from '../layout/themepick/ColorPick'
+import bg_image from './asfalt-dark.png'
 // import CMAIN from '../layout/main_intro/CMAIN'
 // import london_SVGs from '../layout/main_intro/media/londonfull copy/londonfull'
 // import Nav from './Layout/Nav'
@@ -22,17 +24,30 @@ class Homepage extends React.Component{
         return(
             <>
                 <Mainintro/>
-                <div style={{height:'10vh',borderTop:'5px solid dimgray', backgroundColor:'white' ,zIndex:'99',transformStyle:'preserve-3d'}}></div>
+                <div 
+                style={{height:'10vh',
+                borderTop:'5px solid dimgray',
+                transform: 'translate(0)',
+                backgroundColor:'white' ,
+                zIndex:'99',
+                backgroundImage:`url(${bg_image})`
+                }}></div>
 
+
+
+               
                 <CardStrip></CardStrip>
-                <Feat_proj></Feat_proj>
                 
-                <SkillLogo></SkillLogo>
+
+                <Feat_proj></Feat_proj>
+
                 {/* <EducationStrip></EducationStrip> */}
                 <EduExpStrip></EduExpStrip>
-                 <Foot></Foot>
+                {/* <SkillLogo></SkillLogo> */}
+                {/* <ColorPick></ColorPick> */}
+                 <Foot> </Foot>
 
-
+                 
             </>
             
         );
