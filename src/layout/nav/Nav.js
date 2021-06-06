@@ -119,7 +119,8 @@ const showform = false;
                                 </div>
                         </div>
                                 <div id='talkbtnCon' ref={talkbtnCon} className=' navGrid_BtnCon'> 
-                                        <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1 '>Current Project</button>
+                                        <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1 '
+                                        onClick={window.open('https://github.com/wlaa41/Portfolio/','_blank')}>Current Project</button>
                                         <button id='tlkbtn'  className='navGrid_BtnCon_button navGrid_BtnCon_button-2' onClick={openForm}
                 //                         style={{
                 //                                 position: 'relative',
