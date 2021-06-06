@@ -3,8 +3,11 @@
 @import '../../base/animations';
 
 .ftStrip{
+    background-color: white;
+    z-index: 999;
+    transform: translate(0);
     overflow: hidden;
-    height:800px;
+    height:850px;
     display: flex;
     perspective: 1500px;
     position: relative;
