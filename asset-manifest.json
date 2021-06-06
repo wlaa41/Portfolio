@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9230c431.chunk.css",
-    "main.js": "/Portfolio/static/js/main.4fd784ff.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.4fd784ff.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.6c670eba.chunk.css",
+    "main.js": "/Portfolio/static/js/main.877501ef.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.877501ef.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.eb6781d5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.eb6781d5.js.map",
     "static/js/2.c35d8e74.chunk.js": "/Portfolio/static/js/2.c35d8e74.chunk.js",
     "static/js/2.c35d8e74.chunk.js.map": "/Portfolio/static/js/2.c35d8e74.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.9230c431.chunk.css.map": "/Portfolio/static/css/main.9230c431.chunk.css.map",
+    "static/css/main.6c670eba.chunk.css.map": "/Portfolio/static/css/main.6c670eba.chunk.css.map",
     "static/js/2.c35d8e74.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.c35d8e74.chunk.js.LICENSE.txt",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
     "static/media/React JS.png": "/Portfolio/static/media/React JS.999601f5.png",
@@ -38,7 +38,7 @@
     "static/media/light-honeycomb-dark.png": "/Portfolio/static/media/light-honeycomb-dark.be22f003.png",
     "static/media/myBase.224ace37.svg": "/Portfolio/static/media/myBase.224ace37.svg",
     "static/media/myBase.28ddb298.svg": "/Portfolio/static/media/myBase.28ddb298.svg",
-    "static/media/neural-cell-dark.86588c17.jpg": "/Portfolio/static/media/neural-cell-dark.86588c17.jpg",
+    "static/media/neuraan.ac136cb2.jpg": "/Portfolio/static/media/neuraan.ac136cb2.jpg",
     "static/media/nodejs.jpg": "/Portfolio/static/media/nodejs.27655850.jpg",
     "static/media/pat.f17321b7.jpg": "/Portfolio/static/media/pat.f17321b7.jpg",
     "static/media/path-finding-phone-googlemap.0b013073.jpg": "/Portfolio/static/media/path-finding-phone-googlemap.0b013073.jpg",
@@ -66,7 +66,7 @@
   "entrypoints": [
     "static/js/runtime-main.eb6781d5.js",
     "static/js/2.c35d8e74.chunk.js",
-    "static/css/main.9230c431.chunk.css",
-    "static/js/main.4fd784ff.chunk.js"
+    "static/css/main.6c670eba.chunk.css",
+    "static/js/main.877501ef.chunk.js"
   ]
 }
