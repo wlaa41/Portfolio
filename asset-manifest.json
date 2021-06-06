@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.230615b9.chunk.css",
-    "main.js": "/Portfolio/static/js/main.9f68444e.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.9f68444e.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.9230c431.chunk.css",
+    "main.js": "/Portfolio/static/js/main.4fd784ff.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.4fd784ff.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.eb6781d5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.eb6781d5.js.map",
     "static/js/2.c35d8e74.chunk.js": "/Portfolio/static/js/2.c35d8e74.chunk.js",
     "static/js/2.c35d8e74.chunk.js.map": "/Portfolio/static/js/2.c35d8e74.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.230615b9.chunk.css.map": "/Portfolio/static/css/main.230615b9.chunk.css.map",
+    "static/css/main.9230c431.chunk.css.map": "/Portfolio/static/css/main.9230c431.chunk.css.map",
     "static/js/2.c35d8e74.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.c35d8e74.chunk.js.LICENSE.txt",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
     "static/media/React JS.png": "/Portfolio/static/media/React JS.999601f5.png",
@@ -16,7 +16,8 @@
     "static/media/asfalt-dark.png": "/Portfolio/static/media/asfalt-dark.12fc1a7a.png",
     "static/media/baby.e16ea115.jpg": "/Portfolio/static/media/baby.e16ea115.jpg",
     "static/media/body.2fc2973d.svg": "/Portfolio/static/media/body.2fc2973d.svg",
-    "static/media/brain-aura.8a3c8e2b.jpg": "/Portfolio/static/media/brain-aura.8a3c8e2b.jpg",
+    "static/media/boston.5857fad4.jpg": "/Portfolio/static/media/boston.5857fad4.jpg",
+    "static/media/brain-aura.dcbaba9f.jpg": "/Portfolio/static/media/brain-aura.dcbaba9f.jpg",
     "static/media/bright-squares.png": "/Portfolio/static/media/bright-squares.79000482.png",
     "static/media/chat_black_24dp.acafb7f6.svg": "/Portfolio/static/media/chat_black_24dp.acafb7f6.svg",
     "static/media/crisp-paper-ruffles.png": "/Portfolio/static/media/crisp-paper-ruffles.a006a9e2.png",
@@ -33,11 +34,13 @@
     "static/media/iron-grip.png": "/Portfolio/static/media/iron-grip.58ae7f26.png",
     "static/media/keras.jpg": "/Portfolio/static/media/keras.53378331.jpg",
     "static/media/knx.jpg": "/Portfolio/static/media/knx.7a198537.jpg",
+    "static/media/lab.573c973b.jpg": "/Portfolio/static/media/lab.573c973b.jpg",
     "static/media/light-honeycomb-dark.png": "/Portfolio/static/media/light-honeycomb-dark.be22f003.png",
     "static/media/myBase.224ace37.svg": "/Portfolio/static/media/myBase.224ace37.svg",
     "static/media/myBase.28ddb298.svg": "/Portfolio/static/media/myBase.28ddb298.svg",
     "static/media/neural-cell-dark.86588c17.jpg": "/Portfolio/static/media/neural-cell-dark.86588c17.jpg",
     "static/media/nodejs.jpg": "/Portfolio/static/media/nodejs.27655850.jpg",
+    "static/media/pat.f17321b7.jpg": "/Portfolio/static/media/pat.f17321b7.jpg",
     "static/media/path-finding-phone-googlemap.0b013073.jpg": "/Portfolio/static/media/path-finding-phone-googlemap.0b013073.jpg",
     "static/media/phonebooth.1325b9c6.svg": "/Portfolio/static/media/phonebooth.1325b9c6.svg",
     "static/media/phonebooth.dc4700c3.svg": "/Portfolio/static/media/phonebooth.dc4700c3.svg",
@@ -63,7 +66,7 @@
   "entrypoints": [
     "static/js/runtime-main.eb6781d5.js",
     "static/js/2.c35d8e74.chunk.js",
-    "static/css/main.230615b9.chunk.css",
-    "static/js/main.9f68444e.chunk.js"
+    "static/css/main.9230c431.chunk.css",
+    "static/js/main.4fd784ff.chunk.js"
   ]
 }
