@@ -104,10 +104,12 @@ function Mainintro(){
         btnCon_Width = talkbtnConRef.current?.offsetWidth ? (talkbtnConRef.current.offsetWidth - 64) :  btnCon_Width
         btnCon_Height = talkbtnConRef.current?.offsetHeight ? (talkbtnConRef.current.offsetHeight - 76) : btnCon_Height
         const shift=window.scrollY
-        console.log(classdded,shift,LONDON_scrollStopThreshold )
-        if(shift>=LONDON_scrollStopThreshold && classdded){
+        console.log(classdded,shift,Title_btn_scrollStopThreshold )
+        if(shift>=Title_btn_scrollStopThreshold && classdded){
+            // if(shift>=LONDON_scrollStopThreshold && classdded){
             console.log('MOVEEE')
-            document.getElementById('tlkbtn').style=`transform: translate3d(${btnCon_Width}px,${btnCon_Height}px,0);`}
+            document.getElementById('tlkbtn').style=`transform: translate3d(${btnCon_Width}px,${btnCon_Height}px,0);`
+        }
         
         // setBtn_Translate([0,0,0])
         // else  setBtn_Translate([btnCon_Width,btnCon_Height,0])
@@ -144,8 +146,7 @@ function chekclass_REMOVE(){
         talkbtnConRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
                     // setBtn_Translate([0,0,0])
 
-                    document.getElementById('tlkbtn').style=`transform: translate3d(0,0,0);
-                   `
+                    document.getElementById('tlkbtn').style=`transform: translate3d(0,0,0);`
                     titleRef?.current?.classList?.remove("foggyVanish");
                     classdded=false}
 }

@@ -1,6 +1,9 @@
 import ant from './ant-walking-tree.jpg'
-import neural from './neural-cell-dark.jpg'
+import neural from './neuraan.jpg'
 import brain from './brain-aura.jpg'
+import pat from './pat.jpg'
+import lab from './lab.jpg'
+import boston from './boston.jpg'
 import pathFinding from './path-finding-phone-googlemap.jpg'
 
 
@@ -22,20 +25,20 @@ export default function info(){
             {
                 title: "Dijkstra's algorithm",
                 subtitle:'python',
-                brief: 'Based on the known algorithem a full python code that run simulationn on 2 dimenssion grid,',
+                brief: 'Applying  the Dijkstra algorithem  on 2 dimenssion grid. The algorithm is written in Python. Also, there is a brief comparission between three defferent path finding algorithm',
                 image: pathFinding
             }
             ,{
                 title: "My Path Finding Algorithm",
                 subtitle:'python',
                 brief: 'A compenation on A star and Ant Colony where it can finds the best path with minium resources. The code graphs a the path found and prints out the passed nodes ',
-                image: ant
+                image: pat
             }
             ,{
-                title: "Bostom House Price Predection",
+                title: "House Price Predection",
                 subtitle:'python',
-                brief: 'runing different macheine learning model on data and get the best result ',
-                image: brain
+                brief: 'Machine Learning algorthim applied on data set of Bostom house prices. After training the model is able gain 92% accuracy. The algorithm runs different models and shows a graph that compare the result',
+                image: boston
             }
             ,{
                 title: 'Rescorla–Wagner model',

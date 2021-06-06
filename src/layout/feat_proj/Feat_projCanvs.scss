@@ -16,7 +16,7 @@
         @include respond(tab-port){
             position:relative;
             display:block;
-            margin: 0 3rem; }}
+            margin: 0 auto; }}
     &_canvas{
         position: relative;
         height: 85%;
@@ -89,7 +89,7 @@
             @include respond(v400)
             {
             width:  100vw;
-            margin-left: -3rem;
+            margin-left: -1.3rem;//;: -3rem;
             &_Decor{
                 &-1{
                     // height: 550px;

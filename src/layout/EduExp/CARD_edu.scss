@@ -8,14 +8,12 @@ $EduExp__color: rgb(68, 68, 68);
 $EduExp__Backgroundcolor: rgb(41, 41, 41);
 $time-img:2s;
 
-// $shadowcolor:rgba(32, 32, 32, 0.568);
 .CardEdu{
     margin: 2rem;
     border-top-width: 1px;
     min-height: $cardhight;
     min-width: 380px;
     max-width: 555px;
-    // width: 555px;
     flex:1 1;
     color: $EduExp__color;
     box-shadow: 0 4px 9px -3px rgba(0, 0, 0, 0.534);
@@ -27,8 +25,6 @@ $time-img:2s;
     linear-gradient(to bottom left , rgb(168, 168, 168) , rgb(209, 209, 209));
     border-radius:$border-radius;
     counter-reset: white;
-    // @include bg-nicecard(rgb(68, 68, 68), rgb(41, 41, 41));
-    // @include bg-nicecard(rgb(85, 134, 156), rgb(46, 85, 104));
     overflow: hidden;
 
     &_IMG_Con{
@@ -37,7 +33,6 @@ $time-img:2s;
         position: relative;
         object-fit: contain;
         overflow: hidden;
-        // box-shadow: none ;
         filter: grayscale(1) ;//contrast(2) brightness(12);
 
            // // gardient cover on top of the imag <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -48,18 +43,14 @@ $time-img:2s;
                 width:100%;
                 top:0;
                 left:0;
-                background: linear-gradient(to right, rgb(128, 9, 9),rgba(241, 241, 241, 0.2)); 
-            }//192.168.0.29:3000/
+                background: linear-gradient(to right, rgb(128, 9, 9),rgba(241, 241, 241, 0.2)); }
             & img{
                 width: 120%;
                 height: 120%;
                 position: relative;
-                object-fit:cover;
-                // transition: all $time-toPopupCrd;
-
-            }
-        transition: all $time-img ;
-    }
+                object-fit:cover;}
+            
+        transition: all $time-img ;}
 
     &_INFO_Con{
         padding:1.7rem 3rem 4rem;
@@ -93,9 +84,7 @@ $time-img:2s;
                 height: 49px;
                 fill: rgb(128, 128, 128);
 
-                transition: all $time-toPopupCrd;
-
-            }
+                transition: all $time-toPopupCrd; }
 
             &_main_title{
                 // border: 1px dashed red;
@@ -105,11 +94,8 @@ $time-img:2s;
                 text-transform: capitalize;
                 font-weight: 400;
                 position: relative;
-                text-align:end;
-                // text-justify:newspaper;
-                
-                // cursor: alias;
-        } } }
+                text-align:end; } } }
+
         &_second_title{
             margin-top: .2rem;
             font-size: 2rem;
@@ -124,10 +110,7 @@ $time-img:2s;
              line-height: 1.9rem;
              font-weight: 300;
              letter-spacing: .1ch;
-             text-align: center;
-     
-     
-         }
+             text-align: center;}
   
     transition: transform $time-toPopupCrd , box-shadow $time-toPopupCrd;
 
@@ -141,11 +124,7 @@ $time-img:2s;
             transition: all 2s .9s;
 
             img{
-               
-                //  transition: all .9s .9s;
-        // transition: all 34s linear ;
-                animation: picture_bg_Swimming 23s infinite alternate linear;
-            }
+                animation: picture_bg_Swimming 23s infinite alternate linear;}
 
         }
        

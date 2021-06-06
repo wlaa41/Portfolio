@@ -18,9 +18,11 @@
             margin: -5rem 0  0  0;
             padding: 9rem 5rem 0 5rem ;     
             @include respond(phone){
-                padding: 9rem 2rem;     
+                padding: 9rem 0rem;     
 
              @include respond(v400){
+                padding: 9rem 2rem;     
+
                 grid-template-columns: repeat(auto-fit , minmax(220px,1fr));}}}
         &_End-Decoration{
             // flex:1 1;
