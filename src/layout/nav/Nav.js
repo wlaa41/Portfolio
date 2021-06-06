@@ -14,7 +14,6 @@ function formExit(e){
 }function openForm(e){
         document.getElementById("contactCon").style.display = "flex";      
 }
-
 const [name, setName] = useState('')
 const [email, setEmail] = useState('')
 const [phone, setPhone] = useState('')
@@ -120,7 +119,7 @@ const showform = false;
                                 </div>
                         </div>
                                 <div id='talkbtnCon' ref={talkbtnCon} className=' navGrid_BtnCon'> 
-                                        <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1 '>Give an offer</button>
+                                        <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1 '>Current Project</button>
                                         <button id='tlkbtn'  className='navGrid_BtnCon_button navGrid_BtnCon_button-2' onClick={openForm}
                 //                         style={{
                 //                                 position: 'relative',

@@ -1,5 +1,5 @@
 @import '../../abstracts/mixins';
-$buttonTranslateTime:all 1.8s ;
+$buttonTranslateTime:transform 1.8s , background-color .4s , box-shadow .4s;
 
 .nav{
     font: 2rem 'Roboto',sans-serif;
@@ -54,51 +54,36 @@ $buttonTranslateTime:all 1.8s ;
             position: relative;
             grid-column: 2/-2;
             grid-row: 3/-2;
-
             &_button{
-                // position: absolute;
-
                 font-family: 'Loto', sans-serif; 
                 font-weight: 600;
                 background-color: transparent;
                 color: white;
                 border: 2px solid white;
-                // margin-right:-100%;
-                // margin-top: 3rem;
                 transition: $buttonTranslateTime ;
                 @include shadowbend-bottom;
-    // border:8px dashed lightcoral;
-
-
+                &:hover{
+                    background-color: darken(white,11%);
+                    border-color:  darken(white,10%);
+                    color:rgb(82, 163, 230);}
+                &:active{
+                    box-shadow: none;}
                 &-1{
                     position: absolute;
-                    // bottom: 90%;
-
-                    transform: translate3d(100%,0,0);
-                }
+                    transform: translate3d(88%,2px,0); }
                 &-2{
-                    
-                    // transform: translate3d(100%,0,0);
                     height: 2.1em;
-                     width:  111px;
+                    width:  111px;
                     font-weight: 400;
                     color: rgb(82, 163, 230);
                     background-color: white;
                     & > *{
                         transition: $buttonTranslateTime ;
-
                         fill:rgb(82, 163, 230);
-
-                        // display: none;
                         width: 0;
-                        height: 0;
-                    }
-                }
-              
-            }
-        }
-    }
-}
+                        height: 0;}} }}}}
+
+
 .nav{
 &Grid{
 .navGrid_BtnCon-sp1{

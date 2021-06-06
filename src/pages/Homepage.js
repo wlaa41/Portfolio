@@ -25,7 +25,7 @@ class Homepage extends React.Component{
             <>
                 <Mainintro/>
                 {/* <div 
-                style={{height:'10vh',
+                style={{height:'5vh',
                 borderTop:'5px solid lightgray',
                 transform: 'translate(0)',
                 position: 'relative',

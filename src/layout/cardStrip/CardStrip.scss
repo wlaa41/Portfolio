@@ -4,17 +4,17 @@
     transform: translate(0);// TO RAISE THE CONTEXT OF IT SO MAIN INTRO DON'T COMES OVER
     position: relative;
     z-index: 20;
-    height:500px;
+    height:520px;
     background-color: rgb(235, 235, 235);
     background: linear-gradient(to left, white 6%, rgb(247, 247, 247) 50%
     , white 94%);
-    width: 100vw;
     display: flex;
     align-items:  center;
     perspective:600px;
     overflow: hidden;
-    // perspective-origin:  50% 20%;
 
+    // perspective-origin:  50% 20%;
+    
     &_BACKGround{
         position: absolute;
         height: 90%;

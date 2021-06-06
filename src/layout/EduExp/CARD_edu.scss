@@ -25,8 +25,6 @@ $EduExp__Backgroundcolor: rgb(41, 41, 41);
                      rgba(0, 0, 0, 0) ),
     linear-gradient(to bottom left , rgb(168, 168, 168) , rgb(209, 209, 209));
     border-radius:$border-radius;
-    // @include bg-nicecard(lightgray, rgb(158, 158, 158));
-    // @include bg-nicecard(lightgray, rgb(212, 212, 212));
     counter-reset: white;
     // @include bg-nicecard(rgb(68, 68, 68), rgb(41, 41, 41));
     // @include bg-nicecard(rgb(85, 134, 156), rgb(46, 85, 104));

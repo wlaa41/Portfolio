@@ -1,25 +1,18 @@
 @import '../../abstracts/mixins';
 
-
-
-
-
-@include respond(seven)
-{
-
+@include respond(seven){
   $stkCard_level_glow_color : lightblue;
   $stkCard_tilt : 0deg;
   $stkCard_spacing :0px;
-
-  .stackstrip{
-    /////////// card container
- &_container {
+  
+.stackstrip_container {
   flex:1;
   gap: 10px;
   position: absolute;
-  width: 100%;
   justify-content: flex-start;
-  overflow:scroll;}}
+  overflow-y:hidden;
+  overflow-x:scroll;}
+
   .stackCard{
     flex:1;
     transform: rotateY($stkCard_tilt) translate3d(3px,0,0) ;//translateZ(12px);
@@ -28,19 +21,11 @@
     min-width: 200px;
     border-radius: 1px;
     &:hover ~ & { 
-      transform: translateX(0);
-    }
-    // transform: translateY(-50%);
-    // &:hover::before {
-    //   transform: translateY(-50%);
-    // }
+      transform: translateX(0);}
     &:not(:first-child) {
-        margin-left: $stkCard_spacing;
-    }
-  
+        margin-left: $stkCard_spacing; }
     &:hover {
-      transform: translateY(0) ;// translateZ(22px); ///////////// causing a problem
-    }
+      transform: translateY(0) ;}
   
   /// zoom out the picture
     &:hover &_Conimg_img{
