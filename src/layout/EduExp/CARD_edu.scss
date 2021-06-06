@@ -6,6 +6,7 @@ $time-toPopupCrd: .9s ease;
 $EduExp__color: rgb(68, 68, 68);
 // $EduExp__color: rgb(240, 240, 240);
 $EduExp__Backgroundcolor: rgb(41, 41, 41);
+$time-img:2s;
 
 // $shadowcolor:rgba(32, 32, 32, 0.568);
 .CardEdu{
@@ -54,10 +55,10 @@ $EduExp__Backgroundcolor: rgb(41, 41, 41);
                 height: 120%;
                 position: relative;
                 object-fit:cover;
-                transition: all $time-toPopupCrd;
+                // transition: all $time-toPopupCrd;
 
             }
-        transition: all $time-toPopupCrd;
+        transition: all $time-img ;
     }
 
     &_INFO_Con{
@@ -134,12 +135,15 @@ $EduExp__Backgroundcolor: rgb(41, 41, 41);
         transform: translateY(-2px) scale(1.01);
         box-shadow: 0 11px 9px -3px rgba(0, 0, 0, 0.534);
 
-        .CardEdu_IMG_Con:hover{
+        // .CardEdu_IMG_Con:hover{
+            .CardEdu_IMG_Con{
             height: 188px;
+            transition: all 2s .9s;
 
             img{
                
-                // transition: all 34s linear ;
+                //  transition: all .9s .9s;
+        // transition: all 34s linear ;
                 animation: picture_bg_Swimming 23s infinite alternate linear;
             }
 
@@ -156,14 +160,17 @@ $EduExp__Backgroundcolor: rgb(41, 41, 41);
             }
 
         }
-        transition: transform $time-toPopupCrd , box-shadow $time-toPopupCrd;
+        transition: transform $time-toPopupCrd , box-shadow $time-toPopupCrd;}
+    
+        &:target ,&:focus ,&:focus-within{
+            transform: translateY(-2px) scale(1.01);
+            box-shadow: 0 11px 9px -3px rgba(0, 0, 0, 0.534);
+            .CardEdu_IMG_Con{
+                height: 188px;
+                img{
+                    animation: picture_bg_Swimming 23s infinite alternate linear;} }}
+    
     }
-  
-   
-
-
-}
-
 
 @keyframes picture_bg_Swimming {
     from{
