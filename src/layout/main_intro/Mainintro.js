@@ -58,9 +58,10 @@ function Mainintro(){
 
     useLayoutEffect(() => {
         // window.addEventListener('scroll',  ()=>{requestAnimationFrame(  scrollHeandle)} )
-        setInterval(() => {
-            requestAnimationFrame(  scrollHeandle)
-        }, 1000/60);
+        // setInterval(() => {
+        //     requestAnimationFrame(  scrollHeandle)
+        // }, 1000/60);
+        scrollHeandle()
         window.addEventListener('resize', ()=>{requestAnimationFrame( ()=> {
             rtime = new Date();
             if (timeout === false) {
@@ -116,7 +117,8 @@ function Mainintro(){
     }
 
     
-function scrollHeandle(e){        
+function scrollHeandle(e){   
+        requestAnimationFrame(  scrollHeandle)     
         const shift=window.scrollY;
         if(shift<LONDON_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
             setYShift({
