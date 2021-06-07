@@ -22,6 +22,7 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
 
         grid-template-columns: 12.5% 1fr 30% 5%;
         grid-template-rows:15% 1fr 9fr 5%;
+        grid-template-rows:1fr 1fr 60% 5%;
  
                 @include respond(tab-port){
                     grid-template-columns: 9% 1fr 30% 5%;
@@ -39,13 +40,14 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
         }
         &_titleCon{
             position: relative;
-            
+            // border: 3px dashed palevioletred;
             color: rgba(255, 255, 255, 1);
             // animation: vanishText .9s   reverse linear ;
             text-shadow: 
             0 3px 4px rgb(48, 48, 48);
             transition:all .3s ;
-
+            display: flex;
+            align-items: flex-end;
             grid-row: 2/3;
             grid-column: 2/3;
             &_title{
@@ -156,14 +158,7 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
 .nav{
 &Grid{
 .navGrid_BtnCon-sp1{
-
-
-    // align-self: end;
-    // justify-self: end;
     transition: $buttonTranslateTime ease;
-
-    // border:4px dashed rgb(226, 223, 61);
-
             .navGrid_BtnCon_button-1{
                 display: none;
             }
@@ -175,7 +170,7 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
                 border-radius: 50%;
                 font-size: 0;
                 // GREAT IDEA..........
-                // transform: translateX( calc(82.5vw - 111%)) translateY(calc(80vh - 344%));
+                // transform: translateX( calc(82.5vw - 111%)) translateY(calc(60vh - 111%));
 
 
                 & > *{

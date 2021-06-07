@@ -146,9 +146,9 @@ function chekclass_REMOVE(){
         talkbtnConRef?.current?.classList?.remove("navGrid_BtnCon-sp1");
                     // setBtn_Translate([0,0,0])
 
-                    document.getElementById('tlkbtn').style=`transform: translate3d(0,0,0);`
-                    titleRef?.current?.classList?.remove("foggyVanish");
-                    classdded=false}
+        document.getElementById('tlkbtn').style=`transform: translate3d(0,0,0);`
+        titleRef?.current?.classList?.remove("foggyVanish");
+        classdded=false}
 }
   
 
