@@ -95,7 +95,7 @@ const showform = false;
                                         name="massage"
                                         onChange={(event)=>setMsg(event.target.value)}  
                                         type='text' rows="5" 
-                                        placeholder='Massage' multiple={true} required>
+                                        placeholder='Message' multiple={true} required>
                                         </textarea>
                                         
                                         <div className='ct_sub-btnCon'>

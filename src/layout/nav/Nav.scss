@@ -1,6 +1,7 @@
 @import '../../abstracts/mixins';
+@import '../../abstracts/variables';
 $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1.8s,
- height 1.8s, background-color 1s , color 1s , box-shadow .4s;
+ height 1.8s, background-color .3s , color .3s , border-color .5s, box-shadow .4s , box-shadow .4s;
 
 .nav{
     font: 2rem 'Roboto',sans-serif;
@@ -97,14 +98,12 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
             color: white;
             border: 2px solid white;
             transition: $buttonTranslateTime ;
+           
 
 
 
                 @include shadowbend-bottom;
-                &:hover{
-                    background-color: rgb(81, 87, 88);
-                    border-color:  darken(white,10%);
-                    color:rgb(82, 163, 230);}
+               
                 &:active{
                     box-shadow: none;}
                 &-1{
@@ -121,6 +120,19 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
                         fill:rgb(82, 163, 230);
                         width: 0;
                         height: 0;}} 
+
+                $colorAfter:rgba(0, 0, 0, 0.215);
+                // HOVER ON THE BUTTON
+                &:hover{                    
+                    background-color:  $colorAfter;
+                    border-color:  rgb(149, 150, 151);
+                    color:rgb(231, 244, 255);}
+                &-2:hover{
+                    background-color:  rgb(238, 238, 238);
+                    color:rgb(0, 123, 206);
+                    border-color:  rgb(255, 255, 255);
+                    & > *{
+                        fill:rgb(58, 134, 197);}}
                     
                         @include respond(phone){
                             font-size: 1.6rem;
