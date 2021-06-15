@@ -24,20 +24,24 @@
 
     position:absolute;
     transform: translate(-27%);
-    padding:0 7% 0 0%;
+    padding:0 2vw 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: 70%;
+    width:60%;
     border: 4px solid rgba(169, 169, 169, 0.212);
     border-left: 0;
     border-right: 0;
     &  *{
         text-align: justify;
-        position:absolute;
         margin: 0 11ch; }
-    height: 70%;
-    width:60%;
-    // padding: 0 10%;
     @include respond(tab-land) {
+        gap: 0;
+        padding:0 .8vw 0 .8vw;
+
         &  *{
-            position:absolute;
             margin: 0 3ch; }
     @include respond(tab-port) {
         padding:0  ;
@@ -45,13 +49,16 @@
         height: 100%;
         width:100%;
         position:relative;
+        
         &  *{
             position:relative;
-            margin:2rem 8rem;
+            margin:2rem 5vw;
+            @include respond(v400){
+                text-align: center;
             @include respond(phone) {
-                margin:2rem;}}}}
+                margin:2rem;}}}}}
+
     &_Title{
-        margin-top: 4ch ;
         font-weight: 200;
         letter-spacing: .2ch;
         color: rgb(105, 105, 105);
@@ -62,6 +69,9 @@
         &::first-line{
             text-transform: uppercase;
             font-size: 1.8rem;
+            @include respond(tab-port){
+                // font-size: 1.rem;
+            }
         }
         @include respond(tab-port){
             border-bottom: 2px dashed rgb(233, 233, 233);
