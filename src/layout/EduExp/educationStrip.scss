@@ -48,8 +48,7 @@ $edu__fontsize: 5.9rem;
 
 
         &__title__Education{
-            width: 300px;
-        }
+            width: 300px;}
         &__title__Experience{
             .remove__skew{
                 width: 100vw;
@@ -74,15 +73,13 @@ $edu__fontsize: 5.9rem;
                                 padding-left: 2rem;
                                 &::first-letter{font-size: 4rem ;}
                                 &::after{
-                                    font-size: $edu__fontsize ;  }}}
-                    }
-    }
+                                    font-size: $edu__fontsize ;  }}}}}
     &__blue-strip{
         width: 100%;
         background-color: rgba(0, 0, 0, 0.514);
-        border-radius: 50%;
+        border-radius: 30%;
         transform:rotate(-2deg)  translate(0);//calc(100%/-6));
-        box-shadow:  0 -9px 20px 11px rgba(0, 0, 0, 0.4);
+        box-shadow:  0 -9px 20px 1px rgba(0, 0, 0, 0.3);
         height: 9rem;
         z-index: 66;
         position: relative;

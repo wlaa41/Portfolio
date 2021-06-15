@@ -13,7 +13,7 @@ let toggle= true
                 Some technology that I enjoy working with: TensorFlow, Unity ML Agent, Reinforcement Learning, OpenCV. Pytorch, PlotlyJS.               
                 <br/>
                 <br/>
-                I value visualization and I personally believe of its crucial part to deliver your points and ideas. Aside from my knowledge in SASS and Adobe designing tools. I am currently studying ThreeJS and D3js.
+                I value descriptuion and visualization. I personally believe it is almost as important as the technical part. It manifest ideas, also it makes sharing points and knowledge easier, thus, aside from my skills in SASS and Adobe designing tools. I am currently studying ThreeJS and D3js.
            
            </p>
         );

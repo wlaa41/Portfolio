@@ -52,6 +52,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == flatlook {
         @media  (hover: none) , only screen and (max-width: 43.75em) , (prefers-reduced-motion: reduce)   { @content }; // , (hover: none) , (prefers-reduced-motion: reduce) { @content };    //1800
     }
+    @if $breakpoint == flatlook800 {
+        @media  (hover: none) , only screen and (max-width: 49em) , (prefers-reduced-motion: reduce)   { @content }; // , (hover: none) , (prefers-reduced-motion: reduce) { @content };    //1800
+    }
     @if $breakpoint == touchS {
         @media  (hover: none)   { @content }; // , (hover: none) , (prefers-reduced-motion: reduce) { @content };    //1800
     }
@@ -64,15 +67,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 
 }
-
-
-
-
-
-
-
-
-
 
 
 @mixin shadowbend-left {

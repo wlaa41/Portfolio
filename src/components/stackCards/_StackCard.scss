@@ -1,6 +1,6 @@
 @import '../../abstracts/mixins';
 
-@include respond(seven){
+@include respond(flatlook800){
   $stkCard_level_glow_color : lightblue;
   $stkCard_tilt : 0deg;
   $stkCard_spacing :0px;

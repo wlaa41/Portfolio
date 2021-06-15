@@ -16,22 +16,15 @@ export default function Info(){
                 <div className='ftStrip_canvas_infoCon_Title'>Matrix Space Manpulation <br />Abstract:</div>
                 <div className='ftStrip_canvas_infoCon_Body'>
                 {/* <br/> */}
-                The projects shows the linear Manpulationin space caused by multiplying a matrix. It is simulated with
-                python/Javascript code. Then the 3d drawing is ploted using plotly library. You can get the whole code 
-                through <a  target="_blank" href='https://github.com/wlaa41/INM702Coursework'>github</a>.
+                Cool 3D simulation of matrix multiplication on the 3D grid. It demonstrates how The matrix can stretch, skew, rotate or even squash the grid to a lower dimension. You can change the value of the matrix and see the effects of that change on the space, as well seeing matrix values such as Eigen vector/value, Column base, Row Base, Null space and the trajectory of the points once the space has been squashed. This analysis is crucial for many ML algorithm. See more feature with Jupyter notebook<a  target="_blank" href='https://github.com/wlaa41/INM702Coursework'>github</a>.
                 <br/>
                 <br/>
-                The shows the base vector in gray and then calculate the eigen value and vector. It shows the colum space and the row space.
-                The project is heavly inspired by the legend Prof. Gilbert Strang and <a target="_blank" href='https://ocw.mit.edu/index.htm'>MIT online classes</a>. 
-                The task is well explained as it was part of my theises extra researsh.
+                This project is heavly inspired by the legend Prof. Gilbert Strang, a great open source to learn linear algebra. This is the link to <a target="_blank" href='https://ocw.mit.edu/index.htm'>MIT online classes</a> and <a target="_blank" href='https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab'>3b1b videos</a> on Linear algebra. 
                 <br/>
                 <br/>
-                The simulationn to the right of the screen allows you to manpulate the space and see the effect 
-                simply click on the mattrix button. change the value of the matrix and change will be reflected 
-                on the graph. i.e you can see the 'null space' and how it is perpendicular to the column space.
-                This fact is essential in many machine learning algorithm.
-                Feel free to send me a massage to ask for more explaination..
+                Here I will demonstrate how to use this simulator. Press the middle button in the right side. The graph shows the ideal space multiplies by the <q>I</q> matrix. Press the button at the bottom to change the value of the matrix and look at its effect on the graph. You can switch the top button to toggle between dark and normal mode
                 </div>
+
             </div>
                 
             </div>
