@@ -47,22 +47,22 @@
                     // perspective-origin:555px 500px -90px; ;
                     transform:translate3d(0,0,44px) ;
                     z-index: 99;
-                    content: 'Click Here';
+                    content: 'Click Me';
                     text-align: center;
                     position: absolute;
-                    // height: 9%;
-                    // width: 40%;
                     padding: .4rem 1rem;
                     max-width: 22rem;
                     color: white;
+                    color: rgb(75, 75, 75);
                     display: grid;
                     justify-items: center;
-                    font-size: 1vw;
+                    font-size: 1.8vmin;
                     align-items: center;
                     background-color: rgba(0, 0, 0, 0.6);
-                    top: 40% ;
+                    background-color: rgba(228, 228, 228, 0.6);
+                    bottom: 25vmin;
                     border-radius: 9px;
-                    left: 28%;
+                    left: 20%;
                     animation: spining 10s  infinite;
                     touch-action: none;
                     pointer-events: none;
@@ -96,13 +96,19 @@
     0%{
         transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(.5turn);
     }
-    10%{
-        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.97turn);
+    10%{ // SHOW
+        transform: translate3d(0,0,44px) rotateX(-6deg) rotateY(.98turn);
     }
+    // 30%{
+    //     transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.97turn);
+    // }
+    // 40%{
+    //     transform: translate3d(0,0,44px) rotateX(-4deg) rotateY(.96turn);
+    // }
     50%{
-        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.97turn);
+        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.96turn);
     }
-    60%{
+    60%{ // HIDE
         transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(1.5turn);
     }
     100%{

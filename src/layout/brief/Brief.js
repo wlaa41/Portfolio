@@ -34,7 +34,7 @@ const Brief = ()=>{
                         
                                 <div className="dynamic">
                                         <ul className="dynamic_Con">
-                                        <li>Hello, I am Walla</li>
+                                        <li>Hi,</li>
                                         <li>Welcome to my page.</li>
                                         <li> I hope you'll find what you looking for.</li>
                                         </ul>
