@@ -280,3 +280,14 @@ z-index: 55;
 @mixin border($color : coral){
     border: 4px solid $color;
 }
+@keyframes picture_bg_Swimming {
+    from{
+        transform: translate3d(0%,0%,0) scale(1);
+
+    }   
+    to{
+        transform: translate3d(-21%,-24%,0) scale(1.1);
+
+    }
+    
+}

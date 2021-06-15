@@ -12,6 +12,7 @@ import EduExpStrip from '../layout/EduExp/educationStrip'
 import SkillLogo from '../layout/skill_logo/SkillLogo'
 import ColorPick from '../layout/themepick/ColorPick'
 import bg_image from './asfalt-dark.png'
+import Brief from '../layout/brief/Brief'
 // import CMAIN from '../layout/main_intro/CMAIN'
 // import london_SVGs from '../layout/main_intro/media/londonfull copy/londonfull'
 // import Nav from './Layout/Nav'
@@ -23,6 +24,7 @@ class Homepage extends React.Component{
     render(){
         return(
             <>
+                <Brief></Brief>
                 <Mainintro/>
                 {/* <div 
                 style={{height:'5vh',

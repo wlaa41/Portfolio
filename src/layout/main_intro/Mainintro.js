@@ -203,7 +203,7 @@ function chekclass_REMOVE(){
                                 </div>
                                <div className='myAvatarStrip_Ava'>
                                 <div className='vertical_spacer'></div>
-                                <div className='myAvatarContainer' 
+                                <div onClick={()=>document.getElementById('Brief').classList.add('Brief-show')} className='myAvatarContainer' 
                                  style={{
                                      transform: `translate3d(0,${YShift["myBase"]}px,0)`
                                      

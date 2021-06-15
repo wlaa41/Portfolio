@@ -24,52 +24,62 @@
     &_spacer-left{
         height: 220px;
         flex: 3.5;
-        width:70px;        
-        // border: 4px dashed  rgb(159, 255, 142);
-    }
-
+        width:70px;}
         &_Ava{
             height: 100%;
             min-width: 110px;
-            // max-width: 200px;
             flex: 1;
-            // border: 4px dashed  rgb(243, 120, 120);
             display: flex;
             flex-direction: column;
             .vertical_spacer{
                 max-height: calc(60vh - 12vw);
-                
-                flex:1;
-                // border: 4px dashed  rgb(156, 8, 8);
-            // 
-            }
-            .myAvatarContainer{
-                flex:2;
-                min-height: 40vh;
-                
-                position: relative;
-                // display: flex;
-                // flex-direction: column-reverse;
-                // background-color: rgba(219, 205, 0, 0.349);
-                // &_SVG{
-                // border: 4px dashed  rgb(100, 0, 139);
+                flex:1;}
 
-                //     position:absolute;
-                //     min-height: 50vmin;
-                //     // object-fit: contain;
-                //     width: 100%;
-                // }
+            .myAvatarContainer{
+                transform-style: preserve-3d;
+                perspective-origin:55% -220% -90px; ;
+
+                // position: relative;
+                perspective: 400px;
+                // outline: 3px dashed deeppink;
+                &::after{
+                    transform-origin: center center -90px;
+                    // perspective-origin:555px 500px -90px; ;
+                    transform:translate3d(0,0,44px) ;
+                    z-index: 99;
+                    content: 'Click Here';
+                    text-align: center;
+                    position: absolute;
+                    // height: 9%;
+                    // width: 40%;
+                    padding: .4rem 1rem;
+                    max-width: 22rem;
+                    color: white;
+                    display: grid;
+                    justify-items: center;
+                    font-size: 1vw;
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    top: 40% ;
+                    border-radius: 9px;
+                    left: 28%;
+                    animation: spining 10s  infinite;
+                    touch-action: none;
+                    pointer-events: none;
+
+                }
+                flex:2;
+                min-height: 40vh;     
+                position: relative;
+                
             }
         }
     }
-
+  
 .myAvatar_svg{
-    // width: 100%;
-    // flex:1;
+    cursor: pointer;
     min-height: 40vmin;
     max-height: 50vmin;
-    // border: 3px dashed rgb(214, 226, 43);
-    // max-height: 100%;
     position:absolute;
     bottom: 0px;
 }
@@ -80,4 +90,23 @@
 
 .myAvatar-eyes-svg {
     animation: eyeanimation 22s infinite alternate;
+}
+
+@keyframes spining {
+    0%{
+        transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(.5turn);
+    }
+    10%{
+        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.97turn);
+    }
+    50%{
+        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.97turn);
+    }
+    60%{
+        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(1.5turn);
+    }
+    100%{
+        transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(1.5turn);
+    }
+
 }

@@ -1,0 +1,245 @@
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
+$Brief-time:.2s;
+$Brief_Con-time:.8s;
+ // BEFORE SHOW THE BRIEF
+ .Brief{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    // background: 
+    // radial-gradient(circle at 20% 40%, rgba(170, 170, 170, 0.5) 4%,
+    //                  rgba(0, 0, 0, 0) 60% ),
+    // radial-gradient(circle at 20% 40%,rgba(0, 0, 0, 0) 60%,
+    //                  rgba(206, 206, 206, 0.1) 80%, 
+    //                  rgba(0, 0, 0, 0) ),
+    // linear-gradient(to bottom left , rgb(168, 168, 168) , rgb(209, 209, 209));
+   
+
+
+
+    transform: translate(0);
+    // z-index: 999999;
+    z-index: -1;
+    backdrop-filter: blur(0px);
+    // opacity: 0;
+    touch-action: none;
+    pointer-events: none;
+    transition: all $Brief-time ease-in-out;
+    
+
+    &_Con{
+        $background-color: rgb(43, 43, 43);
+        overflow: hidden;
+        box-shadow: 1px 1px 11px 4px rgba(0, 0, 0, 0.79);
+        // outline: 3px dashed deeppink;
+    &_imgCon{
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        // border: 5px dashed deeppink;
+            // object-fit: cover;
+            // background-color: blue;
+            &::after{
+                content: '';
+                position:absolute;
+                width: 100%;
+                height: 100%;
+                // background-color: rgba(0, 0, 255, 0.479);
+                background: 
+                    //   url('http://placebeard.it/g/640x480'),
+                radial-gradient(circle at 80% 60%, rgba(63, 63, 63, 0.5) 4%,
+                                 rgba(0, 0, 0, .8) 60% ),
+                radial-gradient(circle at 20% 40%,rgba(0, 0, 0, 0) 60%,
+                                 rgba(31, 31, 31, 0.6) 80%, 
+                                 rgba(0, 0, 0, .95) );
+                top: 0;
+                left: 0;
+                
+            }
+        &>img{
+            position: relative;
+            // object-fit: cover;
+            // left: -30%;
+            // bottom: 0%;
+            width: 140%;
+            filter: grayscale(1) brightness(.3);
+            animation: picture_bg_Swimming 99s infinite alternate linear;
+            
+        }
+
+    }
+
+//     background: 
+//     //   url('http://placebeard.it/g/640x480'),
+// radial-gradient(circle at 20% 40%, rgba(83, 83, 83, 0.9) 4%,
+//                  rgba(0, 0, 0, .8) 60% ),
+// radial-gradient(circle at 20% 40%,rgba(0, 0, 0, 0) 60%,
+//                  rgba(131, 131, 131, 0.6) 80%, 
+//                  rgba(0, 0, 0, .4) ),
+//       url('http://placebeard.it/g/640x480');
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    // linear-gradient(to bottom left , rgb(68, 68, 68) , rgb(28, 28, 28));
+   
+        transition: all $Brief_Con-time $Brief-time;
+        height: 100%;
+        width: 100%;
+        border-radius: 11px;
+        background-color: rgb(0, 0, 0);
+        background-color:   $background-color;
+        
+        opacity: 0;
+        animation: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        .Brief_close{
+            margin: 2rem 0 0 0;
+            // opacity: inherit;
+            width: 99%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            &-btn{
+                // opacity: inherit;
+                caret-color: transparent;
+                cursor: pointer;
+                text-align: center;
+                color:white;
+                width: 3vmin;
+                z-index: 999;
+                // border: 3px dashed deeppink;
+                .cls-1{
+                    transform: translate(0);
+                    stroke:rgba(255, 255, 255, 1);
+                    stroke-linecap:round;
+                    stroke-linejoin:round;
+                    stroke-width:2px;}}}
+        .Brief_info{
+            padding: 8%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            color:white;
+            overflow-y: auto;
+            .dynamic{
+                position: absolute;
+                $height:3rem;
+                font: $height 'Courier New', Courier, monospace;
+                // color:white;
+                overflow: hidden;
+                height: calc(1.3 * #{$height});
+                text-align: center;
+                margin: 35vh 0;
+                // outline: 3px dashed deeppink;
+                &_Con{
+                    // animation: slid 16s steps(4) forwards;
+                    li{
+                        opacity: 0;
+                        position: relative;
+                        // animation: fading_in_out 4s linear infinite;
+                    }}}
+                    
+            &-Parag{
+                margin: auto;
+                &_Hello{
+                    opacity: 0;
+
+                    font: 3rem 'Lato', Courier, monospace;
+                    margin-bottom: 3rem;
+                    // animation: fade_in_down  1s 12s linear forwards;
+
+                }
+                &_P{
+                    opacity: 0;
+                    // animation: fade_in_up  1s 12s linear forwards;
+
+                    // outline: 3px dashed rgb(216, 147, 184);
+                    font: 2.2rem 'Lato', Courier, monospace;
+                    font-weight: 400;
+                    line-height: 3.8rem;
+                    letter-spacing: .2ch;
+                    text-align:justify;
+                    padding-top: 3rem;
+                    border-top: 1px solid rgba(245, 245, 245, 0.671); }}} }}
+
+
+ // AFTER SHOW THE BRIEF == ADDING THE CLASS
+.Brief-show{
+    position: fixed;
+    pointer-events: auto;
+    touch-action: auto;
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    transform: translate(0);
+    background-color: rgba(105, 105, 105, 0.7);
+    z-index: 999999;
+    padding: 3%;
+    .Brief-show_Con{
+        opacity: 1;
+        transition: all $Brief_Con-time $Brief-time;}
+ 
+        .Brief_info{
+            .dynamic{
+                &_Con{
+                    animation: slid 16s 1.4s steps(4) forwards;
+                    li{
+                        // animation: fading_in_out 4s calc($Brief-time + $Brief_Con-time)  linear infinite; }}}
+                        
+                        animation: fading_in_out 4s 1.4s linear infinite; }}}
+                        
+            &-Parag{
+                margin: auto;
+                &_Hello{
+                    animation: fade_in_down  1s 14.2s linear forwards;
+
+                }
+                &_P{
+                    opacity: 0;
+                    animation: fade_in_up  1s 14.2s linear forwards; }}} }
+
+
+@keyframes typing {
+    10%{transform : translateX(0)}
+    40%{transform : translateX(100%)}
+    90%{transform : translateX(100%)}
+    100%{transform : translateX(0%)}
+}
+@keyframes fade_in_down{
+    10%{opacity: 0 ;
+    transform: translateY(1rem);
+    }
+    100%{  opacity: 1 ;
+        transform: translateY(0%);
+    }
+    }
+    @keyframes fade_in_up{
+        10%{opacity: 0 ;
+        transform: translateY(2rem);
+        }
+        100%{  opacity: 1 ;
+            transform: translateY(0%);
+        }
+        }
+@keyframes fading_in_out{
+    10%{opacity: 0 ;}
+    40%{opacity: 1;
+    transform: scale(1.01);
+    }
+    90%{opacity: 1;
+        transform: scale(1.01);
+    }
+    100%{opacity: 0;}
+    }
+
+@keyframes slid {
+     100%{ transform: translateY(calc(-150%));
+}}

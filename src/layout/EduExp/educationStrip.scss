@@ -5,12 +5,17 @@
 $edu__fontsize: 5.9rem;
     
 .EduStrip{
+    
     transform: translate(0);
-    padding-top: 11rem;
+    padding-top: 9rem;
     overflow: hidden;
-    z-index: 9900;
+    background-color: rgb(241, 241, 241);
+    z-index: 9990;
+    box-shadow: inset 0 5px 11px rgba(0, 0, 0, 0.2);
     @include respond(tab-port){
-    border-top: 7px solid rgb(161, 161, 161) ;
+    border-top: 7px solid rgb(146, 146, 146) ;
+    background-color: rgb(233, 233, 233);
+
     box-shadow: 0 -5px 11px rgba(0, 0, 0, 0.2);}
 
    
