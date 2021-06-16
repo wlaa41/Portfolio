@@ -13,6 +13,7 @@ import SkillLogo from '../layout/skill_logo/SkillLogo'
 import ColorPick from '../layout/themepick/ColorPick'
 import bg_image from './asfalt-dark.png'
 import Brief from '../layout/brief/Brief'
+import Divider from '../components/divider/divider'
 // import CMAIN from '../layout/main_intro/CMAIN'
 // import london_SVGs from '../layout/main_intro/media/londonfull copy/londonfull'
 // import Nav from './Layout/Nav'
@@ -26,6 +27,7 @@ class Homepage extends React.Component{
             <>
                 <Brief></Brief>
                 <Mainintro/>
+                <Divider></Divider>
                 {/* <div 
                 style={{height:'5vh',
                 borderTop:'5px solid lightgray',

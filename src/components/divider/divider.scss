@@ -3,13 +3,27 @@
 .divider{
     background-size: cover;
     // filter: grayscale(1);
-        height: 15vh;
+        height: 70px;
         position: relative;
         z-index: 999;
         background-color: $bg-body;
-        background:
-        linear-gradient(to bottom, 
-        rgb(211, 211, 211),
-        $bg-body);
+        // background:
+        // linear-gradient(to bottom, 
+        // rgb(211, 211, 211),
+        // $bg-body);
+        // background: 
+        // radial-gradient(circle at 20% 40%,
+        //         rgba(170, 170, 170, 0.7) 4%,
+        //         rgba(0, 0, 0, 0) 60% ),
+        // radial-gradient(circle at 20% 40%,rgba(0, 0, 0, 0) 60%,
+        //         rgba(206, 206, 206, 0.9) 80%, 
+        //         rgba(0, 0, 0, .3) ),
+        // linear-gradient(to bottom left  , 
+        //         rgba(253, 253, 253, 1) , 
+        //         rgba(163, 163, 163, 0.3));
+        margin-top: -60px;
+
+        clip-path: polygon(0 0, 5% 0, 10% 86%, 90% 86%, 95% 0, 100% 0, 100% 100%, 0 100%);
+
 
 }
