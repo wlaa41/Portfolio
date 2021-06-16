@@ -3,6 +3,34 @@
 
 .Mi_container{
     height: 80vh;
+    @include respond(h800)
+    {
+        height: 100vh;
+        @include respond(v800){
+            height: 80vh;
+            @include respond(phone){height: 70vh;}
+        }
+        @include respond(h700)
+        {
+            height: 120vh;
+            @include respond(h600)
+            {
+                height: 130vh;
+                
+        
+            }
+    
+        }
+
+    }
+    @include respond(v800){
+        height: 70vh;
+        @include respond(phone){height: 60vh;}
+    }
+
+
+
+
     position: relative;}
 .londonfull{
     background-image:linear-gradient(115deg, rgb(135, 205, 251) , rgb(0, 130, 190));
@@ -12,13 +40,32 @@
     &__imgcontainer{
         height:70vh;
         width: 100%;
+        overflow: hidden;
         position: relative;}}
 
 .londonfull__svg {
     // transition: transform .05s linear;
     width: 100%;
     bottom: 0;
-    position: absolute;}
+    // max-height: 70vh;
+
+    position: absolute;
+    object-fit: cover;
+    // object-position: center;
+    @include respond(tab-port){
+        width: 120%;
+        left: -10%;
+        @include respond(phone){
+            width: 160%;
+            left: -30%;
+            @include respond(v500){
+                width: 180%;
+                left: -40%;
+            }
+        }
+    }
+
+}
 #group{
     transform: translate3d(-292px,233px,0) ;
     fill:rgb(224, 224, 224);

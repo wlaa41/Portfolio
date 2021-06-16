@@ -65,8 +65,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
         @media only screen and (max-width: 31.25em) { @content };    //600px
     }
     @if $breakpoint == v800 {
-        @media only screen and (max-width: 51.75) { @content };    //600px
+        @media only screen and (max-width: 51.75em) { @content };    //600px
     }
+    @if $breakpoint == h800 {
+        @media only screen and (max-height: 50em) { @content };    //600px
+    }
+    @if $breakpoint == h700 {
+        @media only screen and (max-height: 43.75em) { @content };    //600px
+    }
+    @if $breakpoint == h600 {
+        @media only screen and (max-height: 37.5em) { @content };    //600px
+    }
+
+
+
 
 
 }

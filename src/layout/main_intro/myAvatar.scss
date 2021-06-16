@@ -1,4 +1,5 @@
 @import '../../abstracts/variables';
+@import '../../abstracts/mixins';
 @import '../../base/animations';
  
 .myAvatarStrip{
@@ -6,20 +7,15 @@
 
     height: 100%;
     width:100%;
-    // background-color: rgb(53, 0, 26);
-    // overflow: hidden;
     z-index: 22;
-    // border: 4px dashed  rgb(221, 0, 0);
     z-index: 13;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-
     &_spacer-right{
         height: 220px;
         flex: .2;
         width:4px;
-        // border: 4px dashed  rgb(88, 189, 70);
     }
     &_spacer-left{
         height: 220px;
@@ -37,8 +33,6 @@
 
             .myAvatarContainer{
                 transform-style: preserve-3d;
-                perspective-origin:55% -220% -90px; ;
-
                 // position: relative;
                 perspective: 400px;
                 // outline: 3px dashed deeppink;
@@ -52,20 +46,23 @@
                     position: absolute;
                     padding: .4rem 1rem;
                     max-width: 22rem;
-                    // color: white;
-                    color: rgb(53, 53, 53);
+                    text-shadow: 0 0 1px  rgb(0, 0, 0);
+                    color: rgb(22, 22, 22);
+                    color: rgb(255, 255, 255);
                     display: grid;
                     justify-items: center;
                     font-size: 1.8vmin;
                     align-items: center;
-                    // background-color: rgba(0, 0, 0, 0.6);
-                    background-color: rgba(202, 229, 241, 0.3);
+                    background-color: rgba(10, 17, 20, 0.3);
                     bottom: 25vmin;
                     border-radius: 9px;
-                    left: 20%;
+                    left: 25%;
                     animation: spining 10s  infinite;
                     touch-action: none;
                     pointer-events: none;
+                    @include respond(v500){bottom: 38vmin;
+                        left: 28%;}
+                    @include respond(v400){bottom: 52vmin;}
 
                 }
                 flex:2;
@@ -78,10 +75,21 @@
   
 .myAvatar_svg{
     cursor: pointer;
-    min-height: 40vmin;
-    max-height: 50vmin;
+    // height: 100%;
+    min-height: 400px;
+    max-height: 40vh;
+    
     position:absolute;
     bottom: 0px;
+    @include respond(v800){
+    min-height: 333px;
+    bottom: -33px;
+
+    }
+    @include respond(tab-land){
+        color: inherit;
+
+    }
 }
 
 .myAvatar-eyelash-svg {
@@ -97,7 +105,7 @@
         transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(.5turn);
     }
     10%{ // SHOW
-        transform: translate3d(0,0,44px) rotateX(-6deg) rotateY(.98turn);
+        transform: translate3d(0,0,44px) rotateX(-6deg) rotateY(.96turn);
     }
     // 30%{
     //     transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.97turn);
@@ -106,7 +114,7 @@
     //     transform: translate3d(0,0,44px) rotateX(-4deg) rotateY(.96turn);
     // }
     50%{
-        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.96turn);
+        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.93turn);
     }
     60%{ // HIDE
         transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(1.5turn);
