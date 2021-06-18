@@ -27,11 +27,14 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
  
                 @include respond(tab-port){
                     grid-template-columns: 9% 1fr 30% 5%;
-
+                    @include respond(seven){grid-template-rows:11% 1fr 9fr 5%;}
                     @include respond(phone){
                     grid-template-columns: 9% 1fr 20% 2%;
+                    //  grid-template-rows:7% 1fr 9fr 5%;
+
 
                         @include respond(phone){
+
                             @include respond(v400){
 
                             }}}}
@@ -41,30 +44,22 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
         }
         &_titleCon{
             position: relative;
-            // border: 3px dashed palevioletred;
             color: rgba(255, 255, 255, 1);
-            // animation: vanishText .9s   reverse linear ;
             text-shadow: 
             0 3px 4px rgb(48, 48, 48);
             transition:all .3s ;
-            // display: flex;
-            // align-items: flex-end;
             grid-row: 2/3;
             grid-column: 2/3;
             &_title{
                 font-family: 'Loto', sans-serif;    
-                
-                // font-size: 3.5rem;
                 font-size: 5rem;
                 letter-spacing: .1ch;
                 font-weight: 600;
                 text-transform:uppercase;
                 text-shadow: 4px;
                 margin-bottom: 2rem;
-
                 @include respond(big-desktop){
                 font-size: 4.5rem;
-
                     @include respond(tab-land){
                     font-size: 4rem;
                     @include respond(tab-port){
@@ -76,7 +71,7 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
                                 font-size: 2.3rem;
                                 letter-spacing: .0ch;
                                 @include respond(v400){
-                                font-size: 2.3rem;
+                                // font-size: 1.5rem;
 
                                 }}}}}}
                 
@@ -108,7 +103,11 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
                     box-shadow: none;}
                 &-1{
                     position: absolute;
-                    transform: translate3d(88%,2px,0); }
+                    transform: translate3d(88%,2px,0);
+                @include respond(v400){
+                    display: none;
+                }
+                }
                 &-2{
                     height: 2.1em;
                     width:  111px;

@@ -1,8 +1,9 @@
 import React from 'react'
-import SkillLogo from '../skill_logo/SkillLogo'
-import ColorPick from '../themepick/ColorPick'
+// import SkillLogo from '../skill_logo/SkillLogo'
+// import ColorPick from '../themepick/ColorPick'
 import CardEdu from './CARD_Edu'
 import './Edu__INFO.scss'
+// import bg_image from './info/bg_img/bg_teacher_1.svg'
 import bg_image from './info/bg_img/fabric-dark.png'
 // import bg_image from './info/fancy-deboss.png'
 // import bg_image from './info/pinstripe-dark.png'
@@ -16,14 +17,16 @@ const EducationINFO = () => {
     return (
         <div id='Edu_info' className='EduStrip_info'
         style={{backgroundImage:`url(${bg_image})`,
-                    }}>
+
+                    }}
+                    >
                 
                     <div className='EduStrip_info_GRID'>
                             <CardEdu></CardEdu>
 
                     </div>
-                   <SkillLogo></SkillLogo>
-                   <ColorPick></ColorPick>
+                   {/* <SkillLogo></SkillLogo>
+                   <ColorPick></ColorPick> */}
             </div>
     )
 }

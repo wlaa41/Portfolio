@@ -9,9 +9,9 @@ import Feat_proj from '../layout/feat_proj/Feat_proj'
 // import  {ReactComponent as Skyline3  }  from "../layout/main_intro/media/londonfull/skyline3.svg"   
 import Foot from '../layout/footer/footer'
 import EduExpStrip from '../layout/EduExp/educationStrip'
-import SkillLogo from '../layout/skill_logo/SkillLogo'
-import ColorPick from '../layout/themepick/ColorPick'
-import bg_image from './asfalt-dark.png'
+// import SkillLogo from '../layout/skill_logo/SkillLogo'
+// import ColorPick from '../layout/themepick/ColorPick'
+// import bg_image from './asfalt-dark.png'
 import Brief from '../layout/brief/Brief'
 import Divider from '../components/divider/divider'
 // import CMAIN from '../layout/main_intro/CMAIN'
@@ -27,7 +27,8 @@ class Homepage extends React.Component{
             <>
                 <Brief></Brief>
                 <Mainintro/>
-                <Divider></Divider>
+               
+             <Divider></Divider>
                 {/* <div 
                 style={{height:'5vh',
                 borderTop:'5px solid lightgray',
@@ -47,9 +48,10 @@ class Homepage extends React.Component{
                 <Feat_proj></Feat_proj>
 
                 {/* <EducationStrip></EducationStrip> */}
-                <EduExpStrip></EduExpStrip>
-                {/* <SkillLogo></SkillLogo> */}
+                       {/* <SkillLogo></SkillLogo> */}
                 {/* <ColorPick></ColorPick> */}
+                <EduExpStrip></EduExpStrip>
+         
                  <Foot> </Foot>
 
                  

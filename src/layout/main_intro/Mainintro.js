@@ -10,12 +10,12 @@ import   skyline0    from "./media/londonfull_wide/skyline0.svg"
 import   floor       from "./media/londonfull_wide/floor.svg"      
 import   phonebooth  from "./media/londonfull_wide/phonebooth.svg" 
 import   myBase      from './media/londonfull_wide/myBase.svg'
-
 import heel from './media/londonfull/wheel1.svg'
-
 import './Mainintro.scss'
 import './myAvatar.scss'
 import { electronMassDependencies, nullDependencies } from 'mathjs'
+import Arrow from '../../components/Arrow'
+
 
 const london_img_attr =london_vec();
 const myAvatar_img_attr =myavatar_vec();
@@ -224,7 +224,7 @@ function chekclass_REMOVE(){
                 </div>
        
              </section>
-  
+            <Arrow></Arrow>
             </>
         );
 

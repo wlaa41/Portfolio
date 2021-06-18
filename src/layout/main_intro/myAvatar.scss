@@ -61,8 +61,13 @@
                     touch-action: none;
                     pointer-events: none;
                     @include respond(v500){bottom: 38vmin;
+                    transform-origin: center center -60px;
+
                         left: 28%;}
                     @include respond(v400){bottom: 52vmin;}
+                    @include respond(h700){
+                        bottom: 30vh;
+                    }
 
                 }
                 flex:2;

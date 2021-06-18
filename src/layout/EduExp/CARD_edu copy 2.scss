@@ -3,40 +3,46 @@
 
 $border-radius: 33px;
 $cardhight:240px;
-$time-toPopupCrd: 1.5s ease;
-$EduExp__color: rgb(26, 16, 16);
+$time-toPopupCrd: .9s ease;
+$EduExp__color: rgb(255, 255, 255);
 $time-img:2s;
 
 .CardEdu{
-    margin:4rem 2rem;
+    margin:9rem 2rem;
     border-top-width: 1px;
     min-height: $cardhight;
     min-width: 380px;
     max-width: 555px;
     flex:1 1;
     color: $EduExp__color;
-    border:1.4px solid transparent;
-    // border-top: 22px solid transparent;
-    // border-bottom: 22px solid transparent;
-    // border: 1.4px solid black;
-    box-shadow: 0 11px 22px -6px rgba(0, 0, 0, 0.8);
-    position: relative; 
+    // border: 3px solid transparent;
+    box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.534);
+    
+    // background: 
+    // radial-gradient(circle at 20% 40%, rgba(255, 255, 255, 0.5) 4%, rgba(0, 0, 0, 0) 60% ),
+    // radial-gradient(circle at 20% 40%,rgba(255, 255, 255, 0) 60%,
+    //                  rgba(255, 255, 255, 0.1) 80%, 
+    //                  rgba(0, 0, 0, 0) ),
+    // linear-gradient(to bottom left , rgba(0, 142, 236, 0.276) , rgb(137, 178, 216));
     background: 
     linear-gradient(to bottom left , rgb(0, 124, 207) , rgb(31, 143, 247));
-    // background: 
-    // linear-gradient(to bottom left , rgb(27, 27, 27) , rgb(58, 58, 58));
     border-radius:$border-radius;
+    // border-bottom-left-radius:8px ;
+    // border-bottom-right-radius:22px ;
+    // border-top-right-radius:8px ;
     counter-reset: white;
     overflow: hidden;
 
     &_IMG_Con{
-        height: 100%;
+        height: 66px;
         width: 100%;
         position: relative;
-        position: absolute;
         object-fit: contain;
         overflow: hidden;
-        z-index: 0;
+        
+        // filter: grayscale(1) ;//contrast(2) brightness(12);
+
+           // // gardient cover on top of the imag <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             &:after {
                 position: absolute;
                 content:"";
@@ -45,50 +51,19 @@ $time-img:2s;
                 top:-5%;
                 left:-5%;
                 background: 
-                linear-gradient(to top, rgba(29, 29, 29, 0.493),
-                rgba(0, 0, 0, 0.2)); }
+                linear-gradient(to top, rgba(255, 255, 255, 0.493),
+                rgba(241, 241, 241, 0.2)); }
             & img{
-                opacity: .2;
-                 overflow: hidden;
-                // width: 120%;
-                transition: all 2s .9s;
-                height: 140%;
-                position: relative;}
+                width: 120%;
+                height: 120%;
+                position: relative;
+                object-fit:cover;}
             
         transition: all $time-img ;}
 
     &_INFO_Con{
-        // outline: 2px dashed deeppink;
-        z-index: 4;
-        transform: translate(0);
-        padding:1.2rem 1.2rem;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-
-        &_Partitoin {
-            padding: 1rem  2rem 1rem 1.4rem;
-            background:  linear-gradient(to bottom left,
-            rgba(255, 255, 255, 0.62),
-            rgba(185, 185, 185, 0.85));
-            box-shadow: 0 2px 9px -1px black;
-            border-radius: calc( #{$border-radius} - 11px);
-            transition: all $time-toPopupCrd;
-
-        }
-        .Partitoin_up{
-            // border: 2px dashed deeppink;
-            margin-bottom: 1.3rem;
-        }
-        .Partitoin_down{
-            // border: 2px dashed deeppink;
-            flex: 1;
-        }
-
-
-
+        padding:1.7rem 3rem 4rem;
         .CardEdu_header .CardEdu_header_main_title:after{
-
             content: attr(extrainfo);//'19 - Present';/
             font-family: 'Lato', sans-serif;
             position: absolute;
@@ -108,7 +83,7 @@ $time-img:2s;
             justify-content: space-evenly;
             justify-content:space-between;
             padding-bottom: 1rem;
-            // border-bottom: 1px solid rgba(3, 93, 153, 0.877);
+            border-bottom: 1px solid rgba(3, 93, 153, 0.877);
             // @include extraInfo();
 
             &_icon{
@@ -116,11 +91,13 @@ $time-img:2s;
                 max-width: 49px;
                 min-width: 49px;
                 height: 49px;
-                fill: rgb(104, 104, 104);
+                fill: rgb(160, 218, 252);
 
                 transition: all $time-toPopupCrd; }
 
             &_main_title{
+                // border: 1px dashed red;
+                // width: 100%;
                 font-family: 'Lato', sans-serif;
                 letter-spacing: .1ch;
                 text-transform: capitalize;
@@ -148,37 +125,23 @@ $time-img:2s;
     transition: transform $time-toPopupCrd , box-shadow $time-toPopupCrd;
 
     &:hover{
-        transform: translateY(-2px) scale(1.09);
-        @include respond(phone){
-            transform: translateY(-2px) scale(1.04);
-            @include respond(v500){
-                transform: translateY(-2px) scale(1.01);
-            }
-        }
-        // box-shadow: 0 11px 9px -3px rgba(0, 0, 0, 0.534);
-    box-shadow: 0 5px 22px 4px rgba(0, 0, 0, 0.8);
-
+        transform: translateY(-2px) scale(1.01);
+        box-shadow: 0 11px 9px -3px rgba(0, 0, 0, 0.534);
 
         // .CardEdu_IMG_Con:hover{
             .CardEdu_IMG_Con{
-            // height: 188px;
+            height: 188px;
             transition: all 2s .9s;
 
             img{
-                opacity: 1;
-            transition: all 2s .9s;
-
                 animation: picture_bg_Swimming 23s infinite alternate linear;}
 
         }
-        .CardEdu_INFO_Con_Partitoin:hover{transition: all 2s .9s; }
-        .Partitoin_up:hover{ transform: translate3d(0,2px,0) scale(1.02);}
-        .Partitoin_down:hover{transform: translate3d(0,-2px,0) scale(1.01); }
-        
+       
         .CardEdu_header{
             &_icon{
-                transition: all 2s .9s;
                 fill:rgb(0, 107, 156);
+                transition: all $time-toPopupCrd;
             }
 
             .CardEdu_header_main_title:after{

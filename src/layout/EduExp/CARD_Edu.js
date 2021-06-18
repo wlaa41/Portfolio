@@ -16,14 +16,20 @@ const CardEdu = () => {
             </div>
 
             <div className="CardEdu_INFO_Con">
-              <div className="CardEdu_header">
-                {ele.icon}
-                <h3 extrainfo={ele.date} className="CardEdu_header_main_title">
-                  {ele.title} <span className="CardEdu_header_year"> </span>
-                </h3>
+
+              <div className='CardEdu_INFO_Con_Partitoin Partitoin_up'>
+                  <div className="CardEdu_header">
+                        {ele.icon}
+                        <h3 extrainfo={ele.date} className="CardEdu_header_main_title">
+                          {ele.title} <span className="CardEdu_header_year"> </span>
+                        </h3>
+                  </div>
               </div>
-              <h4 className="CardEdu_second_title">{ele.subtitle}</h4>
-              <p className="CardEdu_paragraph">{ele.brief}</p>
+
+              <div className='CardEdu_INFO_Con_Partitoin Partitoin_down '>
+                  <h4 className="CardEdu_second_title">{ele.subtitle}</h4>
+                  <p className="CardEdu_paragraph">{ele.brief}</p>
+              </div>
             </div>
           </div>
         );

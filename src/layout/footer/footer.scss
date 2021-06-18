@@ -4,31 +4,25 @@
 .ft{
     // margin-top: -22px;
     transform: translate(0);
-    box-shadow: 0 -1px 7px rgba(0, 0, 0, 0.745);
+    box-shadow: 0 -1px 22px rgba(0, 0, 0, 0.745);
     background-color: #1b75be;
-    background:
-    radial-gradient(circle at top left , rgba(0, 0, 0, 0.219) 11%, rgba(0, 0, 0, 0) 33%),
-    radial-gradient(circle at top right , rgba(0, 0, 0, 0.219) 11%, rgba(0, 0, 0, 0) 33%),
-    radial-gradient(circle at bottom right , rgba(49, 49, 49, 0.19) , rgba(0, 0, 0, 0) 33%),
-    radial-gradient(circle at bottom left , rgba(110, 110, 110, 0.19) , rgba(0, 0, 0, 0) 33%),
-    linear-gradient(79deg,
-    rgb(37, 123, 204) ,
-    rgb(58, 132, 201) ,
-    rgb(26, 138, 243) );
-    // #1b75be;
-    // linear-gradient(to right ,#16588f ,#2474b6 ,#115d9c );
+    // background:
+    overflow: hidden;
+    // linear-gradient(to right,#074e88,#1b75be);
     padding: 1rem 0;
-    color: white;
+    color: rgb(240, 240, 240);
     & > *{
         color: inherit;
     }
     &_details{
-        margin: 6rem 0 2rem 0 ;
+
+        margin: 2rem 0 5rem ;
         display: flex;
         column-gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
         & > *{
+            text-shadow: 0 4px 9px  rgba(0, 0, 0, 0.534);
             color: inherit;
             white-space: nowrap;}
         font: 1.6rem  'Roboto', sans-serif;
@@ -37,7 +31,7 @@
         word-spacing: .1ch;
     }
     &_ICON{
-        margin: 0 0 5rem 0 ;
+        margin: 5rem 0 0 0 ;
 
         height: 55px;
         display: flex;
@@ -45,15 +39,34 @@
         justify-content: center;
         align-items: center;
         &-con{
-            width:  33px;
-        }
-        &-con:nth-child(n+4){
-            width:  39px;
+            width:  44px;
+            height:  44px;
+            // padding: 1rem;
+            position: relative;
+            display: grid;
+            place-items: center;
+            border-radius: 8px ;
+            box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.534);
+            background: 
+            linear-gradient(to bottom left , rgb(20, 156, 247) , rgb(31, 143, 247));
+            }
+
+        &-con:nth-child(n+3){
+            // width:  39px;
         }
         &-svg{
-            height: 100%;
-            width: 100%;
+            position:absolute;
+            height: 44px;
+            // width: 100%;
+            width: 44px;
+
+            // height: 100%;
             fill:white;
         }
+        // &-svg:nth-child(n+3){
+        //     height: 44px;
+        //     // width: 39px;
+        //     fill:rgb(153, 18, 18);
+        // }
     }
 }

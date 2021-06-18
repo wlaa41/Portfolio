@@ -21,6 +21,7 @@ $Brief_txt_color: rgb(53, 53, 53);
         // opacity: 0;
         @include shadowbend-bottom();
     &_imgCon{
+        z-index: -1;
         position:absolute;
         height: 100%;
         width: 100%;
@@ -85,7 +86,8 @@ $Brief_txt_color: rgb(53, 53, 53);
             flex-direction: column;
             align-items: center;
             color: $Brief_txt_color;
-            overflow-y: auto;
+            overflow: auto;
+            // overflow-x: hidden;
             .dynamic{
                 position: absolute;
                 $height:4vw;
@@ -102,7 +104,10 @@ $Brief_txt_color: rgb(53, 53, 53);
                     }}}
                     
             &-Parag{
+                background-color: transparent;
+                overflow: auto;
                 margin: auto;
+                padding: 0 1rem;
                 &_Hello{
                     opacity: 0;
                     font: 3rem 'Lato', Courier, monospace;
@@ -122,12 +127,9 @@ $Brief_txt_color: rgb(53, 53, 53);
                             font-size: 2rem;
                             line-height: 3rem;
                             @include respond(v500){
-                                text-align: center;}
-                            
-                        }
-                    }}
+                                text-align: center;}} }}
          
-            
+            // &::s
             }} }}
 
 
