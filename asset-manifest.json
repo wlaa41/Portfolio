@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.4b447c17.chunk.css",
-    "main.js": "/Portfolio/static/js/main.c13e4b59.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.c13e4b59.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.6c14a4da.chunk.css",
+    "main.js": "/Portfolio/static/js/main.c8867284.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c8867284.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.eb6781d5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.eb6781d5.js.map",
     "static/js/2.7d179373.chunk.js": "/Portfolio/static/js/2.7d179373.chunk.js",
     "static/js/2.7d179373.chunk.js.map": "/Portfolio/static/js/2.7d179373.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.4b447c17.chunk.css.map": "/Portfolio/static/css/main.4b447c17.chunk.css.map",
+    "static/css/main.6c14a4da.chunk.css.map": "/Portfolio/static/css/main.6c14a4da.chunk.css.map",
     "static/js/2.7d179373.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.7d179373.chunk.js.LICENSE.txt",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
     "static/media/React JS.png": "/Portfolio/static/media/React JS.999601f5.png",
@@ -37,13 +37,13 @@
     "static/media/green-fibers.png": "/Portfolio/static/media/green-fibers.1354abe6.png",
     "static/media/grey-washed-wall.png": "/Portfolio/static/media/grey-washed-wall.c3452b78.png",
     "static/media/grunge-wall.png": "/Portfolio/static/media/grunge-wall.e9b52260.png",
-    "static/media/iconfinder_4115230_cancel_close_delete_icon.928e0c41.svg": "/Portfolio/static/media/iconfinder_4115230_cancel_close_delete_icon.928e0c41.svg",
+    "static/media/iconfinder_4115230_cancel_close_delete_icon.dbe2d431.svg": "/Portfolio/static/media/iconfinder_4115230_cancel_close_delete_icon.dbe2d431.svg",
     "static/media/iron-grip.png": "/Portfolio/static/media/iron-grip.58ae7f26.png",
     "static/media/keras.jpg": "/Portfolio/static/media/keras.53378331.jpg",
     "static/media/knx.jpg": "/Portfolio/static/media/knx.7a198537.jpg",
     "static/media/lab.a79ab9cc.jpg": "/Portfolio/static/media/lab.a79ab9cc.jpg",
     "static/media/light-honeycomb-dark.png": "/Portfolio/static/media/light-honeycomb-dark.be22f003.png",
-    "static/media/motor.e7fa6df5.jpg": "/Portfolio/static/media/motor.e7fa6df5.jpg",
+    "static/media/motor.3f7566ca.jpg": "/Portfolio/static/media/motor.3f7566ca.jpg",
     "static/media/myBase.224ace37.svg": "/Portfolio/static/media/myBase.224ace37.svg",
     "static/media/myBase.28ddb298.svg": "/Portfolio/static/media/myBase.28ddb298.svg",
     "static/media/neuraan.436b15cf.jpg": "/Portfolio/static/media/neuraan.436b15cf.jpg",
@@ -75,7 +75,7 @@
   "entrypoints": [
     "static/js/runtime-main.eb6781d5.js",
     "static/js/2.7d179373.chunk.js",
-    "static/css/main.4b447c17.chunk.css",
-    "static/js/main.c13e4b59.chunk.js"
+    "static/css/main.6c14a4da.chunk.css",
+    "static/js/main.c8867284.chunk.js"
   ]
 }
