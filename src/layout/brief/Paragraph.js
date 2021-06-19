@@ -6,9 +6,11 @@ let toggle= true
 
 
         return(
-           <p className='Brief_info-Parag_P' >
-                I have over 10 years of experience in home automation systems and project management after having worked in Research and Development for my self-founded home automation business. I earned a BSc degree in Electronic and Telecom in 2010 and last year I decided to pursue a bigger goal and embarked on the MSc degree in Artificial intelligence. Whilst covering numerous topics I have enjoyed studying Math in particular. I rediscovered the beauty of calculus and linear algebra. I like designing 2D/3D simulators, Plotly/PlotlyJS and matplotlib of equation and concepts. I am now keen to apply my knowledge of these in real life applications.
-                <br/>
+           <p id='brief_parag' className='Brief_info-Parag_P' >
+                After my BSc degree in Electronics and Telecom in 2010, I started up a home automation business in an emerging market. Whilst enjoying being at the forefront of technology integration with day to day life, I quickly realized that my bigger goal was to learn more about Artificial Intelligence and its use cases.
+                 <br  />
+                 <br  />
+                To that effect, I embarked on a Masters degree in Artificial Intelligence, moving to London in the process. During my Masters I enjoyed Math in particular, rediscovering the beauty of Calculus and Linear Algebra. I love explaining the concepts of Calculas and Linear Algebra and rendering thier effect.
                 <br/>
                 Some technology that I enjoy working with: TensorFlow, Unity ML Agent, Reinforcement Learning, OpenCV. Pytorch, PlotlyJS.               
                 <br/>

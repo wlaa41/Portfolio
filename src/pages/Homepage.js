@@ -24,7 +24,7 @@ class Homepage extends React.Component{
 
     render(){
         return(
-            <>
+            <div id='homePage'>
                 <Brief></Brief>
                 <Mainintro/>
                
@@ -55,7 +55,7 @@ class Homepage extends React.Component{
                  <Foot> </Foot>
 
                  
-            </>
+            </div>
             
         );
     }

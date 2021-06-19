@@ -36,9 +36,13 @@ const ColorPick = () => {
         console.log(w,h)
         const w_adj = w*.4
         document.getElementById('Edu_info').style.backgroundPosition=`${w/2 -w_adj/2}px ${h/2 -w_adj/2.8}px `   ;
-        // document.getElementById('Edu_info').style.backgroundPosition=`${w -w_adj/.9}px ${h -w_adj}px `;
         document.getElementById('Edu_info').style.backgroundSize=`${w_adj}px auto`
         document.getElementById('Edu_info').style.backgroundRepeat=`no-repeat`
+        }
+        else{
+            document.getElementById('Edu_info').style.backgroundPosition=`auto`   ;
+            document.getElementById('Edu_info').style.backgroundSize=` auto`
+            document.getElementById('Edu_info').style.backgroundRepeat=`repeat`
         }
 
        
@@ -57,11 +61,11 @@ const ColorPick = () => {
   
     }
 
-    useEffect(() => {
-        const e ={target:{ getAttribute: (neme)=>'bg'}}
-        BgToggle(e)
-        return null
-    }, [])
+    // useEffect(() => {
+    //     const e ={target:{ getAttribute: (neme)=>'bg'}}
+    //     BgToggle(e)
+    //     return null
+    // }, [])
     return (
        
         

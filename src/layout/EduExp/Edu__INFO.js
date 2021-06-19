@@ -3,7 +3,7 @@ import React from 'react'
 // import ColorPick from '../themepick/ColorPick'
 import CardEdu from './CARD_Edu'
 import './Edu__INFO.scss'
-// import bg_image from './info/bg_img/bg_teacher_1.svg'
+import {ReactComponent as  BG_image} from './info/bg_img/bg_onlineStudy.svg'
 import bg_image from './info/bg_img/fabric-dark.png'
 // import bg_image from './info/fancy-deboss.png'
 // import bg_image from './info/pinstripe-dark.png'
@@ -23,6 +23,8 @@ const EducationINFO = () => {
                 
                     <div className='EduStrip_info_GRID'>
                             <CardEdu></CardEdu>
+                            {/* <div ></div> */}
+                            <BG_image className='lastSVG'/>
 
                     </div>
                    {/* <SkillLogo></SkillLogo>

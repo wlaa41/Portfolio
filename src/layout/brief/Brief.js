@@ -11,11 +11,17 @@ const Brief = ()=>{
         function close(e){
                 // e.target.id ==='Brief'? document.getElementById('Brief').classList.remove('Brief-show'):null
                 if(e.target.id ==='Brief') document.getElementById('Brief').classList.remove('Brief-show')
+                
+                // ALLLOW THE PAGE TO SCROL AGAIN
+                // const scrollY = document.body.style.top;
+                document.body.style.overflow = 'auto';
+                // document.body.style.top = '';
+                // window.scrollTo(0, parseInt(scrollY || '0') * -1);
+                
                 // console.log(e.target.id)
         }
         return(
            <section id='Brief' className='Brief' onClick={close}>
-            
 
                    <div className='Brief_Con Brief-show_Con'>
                         <div className='Brief_Con_imgCon'>
@@ -30,6 +36,7 @@ const Brief = ()=>{
                                 <div className='Brief_info-Parag'>
                                         <h2 className='Brief_info-Parag_Hello'>Hello, I am Walla.</h2>
                                         <Paragraph />
+
                                 </div>
                         
                                 <div className="dynamic">
@@ -40,10 +47,11 @@ const Brief = ()=>{
                                         </ul>
                                 </div>
                         </div>
-      
+
 
                    </div>
            
+
            </section>
         );
     

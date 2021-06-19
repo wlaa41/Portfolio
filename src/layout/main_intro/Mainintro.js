@@ -33,7 +33,6 @@ function Mainintro(){
     let btnCon_Width = 200;
     let btnCon_Height = 100;
     let classdded=false;
-
     // this state to move the button of let's talk from the top to corner
     const [btn_Translate, setBtn_Translate] = useState([0,0,0])
 
@@ -53,7 +52,12 @@ function Mainintro(){
     var timeout = false;
     var delta = 200;
 
-
+    const openBreif =()=>{document.getElementById('Brief').classList.add('Brief-show')
+    document.getElementById('brief_parag').focus()
+    document.body.style.overflow = 'hidden';
+    // document.body.style.position = 'fixed';
+    // document.body.style.top = `-${window.scrollY}px`;
+}
 
 
     useLayoutEffect(() => {
@@ -203,7 +207,7 @@ function chekclass_REMOVE(){
                                 </div>
                                <div className='myAvatarStrip_Ava'>
                                 <div className='vertical_spacer'></div>
-                                <div onClick={()=>document.getElementById('Brief').classList.add('Brief-show')} className='myAvatarContainer' 
+                                <div onClick={openBreif} className='myAvatarContainer' 
                                  style={{
                                      transform: `translate3d(0,${YShift["myBase"]}px,0)`
                                      
