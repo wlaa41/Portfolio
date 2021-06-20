@@ -6,8 +6,9 @@ import { ReactComponent as Wheel} from './media/londonfull/wheel1.svg'
 import   skyline3    from "./media/londonfull_wide/skyline3.svg"   
 import   skyline2    from "./media/londonfull_wide/skyline2.svg"   
 import   skyline1    from "./media/londonfull_wide/skyline1.svg"   
-import   skyline0    from "./media/londonfull_wide/skyline0.svg"   
+import   skyline0    from "./media/londonfull_wide/skyline0.1.svg"   
 import   floor       from "./media/londonfull_wide/floor.svg"      
+import   bushes       from "./media/londonfull_wide/bushes.svg"      
 import   phonebooth  from "./media/londonfull_wide/phonebooth.svg" 
 import   myBase      from './media/londonfull_wide/myBase.svg'
 import heel from './media/londonfull/wheel1.svg'
@@ -41,6 +42,7 @@ function Mainintro(){
         skyline2:       0         ,
         skyline1:       0         ,
         skyline0:       0         ,
+        bushes:         0         ,
         floor:          0         ,
         phonebooth:     0         ,
         myBase:         0                   
@@ -130,6 +132,7 @@ function scrollHeandle(e){
             skyline2:   (  shift  / 1.6   )      ,
             skyline1:   (  shift  / 1.8   )      ,
             skyline0:   (  shift  / 2.1   )      ,
+            bushes:     (  shift  / 2.6   )      ,
             floor:      (  shift  / 3     )      ,
             phonebooth: (  shift  / 3     )      ,
             myBase:     (  shift  / 4     )      })
@@ -185,6 +188,11 @@ function chekclass_REMOVE(){
             className='londonfull__svg' 
             style={{
                 transform: `translate3d(0,${YShift["skyline0"]}px,0)`
+            } } />
+             <img src={bushes} 
+            className='londonfull__svg' 
+            style={{
+                transform: `translate3d(0,${YShift["bushes"]}px,0)`
             } } />
                                   <img src={floor}
             className='londonfull__svg' 

@@ -31,9 +31,25 @@
     position: relative;}
 .londonfull{
     // background-image:linear-gradient(115deg, rgb(135, 205, 251) , rgb(0, 130, 190));
-    background:linear-gradient(
-        355deg
-        , #ffffff, #0082be);
+    // background:linear-gradient( 355deg , #ffffff, #0088be),
+    //     radial-gradient(circle at 11% 11% , 
+    //     white 3%,
+    //      yellow 7% , 
+    //      transparent 9%, white 11%,
+    //      transparent 15%)
+    //     ;
+    background:
+    // radial-gradient(circle at center center , 
+    // rgba(255, 255, 255, 0) 80%, rgba(194, 197, 0, 0.267)
+    // ),
+    //  linear-gradient(to top, 
+    //  #ffffff00 60%,
+    //  #0000002c),
+    linear-gradient(
+        178deg
+        , #51c8ff ,#e4f4ff )
+        // , #5ac7fa 33%,#49cafd 43%, #ccebff 66%,#e4f4ff 96%)
+        ;
     height: inherit;
     display: grid;
     align-content:end;
@@ -70,17 +86,17 @@
 }
 #group{
     transform: translate3d(-292px,233px,0) ;
-    fill:rgb(224, 224, 224);
+    fill:rgb(255, 255, 255);
     transform-box: fill-box;}
 #londonWheel{
     transform-style: preserve-3d;
-    fill:rgb(224, 224, 224);
+    fill:rgb(255, 255, 255);
     transform-origin:center;
     transform-box: fill-box;
     left: 0;
     animation: spin 50s infinite linear;}
 @keyframes spin{
     from{
-        transform:translate3d(-292px,233px,0) scale(.6) rotateY(-15deg) rotateZ(0); }
+        transform:translate3d(-292px,233px,0) scale(.7) rotateY(-35deg) rotateZ(0); }
     to{
-        transform:translate3d(-292px,233px,0) scale(.6) rotateY(-15deg) rotateZ(1turn);}}
+        transform:translate3d(-292px,233px,0) scale(.7) rotateY(-35deg) rotateZ(1turn);}}

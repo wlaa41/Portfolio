@@ -19,7 +19,7 @@ const ColorPick = () => {
       }
       const keys =[] // HOLDS THE NAME OF THE IMAGE
       const images = importAll(require.context('../EduExp/info/bg_img/', false, /\.(png|jpe?g|svg)$/));
-      let i = 3;
+      let i = 5;
 
 
       
@@ -61,11 +61,11 @@ const ColorPick = () => {
   
     }
 
-    // useEffect(() => {
-    //     const e ={target:{ getAttribute: (neme)=>'bg'}}
-    //     BgToggle(e)
-    //     return null
-    // }, [])
+    useEffect(() => {
+        const e ={target:{ getAttribute: (neme)=>'bg'}}
+        BgToggle(e)
+        return null
+    }, [])
     return (
        
         
