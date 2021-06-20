@@ -24,7 +24,7 @@ const EducationINFO = () => {
                     <div className='EduStrip_info_GRID'>
                             <CardEdu></CardEdu>
                             {/* <div ></div> */}
-                            <BG_image className='lastSVG'/>
+                            {/* <BG_image className='lastSVG'/> */}
 
                     </div>
                    {/* <SkillLogo></SkillLogo>

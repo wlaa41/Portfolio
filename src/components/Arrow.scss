@@ -8,6 +8,8 @@
     z-index: 99;
     // bottom: 0;
     transform: translate3d(0,-32px,0);
+    cursor: pointer;
+
     // animation: arrowEffect 4s 1s infinite  linear;
 
 }
@@ -20,6 +22,7 @@
     animation: arrowEffect 4s 1s infinite  linear;
 }
 .arrow_blade{
+    // cursor: pointer;
     transform: translate3d(0,0,33px);
     height: calc(.1vh + 2px);
     width: calc(.5vw + 15px);

@@ -6,7 +6,7 @@ export default function CardStrip(){
 
 
     return(
-    <section className='CardStrip'>
+    <section id='stkCrdStrip' className='CardStrip'>
         <div className="CardStrip_BACKGround">
             <div className='CardStrip_BACKGround_left-bg'>
                
