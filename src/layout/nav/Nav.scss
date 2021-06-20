@@ -26,8 +26,8 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
         // grid-template-rows:1fr 1fr 60% 5%;
  
                 @include respond(tab-port){
-                    grid-template-columns: 9% 1fr 30% 5%;
-                    @include respond(seven){grid-template-rows:11% 1fr 9fr 5%;}
+                    grid-template-columns: 9% 1fr 20% 5%;
+                    @include respond(seven){grid-template-rows:15% 1fr 9fr 5%;}
                     @include respond(phone){
                     grid-template-columns: 9% 1fr 20% 2%;
                     //  grid-template-rows:7% 1fr 9fr 5%;
@@ -63,12 +63,12 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
                     @include respond(tab-land){
                     font-size: 4rem;
                     @include respond(tab-port){
-                    font-size: 3.4rem;
+                    font-size: 3.8rem;
                         @include respond(seven){
                             letter-spacing: .061ch;
                             font-size: 3rem;
                             @include respond(phone){
-                                font-size: 2.3rem;
+                                font-size: 2.6rem;
                                 letter-spacing: .0ch;
                                 @include respond(v400){
                                 // font-size: 1.5rem;

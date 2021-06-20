@@ -51,7 +51,8 @@ $Brief_txt_color: rgb(12, 12, 12);
             // z-index: -1;
             position: relative;
             // min-width: 130vh;
-            width: 130vmax;
+            // width: 130vmax;
+            min-height: 130vh;
             width: 130vmax;
             // filter: grayscale(0) brightness(1);
             animation: picture_bg_Swimming 99s infinite alternate linear; }}
@@ -188,7 +189,7 @@ $Brief_txt_color: rgb(12, 12, 12);
     padding: 4% 3%  ;
 
     @include respond(tab-land){
-        padding: 3% 3% 6% 3% ;
+        padding: 3% 3% 9vh 3% ;
     }
     .Brief-show_Con{
         opacity: 1;

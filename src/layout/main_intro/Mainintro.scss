@@ -18,7 +18,7 @@
                 height: 100vh; }}}
     @include respond(v800){
         // height: 70vh;
-        @include respond(phone){height: 60vh;}
+        @include respond(phone){height: 90vh;}
     }
     @include respond(phone){
         @include respond(h700)
