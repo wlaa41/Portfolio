@@ -194,14 +194,47 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
 }}
 
 .foggyVanish{
-animation: vanishText .9s linear ;
+animation: vanishText .9s linear forwards ;
+@include respond(tab-land){
+    // color:red !important;
+animation: vanishText_EASY 3.9s linear forwards;
+
+
+}
+
         color: rgba(255, 255, 255, 0.0);
         text-shadow: 
         12px 12px 33px rgba(255, 255, 255, 0),
         -12px 12px 33px rgba(255, 255, 255, 0),
         -12px -12px 33px rgba(255, 255, 255, 0);
-        visibility: hidden;
+        // visibility: hidden;
 }
+@keyframes vanishText_EASY{
+    0%{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+  
+        visibility:visible;
+    }
+    69%{
+        transform: scale(2) translate3d(0,-50%,0);
+        opacity: 0;
+        visibility: visible;
+        }
+    99%{
+        transform: scale(2) translate3d(0,-50%,0);
+        opacity: 0;
+        visibility: visible;
+        }
+        100%{
+
+            visibility: hidden;
+        }
+    
+}
+
+
+// OLD METHOD
 @keyframes vanishText{
     0%{
         transform: translate3d(0,0,0);

@@ -5,24 +5,24 @@
     height: 80vh;
     @include respond(h800)
     {
-        height: 90vh;
+        height: 85vh;
         @include respond(v800){
             height: 80vh;
             @include respond(phone){height: 70vh;}
         }
         @include respond(h700)
         {
-            height: 90vh;
+            height: 85vh;
             @include respond(h600)
             {
-                height: 900vh; }}}
+                height: 85vh; }}}
     @include respond(v800){
         // height: 70vh;
-        @include respond(phone){height: 90vh;}
+        @include respond(phone){height: 85vh;}
     }
     @include respond(phone){
         @include respond(h700)
-        {height: 90vh;}
+        {height: 85vh;}
     }
 
 
