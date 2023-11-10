@@ -5,21 +5,23 @@ const Paragraph = ()=>{
 let toggle= true
 
 
-        return(
-           <p id='brief_parag' className='Brief_info-Parag_P' >
-                After my BSc degree in Electronics and Telecom in 2010, I started up a home automation business in an emerging market. Whilst enjoying being at the forefront of technology integration with day to day life, I quickly realized that my bigger goal was to learn more about Artificial Intelligence and its use cases.
-                 <br  />
-                 <br  />
-                To that effect, I embarked on a Masters degree in Artificial Intelligence, moving to London in the process. During my Masters I enjoyed Math in particular, rediscovering the beauty of Calculus and Linear Algebra. I love explaining the concepts of Calculas and Linear Algebra and rendering thier effect.
-                <br/>
-                Some technology that I enjoy working with: TensorFlow, Unity ML Agent, Reinforcement Learning, OpenCV. Pytorch, PlotlyJS.               
-                <br/>
-                <br/>
-                I am a strong beliver of the importance of data visualization an, 3D modeling and UI/UX. I believe it is almost as important as the technical part. It manifest ideas, also it makes sharing points and knowledge easier, thus, aside from my skills in SASS and Adobe designing tools. I am currently studying ThreeJS and D3js.
-           
-           </p>
-        );
+return (
+        <p id='brief_parag' className='Brief_info-Parag_P'>
+          In the vanguard of AI and Robotics, I've forged advancements with the precision of a master craftsman. My odyssey in Artificial Intelligence, enriched by a Master's tapestry of Robotics and Autonomous Systems, shapes the future with each algorithm's pulse.
+          <br /><br />
+          Since my induction with a BSc in Electronics and Telecom, I've charted courses through home automation's intricate channels, merging the pulse of technology with the cadence of daily existence. Such ventures awoke a thirst for deeper knowledge, steering me towards the horizons of AI's boundless potential.
+          <br />
+          London's scholarly realms fostered my mathematical ardor, where the elegance of Calculus and Linear Algebra unfolded like a ballet of numbers, each step a revelation in the grand dance of computation.
+          <br />
+          Tools of innovation — TensorFlow, Unity's ML Agent, and the strategic depth of Reinforcement Learning, to the keen sight of OpenCV and PyTorch’s neural wisdom, and PlotlyJS's narrative arc — all resonate with my quest for enlightenment.
+          <br /><br />
+          Data visualization, 3D modeling, and UI/UX are not mere adjuncts but the essence of my work, transforming abstract concepts into tangible interfaces. With SASS's style and Adobe's finesse, and now venturing into ThreeJS and D3js, I sculpt and weave the digital fabric that drapes our virtual experiences.
+          <br />
+          As I continue to intertwine my narrative with ongoing studies, the promise to contribute to the pillars of our digital tomorrow stands firm and unwavering.
+        </p>
+      )
+}
     
 
-}
+
 export default Paragraph;

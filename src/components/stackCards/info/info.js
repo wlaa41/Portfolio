@@ -4,48 +4,62 @@ import brain from './brain-aura.jpg'
 import pat from './pat.jpg'
 import lab from './lab.jpg'
 import boston from './boston.jpg'
+import mathAI from './mathAI.webp'
+import featureMosaic from './featureMosaic.webp'
 import pathFinding from './path-finding-phone-googlemap.jpg'
 
 
 
 export default function info(){
     return([
-            {
-                title: 'Ant Colony Simulation ',
-                subtitle:'python',
-                brief: 'Algorithm that finds the short paths by simulating ants behavior. This is achieved by simulating: pheromone -a chemical substance-, pheromone’s evaporating and a probability equation. Those three factors determine the ant behavior. In addition, the ants who get lost -take to long time before reaching- get terminated. After few iteration the algorithm finds a short path – might not be the best- with minimum processing usage',
-                image: ant
-            },
-            {
-                title: 'ANN Simulation',
-                subtitle:'python',
-                brief: 'Artificial Neural Network built from the gruond up -using back propagation- without using any third library -Only Numpy- the designed ANN is apple to classify MINST data with 92 accuracy. The algorithm allows editing many hyper parameter: Structure, Activation Function, Output Function, Stop Criterion, Cost Function and Default Weights and Biases',
-                image: neural
-            },
-            {
-                title: "Dijkstra's algorithm",
-                subtitle:'python',
-                brief: "Applying the Dijkstra algorithem on 2 dimenssions grid. It finds the path by using three parallel lists that keeps a record of the order of the shortest path. Unlike the ant algorithm -shortest is not guaranteed-. That being said, this comes at the expense of using more resources -CPU and Memory-. Also the algorithm has some flows which has been amended in the A* algorithm by Dijkstra's himself.",
-                image: pathFinding
-            }
-            ,{
-                title: "My Path Finding Algorithm",
-                subtitle:'python',
-                brief: "The algorithm finds the shortest path using the following techniques: A path is created in the start square where it starts to seed to all the adjacent square and those paths are saved in a list. This list is referred to as a Seeding path list ‘seedingpath’. Click to read more and to see how this algorithm has some advantages over both: Ant Colony Simulation and  Dijkstra's algorithm. It uses a totally different method.",
-                image: pat
-            }
-            ,{
-                title: "House Price Prediction",
-                subtitle:'python',
-                brief: 'Machine Learning algorthim applied on data set of Bostom house price.The algorithm runs different models and shows a graph that compare the result After training the model is able gain 92% accuracy. At the end there is a clear comparison and analysis of all the technics used',
-                image: boston
-            }
-            ,{
-                title: 'Rescorla–Wagner model',
-                subtitle:'python',
-                brief: 'A full simulation of the model ploting a graph on how learning process occure in animal -following Rescorla–Wagner theroy- the siimulation is able demonstrate all different types of learning i.e. Blocking, Negative patterning ...etc. It shows also where the models fails. It also suggest some improvement to the model to accommodate some failure. This research is held under PhD Esther Mondragon.',
-                image: brain
-            }
+        {
+            title: 'Ant Colony Simulation',
+            subtitle: 'Python',
+            brief: 'An algorithm inspired by the foraging behavior of ants, using pheromone trails, evaporation, and a probabilistic model to discover efficient paths. It includes a mechanism to dismiss stagnating ants, enhancing the process to find near-optimal paths with minimal computational demand.',
+            image: ant
+        },
+        {
+            title: 'ANN Simulation',
+            subtitle: 'Python',
+            brief: 'A custom-built Artificial Neural Network employing backpropagation, relying solely on Numpy for computation. This ANN classifies the MNIST dataset with a 92% accuracy rate, providing flexibility to tweak various hyperparameters such as structure, activation, and output functions.',
+            image: neural
+        },
+        {
+            title: "Dijkstra's Algorithm",
+            subtitle: 'Python',
+            brief: "An implementation of Dijkstra's algorithm for grid-based pathfinding, tracking the shortest path order with three parallel lists. It's resource-intensive, leading to an exploration of Dijkstra's subsequent enhancement, the A* algorithm, to improve efficiency.",
+            image: pathFinding
+        },
+        {
+            title: "My Path Finding Algorithm",
+            subtitle: 'Python',
+            brief: "An innovative pathfinding algorithm that seeds paths from the starting square to adjacent squares, maintained in a 'seedingpath' list. This method offers unique advantages over the Ant Colony and Dijkstra's algorithms, utilizing a distinct approach to ascertain the shortest route.",
+            image: pat
+        },
+        {
+            title: "House Price Prediction",
+            subtitle: 'Python',
+            brief: 'Applying machine learning techniques to the Boston housing dataset, this algorithm compares multiple models and visualizes their performance, achieving a notable 92% prediction accuracy. A thorough analysis provides insights into the efficacy of each approach used.',
+            image: boston
+        },
+        {
+            title: 'Rescorla–Wagner Model',
+            subtitle: 'Python',
+            brief: "A comprehensive simulation of the Rescorla–Wagner model, illustrating various learning types in animals and pinpointing the model's limitations. Enhancements are proposed to mitigate identified shortcomings, stemming from research by PhD Esther Mondragon.",
+            image: brain
+        },
+        {
+            title: 'AI Math Core',
+            subtitle: 'Python',
+            brief: 'An intricate project intertwining the core mathematical pillars of AI: a system that employs advanced algorithms to solve complex mathematical problems. Utilizing Calculus for optimization and Linear Algebra for data representation, this project exemplifies the application of theoretical math in practical AI scenarios.',
+            image: mathAI // This would be a reference to the image created
+        },
+        {
+            title: 'Image Mosaic & Feature ID',
+            subtitle: 'Python & OpenCV',
+            brief: "This project applies computer vision to construct mosaics and identify key features, utilizing algorithms like SIFT and ORB, along with the Hough Transform for enhanced image analysis and interpretation.",
+            image: featureMosaic // This would be a reference to the minimalist image created
+        }
 
 ])}
 
