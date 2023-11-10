@@ -115,7 +115,7 @@ const showform = false;
                 <div className='navGrid'> 
                         <div id='mainTitle' ref={title}  className='navGrid_titleCon '> 
                                 <div  className='navGrid_titleCon_title'> 
-                                when you cease to learn you cease to grow
+                                AI's math, robotics' craft, learning's endless flight
                                 </div>
                         </div>
                                 <div id='talkbtnCon' ref={talkbtnCon} className=' navGrid_BtnCon'> 

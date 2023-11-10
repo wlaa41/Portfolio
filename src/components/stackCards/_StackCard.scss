@@ -55,6 +55,7 @@
     &:hover &_Conimg_img{
       transition: transform 44s linear;
       transform: translate3d(-53%,-31%,0) scale(1.5);
+      filter: brightness(.4);
     }
     &_brief{
       opacity: 1;
