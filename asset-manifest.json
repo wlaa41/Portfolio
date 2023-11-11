@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f71f3178.chunk.css",
-    "main.js": "/Portfolio/static/js/main.6beae95c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.6beae95c.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.953b8c88.chunk.css",
+    "main.js": "/Portfolio/static/js/main.e872c945.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.e872c945.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.eb6781d5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.eb6781d5.js.map",
-    "static/js/2.d431bacb.chunk.js": "/Portfolio/static/js/2.d431bacb.chunk.js",
-    "static/js/2.d431bacb.chunk.js.map": "/Portfolio/static/js/2.d431bacb.chunk.js.map",
+    "static/js/2.f4e0838a.chunk.js": "/Portfolio/static/js/2.f4e0838a.chunk.js",
+    "static/js/2.f4e0838a.chunk.js.map": "/Portfolio/static/js/2.f4e0838a.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.f71f3178.chunk.css.map": "/Portfolio/static/css/main.f71f3178.chunk.css.map",
-    "static/js/2.d431bacb.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.d431bacb.chunk.js.LICENSE.txt",
+    "static/css/main.953b8c88.chunk.css.map": "/Portfolio/static/css/main.953b8c88.chunk.css.map",
+    "static/js/2.f4e0838a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f4e0838a.chunk.js.LICENSE.txt",
     "static/media/ICON_sprite.46f553d7.svg": "/Portfolio/static/media/ICON_sprite.46f553d7.svg",
     "static/media/Labtop.9c8f5df8.jpg": "/Portfolio/static/media/Labtop.9c8f5df8.jpg",
     "static/media/React JS.png": "/Portfolio/static/media/React JS.999601f5.png",
+    "static/media/Robotic Operating System.png": "/Portfolio/static/media/Robotic Operating System.274b74e5.png",
     "static/media/ant-walking-tree.fb79269b.jpg": "/Portfolio/static/media/ant-walking-tree.fb79269b.jpg",
     "static/media/asfalt-dark.png": "/Portfolio/static/media/asfalt-dark.12fc1a7a.png",
     "static/media/bengali.8847a189.png": "/Portfolio/static/media/bengali.8847a189.png",
@@ -61,6 +62,7 @@
     "static/media/retina-wood.png": "/Portfolio/static/media/retina-wood.d7a2002c.png",
     "static/media/robot-arm.6d2f6378.jpg": "/Portfolio/static/media/robot-arm.6d2f6378.jpg",
     "static/media/sass.jpg": "/Portfolio/static/media/sass.4ed74e3a.jpg",
+    "static/media/sass_reactjs.f2c677be.webp": "/Portfolio/static/media/sass_reactjs.f2c677be.webp",
     "static/media/sketchup.jpg": "/Portfolio/static/media/sketchup.ca97c37e.jpg",
     "static/media/skyline0.1.73d241ea.svg": "/Portfolio/static/media/skyline0.1.73d241ea.svg",
     "static/media/skyline0.8ab30f46.svg": "/Portfolio/static/media/skyline0.8ab30f46.svg",
@@ -80,8 +82,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eb6781d5.js",
-    "static/js/2.d431bacb.chunk.js",
-    "static/css/main.f71f3178.chunk.css",
-    "static/js/main.6beae95c.chunk.js"
+    "static/js/2.f4e0838a.chunk.js",
+    "static/css/main.953b8c88.chunk.css",
+    "static/js/main.e872c945.chunk.js"
   ]
 }
