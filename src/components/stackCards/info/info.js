@@ -7,6 +7,7 @@ import boston from './boston.jpg'
 import mathAI from './mathAI.webp'
 import featureMosaic from './featureMosaic.webp'
 import pathFinding from './path-finding-phone-googlemap.jpg'
+import interactive_web_application from './sass_reactjs.webp'
 
 
 
@@ -31,6 +32,12 @@ export default function info(){
             image: pathFinding
         },
         {
+            title: "Portfolio Showcase",
+            subtitle: "ReactJS",
+            brief: "An interactive web application highlighting proficiency in ReactJS, SASS CSS, Illustrator, and Photoshop. Features advanced CSS animations, custom graphics, and responsive design.",
+            image: interactive_web_application,
+        },
+        {
             title: "My Path Finding Algorithm",
             subtitle: 'Python',
             brief: "An innovative pathfinding algorithm that seeds paths from the starting square to adjacent squares, maintained in a 'seedingpath' list. This method offers unique advantages over the Ant Colony and Dijkstra's algorithms, utilizing a distinct approach to ascertain the shortest route.",
@@ -50,13 +57,13 @@ export default function info(){
         },
         {
             title: 'AI Math Core',
-            subtitle: 'Python',
+            subtitle: 'ros',
             brief: 'An intricate project intertwining the core mathematical pillars of AI: a system that employs advanced algorithms to solve complex mathematical problems. Utilizing Calculus for optimization and Linear Algebra for data representation, this project exemplifies the application of theoretical math in practical AI scenarios.',
             image: mathAI // This would be a reference to the image created
         },
         {
             title: 'Image Mosaic & Feature ID',
-            subtitle: 'Python & OpenCV',
+            subtitle: 'OpenCV',
             brief: "This project applies computer vision to construct mosaics and identify key features, utilizing algorithms like SIFT and ORB, along with the Hough Transform for enhanced image analysis and interpretation.",
             image: featureMosaic // This would be a reference to the minimalist image created
         }

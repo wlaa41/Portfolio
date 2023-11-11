@@ -25,12 +25,17 @@
         border-radius: 42px;
         transform-origin: right;
         transition: transform .8s, box-shadow .8s  ;
-        transform:rotateX(-5deg) rotateY(-15deg) rotateZ(-1deg) ;
+        // transform:rotateX(-5deg) rotateY(-15deg) rotateZ(-1deg) ; It makes the button click far
         display: flex;
         align-items: center;
         justify-self: center;
-        box-shadow: -11px 11px 22px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: -4px 5px 9px 9px rgba(0, 0, 0, 0.35);
         background-color: rgba(166, 211, 18, 0.849);
+        background: #00F260;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
         // z-index: -1;
         &_Decor{
             &-1{
