@@ -2,7 +2,7 @@ import React,{useEffect}  from 'react'
 import './Brief.scss'
 import {ReactComponent  as CloseSVG} from './iconfinder_4115230_cancel_close_delete_icon.svg'
 import Paragraph from './Paragraph'
-import motor from './motor.jpg'
+import motor from './bengali.png'
 
 
 
@@ -34,16 +34,16 @@ const Brief = ()=>{
                         <div className='Brief_info'>
 
                                 <div className='Brief_info-Parag'>
-                                        <h2 className='Brief_info-Parag_Hello'>Hello, I am Walla.</h2>
+                                        <h2 className='Brief_info-Parag_Hello'>Hello, I am Will.</h2>
                                         <Paragraph />
 
                                 </div>
                         
                                 <div className="dynamic">
                                         <ul className="dynamic_Con">
-                                        <li>Hi, I am Walla.</li>
-                                        <li>Welcome to my page.</li>
-                                        <li> I hope you'll find what you looking for.</li>
+                                        <li>Hi, I'm Will, a trailblazer in AI and Robotics.</li>
+                                        <li>Welcome to a window into my prof. journey and achievements.</li>
+                                        <li>Stay for the robotics, linger for the motorbike racing tales.</li>
                                         </ul>
                                 </div>
                         </div>

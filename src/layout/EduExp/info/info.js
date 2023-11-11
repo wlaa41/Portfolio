@@ -1,9 +1,8 @@
-import ant from './ant-walking-tree.jpg'
+import ant from './neural-cell-dark.jpg'
 import robot from './robot-arm.jpg'
-import baby from './baby.jpg'
 import new_robot_project from './new_robot_project.webp'
 import new_ai_math from './new_ai_math.webp'
-
+import laptop from './Labtop.jpg'
 import sprite from './ICON_sprite.svg'
 import React from 'react'
 
@@ -31,7 +30,7 @@ export const  info = [
         date: "2020 to present",
         subtitle: "Achieved First-Class Honors",
         brief: "Possesses a robust theoretical foundation in Mathematics and AI with proficiency in Python and PyTorch. Skilled in crafting and evaluating ML/DL models and integrating them as services via diverse APIs/software. Familiar with leading machine learning, NLP frameworks (including TensorFlow 2, Keras, Theano, Scikit-learn, and others), and adept in version control (Git) with an understanding of continuous delivery pipelines. Expert in resolving developmental and testing environment issues.",
-        image: ant,
+        image: laptop,
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
     {

@@ -5,6 +5,7 @@ import CardEdu from './CARD_Edu'
 import './Edu__INFO.scss'
 import {ReactComponent as  BG_image} from './info/bg_img/bg_onlineStudy.svg'
 import bg_image from './info/bg_img/fabric-dark.png'
+import ducati from './ducati.webp'
 // import bg_image from './info/fancy-deboss.png'
 // import bg_image from './info/pinstripe-dark.png'
 // import bg_image from './info/green-dust-and-scratches.png'
@@ -14,7 +15,7 @@ import bg_image from './info/bg_img/fabric-dark.png'
 
 
 const EducationINFO = () => {
-    return (
+    return (<>
         <div id='Edu_info' className='EduStrip_info'
         style={{backgroundImage:`url(${bg_image})`,
 
@@ -27,9 +28,13 @@ const EducationINFO = () => {
                             {/* <BG_image className='lastSVG'/> */}
 
                     </div>
+
                    {/* <SkillLogo></SkillLogo>
                    <ColorPick></ColorPick> */}
             </div>
+            <img src={ducati} className='EduStrip_info_GRID_img' alt="Ducati Motorcycle" />
+
+            </>
     )
 }
 
