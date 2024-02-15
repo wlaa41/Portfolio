@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.953b8c88.chunk.css",
-    "main.js": "/Portfolio/static/js/main.e872c945.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.e872c945.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.eb6781d5.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.eb6781d5.js.map",
-    "static/js/2.f4e0838a.chunk.js": "/Portfolio/static/js/2.f4e0838a.chunk.js",
-    "static/js/2.f4e0838a.chunk.js.map": "/Portfolio/static/js/2.f4e0838a.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.c836db9d.chunk.css",
+    "main.js": "/Portfolio/static/js/main.2fd9ed13.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.2fd9ed13.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.4fb55bd1.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.4fb55bd1.js.map",
+    "static/js/2.ec6168af.chunk.js": "/Portfolio/static/js/2.ec6168af.chunk.js",
+    "static/js/2.ec6168af.chunk.js.map": "/Portfolio/static/js/2.ec6168af.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.953b8c88.chunk.css.map": "/Portfolio/static/css/main.953b8c88.chunk.css.map",
-    "static/js/2.f4e0838a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f4e0838a.chunk.js.LICENSE.txt",
+    "static/css/main.c836db9d.chunk.css.map": "/Portfolio/static/css/main.c836db9d.chunk.css.map",
+    "static/js/2.ec6168af.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ec6168af.chunk.js.LICENSE.txt",
+    "static/media/DALL·E 2024-02-15 15.56.12 - A hyper-realistic motorcycle, reminiscent of a Ducati, is showcased on a panoramic black canvas. The scene is heavily adorned with vivid coding lines .758b06b1.webp": "/Portfolio/static/media/DALL·E 2024-02-15 15.56.12 - A hyper-realistic motorcycle, reminiscent of a Ducati, is showcased on a panoramic black canvas. The scene is heavily adorned with vivid coding lines .758b06b1.webp",
     "static/media/ICON_sprite.46f553d7.svg": "/Portfolio/static/media/ICON_sprite.46f553d7.svg",
     "static/media/Labtop.9c8f5df8.jpg": "/Portfolio/static/media/Labtop.9c8f5df8.jpg",
     "static/media/React JS.png": "/Portfolio/static/media/React JS.999601f5.png",
     "static/media/Robotic Operating System.png": "/Portfolio/static/media/Robotic Operating System.274b74e5.png",
     "static/media/ant-walking-tree.fb79269b.jpg": "/Portfolio/static/media/ant-walking-tree.fb79269b.jpg",
     "static/media/asfalt-dark.png": "/Portfolio/static/media/asfalt-dark.12fc1a7a.png",
-    "static/media/bengali.8847a189.png": "/Portfolio/static/media/bengali.8847a189.png",
     "static/media/bg_manager.svg": "/Portfolio/static/media/bg_manager.7af8a6de.svg",
     "static/media/bg_manager_2.svg": "/Portfolio/static/media/bg_manager_2.dde47271.svg",
     "static/media/bg_onlineStudy.svg": "/Portfolio/static/media/bg_onlineStudy.c11cf578.svg",
@@ -81,9 +81,9 @@
     "static/media/wheel1.cde58292.svg": "/Portfolio/static/media/wheel1.cde58292.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb6781d5.js",
-    "static/js/2.f4e0838a.chunk.js",
-    "static/css/main.953b8c88.chunk.css",
-    "static/js/main.e872c945.chunk.js"
+    "static/js/runtime-main.4fb55bd1.js",
+    "static/js/2.ec6168af.chunk.js",
+    "static/css/main.c836db9d.chunk.css",
+    "static/js/main.2fd9ed13.chunk.js"
   ]
 }
