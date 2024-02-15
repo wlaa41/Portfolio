@@ -60,7 +60,7 @@ const exit_Icon=<svg className="ftP-svg">
      
         <div className="ftStrip_titleCon">
             <div className='ftStrip_titleCon-flip'>
-            <div className='ftStrip_titleCon-Feature'>Feature</div>
+            <div className='ftStrip_titleCon-Feature'>For Fun</div>
                 <div className='ftStrip_titleCon-Project'><div className='P'>P</div>roject</div>
             
             

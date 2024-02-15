@@ -2,7 +2,7 @@ import React,{useEffect}  from 'react'
 import './Brief.scss'
 import {ReactComponent  as CloseSVG} from './iconfinder_4115230_cancel_close_delete_icon.svg'
 import Paragraph from './Paragraph'
-import motor from './bengali.png'
+import motor from './DALL·E 2024-02-15 15.56.12 - A hyper-realistic motorcycle, reminiscent of a Ducati, is showcased on a panoramic black canvas. The scene is heavily adorned with vivid coding lines .webp'
 
 
 

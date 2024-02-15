@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "WalaaWill",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://wlaa41.github.io/Portfolio",
@@ -46,5 +46,6 @@
   "description": "My portfolio",
   "main": "index.js",
   "author": "<wlaa41@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "git@github.com:wlaa41/Portfolio.git"
 }

@@ -10,18 +10,18 @@ import React from 'react'
 
 export const  info = [
     {
-        title: "AI & Robotics Innovations",
+        title: "PhD AI & Robotics Innovations",
         date: "2023/24",
-        subtitle: "MSc Robotics, AI & Autonomous Systems",
-        brief: "Engaging in cutting-edge projects that blend AI with robotics. Develops autonomous systems using advanced mathematics, machine learning models, and robotics integration. Strong focus on practical applications of AI in robotics, with a commitment to innovation and industry advancement.",
+        subtitle: "PhD Enhancing Autonomous Robotics with Cognitive RL",
+        brief: "This research aims to advance autonomous robotics in multi-agent systems by merging cognitive learning with reinforcement learning (RL) for better localization and sim2real adaptation. Focusing on probabilistic optimization and agent interaction dynamics, the project bridges theory with practical application, targeting improved collaboration and adaptability in commercial environments. Through a blend of simulation testing and real-world deployment, it seeks to transform robotic learning, making it more adaptable and effective for complex tasks.",
         image: new_robot_project, // Placeholder for the actual image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
     {
-        title: "Mathematical AI Modeling",
+        title: "Aviation Control System Enhancement",
         date: "2023/24",
-        subtitle: "Complex Systems Simulation",
-        brief: "Specializes in the simulation of complex systems using mathematical models. Utilizes a deep understanding of algorithms, calculus, and linear algebra to solve advanced AI challenges. Implements simulations that demonstrate the mathematical underpinnings of intelligent systems.",
+        subtitle: "Linearized Models & Jacobian Matrix",
+        brief: "Focusing on aviation control systems, this study uses linearized models and the Jacobian matrix to analyze and stabilize the RAE (Research Aircraft Experiment) plane. Linearized models help predict the aircraft's response to perturbations, while the Jacobian matrix offers insights into system stability and control feedback mechanisms. This methodology aims to improve flight stability and performance, applying fundamental mathematical principles to address complex engineering challenges in aviation. The project exemplifies the application of advanced mathematical techniques in enhancing the safety and efficiency of aircraft operations.",
         image: new_ai_math, // Placeholder for the actual image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },

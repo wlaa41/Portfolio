@@ -14,46 +14,41 @@ import interactive_web_application from './sass_reactjs.webp'
 export default function info(){
     return([
         {
-            title: 'Ant Colony Simulation',
-            subtitle: 'Python',
-            brief: 'An algorithm inspired by the foraging behavior of ants, using pheromone trails, evaporation, and a probabilistic model to discover efficient paths. It includes a mechanism to dismiss stagnating ants, enhancing the process to find near-optimal paths with minimal computational demand.',
-            image: ant
+            title: 'RL & Cognitive Robotics',
+            subtitle: 'Agent Collaboration',
+            brief: 'This project integrates cognitive learning with RL to enhance multi-agent robotics. It improves localization, addresses the sim2real gap, and examines agent interactions for commercial application. By combining probabilistic methods and cognitive models, it advances autonomous collaboration and adaptability.',
+            image: lab // Placeholder for concise visual representation
         },
         {
-            title: 'ANN Simulation',
-            subtitle: 'Python',
-            brief: 'A custom-built Artificial Neural Network employing backpropagation, relying solely on Numpy for computation. This ANN classifies the MNIST dataset with a 92% accuracy rate, providing flexibility to tweak various hyperparameters such as structure, activation, and output functions.',
-            image: neural
+            title: 'Jackal Robot Sim',
+            subtitle: 'ROS & Gazebo ',
+            brief: "Explore the Jackal robot in a tailored Gazebo environment, perfect for research and learning. This setup covers custom models, ROS packages, and a step-by-step guide from cloning to launch. With ROS and Gazebo, dive into robotics, SLAM mapping, and AMCL navigation, enriching your simulation experience and autonomous navigation skills.",
+            image: neural // Placeholder for a visually summarized concept
         },
         {
-            title: "Dijkstra's Algorithm",
+            title: 'AI & ML Python Projects',
             subtitle: 'Python',
-            brief: "An implementation of Dijkstra's algorithm for grid-based pathfinding, tracking the shortest path order with three parallel lists. It's resource-intensive, leading to an exploration of Dijkstra's subsequent enhancement, the A* algorithm, to improve efficiency.",
+            brief: "Featuring key Python projects: Ant Colony for efficient pathfinding, ANN Simulation with 92% MNIST accuracy, optimized pathfinding with Dijkstra's and A*, innovative My Path Finding Algorithm, 92% accurate House Price Prediction on the Boston dataset, and the application of the Rescorla–Wagner model for psychological learning simulations. Examples showcasing the fusion of theory and practice in AI, highlighting adept problem-solving:",
+            image: interactive_web_application
+        },
+        {
+            title: 'Project Management',
+            subtitle: 'ISO & Scrum',
+            brief: "Leading over 100 home automation and commercial projects, I've managed the entire lifecycle from conceptual design with AutoCAD, through electrical planning, to execution and maintenance. My approach involves direct oversight of skilled engineering teams and managing all facets of procurement and logistics. These projects demonstrate my commitment to high standards, from design to client support, highlighting my comprehensive project management expertise.",
             image: pathFinding
         },
         {
-            title: "Portfolio Showcase",
-            subtitle: "ReactJS",
-            brief: "An interactive web application highlighting proficiency in ReactJS, SASS CSS, Illustrator, and Photoshop. Features advanced CSS animations, custom graphics, and responsive design.",
-            image: interactive_web_application,
+            title: 'Security Systems  ',
+            subtitle: 'IP & Analog',
+            brief: 'My specialization in enhancing property safety involves sophisticated security configurations and cutting-edge surveillance solutions. Notable tools include Paradox, Hikvision & Aldaua samsung, philps  for top-tier CCTV systems, and Samsung for comprehensive security coverage. These examples illustrate my capability to deliver peace of mind to clients through comprehensive security systems integration.',
+            image: 'path/to/security-system-image.jpg' // Placeholder for an actual image path
         },
+        
         {
-            title: "My Path Finding Algorithm",
-            subtitle: 'Python',
-            brief: "An innovative pathfinding algorithm that seeds paths from the starting square to adjacent squares, maintained in a 'seedingpath' list. This method offers unique advantages over the Ant Colony and Dijkstra's algorithms, utilizing a distinct approach to ascertain the shortest route.",
-            image: pat
-        },
-        {
-            title: "House Price Prediction",
-            subtitle: 'Python',
-            brief: 'Applying machine learning techniques to the Boston housing dataset, this algorithm compares multiple models and visualizes their performance, achieving a notable 92% prediction accuracy. A thorough analysis provides insights into the efficacy of each approach used.',
+            title: 'Home Automation Systems',
+            subtitle: 'KNX, CBUS',
+            brief: 'Expert in integrating lighting, dimming, and facade lighting with DALI, as well as automating AC, jacuzzis, curtains, and garages. My projects utilize Control4 for seamless lighting and entertainment setups and Crestron for luxury automation. Proficient with scalable smart homes technologies including Control4, Crestron, Jira, Jung, Schneider Electric, and ABB, demonstrating my ability to ensure optimal functionality and integration in home automation systems.',
             image: boston
-        },
-        {
-            title: 'Rescorla–Wagner Model',
-            subtitle: 'Python',
-            brief: "A comprehensive simulation of the Rescorla–Wagner model, illustrating various learning types in animals and pinpointing the model's limitations. Enhancements are proposed to mitigate identified shortcomings, stemming from research by PhD Esther Mondragon.",
-            image: brain
         },
         {
             title: 'AI Math Core',

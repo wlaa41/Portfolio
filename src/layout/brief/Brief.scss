@@ -46,11 +46,15 @@ $Brief_txt_color: rgb(12, 12, 12);
             left: 0;}
         &>img{
             // z-index: -1;
+            // left: 0%;
+
             position: relative;
             // min-width: 130vh;
             // width: 130vmax;
             min-height: 130vh;
-            width: 130vmax;
+            height: 100%;
+            width: 230vmax;
+            right: 60vh;
             // filter: grayscale(0) brightness(1);
             animation: picture_bg_Swimming 99s infinite alternate linear; }}
         transition: all $Brief_Con-time $Brief-time;
