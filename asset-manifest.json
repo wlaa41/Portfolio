@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7fea8751.chunk.css",
-    "main.js": "/Portfolio/static/js/main.721db852.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.721db852.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.4fb55bd1.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.4fb55bd1.js.map",
-    "static/js/2.cf2b289c.chunk.js": "/Portfolio/static/js/2.cf2b289c.chunk.js",
-    "static/js/2.cf2b289c.chunk.js.map": "/Portfolio/static/js/2.cf2b289c.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.49238de4.chunk.css",
+    "main.js": "/Portfolio/static/js/main.4a81b68d.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.4a81b68d.chunk.js.map",
+    "reactPlayerPreview.js": "/Portfolio/static/js/reactPlayerPreview.6117bd05.chunk.js",
+    "reactPlayerPreview.js.map": "/Portfolio/static/js/reactPlayerPreview.6117bd05.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.73afb570.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.73afb570.js.map",
+    "static/js/3.0a664df9.chunk.js": "/Portfolio/static/js/3.0a664df9.chunk.js",
+    "static/js/3.0a664df9.chunk.js.map": "/Portfolio/static/js/3.0a664df9.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.7fea8751.chunk.css.map": "/Portfolio/static/css/main.7fea8751.chunk.css.map",
-    "static/js/2.cf2b289c.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.cf2b289c.chunk.js.LICENSE.txt",
+    "static/css/main.49238de4.chunk.css.map": "/Portfolio/static/css/main.49238de4.chunk.css.map",
+    "static/js/3.0a664df9.chunk.js.LICENSE.txt": "/Portfolio/static/js/3.0a664df9.chunk.js.LICENSE.txt",
     "static/media/DALL·E 2024-02-15 15.56.12 - A hyper-realistic motorcycle, reminiscent of a Ducati, is showcased on a panoramic black canvas. The scene is heavily adorned with vivid coding lines .758b06b1.webp": "/Portfolio/static/media/DALL·E 2024-02-15 15.56.12 - A hyper-realistic motorcycle, reminiscent of a Ducati, is showcased on a panoramic black canvas. The scene is heavily adorned with vivid coding lines .758b06b1.webp",
     "static/media/ICON_sprite.46f553d7.svg": "/Portfolio/static/media/ICON_sprite.46f553d7.svg",
     "static/media/Labtop.9c8f5df8.jpg": "/Portfolio/static/media/Labtop.9c8f5df8.jpg",
@@ -82,9 +84,9 @@
     "static/media/wheel1.cde58292.svg": "/Portfolio/static/media/wheel1.cde58292.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fb55bd1.js",
-    "static/js/2.cf2b289c.chunk.js",
-    "static/css/main.7fea8751.chunk.css",
-    "static/js/main.721db852.chunk.js"
+    "static/js/runtime-main.73afb570.js",
+    "static/js/3.0a664df9.chunk.js",
+    "static/css/main.49238de4.chunk.css",
+    "static/js/main.4a81b68d.chunk.js"
   ]
 }
