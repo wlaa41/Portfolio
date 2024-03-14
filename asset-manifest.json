@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.c836db9d.chunk.css",
-    "main.js": "/Portfolio/static/js/main.8760517b.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.8760517b.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.3e436647.chunk.css",
+    "main.js": "/Portfolio/static/js/main.721db852.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.721db852.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.4fb55bd1.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.4fb55bd1.js.map",
-    "static/js/2.ec6168af.chunk.js": "/Portfolio/static/js/2.ec6168af.chunk.js",
-    "static/js/2.ec6168af.chunk.js.map": "/Portfolio/static/js/2.ec6168af.chunk.js.map",
+    "static/js/2.cf2b289c.chunk.js": "/Portfolio/static/js/2.cf2b289c.chunk.js",
+    "static/js/2.cf2b289c.chunk.js.map": "/Portfolio/static/js/2.cf2b289c.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.c836db9d.chunk.css.map": "/Portfolio/static/css/main.c836db9d.chunk.css.map",
-    "static/js/2.ec6168af.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ec6168af.chunk.js.LICENSE.txt",
+    "static/css/main.3e436647.chunk.css.map": "/Portfolio/static/css/main.3e436647.chunk.css.map",
+    "static/js/2.cf2b289c.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.cf2b289c.chunk.js.LICENSE.txt",
     "static/media/DALL·E 2024-02-15 15.56.12 - A hyper-realistic motorcycle, reminiscent of a Ducati, is showcased on a panoramic black canvas. The scene is heavily adorned with vivid coding lines .758b06b1.webp": "/Portfolio/static/media/DALL·E 2024-02-15 15.56.12 - A hyper-realistic motorcycle, reminiscent of a Ducati, is showcased on a panoramic black canvas. The scene is heavily adorned with vivid coding lines .758b06b1.webp",
     "static/media/ICON_sprite.46f553d7.svg": "/Portfolio/static/media/ICON_sprite.46f553d7.svg",
     "static/media/Labtop.9c8f5df8.jpg": "/Portfolio/static/media/Labtop.9c8f5df8.jpg",
@@ -28,6 +28,7 @@
     "static/media/bright-squares.png": "/Portfolio/static/media/bright-squares.79000482.png",
     "static/media/bushes.29bbd009.svg": "/Portfolio/static/media/bushes.29bbd009.svg",
     "static/media/chat_black_24dp.acafb7f6.svg": "/Portfolio/static/media/chat_black_24dp.acafb7f6.svg",
+    "static/media/citySpark-price-5000-will-jamous.25710202.png": "/Portfolio/static/media/citySpark-price-5000-will-jamous.25710202.png",
     "static/media/crisp-paper-ruffles.png": "/Portfolio/static/media/crisp-paper-ruffles.a006a9e2.png",
     "static/media/ducati.7146c1ab.webp": "/Portfolio/static/media/ducati.7146c1ab.webp",
     "static/media/eyelash.99a1b011.svg": "/Portfolio/static/media/eyelash.99a1b011.svg",
@@ -82,8 +83,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4fb55bd1.js",
-    "static/js/2.ec6168af.chunk.js",
-    "static/css/main.c836db9d.chunk.css",
-    "static/js/main.8760517b.chunk.js"
+    "static/js/2.cf2b289c.chunk.js",
+    "static/css/main.3e436647.chunk.css",
+    "static/js/main.721db852.chunk.js"
   ]
 }
