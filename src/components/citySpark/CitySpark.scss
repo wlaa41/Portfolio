@@ -2,22 +2,42 @@
 
 .citySpark_stripe{
   display: flex;
-  overflow-y: hidden;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
   h2{
     margin-top: 2rem;
     font-size: 2.9rem;
     text-align: center;
+    font-size: 40px;
+            background: linear-gradient(
+              149.47deg,
+              rgb(111, 159, 255) 6.08%,
+              rgb(86, 145, 255) 11.08%,
+              rgb(88, 86, 249) 50.65%,
+              rgb(128, 43, 255) 75.66%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+ 
+            margin-top: 36px;
 
   }
   &_h3{
     font-size: 1.6rem;
-    font-weight: 400;
-    color: rgb(167, 167, 167);
     margin-bottom: 2rem;
     text-align: center;
-
+          background: linear-gradient(
+            149.47deg,
+            rgb(30, 30, 30) 5.08%,
+            rgb(60, 144, 133) 50.65%,
+            rgb(148, 148, 148) 75.66%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+    filter: grayscale(.4);
   }
 }
 
@@ -65,7 +85,7 @@
     align-items: center;
     margin: -1.4rem 2rem 3rem 5rem;
     text-align: center;
-    letter-spacing: .3ch;
+    letter-spacing: .1ch;
     font-weight: 300;
     color: rgb(86, 86, 86);
 

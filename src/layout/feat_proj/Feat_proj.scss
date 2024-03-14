@@ -14,7 +14,7 @@
     &_titleCon{
         flex:2;
         // border: 3px dashed darkgreen;
-        padding-left: 2rem;
+        // padding-left: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -23,7 +23,7 @@
             text-orientation: mixed;
             text-align: center;
             transform: rotateZ(.5turn);
-            margin: -55px -7rem 0 0;
+            margin: -55px 0 0 0;
             & > div{
                 text-transform: uppercase;
             }
@@ -56,6 +56,24 @@
             
         }   
     }
+.title{
+
+            //font-family: $roboto-black;
+            font-size: 40px;
+            background: linear-gradient(
+              149.47deg,
+              rgb(111, 159, 255) 6.08%,
+              rgb(86, 145, 255) 11.08%,
+              rgb(88, 86, 249) 50.65%,
+              rgb(128, 43, 255) 75.66%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 22px;
+            margin-top: 36px;
+            
+}
 @include respond(tab-port)
 {
     .ftStrip{

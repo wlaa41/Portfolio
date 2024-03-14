@@ -1,0 +1,103 @@
+
+
+.video-stripe {
+  // max-width: 1440px;
+  width: 100%;
+  overflow: hidden;
+  padding-block: 80px;
+  padding-inline: 170px;
+  background: lightgray;
+
+  .main-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    .gridLeftRight {
+      display: grid;
+      grid-template-columns: 450px 500px;
+      gap: 50px;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .leftContainer {
+        .text-desc {
+          text-align: left;
+
+          .title {
+            //font-family: $roboto-black;
+            font-size: 40px;
+            background: linear-gradient(
+              149.47deg,
+              rgb(111, 159, 255) 6.08%,
+              rgb(86, 145, 255) 11.08%,
+              rgb(88, 86, 249) 50.65%,
+              rgb(128, 43, 255) 75.66%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 35px;
+            width: 95%;
+          }
+
+          .desc {
+            //font-family: $roboto_regular;
+            font-size: 14px;
+            color: rgb(63, 63, 63);
+          }
+        }
+      }
+
+      .rightContainer {
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0 5px 11px rgba(0, 0, 0, 0.4);
+        height: 290px;
+
+        .video {
+          height: 100%;
+
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .video-stripe {
+    padding-inline: 25px;
+
+    .main-container {
+      .gridLeftRight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 0px;
+
+        .leftContainer {
+          .text-desc {
+            .title {
+              text-align: center;
+              margin: 0 0 40px;
+              width: 100%;
+            }
+
+            .desc {
+              margin: 0 0 40px;
+              text-align: center;
+            }
+          }
+        }
+
+        .rightContainer {
+          width: 100%;
+          height: 415px;
+        }
+      }
+    }
+  }
+}

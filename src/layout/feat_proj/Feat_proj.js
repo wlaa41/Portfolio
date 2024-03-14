@@ -59,11 +59,14 @@ const exit_Icon=<svg className="ftP-svg">
     <section className='ftStrip'>
      
         <div className="ftStrip_titleCon">
-            <div className='ftStrip_titleCon-flip'>
-            <div className='ftStrip_titleCon-Feature'>3D Matrix</div>
+            <div className='ftStrip_titleCon-flip '>
+            <h2 className='title'>
+                3D Matrix Space Simulator
+            </h2>
+            {/* <div className='ftStrip_titleCon-Feature'>3D Matrix</div>
                 <div className='ftStrip_titleCon-Project'><div className='P'>S</div>imulation</div>
             
-            
+             */}
             </div>
         </div>
 

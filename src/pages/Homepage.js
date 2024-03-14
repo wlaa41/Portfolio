@@ -7,6 +7,7 @@ import EduExpStrip from '../layout/EduExp/educationStrip'
 import Brief from '../layout/brief/Brief'
 import Divider from '../components/divider/divider'
 import CitySpark from '../components/citySpark/CitySpark'
+import VideoStripe from '../components/VideoStripe/VideoStripe'
 
 class Homepage extends React.Component{
 
@@ -15,7 +16,6 @@ class Homepage extends React.Component{
             <div id='homePage'>
                 <Brief></Brief>
                 <Mainintro/>
-               
 
 
 
@@ -25,6 +25,8 @@ class Homepage extends React.Component{
                 
                 <CitySpark/>
                 <Feat_proj></Feat_proj>
+                <VideoStripe/>
+
 
                 {/* <EducationStrip></EducationStrip> */}
                        {/* <SkillLogo></SkillLogo> */}

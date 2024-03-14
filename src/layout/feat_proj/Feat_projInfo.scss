@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    // gap: 2rem;
     height: 70%;
     width:60%;
     border: 4px solid rgba(169, 169, 169, 0.212);
@@ -60,12 +60,12 @@
 
     &_Title{
         font-weight: 200;
-        letter-spacing: .2ch;
+        letter-spacing: 0ch;
         color: rgb(105, 105, 105);
         position: relative;
        font-family:  sans-serif;
        font-size: 1.5rem;
-       line-height: 4ch;
+       line-height: 3ch;
         &::first-line{
             text-transform: uppercase;
             font-size: 1.8rem;
@@ -85,8 +85,8 @@
     &_Body{
        font-family:  sans-serif;
        font-size: 1.5rem;
-       letter-spacing: .1ch;
-       a{
+       line-height: 1.5;
+              a{
             display:inline;
             position: relative;
             margin: 0;
