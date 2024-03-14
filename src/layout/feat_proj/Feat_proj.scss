@@ -86,7 +86,8 @@
                     font-size:3.3rem;
                 }
                 font-size:2rem;
-                letter-spacing: .3ch;
+                letter-spacing: 0ch;
+                color:rgb(174, 174, 174)
             }
             &-Project{
                 margin-top: -7rem;
@@ -96,9 +97,9 @@
                     display: inline;
                     font-size:7rem;
                     position: relative;
-                    margin-right: -1rem;
+                    margin-right: 0rem;
                 }
-                letter-spacing: .2ch;
+                letter-spacing: .1ch;
                 font-size: 3rem;
                 font-weight: bold;
                 transform: translate(0,0ch);

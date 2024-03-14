@@ -6,7 +6,7 @@ import Foot from '../layout/footer/footer'
 import EduExpStrip from '../layout/EduExp/educationStrip'
 import Brief from '../layout/brief/Brief'
 import Divider from '../components/divider/divider'
-
+import CitySpark from '../components/citySpark/CitySpark'
 
 class Homepage extends React.Component{
 
@@ -23,7 +23,7 @@ class Homepage extends React.Component{
                
                 <CardStrip></CardStrip>
                 
-
+                <CitySpark/>
                 <Feat_proj></Feat_proj>
 
                 {/* <EducationStrip></EducationStrip> */}

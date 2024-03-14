@@ -60,8 +60,8 @@ const exit_Icon=<svg className="ftP-svg">
      
         <div className="ftStrip_titleCon">
             <div className='ftStrip_titleCon-flip'>
-            <div className='ftStrip_titleCon-Feature'>For Fun</div>
-                <div className='ftStrip_titleCon-Project'><div className='P'>P</div>roject</div>
+            <div className='ftStrip_titleCon-Feature'>3D Matrix</div>
+                <div className='ftStrip_titleCon-Project'><div className='P'>S</div>imulation</div>
             
             
             </div>

@@ -14,8 +14,8 @@ import interactive_web_application from './sass_reactjs.webp'
 export default function info(){
     return([
         {
-            title: 'RL & Cognitive Robotics',
-            subtitle: 'Agent Collaboration',
+            title: 'RL & Cognitive Robot',
+            subtitle: 'Agent Collab.',
             brief: 'This project integrates cognitive learning with RL to enhance multi-agent robotics. It improves localization, addresses the sim2real gap, and examines agent interactions for commercial application. By combining probabilistic methods and cognitive models, it advances autonomous collaboration and adaptability.',
             image: lab // Placeholder for concise visual representation
         },
