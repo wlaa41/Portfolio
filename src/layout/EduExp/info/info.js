@@ -8,70 +8,80 @@ import React from 'react'
 
 
 
-export const  info = [
+export const info = [
     {
-        title: "PhD AI & Robotics Innovations",
-        date: "2023/24",
-        subtitle: "PhD Enhancing Autonomous Robotics with Cognitive RL",
-        brief: "This research aims to advance autonomous robotics in multi-agent systems by merging cognitive learning with reinforcement learning (RL) for better localization and sim2real adaptation. Focusing on probabilistic optimization and agent interaction dynamics, the project bridges theory with practical application, targeting improved collaboration and adaptability in commercial environments. Through a blend of simulation testing and real-world deployment, it seeks to transform robotic learning, making it more adaptable and effective for complex tasks.",
+        title: "PhD in AI & Robotics Innovations",
+        date: "Expected 2028",
+        subtitle: "Enhancing Cognitive Robotics",
+        brief: "Engaged in groundbreaking research to merge cognitive learning with reinforcement learning for advanced autonomous system adaptability. Focus on multi-agent system collaboration, leveraging simulation and real-world deployment to revolutionize robotic learning.",
         image: new_robot_project, // Placeholder for the actual image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
     {
-        title: "Aviation Control System Enhancement",
+        title: "Aviation Control System Research",
         date: "2023/24",
-        subtitle: "Linearized Models & Jacobian Matrix",
-        brief: "Focusing on aviation control systems, this study uses linearized models and the Jacobian matrix to analyze and stabilize the RAE (Research Aircraft Experiment) plane. Linearized models help predict the aircraft's response to perturbations, while the Jacobian matrix offers insights into system stability and control feedback mechanisms. This methodology aims to improve flight stability and performance, applying fundamental mathematical principles to address complex engineering challenges in aviation. The project exemplifies the application of advanced mathematical techniques in enhancing the safety and efficiency of aircraft operations.",
+        subtitle: "Control Sysyem",
+        brief: "Employed linearized models and Jacobian matrix for RAE plane stability. Aimed at enhancing flight control and safety through mathematical analysis, improving aircraft performance.",
         image: new_ai_math, // Placeholder for the actual image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
     {
-        title: "MSc in Artificial Intelligence, UK",
-        date: "2020 to present",
-        subtitle: "Achieved First-Class Honors",
-        brief: "Possesses a robust theoretical foundation in Mathematics and AI with proficiency in Python and PyTorch. Skilled in crafting and evaluating ML/DL models and integrating them as services via diverse APIs/software. Familiar with leading machine learning, NLP frameworks (including TensorFlow 2, Keras, Theano, Scikit-learn, and others), and adept in version control (Git) with an understanding of continuous delivery pipelines. Expert in resolving developmental and testing environment issues.",
-        image: laptop,
+        title: "MSc Artificial Intelligence, 2022",
+        subtitle: "With Distinction",
+        brief: "• Specialized in Generative AI, excelling in model innovation. • Mastered CNNs and NLP models, applying them to complex datasets. • Focused on Multi-Agent Systems, demonstrating advanced problem-solving skills. • Proficient in TensorFlow, PyTorch, and Pandas, aligning with high employability standards in AI fields.",
+        image: laptop, // Placeholder image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
     {
-        title: "Transition to ML, AI & ReactJS",
-        date: "2020 to 2022",
-        subtitle: "Completed 15+ AI-Related Courses",
-        brief: "Dedicated substantial time to learning alongside my studies, completing over 14 courses with a focus on mathematics, including linear algebra, probability, statistics, and number theory. Presently exploring ROS2 for automotive algorithm development. Applied JavaScript, SASS, and ReactJS in freelance projects, demonstrating FullStack development proficiency.",
-        image: robot,
+        title: "Full-Stack Development & AI Integration",
+        date: "2020 - 2022",
+        subtitle: "Extensive Learning & Application",
+        brief: "Completed 25+ courses in AI, mathematics, and Full-Stack development. Applied skills in JavaScript, ReactJS, and AI in freelance projects, demonstrating versatility and proficiency.",
+        image: robot, // Placeholder for the actual image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
     },
     {
-        title: "Smart Cities Company, UAE",
-        date: "2015 - 2020",
-        subtitle: "Manager & R&D Manager",
-        brief: "Spearheaded project planning, commissioning, and product improvement based on industry trends. Integrated services with noSQL cloud solutions, educated staff on AutoCAD, SolidWorks, Control4, and KNX systems. Innovated a local language voice recognition system, pivotal in marketing campaigns, giving a competitive edge to our automation solutions. Ensured team metrics and goals were met with comprehensive documentation throughout R&D phases.",
-        image: ant,
+        title: "Smart City Solutions Leadership",
+        date: "2015 - 2019",
+        subtitle: "Innovation in Automation",
+        brief: "Directed smart city projects, integrating noSQL solutions and pioneering voice recognition systems for automation. Achieved significant advancements in project delivery and product improvement.",
+        image: ant, // Placeholder for the actual image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
     },
     {
-        title: "Int. Islamic University of Malaysia",
-        date: "2013 - 2015",
-        subtitle: "Lab Instructor Assistant",
-        brief: "Collaborated with a teaching team on PCB design and microcontroller programming courses. Created teaching materials and methods, aligning with established academic practices. Fostered a hands-on learning environment, set high expectations, and nurtured student independence and self-esteem.",
-        image: robot,
+        title: "DevOps & Cloud Engineering Expertise",
+        date: "2023 - 2024",
+        subtitle: "Mastering Modern Deployment",
+        brief: "Specialized in Docker, Kubernetes, and Azure DevOps. Led projects enhancing CI/CD pipelines, infrastructure as code with Terraform, and system monitoring, ensuring scalable and reliable cloud solutions.",
+        image: laptop, // Reused image placeholder
+        icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
+    },
+    {
+        title: "Advanced Robotics Simulation",
+        date: "2023",
+        subtitle: "Gazebo & Jackal Robot Integration",
+        brief: "Developed a Gazebo simulation environment, enhancing autonomous navigation research. Authored guides and designed custom models, showcasing proficiency in robotics software development.",
+        image: new_robot_project, // Reused image placeholder
+        icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
+    },
+    {
+        title: "Smart Home Automation Expert",
+        date: "2019",
+        subtitle: "Leading Edge in Home Automation",
+        brief: "Directed luxury smart home integrations, achieving significant sales growth through innovative marketing and product delivery. Specialized in Control4, Crestron systems, and sustainable energy solutions.",
+        image: ant, // Reused image placeholder
+        icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
+    },
+    {
+        title: "Programming Inst.II University of Malaysia",
+        date: "2013 - 2016",
+        subtitle: "OOP & Algorithms Mastery",
+        brief: "• Innovated programming education focusing on OOP (Object-Oriented Programming) and algorithms. • Awarded for pedagogical excellence; Pedagogy certified. • Educated over 400 students • Developed coursework that combined theory with practical application.",
+        image: robot, // Placeholder for emphasis on technology education
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-blackboard"}></use></svg>
     },
-    // Additional Entries:
-   
-    
-            // {
-            //     title: 'Born in 1986',
-            //     date: '2013 - 15',
-            //     subtitle:'Eye opener',
-            //     brief: `My love to my mother, late father. Also my supportiv wife and great family around me.`
-            //     ,
-            //     image: baby,
-            //     icon:   <svg className="CardEdu_header_icon">
-            //                 <use href={sprite+"#icon-blackboard"}>
-            //                 </use>
-            //             </svg>
-            // }
 ]
+
+
 
 

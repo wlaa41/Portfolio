@@ -1,0 +1,179 @@
+
+
+.robotic-stripe {
+  margin-top: 4vw;
+  // max-width: 1440px;
+  width: 100%;
+  overflow: hidden;
+  padding-block: 80px;
+  padding-inline: 170px;
+
+  .main-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    .gridLeftRight {
+      display: grid;
+      grid-template-columns: 560px 430px;
+      gap: 20px;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .rightContainer {
+        .text-desc {
+          text-align: left;
+
+          .title {
+            //font-family: $roboto-black;
+            line-height: 1.3;
+            letter-spacing: -.1ch;
+            margin-top: 0;
+            font-size: 35px;
+            background: linear-gradient(
+              149.47deg,
+              rgb(111, 159, 255) 6.08%,
+              rgb(86, 145, 255) 11.08%,
+              rgb(88, 86, 249) 50.65%,
+              rgb(128, 43, 255) 75.66%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            width: 95%;
+          }
+
+          .desc {
+            //font-family: $roboto_regular;
+            font-size: 14px;
+            color: rgb(63, 63, 63);
+            object-fit: fill;
+
+          }
+        }
+      }
+
+      .leftContainer {
+        border-radius: 1px;
+        overflow: hidden;
+        
+        height: 330px;
+        // box-shadow: inset 4px 5px 11px rgba(151, 0, 0, 0.4);
+        // border: 4px solid rgb(0, 156, 191);
+        background: conic-gradient( rgb(86, 145, 255) 11.08%, rgb(86, 145, 255),rgb(86, 145, 255) 11.08%, rgb(86, 145, 255));
+
+        &S::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          box-shadow: inset 0 5px 11px rgba(0, 0, 0, 0.4);
+          pointer-events: none; /* This ensures that clicks go through to the image */
+        }
+        .robotic {
+          height: 100%;
+          // border: 4px solid blue;
+          // box-shadow:  0 5px 11px rgba(0, 0, 0, 0.74);
+          padding: 6px;
+          // overflow: hidden;
+          //BOARDER TOP
+          border: 16px solid;
+          border-image-slice: 6;
+          border-width: 5px;
+          display: flex;
+          overflow: hidden;
+
+          border-image-source: radial-gradient(circle at center, #6f9fff  55%, white 120%);
+    
+          img {
+            position: relative;
+            top:-4px;
+            left: -3%;
+            width: 107%;
+            // display: none;
+            
+          }
+
+        }
+      }
+    }
+  }
+}
+#GazeboButton{
+  // background-color: rgb(72, 72, 72);
+  background: radial-gradient(circle at 0% 0%, rgba(74, 252, 175, 0.4), rgba(255, 255, 255, 0)), linear-gradient(149.47deg, rgba(20, 170, 105, 0.6) 5.08%, rgba(25, 145, 128, 0.6) 50.65%, rgba(33, 127, 149, 0.8) 75.66%),linear-gradient(255.37deg, #000000 38%, #262626 97%);
+  // background: linear-gradient(255.37deg, #000000 14.38%, #262626 67.97%);
+  color: white;
+  margin-top: 22px;
+  // display: flex;
+  padding-bottom: 9px;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.538) ;
+  height: 44px;
+  transition: 0.2s;
+
+  &:hover{
+    transition: 0.2s;
+    transform: translateY(-3px);
+  }
+  &:active {
+    transition: 0.1s;
+    transform: translateY(2px);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.538) ;
+  }
+}
+@media only screen and (max-width: 1199.98px) {
+  #GazeboButton{
+    margin: 0 0 5rem;
+  }
+  .robotic-stripe {
+    padding-inline: 25px;
+
+    .main-container {
+      max-width: 700px;
+      .gridLeftRight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 0px;
+
+        .rightContainer {
+          .text-desc {
+            display: grid;
+            .title {
+              text-align: center;
+              margin: 2rem 0 10px;
+              width: 100%;
+            }
+
+            .desc {
+              margin: 0 0 20px;
+              text-align: center;
+            }
+          }
+        }
+
+        .leftContainer {
+          width: 100%;
+          height: 415px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 699.98px) {
+  .robotic-stripe {
+    .main-container {
+      .gridLeftRight {
+
+        .rightContainer {
+          height: 53vw;
+        }
+      }
+    }
+  }
+}

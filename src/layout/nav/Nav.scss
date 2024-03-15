@@ -122,11 +122,15 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
 
                 $colorAfter:rgba(0, 0, 0, 0.215);
                 // HOVER ON THE BUTTON
+
                 &:hover{                    
                     background-color:  $colorAfter;
                     border-color:  rgb(149, 150, 151);
                     color:rgb(231, 244, 255);}
+
                 &-2:hover{
+                    transition: .2s;
+
                     background-color:  rgb(238, 238, 238);
                     color:rgb(0, 123, 206);
                     border-color:  rgb(255, 255, 255);

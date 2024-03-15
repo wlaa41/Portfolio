@@ -8,6 +8,7 @@ import Brief from '../layout/brief/Brief'
 import Divider from '../components/divider/divider'
 import CitySpark from '../components/citySpark/CitySpark'
 import VideoStripe from '../components/VideoStripe/VideoStripe'
+import RoboticProject from '../components/RoboticProject/RoboticProject'
 
 class Homepage extends React.Component{
 
@@ -31,6 +32,7 @@ class Homepage extends React.Component{
                 {/* <EducationStrip></EducationStrip> */}
                        {/* <SkillLogo></SkillLogo> */}
                 {/* <ColorPick></ColorPick> */}
+                <RoboticProject/>
                 <EduExpStrip></EduExpStrip>
          
                  <Foot> </Foot>

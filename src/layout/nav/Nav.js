@@ -124,11 +124,6 @@ const showform = false;
                                         // onClick={ window.open("about:blank","_blank")}
                                         target="_blank" href="https://www.linkedin.com/in/smartwill/">Current Project</button>
                                         <button id='tlkbtn'  className='navGrid_BtnCon_button navGrid_BtnCon_button-2' onClick={openForm}
-                //                         style={{
-                //                                 position: 'relative',
-                // transform: `translate3d(${translate[0]}px,${translate[1]}px,0)`
-                //                         }}
-                                        
                                         >Let's Talk
                                         <TalkIcon></TalkIcon>
                                         </button>
