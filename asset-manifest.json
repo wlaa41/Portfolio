@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3cadf97a.chunk.css",
-    "main.js": "/Portfolio/static/js/main.37b2ece5.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.37b2ece5.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.8b236fb6.chunk.css",
+    "main.js": "/Portfolio/static/js/main.849730ba.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.849730ba.chunk.js.map",
     "reactPlayerPreview.js": "/Portfolio/static/js/reactPlayerPreview.86b734e4.chunk.js",
     "reactPlayerPreview.js.map": "/Portfolio/static/js/reactPlayerPreview.86b734e4.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.053a71f3.js",
@@ -10,9 +10,8 @@
     "static/js/3.7fb22709.chunk.js": "/Portfolio/static/js/3.7fb22709.chunk.js",
     "static/js/3.7fb22709.chunk.js.map": "/Portfolio/static/js/3.7fb22709.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.3cadf97a.chunk.css.map": "/Portfolio/static/css/main.3cadf97a.chunk.css.map",
+    "static/css/main.8b236fb6.chunk.css.map": "/Portfolio/static/css/main.8b236fb6.chunk.css.map",
     "static/js/3.7fb22709.chunk.js.LICENSE.txt": "/Portfolio/static/js/3.7fb22709.chunk.js.LICENSE.txt",
-    "static/media/DALL·E 2024-02-15 15.56.12 - A hyper-realistic motorcycle, reminiscent of a Ducati, is showcased on a panoramic black canvas. The scene is heavily adorned with vivid coding lines .758b06b1.webp": "/Portfolio/static/media/DALL·E 2024-02-15 15.56.12 - A hyper-realistic motorcycle, reminiscent of a Ducati, is showcased on a panoramic black canvas. The scene is heavily adorned with vivid coding lines .758b06b1.webp",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
     "static/media/Labtop.9c8f5df8.jpg": "/Portfolio/static/media/Labtop.9c8f5df8.jpg",
     "static/media/React JS.png": "/Portfolio/static/media/React JS.999601f5.png",
@@ -86,7 +85,7 @@
   "entrypoints": [
     "static/js/runtime-main.053a71f3.js",
     "static/js/3.7fb22709.chunk.js",
-    "static/css/main.3cadf97a.chunk.css",
-    "static/js/main.37b2ece5.chunk.js"
+    "static/css/main.8b236fb6.chunk.css",
+    "static/js/main.849730ba.chunk.js"
   ]
 }
