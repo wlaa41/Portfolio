@@ -5,21 +5,66 @@ Welcome to the official repository of my professional portfolio. This space is d
 
 ## Table of Contents
 
-- [About Me](#about-me)
-- [Projects Overview](#projects-overview)
-  - [RL & Cognitive Robot](#rl--cognitive-robot)
-  - [Jackal Robot Sim](#jackal-robot-sim)
-  - [AI & ML Python Projects](#ai--ml-python-projects)
-  - [Project Management](#project-management)
-  - [Security Systems](#security-systems)
-  - [Home Automation Systems](#home-automation-systems)
-  - [AI Math Core](#ai-math-core)
-  - [Image Mosaic & Feature ID](#image-mosaic--feature-id)
-- [Education and Experience](#education-and-experience)
-- [Awards and Recognitions](#awards-and-recognitions)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
+
+# Table of Contents
+
+- [WalaaWill Portfolio](#walaawill-portfolio)
+  - [Table of Contents](#table-of-contents)
+- [Table of Contents](#table-of-contents-1)
+  - [About Me](#about-me)
+  - [Projects Overview](#projects-overview)
+    - [RL \& Cognitive Robot](#rl--cognitive-robot)
+    - [Jackal Robot Sim](#jackal-robot-sim)
+    - [AI \& ML Python Projects](#ai--ml-python-projects)
+    - [Project Management](#project-management)
+  - [Education and Experience](#education-and-experience)
+  - [Awards and Recognitions](#awards-and-recognitions)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+      - [Running Without a Container](#running-without-a-container)
+      - [Running With a Container](#running-with-a-container)
+  - [React Application Docker Setup (Deeper Dive in Docker)](#react-application-docker-setup-deeper-dive-in-docker)
+      - [Dockerfile Explanation](#dockerfile-explanation)
+  - [Building the Docker Image](#building-the-docker-image)
+  - [Running the Container for Development](#running-the-container-for-development)
+  - [Making Changes](#making-changes)
+- [Project Deployment Guide](#project-deployment-guide)
+  - [Setting Up SSH](#setting-up-ssh)
+    - [Generating SSH Keys](#generating-ssh-keys)
+    - [Adding SSH Key to GitHub](#adding-ssh-key-to-github)
+  - [Configuring Git Identity](#configuring-git-identity)
+    - [Setting Git Identity](#setting-git-identity)
+  - [Deployment](#deployment)
+  - [Advanced Projects and Research](#advanced-projects-and-research)
+    - [Enhancing Autonomous Robotics with Cognitive RL](#enhancing-autonomous-robotics-with-cognitive-rl)
+    - [Aviation Control System Enhancement](#aviation-control-system-enhancement)
+    - [Smart Cities and IoT](#smart-cities-and-iot)
+  - [Tools and Technologies](#tools-and-technologies)
+  - [Tools and Technologies](#tools-and-technologies-1)
+  - [Contributions and Community Engagement](#contributions-and-community-engagement)
+    - [Open Source Projects](#open-source-projects)
+    - [Publications and Presentations](#publications-and-presentations)
+    - [Workshops and Seminars](#workshops-and-seminars)
+  - [Looking Ahead](#looking-ahead)
+  - [How to Contribute](#how-to-contribute)
+    - [Reporting Issues](#reporting-issues)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+  - [Contact Information](#contact-information)
+  - [Skills and Tools](#skills-and-tools)
+  - [Work Experience Highlights](#work-experience-highlights)
+  - [Key Projects and Achievements](#key-projects-and-achievements)
+  - [Education](#education)
+  - [Achievements](#achievements)
+    - [Workshops and Seminars](#workshops-and-seminars-1)
+  - [Looking Ahead](#looking-ahead-1)
+  - [How to Contribute](#how-to-contribute-1)
+    - [Reporting Issues](#reporting-issues-1)
+  - [License](#license-1)
+  - [Acknowledgments](#acknowledgments-1)
+  - [Contact Information](#contact-information-1)
+
 
 ## About Me
 
@@ -60,10 +105,8 @@ Before you begin, ensure you have the following installed:
 - Python 3.x
 - Node.js
 
-### Installation
 
-
-### Installation
+## Installation
 
 This portfolio can be run with or without a container. Below are the instructions for both methods, including a note on potential issues with Windows OS and the importance of using Node.js version 16.
 
@@ -113,6 +156,148 @@ Using Docker or any compatible container platform can streamline the setup proce
 ---
 
 Regardless of the method chosen, `npm install --save-dev sass` is crucial for proper styling compilation. Ensure this step is not overlooked during setup.
+
+
+## React Application Docker Setup (Deeper Dive in Docker)
+
+This guide outlines how to containerize a React application using Docker, emphasizing live reloading capabilities during development with hot reloading supported by React Hot Loader and ensuring file change detection with CHOKIDAR_USEPOLLING.
+
+#### Dockerfile Explanation
+
+The Dockerfile sets up an Ubuntu 22.04 environment, installs Node.js, Yarn, and other necessary packages. It uses an environment variable to improve file watching in Docker environments, particularly useful for development on platforms where file change events do not automatically propagate to Docker containers.
+
+```Dockerfile
+# Use Ubuntu 22.04 as the base image
+FROM ubuntu:22.04
+
+# Avoid prompts from apt during installation
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Install Node.js (including npm) and other necessary packages
+RUN apt-get update && apt-get install -y curl && \
+    curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && \
+    apt-get install -y nodejs && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install Yarn
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+    apt-get update && apt-get install -y yarn
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Install application dependencies
+RUN apt-get update && apt-get install -y git && \
+    npm install react@16 react-dom@16 react-player && \
+    npm install --save-dev sass
+
+# Use polling for file system events for compatibility in Docker
+ENV CHOKIDAR_USEPOLLING=true
+
+# Copy the local application files to the container
+COPY . /app
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the application
+CMD ["npm", "start"]
+```
+
+## Building the Docker Image
+
+To build your Docker image, navigate to the directory containing your Dockerfile and run:
+
+```bash
+docker build -t <image-name> .
+```
+
+Replace `<image-name>` with your preferred name for the Docker image.
+
+## Running the Container for Development
+
+To run your container and enable live reloading during development, use the following command:
+
+```bash
+docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 <image-name>
+```
+
+This command mounts your current working directory to `/app` in the container and creates an anonymous volume for `/app/node_modules`, ensuring that the container uses its own `node_modules` and not the host's. This setup is crucial for live reloading to work properly.
+
+`ENV CHOKIDAR_USEPOLLING=true` ensures that file watching works correctly across all development environments, especially necessary for Docker on Windows and macOS.
+
+## Making Changes
+
+With the container running, any changes made to your files will trigger a reload in your React application, allowing you to see updates in real-time.
+
+---
+
+This setup provides a robust environment for developing React applications with Docker, leveraging the best practices for live reloading and efficient development workflows.
+
+# Project Deployment Guide
+
+This guide provides essential steps for setting up SSH and Git configurations required for deploying your project, especially when working within a Docker container.
+
+## Setting Up SSH
+
+SSH (Secure Shell) is vital for secure communication with repositories hosted on platforms like GitHub. It's particularly crucial when pushing changes or deploying projects from within Docker containers.
+
+### Generating SSH Keys
+
+1. **Open a terminal** in your Docker container or local environment where you need to generate SSH keys.
+2. **Generate a new SSH key pair** with the following command:
+   ```bash
+   ssh-keygen -t ed25519 -C "your_email@example.com"
+   ```
+   Replace `your_email@example.com` with your email address. Press Enter to accept default file locations and enter a passphrase if desired.
+
+3. **Start the ssh-agent in the background**:
+   ```bash
+   eval "$(ssh-agent -s)"
+   ```
+
+4. **Add your SSH private key to the ssh-agent**:
+   ```bash
+   ssh-add ~/.ssh/id_ed25519
+   ```
+
+### Adding SSH Key to GitHub
+
+1. **Copy the SSH public key to your clipboard**:
+   ```bash
+   cat ~/.ssh/id_ed25519.pub
+   ```
+   Then manually copy the displayed key.
+
+2. **Go to GitHub** and navigate to **Settings > SSH and GPG keys > New SSH key**.
+
+3. **Paste your key**, give it a title, and **Add SSH key**.
+
+## Configuring Git Identity
+
+Git requires user identity configuration to associate commits with an individual. This setup is necessary for operations that interact with a Git repository.
+
+### Setting Git Identity
+
+Run the following commands in your Docker container or local environment where you're setting up your project:
+
+1. **Set your Git user name**:
+   ```bash
+   git config --global user.name "Your Name"
+   ```
+
+2. **Set your Git email address**:
+   ```bash
+   git config --global user.email "you@example.com"
+   ```
+
+Replace `"Your Name"` with your actual name and `"you@example.com"` with your email address. These should align with your GitHub account for consistency with GitHub commits.
+
+## Deployment
+
+With SSH and Git configurations set, you're ready to deploy your project. Follow your project-specific deployment instructions, ensuring any operations that require Git or SSH access are now properly authenticated.
 
 
 ## Advanced Projects and Research
@@ -236,3 +421,49 @@ Thank you for taking the time to explore my portfolio. I look forward to the pos
 
 - **1st Place CitySpark Startup Competition (2022)**: For innovative concepts in AI education.
 - **Pioneering Home Automation Projects**: Over 100 projects integrating advanced AI technologies.
+
+### Workshops and Seminars
+
+Information on workshops and seminars I've organized or participated in, aimed at educating and inspiring others in the fields of AI, machine learning, and robotics.
+
+## Looking Ahead
+
+As I continue my journey in AI and Robotics, I remain committed to exploring new horizons and pushing the boundaries of technology. My ongoing research and project work aim to contribute to the advancement of autonomous systems and their application in improving human life and environmental sustainability.
+
+I look forward to collaborating with peers, industry leaders, and communities to create innovative solutions that address global challenges. The path ahead is filled with opportunities for growth, learning, and impact, and I am excited to see where it leads.
+
+For inquiries, collaborations, or more information, please feel free to contact me at walaa.jamous@city.ac.uk.
+
+## How to Contribute
+
+I welcome contributions from the community, whether they are suggestions for improvements, bug reports, or contributions to the code. If you're interested in contributing, please follow these steps:
+
+1. **Fork the repository**: Create your own copy of the repository to work on.
+2. **Create a new branch**: Make your changes in a new branch off of the main branch.
+3. **Submit a pull request**: Once your changes are complete, submit a pull request to merge your changes back into the main repository. Please provide a detailed description of your changes and the impact they have.
+
+### Reporting Issues
+
+If you encounter any issues or have suggestions for improvements, please submit them through the GitHub issue tracker for this repository. Your feedback is invaluable in making this resource more useful for everyone.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. This means you are free to use, modify, and distribute the projects contained herein, provided that you include the original copyright and permission notice in all copies or substantial portions of the software.
+
+## Acknowledgments
+
+- Hat tip to everyone who has contributed to this project, whether through direct code contributions, issues, or feature suggestions.
+- Special thanks to the academic and professional mentors who have guided my journey in AI and Robotics.
+- Appreciation to the open-source community for providing the tools and frameworks that have made much of this work possible.
+
+## Contact Information
+
+For any inquiries or further discussion about the projects and technologies mentioned in this portfolio, please don't hesitate to reach out. I am always open to discussing new ideas, potential collaborations, or opportunities to contribute to exciting projects.
+
+**Email**: walaa.jamous@city.ac.uk
+
+Thank you for taking the time to explore my portfolio. I look forward to the possibility of working together to push the boundaries of what's possible in AI and Robotics.
+
+---
+
+*This README is a living document and may be updated as new projects are added or existing ones are enhanced. Be sure to check back regularly for the latest developments.*
