@@ -12,7 +12,9 @@
     align-items:  center;
     perspective:600px;
     overflow: hidden;
-
+    border-top: 4px solid;
+    border-image-slice: 1;
+    border-image-source: radial-gradient(circle at center, #6f9fff  55%, white 120%);
     // perspective-origin:  50% 20%;
     
     &_BACKGround{

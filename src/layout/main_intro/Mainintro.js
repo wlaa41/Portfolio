@@ -228,7 +228,7 @@ function chekclass_REMOVE(){
                                 </div>
                                
                               </div>
-                              <div className='myAvatarStrip_spacer-left'>
+                              <div id='targetAncher' className='myAvatarStrip_spacer-left'>
                                 </div>
 
                         </div>
