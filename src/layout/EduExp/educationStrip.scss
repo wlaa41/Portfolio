@@ -29,26 +29,58 @@ $edu__fontsize: 5.9rem;
         text-align: end;
         width: 60%;
         transform:rotate(-2deg) ;
-        text-shadow:  -7px 3px 3px rgba(0, 0, 0, 0.17);
+        background: linear-gradient(
+            149.47deg,
+            rgb(111, 159, 255) 6.08%,
+            rgb(86, 145, 255) 11.08%,
+            rgb(88, 86, 249) 50.65%,
+            rgb(128, 43, 255) 75.66%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
 
         text-transform: uppercase;}
     &__title__Education{
         margin-bottom: -5rem;
         letter-spacing: .1ch;
         font-size: $edu__fontsize - 3rem ;}
-        font-weight: 400;
+        font-weight: 600;
         
     &__title__Experience{
         .remove__skew{
             position: relative;
+            background: linear-gradient(
+                149.47deg,
+                rgb(111, 159, 255) 6.08%,
+                rgb(86, 145, 255) 11.08%,
+                rgb(88, 86, 249) 50.65%,
+                rgb(128, 43, 255) 75.66%
+              );
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-weight: 600;
+
             &::first-letter{font-size: $edu__fontsize + 2;}
             &::after{
                 font-family: serif;
                 content: '&';
                 font-size: $edu__fontsize + 4rem;
                 position: absolute;
-                color:rgba(119, 155, 21, 0.562);
+                color:rgba(187, 255, 0, 0.562);
                 text-shadow:  -7px 3px 3px rgba(0, 0, 0, 0.21);
+                background: linear-gradient(
+                    149.47deg,
+                    rgb(111, 159, 255) 6.08%,
+                    rgb(86, 145, 255) 11.08%,
+                    rgb(88, 86, 249) 50.65%,
+                    rgb(128, 43, 255) 75.66%
+                  );
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+        
                 transform: rotate(-7deg) translate3d(-1px,-20%,0);  }}}
 
     @include respond(phone){

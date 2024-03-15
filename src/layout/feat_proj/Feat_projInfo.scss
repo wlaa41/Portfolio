@@ -59,9 +59,20 @@
                 margin:2rem;}}}}}
 
     &_Title{
-        font-weight: 200;
+        font-weight: 300;
         letter-spacing: 0ch;
         color: rgb(105, 105, 105);
+        background: linear-gradient(
+            149.47deg,
+            rgb(111, 159, 255) 6.08%,
+            rgb(86, 145, 255) 11.08%,
+            rgb(88, 86, 249) 50.65%,
+            rgb(128, 43, 255) 75.66%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+
         position: relative;
        font-family:  sans-serif;
        font-size: 1.5rem;

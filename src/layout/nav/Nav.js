@@ -115,7 +115,7 @@ const showform = false;
                 <div className='navGrid'> 
                         <div id='mainTitle' ref={title}  className='navGrid_titleCon '> 
                                 <div  className='navGrid_titleCon_title'> 
-                                AI's math, robotics' craft, learning's endless flight
+                                Walaa's Web, AI's Zest, Robotics Nest, Progress Quest
                                 </div>
                         </div>
                                 <div id='talkbtnCon' ref={talkbtnCon} className=' navGrid_BtnCon'> 

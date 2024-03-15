@@ -157,17 +157,12 @@ $time-img:2s;
         }
         // box-shadow: 0 11px 9px -3px rgba(0, 0, 0, 0.534);
     box-shadow: 0 5px 22px 4px rgba(0, 0, 0, 0.8);
-
-
-        // .CardEdu_IMG_Con:hover{
             .CardEdu_IMG_Con{
             // height: 188px;
             transition: all 2s .9s;
-
             img{
                 opacity: 1;
-            transition: all 2s .9s;
-
+                transition: all 2s .9s;
                 animation: picture_bg_Swimming 23s infinite alternate linear;}
 
         }
