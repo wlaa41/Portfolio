@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0a5f8bdd.chunk.css",
-    "main.js": "/Portfolio/static/js/main.a76c01b1.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.a76c01b1.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.b1d60206.chunk.css",
+    "main.js": "/Portfolio/static/js/main.ba71ed5b.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.ba71ed5b.chunk.js.map",
     "reactPlayerPreview.js": "/Portfolio/static/js/reactPlayerPreview.b667bf7e.chunk.js",
     "reactPlayerPreview.js.map": "/Portfolio/static/js/reactPlayerPreview.b667bf7e.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.2e11dd9f.js",
@@ -10,7 +10,7 @@
     "static/js/3.fb034792.chunk.js": "/Portfolio/static/js/3.fb034792.chunk.js",
     "static/js/3.fb034792.chunk.js.map": "/Portfolio/static/js/3.fb034792.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.0a5f8bdd.chunk.css.map": "/Portfolio/static/css/main.0a5f8bdd.chunk.css.map",
+    "static/css/main.b1d60206.chunk.css.map": "/Portfolio/static/css/main.b1d60206.chunk.css.map",
     "static/js/3.fb034792.chunk.js.LICENSE.txt": "/Portfolio/static/js/3.fb034792.chunk.js.LICENSE.txt",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
     "static/media/Labtop.9c8f5df8.jpg": "/Portfolio/static/media/Labtop.9c8f5df8.jpg",
@@ -25,11 +25,14 @@
     "static/media/bg_teacher_1.svg": "/Portfolio/static/media/bg_teacher_1.d2dc4979.svg",
     "static/media/body.2fc2973d.svg": "/Portfolio/static/media/body.2fc2973d.svg",
     "static/media/boston.68552215.jpg": "/Portfolio/static/media/boston.68552215.jpg",
+    "static/media/brain-aura.8a3c8e2b.jpg": "/Portfolio/static/media/brain-aura.8a3c8e2b.jpg",
     "static/media/brain-aura.a471b297.jpg": "/Portfolio/static/media/brain-aura.a471b297.jpg",
     "static/media/bright-squares.png": "/Portfolio/static/media/bright-squares.79000482.png",
     "static/media/bushes.29bbd009.svg": "/Portfolio/static/media/bushes.29bbd009.svg",
     "static/media/chat_black_24dp.acafb7f6.svg": "/Portfolio/static/media/chat_black_24dp.acafb7f6.svg",
-    "static/media/citySpark-price-5000-will-jamous.c8c61c47.png": "/Portfolio/static/media/citySpark-price-5000-will-jamous.c8c61c47.png",
+    "static/media/citySpark-price-5000-will-jamous-LongArrow.9905233b.png": "/Portfolio/static/media/citySpark-price-5000-will-jamous-LongArrow.9905233b.png",
+    "static/media/citySpark-price-5000-will-jamous-ShortArrow.d0f4b313.png": "/Portfolio/static/media/citySpark-price-5000-will-jamous-ShortArrow.d0f4b313.png",
+    "static/media/citySpark-price-5000-will-jamous-no-arrows-no-shadow.bd6b5459.png": "/Portfolio/static/media/citySpark-price-5000-will-jamous-no-arrows-no-shadow.bd6b5459.png",
     "static/media/crisp-paper-ruffles.png": "/Portfolio/static/media/crisp-paper-ruffles.a006a9e2.png",
     "static/media/ducati.7146c1ab.webp": "/Portfolio/static/media/ducati.7146c1ab.webp",
     "static/media/eyelash.99a1b011.svg": "/Portfolio/static/media/eyelash.99a1b011.svg",
@@ -53,7 +56,6 @@
     "static/media/myBase.224ace37.svg": "/Portfolio/static/media/myBase.224ace37.svg",
     "static/media/myBase.28ddb298.svg": "/Portfolio/static/media/myBase.28ddb298.svg",
     "static/media/neuraan.436b15cf.jpg": "/Portfolio/static/media/neuraan.436b15cf.jpg",
-    "static/media/neural-cell-dark.86588c17.jpg": "/Portfolio/static/media/neural-cell-dark.86588c17.jpg",
     "static/media/new_ai_math.2707a17a.webp": "/Portfolio/static/media/new_ai_math.2707a17a.webp",
     "static/media/new_robot_project.9152540c.webp": "/Portfolio/static/media/new_robot_project.9152540c.webp",
     "static/media/nodejs.jpg": "/Portfolio/static/media/nodejs.27655850.jpg",
@@ -86,7 +88,7 @@
   "entrypoints": [
     "static/js/runtime-main.2e11dd9f.js",
     "static/js/3.fb034792.chunk.js",
-    "static/css/main.0a5f8bdd.chunk.css",
-    "static/js/main.a76c01b1.chunk.js"
+    "static/css/main.b1d60206.chunk.css",
+    "static/js/main.ba71ed5b.chunk.js"
   ]
 }
