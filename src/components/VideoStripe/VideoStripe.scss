@@ -13,11 +13,11 @@
     margin: 0 auto;
     .gridLeftRight {
       display: grid;
-      grid-template-columns: 450px 500px;
-      gap: 50px;
+      grid-template-columns: 460px 510px;
+      gap: 20px;
       justify-content: space-evenly;
       align-items: center;
-
+      margin-top: 61px;
       .leftContainer {
         .text-desc {
           text-align: left;
@@ -36,7 +36,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 35px;
+            margin: 0;
             width: 95%;
           }
 
@@ -51,8 +51,8 @@
       .rightContainer {
         border-radius: 30px;
         overflow: hidden;
-        box-shadow: 0 5px 11px rgba(0, 0, 0, 0.4);
-        height: 290px;
+        box-shadow: 0 5px 11px rgba(0, 0, 0, 0.84);
+        height: 319px;
 
         .video {
           height: 100%;

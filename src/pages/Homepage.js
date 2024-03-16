@@ -23,16 +23,13 @@ class Homepage extends React.Component{
 
                
                 <CardStrip></CardStrip>
-                
-                <CitySpark/>
-                <Feat_proj></Feat_proj>
                 <VideoStripe/>
 
+                <CitySpark/>
+                <Feat_proj></Feat_proj>
 
-                {/* <EducationStrip></EducationStrip> */}
-                       {/* <SkillLogo></SkillLogo> */}
-                {/* <ColorPick></ColorPick> */}
                 <RoboticProject/>
+
                 <EduExpStrip></EduExpStrip>
          
                  <Foot> </Foot>

@@ -7,6 +7,8 @@
   overflow: hidden;
   padding-block: 80px;
   padding-inline: 170px;
+  background: lightgray;
+
 
   .main-container {
     max-width: 1500px;
@@ -53,43 +55,49 @@
       }
 
       .leftContainer {
-        border-radius: 1px;
+        border-radius: 2px;
         overflow: hidden;
-        
+        position: relative;
         height: 330px;
-        // box-shadow: inset 4px 5px 11px rgba(151, 0, 0, 0.4);
-        // border: 4px solid rgb(0, 156, 191);
-        background: conic-gradient( rgb(86, 145, 255) 11.08%, rgb(86, 145, 255),rgb(86, 145, 255) 11.08%, rgb(86, 145, 255));
+        // padding: 6px;
+        // overflow: hidden;
+        //BOARDER TOP
+        border: 3px solid;
+        border-image-slice: 5;
+        border-width: 5px;
+        display: flex;
+        overflow: hidden;
 
-        &S::after {
+        border-image-source: radial-gradient(circle at center, #6f9fff  55%, white 120%);
+  
+        // box-shadow: inset 5px 5px 11px rgba(1, 0, 66, 1), inset -5px -5px 11px rgba(0, 0,66, 1);
+        // border: 4px solid rgb(0, 156, 191);
+        // padding:1px;
+        // background: conic-gradient( rgb(86, 145, 255) 11.08%, rgb(86, 145, 255),rgb(86, 145, 255) 11.08%, rgb(86, 145, 255));
+
+        &::after {
           content: '';
           position: absolute;
+          height: 100%;
+          width: 100%;
           top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          box-shadow: inset 0 5px 11px rgba(0, 0, 0, 0.4);
+          // left: 0;
+          box-shadow: inset 0px 5px 2px rgba(1, 0, 66, .3), inset 0px -3px 4px rgba(0, 0,66, .2);
+
+          // border:6px solid red;
+          
+          // box-shadow: inset 0 5px 11px rgba(0, 0, 0, 0.4);
           pointer-events: none; /* This ensures that clicks go through to the image */
         }
         .robotic {
           height: 100%;
-          // border: 4px solid blue;
-          // box-shadow:  0 5px 11px rgba(0, 0, 0, 0.74);
-          padding: 6px;
-          // overflow: hidden;
-          //BOARDER TOP
-          border: 16px solid;
-          border-image-slice: 6;
-          border-width: 5px;
-          display: flex;
-          overflow: hidden;
+   
 
-          border-image-source: radial-gradient(circle at center, #6f9fff  55%, white 120%);
-    
           img {
+            // display: none;
             position: relative;
-            top:-4px;
-            left: -3%;
+            top:-8px;
+            left: -1%;
             width: 107%;
             // display: none;
             
