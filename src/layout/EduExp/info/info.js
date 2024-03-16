@@ -69,7 +69,7 @@ export const info = [
         title: "DevOps & Cloud Engineering",
         date: "2023 - 2024",
         subtitle: "Mastering Modern Deployment",
-        brief: "Specialized in Docker, Kubernetes, and Azure DevOps. Led projects enhancing CI/CD pipelines, infrastructure as code with Terraform, and system monitoring, ensuring scalable and reliable cloud solutions.",
+        brief: "• Mastery in containerization and orchestration with Docker and Kubernetes, enabling scalable and efficient application deployment. • Proficient in infrastructure as code (IaC) using Terraform and Ansible for automated configuration and management. • Extensive experience with Azure and Azure DevOps for seamless cloud integration and deployment pipelines. • Skilled in version control systems, particularly git and GitHub, ensuring robust code management and collaboration.",
         image: laptop, // Reused image placeholder
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
     },
@@ -97,6 +97,47 @@ export const info = [
         image: new_ai_math, // Placeholder image for educational achievement
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
+    {
+        title: "Technical Proficiency in AI & Robotics",
+        subtitle: "Mastering Tools and Technologies",
+        date: "Ongoing",
+        brief: `• Expertise in programming languages and tools such as Python, JavaScript, HTML, and C#, critical for diverse project requirements. 
+                • Advanced proficiency in deployment and automation technologies, including Docker, Kubernetes, Terraform, and Ansible. 
+                • Comprehensive experience with Azure, Azure DevOps, git, GitHub, and Prometheus for project management and operational monitoring. 
+                • Specialization in AI and Machine Learning technologies like TensorFlow, PyTorch, CNNs, RL, and ANN, pushing the boundaries of intelligent systems. 
+                • Skilled in utilizing robotics components such as Cameras, LiDARs, IMUs, GNSS, alongside precision measurement systems like motion capture and 3D scanning for enhanced robotic perception and navigation.`,
+        image: sprite, // Placeholder or an icon that represents technical skills
+        icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-tools"}></use></svg>
+    },
+    {
+        title: "Certifications & Educational Achievements",
+        subtitle: "Foundation of Knowledge and Expertise",
+        date: "Ongoing",
+        brief: `• BSc in Electrical Engineering, laying the groundwork for a deep understanding of technology's core principles. 
+                • Currently pursuing the Hashicorp Terraform Associate 003 certification, demonstrating a commitment to mastering infrastructure as code. 
+                • Completed the DevOps Engineering certification from AiCore, showcasing skills in modern deployment practices. 
+                • Graduated with Distinction in AI and Machine Learning from City, University of London, evidencing advanced competencies in cutting-edge AI technologies. 
+                • Expertise in smart environment systems certified by KNX and distinguished as a top Control4 seller, reflecting prowess in home automation.`,
+        image: sprite, // Placeholder or an icon that signifies achievements
+        icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
+    },
+    {
+        title: "Passion for Speed & Engineering",
+        subtitle: "Motorbikes & Speed Machines Enthusiast",
+        date: "Lifelong Interest",
+        brief: `• A fervent enthusiast of motorbikes and high-speed machinery, with a deep appreciation for the marvels of engineering behind each model. 
+                • Dedicates time to exploring the latest in motorbike technology and speed machine advancements, understanding the mechanics and engineering principles that drive performance. 
+                • Engages in hands-on experiences, from maintenance to modifications, to enhance understanding of mechanical systems and performance dynamics. 
+                • Actively participates in community events and gatherings, sharing knowledge and experiences with fellow enthusiasts. 
+                • Pursues the thrill of speed with a respect for safety and engineering excellence, embodying the spirit of innovation and the quest for ultimate performance. 
+                • Explores the history and evolution of speed machines, appreciating the engineering milestones that have shaped today's cutting-edge designs.`,
+        image: sprite, // Placeholder or an icon that symbolizes your hobby in speed and engineering
+        icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-speedometer"}></use></svg>
+    }
+    
+    
+
+
 ]
 
 
