@@ -43,6 +43,7 @@
           -webkit-text-fill-color: transparent;
     filter: grayscale(.4);
   }
+
 }
 
 .citySpark_container {
@@ -67,8 +68,9 @@
   
   .citySpark_image-container {
     
+    // transform: translate3d(-113px,0,0);
     flex: 1;
-  
+    position: relative;
     // display: flex; // Flex is here to ensure any further inner adjustments can be made easily
     // justify-content: center;
     img{
@@ -77,6 +79,24 @@
       max-height: 700px;
       // left: -20%;
     }
+    .citysparkImge{
+
+    }
+    .citysparkImgeArrows{
+      top:0;
+      left:0%;
+      height: 60vw;
+      width: auto;
+      max-height: 700px;
+      position: absolute;
+      // transition: .5s;
+      animation: moveArrows 8s ease-in-out infinite;
+    }
+    .citysparkImgeArrows_short{
+      animation-delay: 2s;
+    }
+
+
     @include respond(tab-land) {
       order: -1;
     }

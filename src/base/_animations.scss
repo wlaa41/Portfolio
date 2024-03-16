@@ -111,6 +111,61 @@
     }
 } 
 
+@keyframes windMovePaper {
+    0%{
+        transform: rotateY(-7deg);
+    }
+    10%{
+        transform: rotateY(-5deg);
+    }    
+    20%{
+        transform: rotateY(-7deg);
+    }
+    30%{
+        transform: rotateY(-5deg);
+    }
+    40%{
+        transform: rotateY(-6deg);
+    }
+    60%{
+        transform: rotateY(-5deg);
+    }
+    80%{
+        transform: rotateY(-7deg);
+    }
+    90%{
+        transform: rotateY(-5deg);
+    }
+}
+
+// animation: windMovePaper 8s ease-in-out infinite;
+@keyframes moveArrows {
+    0%{
+        transform:  translate3d(0px,0px, 0);
+    }
+    10%{
+        transform:  translate3d(-1px,1px, 0);
+    }    
+    20%{
+        transform:  translate3d(0px,1px, 0);
+    }
+    30%{
+        transform:  translate3d(-1px,0px, 0);
+    }
+    40%{
+        transform:  translate3d(1px,0px, 0);
+    }
+    60%{
+        transform:  translate3d(-1px,-1px, 0);
+    }
+    80%{
+        transform:  translate3d(0px,0px, 0);
+    }
+    90%{
+        transform:  translate3d(-1px,-1px, 0);
+    }
+}
+
 // @keyframes moveInLeft {
 //     0% {
 //         opacity: 0;

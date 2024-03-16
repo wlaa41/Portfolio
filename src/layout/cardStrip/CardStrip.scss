@@ -1,4 +1,5 @@
 @import '../../abstracts/mixins';
+@import '../../base/animations';
 
 .CardStrip{
     transform: translate(0);// TO RAISE THE CONTEXT OF IT SO MAIN INTRO DON'T COMES OVER
@@ -151,29 +152,3 @@
 
 }
 
-@keyframes windMovePaper {
-    0%{
-        transform: rotateY(-7deg);
-    }
-    10%{
-        transform: rotateY(-5deg);
-    }    
-    20%{
-        transform: rotateY(-7deg);
-    }
-    30%{
-        transform: rotateY(-5deg);
-    }
-    40%{
-        transform: rotateY(-6deg);
-    }
-    60%{
-        transform: rotateY(-5deg);
-    }
-    80%{
-        transform: rotateY(-7deg);
-    }
-    90%{
-        transform: rotateY(-5deg);
-    }
-}

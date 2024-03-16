@@ -1,4 +1,6 @@
-import citySparkimage from './info/citySpark-price-5000-will-jamous.png';
+import citySparkimage from './info/citySpark-price-5000-will-jamous-no-arrows-no-shadow.png';
+import citySparkimageArrowslong from './info/citySpark-price-5000-will-jamous-LongArrow.png';
+import citySparkimageArrowsShort from './info/citySpark-price-5000-will-jamous-ShortArrow.png';
 import './CitySpark.scss'
 
 
@@ -13,7 +15,9 @@ const CitySpark = () => {
 
       </div>
       <div className="citySpark_image-container">
-      <img src={citySparkimage} className='g' alt="CitySpark" />
+      <img src={citySparkimageArrowsShort} className='citysparkImgeArrows citysparkImgeArrows_short' alt="CitySpark" />
+      <img src={citySparkimage} className='citysparkImge' alt="CitySpark" />
+      <img src={citySparkimageArrowslong} className='citysparkImgeArrows citysparkImgeArrows_Long' alt="CitySpark" />
 
       </div>
       </div>

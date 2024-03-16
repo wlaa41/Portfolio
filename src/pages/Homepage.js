@@ -9,6 +9,8 @@ import Divider from '../components/divider/divider'
 import CitySpark from '../components/citySpark/CitySpark'
 import VideoStripe from '../components/VideoStripe/VideoStripe'
 import RoboticProject from '../components/RoboticProject/RoboticProject'
+import { videosList } from '../components/VideoStripe/info/info';
+
 
 class Homepage extends React.Component{
 
@@ -23,12 +25,12 @@ class Homepage extends React.Component{
 
                
                 <CardStrip></CardStrip>
-                <VideoStripe/>
-
+                <VideoStripe videoData={videosList[0]}/>
                 <CitySpark/>
                 <Feat_proj></Feat_proj>
 
                 <RoboticProject/>
+                <VideoStripe videoData={videosList[1]}/>
 
                 <EduExpStrip></EduExpStrip>
          
