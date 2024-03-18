@@ -27,7 +27,9 @@ Welcome to the official repository of my professional portfolio. This space is d
   - [React Application Docker Setup (Deeper Dive in Docker)](#react-application-docker-setup-deeper-dive-in-docker)
       - [Dockerfile Explanation](#dockerfile-explanation)
   - [Building the Docker Image](#building-the-docker-image)
-  - [Running the Container for Development](#running-the-container-for-development)
+  - [Running the Container for Development (Without SSH "not recomended" )](#running-the-container-for-development-without-ssh-not-recomended-)
+  - [Streamline Your Workflow with Docker and SSH](#streamline-your-workflow-with-docker-and-ssh)
+    - [Quick Setup Steps](#quick-setup-steps)
   - [Making Changes](#making-changes)
 - [Project Deployment Guide](#project-deployment-guide)
   - [Setting Up SSH](#setting-up-ssh)
@@ -219,7 +221,7 @@ docker build -t <image-name> .
 
 Replace `<image-name>` with your preferred name for the Docker image.
 
-## Running the Container for Development
+## Running the Container for Development (Without SSH "not recomended" )
 
 To run your container and enable live reloading during development, use the following command:
 
@@ -230,6 +232,42 @@ docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 <image-name>
 This command mounts your current working directory to `/app` in the container and creates an anonymous volume for `/app/node_modules`, ensuring that the container uses its own `node_modules` and not the host's. This setup is crucial for live reloading to work properly.
 
 `ENV CHOKIDAR_USEPOLLING=true` ensures that file watching works correctly across all development environments, especially necessary for Docker on Windows and macOS.
+
+## Streamline Your Workflow with Docker and SSH 
+
+By sharing your existing SSH key with your Docker container, you can interact with GitHub repositories directly from within the container. This method saves you from generating a new SSH key each time you run an image, streamlining your development process.
+
+### Quick Setup Steps
+
+1. **Verify SSH Key on Windows**:
+   ```powershell
+   Test-Path C:/Users/<YourUsername>/.ssh
+   ```
+   Replace `<YourUsername>` with your Windows username.
+
+2. **Run Docker Container with SSH Key**:
+   ```powershell
+   docker run -it -v ${PWD}:/app -v /app/node_modules -p 3000:3000 -v C:/Users/<YourUsername>/.ssh:/root/.ssh --name portfolio-ssh-container <your_docker_image_name>
+   ```
+
+3. **Access Container's Terminal**:
+   ```bash
+   docker exec -it portfolio-ssh-container /bin/bash
+   ```
+
+4. **Set Correct SSH Key Permissions** (if using `id_ed25519`):
+   ```bash
+   chmod 600 /root/.ssh/id_ed25519
+   ```
+
+5. **Test GitHub SSH Connectivity**:
+   ```bash
+   ssh -T git@github.com
+   ```
+
+This setup not only simplifies SSH key management but also enhances the efficiency of your Git operations within Docker.
+
+
 
 ## Making Changes
 

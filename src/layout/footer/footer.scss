@@ -47,6 +47,7 @@
     }
     &_ICON{
         margin: 5rem 0 0 0 ;
+        border-radius: 31px ;
 
         height: 55px;
         display: flex;
@@ -56,14 +57,18 @@
         &-con{
             width:  44px;
             height:  44px;
+            fill: black;
+            overflow: hidden;
+            // filter: grayscale(1);
             // padding: 1rem;
+            // background: navy;
             position: relative;
             display: grid;
             place-items: center;
-            border-radius: 8px ;
+            border-radius: 31px ;
             box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.534);
-            background: 
-            linear-gradient(to bottom left , rgb(20, 156, 247) , rgb(31, 143, 247));
+            // background: 
+            // linear-gradient(to bottom left , rgb(20, 156, 247) , rgb(31, 143, 247));
             }
 
         &-con:nth-child(n+3){
@@ -73,7 +78,7 @@
             position:absolute;
             height: 44px;
             width: 44px;
-            fill:white;
+            fill:rgb(98, 89, 89);
         }
 
     }

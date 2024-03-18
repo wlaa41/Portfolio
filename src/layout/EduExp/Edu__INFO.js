@@ -24,8 +24,9 @@ const EducationINFO = () => {
                    {/* <SkillLogo></SkillLogo>
                    <ColorPick></ColorPick> */}
             </div>
-            <img src={ducati} className='EduStrip_info_GRID_img' alt="Ducati Motorcycle" />
-
+            <div className='EduStrip_info_GRID_container'>
+              <img src={ducati} className='EduStrip_info_GRID_container_img' alt="Ducati Motorcycle" />
+            </div>          
             </>
     )
 }
