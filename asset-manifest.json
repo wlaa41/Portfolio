@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.66f9f6cb.chunk.css",
-    "main.js": "/Portfolio/static/js/main.b98ccfc3.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.b98ccfc3.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.e0fe947d.chunk.css",
+    "main.js": "/Portfolio/static/js/main.84937e1e.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.84937e1e.chunk.js.map",
     "reactPlayerPreview.js": "/Portfolio/static/js/reactPlayerPreview.73da4364.chunk.js",
     "reactPlayerPreview.js.map": "/Portfolio/static/js/reactPlayerPreview.73da4364.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.b1cc4609.js",
@@ -10,7 +10,7 @@
     "static/js/3.78ce4369.chunk.js": "/Portfolio/static/js/3.78ce4369.chunk.js",
     "static/js/3.78ce4369.chunk.js.map": "/Portfolio/static/js/3.78ce4369.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.66f9f6cb.chunk.css.map": "/Portfolio/static/css/main.66f9f6cb.chunk.css.map",
+    "static/css/main.e0fe947d.chunk.css.map": "/Portfolio/static/css/main.e0fe947d.chunk.css.map",
     "static/js/3.78ce4369.chunk.js.LICENSE.txt": "/Portfolio/static/js/3.78ce4369.chunk.js.LICENSE.txt",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
     "static/media/Labtop.9c8f5df8.jpg": "/Portfolio/static/media/Labtop.9c8f5df8.jpg",
@@ -29,7 +29,7 @@
     "static/media/citySpark-price-5000-will-jamous-ShortArrow.d0f4b313.png": "/Portfolio/static/media/citySpark-price-5000-will-jamous-ShortArrow.d0f4b313.png",
     "static/media/citySpark-price-5000-will-jamous-no-arrows-no-shadow.bd6b5459.png": "/Portfolio/static/media/citySpark-price-5000-will-jamous-no-arrows-no-shadow.bd6b5459.png",
     "static/media/crisp-paper-ruffles.png": "/Portfolio/static/media/crisp-paper-ruffles.a006a9e2.png",
-    "static/media/ducati.450f6254.webp": "/Portfolio/static/media/ducati.450f6254.webp",
+    "static/media/ducati.16a771f6.webp": "/Portfolio/static/media/ducati.16a771f6.webp",
     "static/media/eyelash.99a1b011.svg": "/Portfolio/static/media/eyelash.99a1b011.svg",
     "static/media/eyes.727e3c71.svg": "/Portfolio/static/media/eyes.727e3c71.svg",
     "static/media/fabric-dark.png": "/Portfolio/static/media/fabric-dark.3a1471f2.png",
@@ -81,7 +81,7 @@
   "entrypoints": [
     "static/js/runtime-main.b1cc4609.js",
     "static/js/3.78ce4369.chunk.js",
-    "static/css/main.66f9f6cb.chunk.css",
-    "static/js/main.b98ccfc3.chunk.js"
+    "static/css/main.e0fe947d.chunk.css",
+    "static/js/main.84937e1e.chunk.js"
   ]
 }
