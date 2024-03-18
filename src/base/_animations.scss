@@ -155,16 +155,16 @@
         transform:  translate3d(0px,0px, 0);
     }
     10%{
-        transform:  translate3d(-1px,1px, 0);
+        transform:  translate3d(-2px,-3px, 0);
     }    
     20%{
         transform:  translate3d(0px,1px, 0);
     }
     30%{
-        transform:  translate3d(-1px,0px, 0);
+        transform:  translate3d(-2px,0px, 0);
     }
     40%{
-        transform:  translate3d(1px,0px, 0);
+        transform:  translate3d(1px,-2px, 0);
     }
     60%{
         transform:  translate3d(-1px,-1px, 0);
@@ -173,7 +173,7 @@
         transform:  translate3d(0px,0px, 0);
     }
     90%{
-        transform:  translate3d(-1px,-1px, 0);
+        transform:  translate3d(2px,-1px, 0);
     }
 }
 

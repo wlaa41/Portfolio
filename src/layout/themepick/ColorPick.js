@@ -19,7 +19,7 @@ const ColorPick = () => {
       }
       const keys =[] // HOLDS THE NAME OF THE IMAGE
       const images = importAll(require.context('../EduExp/info/bg_img/', false, /\.(png|jpe?g|svg)$/));
-      let i = 4;
+      let i = 20;
 
     /// findme
       

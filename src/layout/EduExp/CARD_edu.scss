@@ -74,6 +74,7 @@ $time-img:2s;
             box-shadow: 0 2px 9px -1px black;
             border-radius: calc( #{$border-radius} - 11px);
             transition: all $time-toPopupCrd;
+            // filter: blur(4px);
 
         }
         .Partitoin_up{
@@ -82,6 +83,8 @@ $time-img:2s;
         }
         .Partitoin_down{
             // border: 2px dashed deeppink;
+            // filter: blur(4px);
+
             flex: 1;
         }
 

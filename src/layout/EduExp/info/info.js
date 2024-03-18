@@ -106,7 +106,7 @@ export const info = [
                 • Comprehensive experience with Azure, Azure DevOps, git, GitHub, and Prometheus for project management and operational monitoring. 
                 • Specialization in AI and Machine Learning technologies like TensorFlow, PyTorch, CNNs, RL, and ANN, pushing the boundaries of intelligent systems. 
                 • Skilled in utilizing robotics components such as Cameras, LiDARs, IMUs, GNSS, alongside precision measurement systems like motion capture and 3D scanning for enhanced robotic perception and navigation.`,
-        image: sprite, // Placeholder or an icon that represents technical skills
+        image: brain, // Placeholder or an icon that represents technical skills
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-tools"}></use></svg>
     },
     {
@@ -118,7 +118,7 @@ export const info = [
                 • Completed the DevOps Engineering certification from AiCore, showcasing skills in modern deployment practices. 
                 • Graduated with Distinction in AI and Machine Learning from City, University of London, evidencing advanced competencies in cutting-edge AI technologies. 
                 • Expertise in smart environment systems certified by KNX and distinguished as a top Control4 seller, reflecting prowess in home automation.`,
-        image: sprite, // Placeholder or an icon that signifies achievements
+        image: new_robot_project, // Placeholder or an icon that signifies achievements
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
     {
@@ -130,7 +130,7 @@ export const info = [
                 • Hands-on in enhancing machine performance and personal physical fitness, I advocate for a no sugar, no preservative lifestyle, emphasizing health and sustainability.
                 • Through community engagement and shared experiences, I promote a balanced approach to speed, innovation, and health, valuing safety and engineering excellence alongside holistic well-being.
                 • My journey is a continuous exploration of human and mechanical capabilities, celebrating historical milestones and personal achievements in engineering and athleticism.`,
-        image: sprite, // A symbol that represents your passions and dedication
+        image: brain, // A symbol that represents your passions and dedication
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-speedometer"}></use></svg>
     }
     
