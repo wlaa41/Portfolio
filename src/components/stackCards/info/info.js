@@ -1,9 +1,9 @@
 import ant from './ant-walking-tree.jpg'
 import neural from './neuraan.jpg'
 import brain from './brain-aura.jpg'
-import pat from './pat.jpg'
-import lab from './lab.jpg'
-import boston from './boston.jpg'
+// import pat from './pat.jpg'
+// import lab from './lab.jpg'
+// import boston from './boston.jpg'
 import mathAI from './mathAI.webp'
 import featureMosaic from './featureMosaic.webp'
 import pathFinding from './path-finding-phone-googlemap.jpg'
@@ -17,7 +17,7 @@ export default function info(){
             title: 'RL & Cognitive Robot',
             subtitle: 'Agent Collab.',
             brief: 'This project integrates cognitive learning with RL to enhance multi-agent robotics. It improves localization, addresses the sim2real gap, and examines agent interactions for commercial application. By combining probabilistic methods and cognitive models, it advances autonomous collaboration and adaptability.',
-            image: lab // Placeholder for concise visual representation
+            image: brain // Placeholder for concise visual representation
         },
         {
             title: 'Jackal Robot Sim',
@@ -48,7 +48,7 @@ export default function info(){
             title: 'Home Automation Systems',
             subtitle: 'KNX, CBUS',
             brief: 'Expert in integrating lighting, dimming, and facade lighting with DALI, as well as automating AC, jacuzzis, curtains, and garages. My projects utilize Control4 for seamless lighting and entertainment setups and Crestron for luxury automation. Proficient with scalable smart homes technologies including Control4, Crestron, Jira, Jung, Schneider Electric, and ABB, demonstrating my ability to ensure optimal functionality and integration in home automation systems.',
-            image: boston
+            image: brain
         },
         {
             title: 'AI Math Core',

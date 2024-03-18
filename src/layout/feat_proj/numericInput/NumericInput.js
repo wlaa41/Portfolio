@@ -2,7 +2,6 @@ import React,{useState,useEffect,useRef} from 'react'
 import './NumericInput.scss'
 
 const NumericInput = ({initvalue=1,change=null,min=-4,index=0,style={}}) => {
-    const [eleValue, setValue] = useState(initvalue)
     const element = useRef(null)
 
 useEffect(() => {
@@ -27,14 +26,7 @@ useEffect(() => {
         }
         
     }
-    // useEffect(() => {
-    //     console.log('cleanupcleanupcleanupcleanupcleanupcleanupcleanupcleanupcleanupcleanupcleanupcleanupcleanupcleanupcleanupcleanup')
 
-    //     change(element.value,index)
-    //     return () => {
-    //         console.log('cleanup')
-    //     }
-    // }, [eleValue])
 
     function handleChange(event) {
         // setValue( event.target.value);

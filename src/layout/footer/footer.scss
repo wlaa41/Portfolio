@@ -5,8 +5,23 @@
     // margin-top: -22px;
     transform: translate(0);
     box-shadow: 0 -1px 22px rgba(0, 0, 0, 0.745);
-    background-color: #0e5792;
-    // background:
+
+    background:#090705;
+;
+    //TO CHNAGE THE BACKGROUND COLOR GRAGIECN TO TEH REST OF THE OF THE FOOTER EXCLUDING THE LOGO
+    &_backgroundColorGradient{
+        background:beige;
+        background: linear-gradient(
+            180deg,
+            #090705 0%,
+            #1d181779 25%,
+            #39302b96 50.65%,
+            #141116 100%
+          ),
+          radial-gradient(circle at  top right,hsla(181, 100%, 70%, 0.226) 0,transparent 55%),
+          radial-gradient(circle at  top left,hsla(29, 100%, 44%, 0.257) 0,transparent 55%);
+          padding-bottom: 55px;
+    }
     overflow: hidden;
     // linear-gradient(to right,#074e88,#1b75be);
     padding: 1rem 0;
@@ -16,7 +31,7 @@
     }
     &_details{
 
-        margin: 2rem 0 5rem ;
+        margin: 2rem 0 0 ;
         display: flex;
         column-gap: 15px;
         flex-wrap: wrap;
@@ -26,9 +41,9 @@
             color: inherit;
             white-space: nowrap;}
         font: 1.6rem  'Roboto', sans-serif;
-        font-weight: 500;
-        letter-spacing: .051ch;
-        word-spacing: .1ch;
+        font-weight: 200;
+        letter-spacing: .071ch;
+        word-spacing: .21ch;
     }
     &_ICON{
         margin: 5rem 0 0 0 ;
@@ -57,16 +72,9 @@
         &-svg{
             position:absolute;
             height: 44px;
-            // width: 100%;
             width: 44px;
-
-            // height: 100%;
             fill:white;
         }
-        // &-svg:nth-child(n+3){
-        //     height: 44px;
-        //     // width: 39px;
-        //     fill:rgb(153, 18, 18);
-        // }
+
     }
 }

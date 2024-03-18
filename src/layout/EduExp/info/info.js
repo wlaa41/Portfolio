@@ -11,9 +11,9 @@ import React from 'react'
 export const info = [
     {
         title: "PhD in AI & Robotics Innovations",
-        date: "Expected 2028",
+        date: "On Progress",
         subtitle: "Enhancing Cognitive Robotics",
-        brief: "Engaged in groundbreaking research to merge cognitive learning with reinforcement learning for advanced autonomous system adaptability. Focus on multi-agent system collaboration, leveraging simulation and real-world deployment to revolutionize robotic learning.",
+        brief: "• Engaged in groundbreaking research merging cognitive and reinforcement learning.\n• Focused on multi-agent system collaboration.\n• Leveraging simulation and real-world deployment to revolutionize robotic learning.",
         image: new_robot_project, // Placeholder for the actual image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
@@ -29,7 +29,7 @@ export const info = [
         title: "APPITUNITY",
         subtitle: "Co-Founder and CEO",
         date: "Jan 2018 - Jan 2022",
-        brief: "• Led 30+ digital marketing and web optimization projects, achieving a 40% increase in web traffic and 25% in conversion rates. • Directed a team of 15+ software developers and engineers using Azure boards and Scrum. • Deployed 150+ embedded systems and cloud projects, enhancing operational efficiencies. • Managed 20+ member cross-functional teams, fostering collaboration in complex tech environments.",
+        brief: "• Led 30+ digital marketing and web optimization projects, achieving a 40% increase in web traffic and 25% in conversion rates. \n• Directed a team of 15+ software developers and engineers using Azure boards and Scrum. \n• Deployed 150+ embedded systems and cloud projects, enhancing operational efficiencies. \n• Managed 20+ member cross-functional teams, fostering collaboration in complex tech environments.",
         image: robot, // Placeholder image for tech leadership and project management
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-blackboard"}></use></svg>
     },
@@ -37,15 +37,15 @@ export const info = [
         title: "My Smart Home",
         subtitle: "Founder and CEO",
         date: "Jan 2015 - Jan 2019",
-        brief: "• Grew market value to £2 million in 3 years, achieving platinum with Control4, GIRA, Intesis. • Top Control4 seller in 2019, highlighting sales excellence. • Completed 120+ smart installations across diverse properties. • Implemented solar systems in palaces, cutting energy costs by 43%, ROI in 5 years. • Established R&D for smart home solutions, focusing on protocols. • Tripled sales via targeted ads and SMM, leading YouTube channel in Home Automation.",
+        brief: "• Grew market value to £2 million in 3 years, achieving platinum with Control4, GIRA, Intesis. \n• Top Control4 seller in 2019, highlighting sales excellence. \n• Completed 120+ smart installations across diverse properties. \n• Implemented solar systems in palaces, cutting energy costs by 43%, ROI in 5 years. \n• Established R&D for smart home solutions, focusing on protocols. \n• Tripled sales via targeted ads and SMM, leading YouTube channel in Home Automation.",
         image: new_robot_project, // Placeholder image for innovative smart home solutions
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
     },
     {
-        title: "MSc Artificial Intelligence, 2022",
+        title: "MSc Artificial Intelligence",
         subtitle: "PG With Distinction",
         date: "2021 - 2022",
-        brief: "• Specialized in Generative AI, excelling in model innovation. • Mastered CNNs and NLP models, applying them to complex datasets. • Focused on Multi-Agent Systems, demonstrating advanced problem-solving skills. • Proficient in TensorFlow, PyTorch, and Pandas, aligning with high employability standards in AI fields.",
+        brief: "• Specialized in Generative AI, excelling in model innovation. \n• Mastered CNNs and NLP models, applying them to complex datasets. \n• Focused on Multi-Agent Systems, demonstrating advanced problem-solving skills. \n• Proficient in TensorFlow, PyTorch, and Pandas, aligning with high employability standards in AI fields.",
         image: laptop, // Placeholder image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
@@ -53,7 +53,7 @@ export const info = [
         title: "Full-Stack Development",
         date: "2020 - 2022",
         subtitle: "Extensive Learning & Application",
-        brief: "Completed 25+ courses in AI, mathematics, and Full-Stack development. Applied skills in JavaScript, ReactJS, and AI in freelance projects, demonstrating versatility and proficiency.",
+        brief: "• Completed 25+ courses in AI, mathematics, and Full-Stack development.\n• Applied skills in JavaScript, ReactJS, and AI in freelance projects, demonstrating versatility.",
         image: robot, // Placeholder for the actual image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
     },
@@ -98,9 +98,9 @@ export const info = [
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
     {
-        title: "Technical Proficiency in AI & Robotics",
+        title: "Real Passion for AI and Robotics",
         subtitle: "Mastering Tools and Technologies",
-        date: "Ongoing",
+        date: "Lifelong Dedication",
         brief: `• Expertise in programming languages and tools such as Python, JavaScript, HTML, and C#, critical for diverse project requirements. 
                 • Advanced proficiency in deployment and automation technologies, including Docker, Kubernetes, Terraform, and Ansible. 
                 • Comprehensive experience with Azure, Azure DevOps, git, GitHub, and Prometheus for project management and operational monitoring. 
@@ -110,7 +110,7 @@ export const info = [
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-tools"}></use></svg>
     },
     {
-        title: "Certifications & Educational Achievements",
+        title: "Certifications & Educational",
         subtitle: "Foundation of Knowledge and Expertise",
         date: "Ongoing",
         brief: `• BSc in Electrical Engineering, laying the groundwork for a deep understanding of technology's core principles. 
@@ -122,16 +122,15 @@ export const info = [
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
     {
-        title: "Passion for Speed & Engineering",
-        subtitle: "Motorbikes & Speed Machines Enthusiast",
-        date: "Lifelong Interest",
-        brief: `• A fervent enthusiast of motorbikes and high-speed machinery, with a deep appreciation for the marvels of engineering behind each model. 
-                • Dedicates time to exploring the latest in motorbike technology and speed machine advancements, understanding the mechanics and engineering principles that drive performance. 
-                • Engages in hands-on experiences, from maintenance to modifications, to enhance understanding of mechanical systems and performance dynamics. 
-                • Actively participates in community events and gatherings, sharing knowledge and experiences with fellow enthusiasts. 
-                • Pursues the thrill of speed with a respect for safety and engineering excellence, embodying the spirit of innovation and the quest for ultimate performance. 
-                • Explores the history and evolution of speed machines, appreciating the engineering milestones that have shaped today's cutting-edge designs.`,
-        image: sprite, // Placeholder or an icon that symbolizes your hobby in speed and engineering
+        title: "Speed, Engineering & Wellness",
+        subtitle: "A Devoted Enthusiast & Athlete",
+        date: "Lifelong Dedication",
+        brief: `• Passionately dedicated to exploring the synergy between the thrill of motorbikes, the precision of engineering, and the discipline of sports. 
+                • Immersed in the latest advancements in technology, mechanics, and sports science, I strive to understand and optimize performance and well-being. 
+                • Hands-on in enhancing machine performance and personal physical fitness, I advocate for a no sugar, no preservative lifestyle, emphasizing health and sustainability.
+                • Through community engagement and shared experiences, I promote a balanced approach to speed, innovation, and health, valuing safety and engineering excellence alongside holistic well-being.
+                • My journey is a continuous exploration of human and mechanical capabilities, celebrating historical milestones and personal achievements in engineering and athleticism.`,
+        image: sprite, // A symbol that represents your passions and dedication
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-speedometer"}></use></svg>
     }
     

@@ -7,6 +7,8 @@ $edu__fontsize: 5.9rem;
 .EduStrip_info_GRID_img{
     width: 100%;
     margin-bottom: -11px; 
+    // -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+    // mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
 }
 .EduStrip{
     transform: translate(0);

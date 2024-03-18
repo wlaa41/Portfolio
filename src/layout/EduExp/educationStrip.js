@@ -1,5 +1,4 @@
 import React from 'react'
-import SkillLogo from '../skill_logo/SkillLogo'
 import './educationStrip.scss'
 import EducationINFO from './Edu__INFO'
 

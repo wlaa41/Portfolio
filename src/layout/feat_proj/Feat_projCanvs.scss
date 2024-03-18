@@ -144,7 +144,9 @@
                     }
                 }
                 & .see_the_graph_SVG{
-                    animation: flashing  7s   infinite linear  ;
+                    
+                    animation: improvedFlashing 2s infinite;
+                    // animation: flashing  3s   infinite linear  ;
 
 
                 }

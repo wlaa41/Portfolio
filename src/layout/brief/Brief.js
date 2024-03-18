@@ -35,8 +35,9 @@ const Brief = ()=>{
                         
                                 <div className="dynamic">
                                 <ul className="dynamic_Con">
-                                        <li>Hi, I'm Walaa Will.</li>
+                                        <li></li>
                                         <li>Individually smart, together we're art.</li>
+                                        <li>Hi, I'm Walaa Will.</li>
                                         <li>Web, software's shine, robotics, AI's line, motorbike's vine.</li>
                                 </ul>   
                                 </div>

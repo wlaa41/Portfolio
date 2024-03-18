@@ -9,7 +9,9 @@ export const Foot = (props) => {
     return (
         <footer className='ft'>
 
-                    <SkillLogo></SkillLogo>
+            <SkillLogo></SkillLogo>
+            <div className='ft_backgroundColorGradient'>
+            
                    <ColorPick></ColorPick>
             {props.children}
 
@@ -42,11 +44,14 @@ export const Foot = (props) => {
         </div>    
 
             <div className="ft_details" >
-                <div className="ft_details-name" > Walaa Jam </div>
-                <div className="ft_details-location" >London, UK IG1 </div>
+                <div className="ft_details-name" > Walaa Will Jam </div>
                 <a className="ft_details-email"  href="mailto:walaa.jamous@city.ac.uk" target="_blank"  >  walaa.jamous@city.ac.uk</a>
-             </div>
+                <div className="ft_details-location" >London, UK IG1 </div>
+                <div className="ft_details-location" >© 2024 Walaa Will. All rights reserved.
+</div>
 
+             </div>
+             </div>
         </footer>
     )
 }

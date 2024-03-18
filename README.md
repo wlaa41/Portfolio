@@ -559,6 +559,3 @@ For any inquiries or further discussion about the projects and technologies ment
 
 Thank you for taking the time to explore my portfolio. I look forward to the possibility of working together to push the boundaries of what's possible in AI and Robotics.
 
----
-
-*This README is a living document and may be updated as new projects are added or existing ones are enhanced. Be sure to check back regularly for the latest developments.*

@@ -11,10 +11,10 @@ import   floor       from "./media/londonfull_wide/floor.svg"
 import   bushes       from "./media/londonfull_wide/bushes.svg"      
 import   phonebooth  from "./media/londonfull_wide/phonebooth.svg" 
 import   myBase      from './media/londonfull_wide/myBase.svg'
-import heel from './media/londonfull/wheel1.svg'
+// import heel from './media/londonfull/wheel1.svg'
 import './Mainintro.scss'
 import './myAvatar.scss'
-import { electronMassDependencies, nullDependencies } from 'mathjs'
+// import { electronMassDependencies, nullDependencies } from 'mathjs'
 import Arrow from '../../components/Arrow'
 
 

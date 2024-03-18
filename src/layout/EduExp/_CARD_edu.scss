@@ -24,20 +24,21 @@ $time-toPopupCrd: .9s ease;
     &_IMG_Con{
         // overflow: hidden;
         // border:2px dashed deeppink;
-        height: 100%;
-        object-fit: contain;
-        box-shadow: none ;
+        height: 150%;
+        // object-fit: contain;
+                width: 160%;
+                box-shadow: none ;
         filter: grayscale(1);
         border-radius: 11px ;
         border-bottom-width: 1px;
         box-shadow: 0 33px 22px -22px rgb(71, 71, 71);
 
             & img{
-                width: 120%;
-                height: 160%;
+                width: 160%;
+                // height: 160%;
                 // object-position: center bottom;
                 position: relative;
-                object-fit:cover;
+                // object-fit:cover;
                 transition: all $time-toPopupCrd;
 
             }
