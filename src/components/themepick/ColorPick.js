@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './ColorPick.scss'
+
 const ColorPick = () => {
 
     function importAll(r) {
@@ -11,7 +12,7 @@ const ColorPick = () => {
       }
       const keys =[] // HOLDS THE NAME OF THE IMAGE
       const images = importAll(require.context('../educationExperience/info/bg_img/', false, /\.(png|jpe?g|svg)$/));
-      let i = 0;
+      let i = 8;
 
     /// findme
       

@@ -2,15 +2,17 @@
 
 .EduStrip_info{
     // height: 99vh;
+    
     position: relative;
     font-size: 1.4rem;
-    color:white;
+    color:rgb(175, 175, 175);
     padding-bottom: 3rem;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(176, 176, 176);
 
 
 
         &_GRID{
+
             position: relative;
             display: grid;
             grid-template-columns: repeat(auto-fit , minmax(400px,1fr));

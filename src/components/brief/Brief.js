@@ -1,4 +1,3 @@
-import React,{useEffect}  from 'react'
 import './Brief.scss'
 import {ReactComponent  as CloseSVG} from './iconfinder_4115230_cancel_close_delete_icon.svg'
 import Paragraph from './Paragraph'

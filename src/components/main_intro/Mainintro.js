@@ -1,5 +1,4 @@
 import React, {useState,useRef,useLayoutEffect} from 'react'
-// import { Helmet } from 'react-helmet';
 import  myavatar_vec  from './media/myavatar/myavatar'
 import Nav from '../../layout/nav/Nav'
 import { ReactComponent as Wheel} from './media/londonfull/wheel1.svg'
