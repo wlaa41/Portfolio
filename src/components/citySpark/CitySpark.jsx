@@ -7,8 +7,8 @@ import './CitySpark.scss'
 const CitySpark = () => {
   return (
     <div className="citySpark_stripe">
-        <h2 className='citySpark_stripe_h2'>CitySpark London</h2>
-        <h3 className='citySpark_stripe_h3'>First prize at City Spark for London's AI VR math education startup</h3>
+        <h2 className='citySpark_stripe_h2'>CitySpark London's 1st Prize Winner</h2>
+        <h3 className='citySpark_stripe_h3'>Reinventing Math Education with Robotics, AI, & VR: First Prize at CitySpark and Best Startup Idea in London Competition</h3>
         <div className="citySpark_container">
 
       <div className="citySpark_title-container">
