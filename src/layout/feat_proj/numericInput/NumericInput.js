@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useRef} from 'react'
+import React,{useEffect,useRef} from 'react'
 import './NumericInput.scss'
 
 const NumericInput = ({initvalue=1,change=null,min=-4,index=0,style={}}) => {

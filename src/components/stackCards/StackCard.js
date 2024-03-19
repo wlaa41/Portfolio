@@ -15,7 +15,7 @@ export default function StackCard({info}) {
         <div title="Double click to open"  onDoubleClick={()=>window.open('https://github.com/rutall-co/clearpath_university-campus','_blank')}
          target="_blank" href="https://www.linkedin.com/in/smartwill/"  className="stackCard" >
              <div className='stackCard_Conimg'>
-             <img className='stackCard_Conimg_img' src={image} />
+             <img className='stackCard_Conimg_img' src={image} alt={image.alt}/>
              </div>
             <h3 className="stackCard_title" subtitle={subtitle}>{title}</h3>
                 <div className="">

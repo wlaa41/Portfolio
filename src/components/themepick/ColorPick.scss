@@ -1,0 +1,35 @@
+@import '../../abstracts/variables';
+
+
+.skl_COLOR_CON{
+    display: flex;
+    height: 4vh;
+    transform: translate(0);
+    justify-content: flex-end;
+    // background-image: inherit;
+    // background-color: inherit;
+    padding:0 5%;
+
+    .btn{
+        height: 8px;
+        width: 25px ;
+        border-radius:1px;
+        margin:.3rem .5rem 4rem   .5rem;
+        box-shadow: inset -2px 1px 1px rgba(126, 126, 126, 0.562);
+    }
+
+    .btn-red{
+        background-color: #ff578f;
+    }
+    .btn-ygreen{
+        background-color: #bed38c;
+    }
+    .btn-bluish{
+        background-color: #87a5c0;
+    }
+
+
+
+
+
+}

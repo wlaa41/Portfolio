@@ -20,7 +20,6 @@ const Nav = ({ talkbtnCon, title, translate }) => {
             document.getElementById("contactCon").style.display = "none";
         }
     }
-
     // Function to open the form
     function openForm(e) {
         document.getElementById("contactCon").style.display = "flex";
@@ -49,7 +48,7 @@ const Nav = ({ talkbtnCon, title, translate }) => {
         }
         let promise = fetch("https://en6gthld5q6w7jf.m.pipedream.net", options);
         promise.then((value) => {
-            console.log('weeeeee did    it');
+            // console.log('weeeeee did    it');
             setStatusMsg(`Thanks ${name}. Talk to you soon.`);
             document.getElementById('status').style.color = 'rgb(35, 139, 51)';
             document.getElementById('status').style.fontSize = '1.5rem';
@@ -63,7 +62,6 @@ const Nav = ({ talkbtnCon, title, translate }) => {
             document.getElementById('status').style.fontSize = '1.5rem';
         });
     }
-
     // JSX structure for the Nav component
     return (
         <nav className='nav'>
@@ -117,9 +115,7 @@ const Nav = ({ talkbtnCon, title, translate }) => {
 
             <div className='navGrid'>
                 <div id='mainTitle' ref={title} className='navGrid_titleCon'>
-                    <div className='navGrid_titleCon_title'>
-                        Walaa's Web, AI's Zest, Robotics Nest, Progress Quest
-                    </div>
+                    <h1 className='navGrid_titleCon_title' aria-label="Main Title: Walaa's Web, AI's Zest, Robotics Nest, Progress Quest">Walaa's Web, AI's Zest, Robotics Nest, Progress Quest</h1>
                 </div>
                 <div id='talkbtnCon' ref={talkbtnCon} className='navGrid_BtnCon'>
                     <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1'
