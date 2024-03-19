@@ -1,14 +1,14 @@
 import React from 'react'
-import Mainintro from '../layout/main_intro/Mainintro'
-import CardStrip from '../layout/cardStrip/CardStrip'
+import Mainintro from '../components/main_intro/Mainintro'
+import CardStrip from '../components/cardStrip/CardStrip'
 import Feat_proj from '../layout/feat_proj/Feat_proj' 
 import Foot from '../layout/footer/footer'
-import EduExpStrip from '../layout/EduExp/educationStrip'
-import Brief from '../layout/brief/Brief'
+import Brief from '../components/brief/Brief'
 import CitySpark from '../components/citySpark/CitySpark'
 import VideoStripe from '../components/VideoStripe/VideoStripe'
 import RoboticProject from '../components/RoboticProject/RoboticProject'
 import { videosList } from '../components/VideoStripe/info/info';
+import EduExpStrip from '../components/educationExperience/educationStrip'
 
 
 class Homepage extends React.Component{
@@ -18,24 +18,14 @@ class Homepage extends React.Component{
             <div id='homePage'>
                 <Brief></Brief>
                 <Mainintro/>
-
-
-
-
-               
                 <CardStrip></CardStrip>
                 <VideoStripe videoData={videosList[0]}/>
                 <CitySpark/>
                 <Feat_proj></Feat_proj>
-
                 <RoboticProject/>
                 <VideoStripe videoData={videosList[1]}/>
-
-                <EduExpStrip></EduExpStrip>
-         
+                <EduExpStrip/>
                  <Foot> </Foot>
-
-                 
             </div>
             
         );

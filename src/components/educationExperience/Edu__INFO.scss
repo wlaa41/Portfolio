@@ -1,0 +1,44 @@
+@import '../../abstracts/mixins';
+
+.EduStrip_info{
+    // height: 99vh;
+    position: relative;
+    font-size: 1.4rem;
+    color:white;
+    padding-bottom: 3rem;
+    background-color:rgb(255, 255, 255);
+
+
+
+        &_GRID{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax(400px,1fr));
+            justify-items: center;
+            margin: -5rem 0  -3rem  0;
+            padding: 16rem 5rem 0 5rem ;     
+            @include respond(phone){
+                padding: 9rem 0rem;     
+
+             @include respond(v400){
+                padding: 9rem 2rem;     
+
+                grid-template-columns: repeat(auto-fit , minmax(220px,1fr));}}}
+        &_End-Decoration{
+            // flex:1 1;
+            min-height: 39px;
+            position: relative;
+            grid-column: 1/-1;
+            grid-row: 3/4;
+            background-color: #56a2e9;
+            transform-origin: left;
+        }
+    
+}
+
+.lastSVG{
+    // border: 4px dashed deeppink;
+    align-self: end;
+    margin: 2rem;
+
+}

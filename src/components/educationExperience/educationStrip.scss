@@ -1,0 +1,156 @@
+@import '../../abstracts/mixins';
+
+
+
+$edu__fontsize: 5.9rem;
+    
+
+.EduStrip_info_GRID_container{
+    position: relative;
+    &_img{
+        position: relative;
+        width: 100%;
+        margin-bottom: -11px; 
+        // border: 3px solid yellowgreen;
+        // -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+        // mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        top: -150px;
+        left: 0;
+        background: linear-gradient(transparent,rgba(255, 255, 255, 0.176), rgb(255, 255, 255));
+        // box-shadow: inset 0px 5px 2px rgba(1, 0, 66, .3);
+        pointer-events: none; /* This ensures that clicks go through to the image */
+    }
+}
+.EduStrip{
+    transform: translate(0);
+    padding-top: 13rem;
+    overflow: hidden;
+    z-index: 9990;
+    @include respond(tab-port){
+}
+
+   
+    &__title{
+        font: $edu__fontsize 'Lato', sans-serif;
+        text-align: end;
+        width: 60%;
+        transform:rotate(-2deg) ;
+        background: linear-gradient(
+            149.47deg,
+            rgb(111, 159, 255) 6.08%,
+            rgb(86, 145, 255) 11.08%,
+            rgb(88, 86, 249) 50.65%,
+            rgb(128, 43, 255) 75.66%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+        text-transform: uppercase;}
+    &__title__Education{
+        margin-bottom: -5rem;
+        letter-spacing: .1ch;
+        font-size: $edu__fontsize - 3rem ;}
+        font-weight: 600;
+        
+    &__title__Experience{
+        .remove__skew{
+            position: relative;
+            background: linear-gradient(
+                149.47deg,
+                rgb(111, 159, 255) 6.08%,
+                rgb(86, 145, 255) 11.08%,
+                rgb(88, 86, 249) 50.65%,
+                rgb(128, 43, 255) 75.66%
+              );
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-weight: 600;
+
+            &::first-letter{font-size: $edu__fontsize + 2;}
+            &::after{
+                font-family: serif;
+                content: '&';
+                font-size: $edu__fontsize + 4rem;
+                position: absolute;
+                color:rgba(187, 255, 0, 0.562);
+                text-shadow:  -7px 3px 3px rgba(0, 0, 0, 0.21);
+                background: linear-gradient(
+                    149.47deg,
+                    rgb(111, 159, 255) 6.08%,
+                    rgb(86, 145, 255) 11.08%,
+                    rgb(88, 86, 249) 50.65%,
+                    rgb(128, 43, 255) 75.66%
+                  );
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+        
+                transform: rotate(-7deg) translate3d(-1px,-20%,0);  }}}
+
+    @include respond(phone){
+
+
+        &__title__Education{
+            width: 300px;}
+        &__title__Experience{
+            .remove__skew{
+                width: 100vw;
+                font-size: 75%;
+                text-align: start;
+                padding-left: 2rem;
+                &::first-letter{font-size: $edu__fontsize + 1;}
+                &::after{
+                    transform: rotate(-7deg) translate3d(-1px,-10%,0); 
+                    font-size: $edu__fontsize + 2rem;  }}}
+                    @include respond(v400){
+                        &__title__Education{
+                            width: 180px;
+                            font-size: 2rem;
+                            margin-bottom: -2.6rem;
+                        }
+                        &__title__Experience{
+                            .remove__skew{
+                                width: 100vw;
+                                font-size: 45%;
+                                text-align: start;
+                                padding-left: 2rem;
+                                &::first-letter{font-size: 4rem ;}
+                                &::after{
+                                    font-size: $edu__fontsize ;  }}}}}
+    &__blue-strip{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.514);
+        border-radius: 8% 114%;
+        transform:rotate(-2deg)  translate(0);//calc(100%/-6));
+        // box-shadow:  -50vw -11px 22px 11px rgba(0, 0, 0, 0.5);
+        height: 9rem;
+        z-index: 66;
+        position: relative;
+        &::after{
+
+            z-index: 66;
+            height: 110%;
+            width: 200%;
+            content: '';
+            background-color: rgb(43, 137, 226);
+            left: -20%;
+            background: 
+                linear-gradient(79deg,
+                    rgb(22, 94, 161) ,
+                    rgb(58, 132, 201) 36%,
+                    rgb(29, 140, 243) 66%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+            position: absolute;}}
+    
+
+
+
+}

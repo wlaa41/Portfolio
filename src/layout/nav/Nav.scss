@@ -5,8 +5,6 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
 
 .nav{
     font: 2rem 'Roboto',sans-serif;
-
-  // margin-bottom: ;
     position:fixed;
     z-index: 9999;
     width: 100vw;
@@ -15,7 +13,6 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
     touch-action:none;
     // border:8px dashed lightcoral;
     height: 100vh;
- 
 &Grid{
         display: grid;
         height: 100%;
@@ -30,13 +27,8 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
                     @include respond(seven){grid-template-rows:15% 1fr 9fr 5%;}
                     @include respond(phone){
                     grid-template-columns: 9% 1fr 20% 2%;
-                    //  grid-template-rows:7% 1fr 9fr 5%;
-
-
                         @include respond(phone){
-
                             @include respond(v400){
-
                             }}}}
         & > div >  * {
             touch-action:auto;

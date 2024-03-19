@@ -117,9 +117,9 @@ const Nav = ({ talkbtnCon, title, translate }) => {
 
             <div className='navGrid'>
                 <div id='mainTitle' ref={title} className='navGrid_titleCon'>
-                    <div className='navGrid_titleCon_title'>
+                    <h1 className='navGrid_titleCon_title'>
                         Walaa's Web, AI's Zest, Robotics Nest, Progress Quest
-                    </div>
+                    </h1>
                 </div>
                 <div id='talkbtnCon' ref={talkbtnCon} className='navGrid_BtnCon'>
                     <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1'

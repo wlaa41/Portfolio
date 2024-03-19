@@ -2,7 +2,7 @@ import React from 'react'
 import sprite from './symbol-defs.svg'
 import './footer.scss'
 import SkillLogo from '../skill_logo/SkillLogo'
-import ColorPick from '../themepick/ColorPick'
+import ColorPick from '../../components/themepick/ColorPick'
 
 
 export const Foot = (props) => {
@@ -22,7 +22,6 @@ export const Foot = (props) => {
                     </use>
                     </svg>
                 </a>
-  
                 <a className='ft_ICON-con' href="https://github.com/wlaa41" target="_blank" name='github'>
                     <svg className="ft_ICON-svg">
                     <use href={sprite+"#icon-github-square"}>
@@ -42,7 +41,6 @@ export const Foot = (props) => {
                     </svg>
                 </a>   
         </div>    
-
             <div className="ft_details" >
                 <div className="ft_details-name" > Walaa Will Jam </div>
                 <a className="ft_details-email"  href="mailto:walaa.jamous@city.ac.uk" target="_blank"  >  walaa.jamous@city.ac.uk</a>
