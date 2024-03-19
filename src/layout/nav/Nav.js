@@ -115,7 +115,7 @@ const Nav = ({ talkbtnCon, title, translate }) => {
 
             <div className='navGrid'>
                 <div id='mainTitle' ref={title} className='navGrid_titleCon'>
-                    <h1 className='navGrid_titleCon_title' aria-label="Main Title: Walaa's Web, AI's Zest, Robotics Nest, Progress Quest">Walaa's Web, AI's Zest, Robotics Nest, Progress Quest</h1>
+                    <h1 className='navGrid_titleCon_title' aria-label="Main Title: Walaa's Web, AI's Zest, Robotics Nest, Progress Quest">DevOps, AI Robotics, Electrical Engineering and Automation in Harmony.</h1>
                 </div>
                 <div id='talkbtnCon' ref={talkbtnCon} className='navGrid_BtnCon'>
                     <button className='navGrid_BtnCon_button navGrid_BtnCon_button-1'

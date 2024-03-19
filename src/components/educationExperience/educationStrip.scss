@@ -7,13 +7,11 @@ $edu__fontsize: 5.9rem;
 
 .EduStrip_info_GRID_container{
     position: relative;
+
     &_img{
         position: relative;
         width: 100%;
         margin-bottom: -11px; 
-        // border: 3px solid yellowgreen;
-        // -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
-        // mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
     }
     &::after {
         content: '';
