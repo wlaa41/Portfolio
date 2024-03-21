@@ -12,8 +12,9 @@ import   phonebooth  from "./media/londonfull_wide/phonebooth.svg"
 import   myBase      from './media/londonfull_wide/myBase.svg'
 import './Mainintro.scss'
 import './myAvatar.scss'
-import Arrow from '../arrow/Arrow'
 import './SkyChangingcolor.scss'
+
+import Arrow from '../arrow/Arrow'
 
 
 const myAvatar_img_attr =myavatar_vec();
