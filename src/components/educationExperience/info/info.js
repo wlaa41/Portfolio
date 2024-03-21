@@ -27,7 +27,7 @@ export const info = [
     },
     {
         title: "APPITUNITY",
-        subtitle: "Co-Founder and CEO",
+        subtitle: "CTO & Bid Manager",
         date: "Jan 2018 - Jan 2022",
         brief: "• Led 30+ digital marketing and web optimization projects, achieving a 40% increase in web traffic and 25% in conversion rates. \n• Directed a team of 15+ software developers and engineers using Azure boards and Scrum. \n• Deployed 150+ embedded systems and cloud projects, enhancing operational efficiencies. \n• Managed 20+ member cross-functional teams, fostering collaboration in complex tech environments.",
         image: robot, // Placeholder image for tech leadership and project management
@@ -35,7 +35,7 @@ export const info = [
     },
     {
         title: "My Smart Home",
-        subtitle: "Founder and CEO",
+        subtitle: "Operations & R&D Manager ",
         date: "Jan 2015 - Jan 2019",
         brief: "• Grew market value to £2 million in 3 years, achieving platinum with Control4, GIRA, Intesis. \n• Top Control4 seller in 2019, highlighting sales excellence. \n• Completed 120+ smart installations across diverse properties. \n• Implemented solar systems in palaces, cutting energy costs by 43%, ROI in 5 years. \n• Established R&D for smart home solutions, focusing on protocols. \n• Tripled sales via targeted ads and SMM, leading YouTube channel in Home Automation.",
         image: new_robot_project, // Placeholder image for innovative smart home solutions

@@ -18,7 +18,7 @@ $time-toPopupCrd: .9s ease;
     min-width: 340px;
     max-width: 100vw;
     color: $EduExp__CRD__color;
-    box-shadow: none ;
+    // box-shadow: none ;
     border-radius:27px;
     overflow: hidden;
     &_IMG_Con{
@@ -100,13 +100,13 @@ $time-toPopupCrd: .9s ease;
     transition: transform $time-toPopupCrd , box-shadow $time-toPopupCrd;
 
     &:hover{
-        transform: translateY(0) scale(1);
-        box-shadow: none;
+        // transform: translateY(0) scale(1);
+        // box-shadow: none;
 
         .CardEdu_IMG_Con:hover{
             height: 188px;
             img{
-                animation: none;
+                // animation: none;
             }
         }
         .CardEdu_header {

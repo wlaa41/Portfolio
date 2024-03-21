@@ -36,7 +36,7 @@ const ColorPick = () => {
         console.log(i)
         console.log(`%cbg ${images[i].default}}`,'color: deeppink')
 
-        document.getElementById('Edu_info').style.backgroundImage=`url(${images[i].default})`
+        document.getElementById('Edu_info').style.background=`url(${images[i].default})`
         if(images.length === i+1)i=0
         else i+=1}}
 

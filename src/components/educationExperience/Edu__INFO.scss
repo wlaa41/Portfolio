@@ -7,12 +7,13 @@
     font-size: 1.4rem;
     color:rgb(175, 175, 175);
     padding-bottom: 3rem;
-    background-color: rgb(176, 176, 176);
+    background: linear-gradient(rgb(74, 83, 90),rgb(221, 227, 232)90%,rgb(221, 227, 232));
+
 
 
 
         &_GRID{
-
+            // background: linear-gradient(rgb(67, 77, 85),rgb(165, 180, 193));
             position: relative;
             display: grid;
             grid-template-columns: repeat(auto-fit , minmax(400px,1fr));
@@ -20,10 +21,10 @@
             margin: -5rem 0  -3rem  0;
             padding: 16rem 5rem 0 5rem ;     
             @include respond(phone){
-                padding: 9rem 0rem;     
+                padding: 9rem 0rem 0rem;     
 
              @include respond(v400){
-                padding: 9rem 2rem;     
+                padding: 9rem 2rem 2rem;    
 
                 grid-template-columns: repeat(auto-fit , minmax(220px,1fr));}}}
         &_End-Decoration{

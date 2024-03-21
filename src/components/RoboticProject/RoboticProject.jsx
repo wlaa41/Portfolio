@@ -1,12 +1,52 @@
 import "./RoboticProject.scss";
 import projectimage from './info/uniCampus3dgazebo.gif'
+import React, { useState, useEffect, useRef } from 'react';
+import "./RoboticProject.scss"; // Make sure your CSS is properly set up to see the effect
 
 const RoboticProject = () => {
+  const divRef = useRef(null);
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+  const [angle, setAngle] = useState(0);
+
+  useEffect(() => {
+    if (divRef.current) {
+      const { width, height } = divRef.current.getBoundingClientRect();
+      setDimensions({ width, height });
+    }
+
+    // This event listener helps in recalculating the angle when the window is resized
+    const handleResize = () => {
+      if (divRef.current) {
+        const { width, height } = divRef.current.getBoundingClientRect();
+        setDimensions({ width, height });
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    // Calculating the angle based on the div's dimensions
+    // Here we aim for the top-right corner as an example
+    const angleRadians = Math.atan(dimensions.width / dimensions.height);
+    const angleDegrees = angleRadians * (180 / Math.PI);
+    
+    console.log(dimensions.height,' height')
+    console.log(dimensions.width,' width')
+    console.log(angleDegrees,' angleDegrees')
+    setAngle(angleDegrees);
+  }, [dimensions]);
+
+  // var dynamicGradient = `conic-gradient(from ${angle }deg, blue, red)`;
+   const dynamicGradient = `conic-gradient(at ${dimensions.width - dimensions.height/2 }px ${dimensions.height/2 }px,  #90aeb2, #80a5aa 12.5%, #48828b 12.5%, #cddada, #90aeb2 100%)`;
+
   return (
     <div className="robotic-stripe">
       <div className="main-container">
         <div className="gridLeftRight">
-        <div className="leftContainer">
+        <div ref={divRef} className="leftContainer" style={{ background: dynamicGradient }}>
             <div className="robotic">
               <div itemScope itemType="http://schema.org/VideoObject">
                

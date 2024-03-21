@@ -16,10 +16,8 @@ $time-img:2s;
     flex:1 1;
     color: $EduExp__color;
     border:1.4px solid transparent;
-    // border-top: 22px solid transparent;
-    // border-bottom: 22px solid transparent;
-    // border: 1.4px solid black;
-    box-shadow: 0 11px 22px -6px rgba(0, 0, 0, 0.8);
+
+    box-shadow: 0 -36px 37px -13px rgba(0, 0, 0, 0.48);
     position: relative; 
     background: 
     linear-gradient(to bottom left , rgb(0, 124, 207) , rgb(31, 143, 247));
@@ -163,7 +161,7 @@ $time-img:2s;
             backdrop-filter: blur(3px);
         }
         // box-shadow: 0 11px 9px -3px rgba(0, 0, 0, 0.534);
-    box-shadow: 0 5px 22px 4px rgba(0, 0, 0, 0.8);
+    // box-shadow: 0 5px 22px 4px rgba(0, 0, 0, 0.8);
             .CardEdu_IMG_Con{
             // height: 188px;
             transition: all 2s .9s;

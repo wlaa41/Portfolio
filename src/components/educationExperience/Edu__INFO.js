@@ -8,10 +8,8 @@ import ducati from './info/Motorbike-black.webp'
 
 const EducationINFO = () => {
     return (<>
-        <div id='Edu_info' className='EduStrip_info'
-        style={{backgroundImage:`url(${bg_image})`,
-                    }} >
-                    <div className='EduStrip_info_GRID'>
+        <div  className='EduStrip_info' >
+                    <div id='Edu_info'  className='EduStrip_info_GRID'>
                             <CardEdu></CardEdu>
                     </div>
             </div>

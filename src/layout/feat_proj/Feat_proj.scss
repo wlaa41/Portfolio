@@ -73,6 +73,7 @@
             -webkit-text-fill-color: transparent;
             // margin-bottom: 22px;
             margin: 36px 1rem 22px;
+            line-height: calc(normal -.1ch);
             
 }
 @include respond(tab-port)
