@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.dd5906c2.chunk.css",
-    "main.js": "/Portfolio/static/js/main.01e1e6d0.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.01e1e6d0.chunk.js.map",
-    "reactPlayerPreview.js": "/Portfolio/static/js/reactPlayerPreview.73da4364.chunk.js",
-    "reactPlayerPreview.js.map": "/Portfolio/static/js/reactPlayerPreview.73da4364.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.b1cc4609.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.b1cc4609.js.map",
-    "static/js/3.ffac6e39.chunk.js": "/Portfolio/static/js/3.ffac6e39.chunk.js",
-    "static/js/3.ffac6e39.chunk.js.map": "/Portfolio/static/js/3.ffac6e39.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.e7dba7d1.chunk.css",
+    "main.js": "/Portfolio/static/js/main.0ca3e46c.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0ca3e46c.chunk.js.map",
+    "reactPlayerPreview.js": "/Portfolio/static/js/reactPlayerPreview.b7e2b563.chunk.js",
+    "reactPlayerPreview.js.map": "/Portfolio/static/js/reactPlayerPreview.b7e2b563.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.ce6d878c.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.ce6d878c.js.map",
+    "static/js/3.24672c11.chunk.js": "/Portfolio/static/js/3.24672c11.chunk.js",
+    "static/js/3.24672c11.chunk.js.map": "/Portfolio/static/js/3.24672c11.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.dd5906c2.chunk.css.map": "/Portfolio/static/css/main.dd5906c2.chunk.css.map",
-    "static/js/3.ffac6e39.chunk.js.LICENSE.txt": "/Portfolio/static/js/3.ffac6e39.chunk.js.LICENSE.txt",
+    "static/css/main.e7dba7d1.chunk.css.map": "/Portfolio/static/css/main.e7dba7d1.chunk.css.map",
+    "static/js/3.24672c11.chunk.js.LICENSE.txt": "/Portfolio/static/js/3.24672c11.chunk.js.LICENSE.txt",
     "static/media/1fresh-snow.png": "/Portfolio/static/media/1fresh-snow.1466e802.png",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
     "static/media/Labtop.9c8f5df8.jpg": "/Portfolio/static/media/Labtop.9c8f5df8.jpg",
@@ -71,9 +71,9 @@
     "static/media/wheel1.9b1307ea.svg": "/Portfolio/static/media/wheel1.9b1307ea.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1cc4609.js",
-    "static/js/3.ffac6e39.chunk.js",
-    "static/css/main.dd5906c2.chunk.css",
-    "static/js/main.01e1e6d0.chunk.js"
+    "static/js/runtime-main.ce6d878c.js",
+    "static/js/3.24672c11.chunk.js",
+    "static/css/main.e7dba7d1.chunk.css",
+    "static/js/main.0ca3e46c.chunk.js"
   ]
 }
