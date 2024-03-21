@@ -13,6 +13,7 @@ import   myBase      from './media/londonfull_wide/myBase.svg'
 import './Mainintro.scss'
 import './myAvatar.scss'
 import Arrow from '../arrow/Arrow'
+import './SkyChangingcolor.scss'
 
 
 const myAvatar_img_attr =myavatar_vec();
@@ -141,7 +142,18 @@ function chekclass_REMOVE(){
                 
                 <Nav talkbtnCon={talkbtnConRef} title={titleRef} translate={btn_Translate}></Nav>
             <section className='Mi_container'>
+                <div className='sky'>
+                        <div className="sky__phase sky__dawn"></div>
+                        <div className="sky__phase sky__noon"></div>
+                        <div className="sky__phase sky__dusk"></div>
+                        <div className="sky__phase sky__midnight"></div>
+                        <div className="orbit">
+                            <div className="sun"></div>
+                            <div className="moon"></div>
+                        </div>
+                </div>
                 <div className='londonfull'>
+             
                     <div className="londonfull__imgcontainer">
                         <img src={skyline3} alt="London Skyline Far Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline3"]}px,0)` }} />
                         <img src={skyline2} alt="London Skyline Middle Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline2"]}px,0)` }} />
@@ -169,6 +181,7 @@ function chekclass_REMOVE(){
                         </div>
                     </div>
                 </div>
+
             </section>
             <Arrow></Arrow>
         </>
