@@ -72,6 +72,9 @@
 }
 @keyframes moonrise {
 	0% {
+		transform: rotateZ(-30deg);
+	}
+	1% {
 		transform: rotateZ(-77deg);
 	}
 	100% {
