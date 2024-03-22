@@ -30,7 +30,31 @@
     background-color: rgb(255, 255, 255);
 
 }
+.arrow_blade-left{
+    transform: rotate(22deg);
+}
+.arrow_blade-right{
+    transform: rotate(-22deg);
 
+    &::after{      
+    //     background: linear-gradient(to bottom left, 
+    //     white 22%,
+    //     rgba(255, 255, 255, 0.6), 
+    //     white 33%,
+    //     rgba(255, 255, 255, 1) 55%,
+    //     rgb(253, 253, 253), 
+    //     rgba(255, 255, 255, 0.94) 88%,
+    //     white);
+        
+        // background: linear-gradient(to bottom right , 
+        // rgba(255, 255, 255, 0.2) ,
+        // white 40%,
+        // rgb(179, 179, 179), 
+        // white 66%,
+        // white
+        // );
+    }
+}
 @keyframes arrowAfterEffect {
     from{
         transform:  translate3d(0,-95%,0);
@@ -65,5 +89,6 @@
         opacity: 1;
         transform: translate3d(0,-48px,0);
     }
+
 
 }

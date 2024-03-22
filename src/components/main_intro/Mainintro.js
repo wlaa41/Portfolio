@@ -148,10 +148,7 @@ function chekclass_REMOVE(){
                         <div className="sky__phase sky__noon"></div>
                         <div className="sky__phase sky__dusk"></div>
                         <div className="sky__phase sky__midnight"></div>
-                        <div className="orbit">
-                            <div className="sun"></div>
-                            <div className="moon"></div>
-                        </div>
+                        <div className="moon"></div>
                 </div>
                 <div className='londonfull'>
              

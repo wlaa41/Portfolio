@@ -45,6 +45,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == tab-land {
         @media only screen and (max-width: 75em) { @content };    //1200px
     }
+    @if $breakpoint == protab-land {
+        @media only screen and (max-width: 100em) { @content };    //1200px
+    }
     @if $breakpoint == big-desktop {
         @media only screen and (max-width: 112.5em) { @content };    //1800
     }
@@ -63,6 +66,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
     @if $breakpoint == v500 {
         @media only screen and (max-width: 31.25em) { @content };    //600px
+    }
+    @if $breakpoint == v1000 {
+        @media only screen and (max-width: 71.75em) { @content };    //600px
     }
     @if $breakpoint == v800 {
         @media only screen and (max-width: 51.75em) { @content };    //600px
@@ -140,7 +146,7 @@ z-index: 55;
     position: relative;
     z-index: 77;
     // transform: translate3d(0,0,4px);
-        box-shadow: 0 10px 16px -1px rgba(26, 26, 26, 0.24);
+        box-shadow:9px 6px 7px 0px rgba(26, 26, 26, 0.4);
 
     &:before, &:after
     {

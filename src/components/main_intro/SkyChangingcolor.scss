@@ -7,6 +7,7 @@ body {
 }
 
 .Mi_container{
+
     height: 80vh;
     @include respond(h800)
     {
@@ -29,6 +30,91 @@ body {
         @include respond(h700)
         {height: 85vh;}
     }
+	.londonfull{
+		background: conic-gradient(at -1% 8%,rgb(255, 255, 255),rgba(225, 255, 0, 0.1)40%), linear-gradient(178deg, #0092d5 ,#65bffb );
+
+		// animation: 211s infinite day_night;
+	}
+}
+.moon {
+	// border: 99px dashed red;
+	position: absolute;
+	bottom: -1561px;
+	// left: calc(50vw - 40px) ;
+	left: calc(160vw - 40px) ;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 0 0 22px 3px rgba(255, 255, 255, 0.656);
+	transform-origin:-110vw ; 
+	transform: rotateZ(-90deg);
+	background: radial-gradient(circle at 70% 30%, #ffffff, #ffffff 60%,#dbe5e7 60%);
+
+	@include respond(protab-land)
+    {
+		bottom: -1131px;
+        @include respond(v1000){
+			bottom: -421px;
+            @include respond(phone){bottom: -221px;}
+        }
+            @include respond(h600)
+            {
+				bottom: -421px;
+			}}
+
+	animation:  80s ease-in-out 0s infinite moonrise ;
+	}
+	@keyframes moonrise {
+
+		0% {
+			transform: rotateZ(-60deg);
+		}
+
+		66% {
+			transform: rotateZ(-60deg);
+		}
+
+		100% {
+			transform: rotateZ(-120deg);
+		}
+
+	}
+.sky__dawn {
+	position: absolute;
+	background:
+	conic-gradient(at -1% 8%,rgb(79, 15, 255),rgba(225, 255, 0, 0.1)40%),
+	linear-gradient(
+		11deg,
+		rgb(191, 8, 130) 0%,
+		rgba(10, 0, 94, 1) 60%);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	// opacity: 0;
+
+	transition: opacity 0.2s;
+	animation:  80s ease-in-out 0s infinite sky__dusk ;
+}
+
+
+@keyframes sky__dusk {
+	0% {
+		opacity: 0;
+	}
+	68% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	98% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 .sky {
     top:0;
@@ -43,187 +129,3 @@ body {
 	max-height: 600px;
 	overflow: hidden;
 }
-
-.sky__phase {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	transition: opacity 0.2s;
-}
-
-.sky__dawn {
-	background: linear-gradient(
-		0deg,
-		rgba(254, 215, 102, 1) 0%,
-		rgba(205, 237, 246, 1) 100%
-	);
-	animation: linear dawn infinite var(--animation-speed);
-}
-
-.sky__noon {
-	position:absolute;
-	background: linear-gradient(
-		0deg,
-		rgba(205, 237, 246, 1) 0%,
-		rgba(36, 123, 160, 1) 100%
-	);
-	animation: linear noon infinite var(--animation-speed);
-}
-
-.sky__dusk {
-	background: linear-gradient(
-		0deg,
-		rgba(255, 32, 110, 1) 0%,
-		rgba(10, 0, 94, 1) 100%
-	);
-	animation: linear dusk infinite var(--animation-speed);
-}
-
-.sky__midnight {
-	background: linear-gradient(
-		0deg,
-		rgba(2, 0, 20, 1) 0%,
-		rgba(10, 0, 94, 1) 100%
-	);
-	animation: linear midnight infinite var(--animation-speed);
-}
-
-.orbit {
-	// border:3px solid red;
-	position: absolute;
-	width: 200wh;
-	height: 100vh;
-	left:12%;
-	margin: 200px auto;
-	transform: rotate(-45deg);
-	animation: linear sunrise infinite var(--animation-speed);
-}
-
-.moon {
-	position: absolute;
-	bottom: -40px;
-	right: -40px;
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	background-color: #fff;
-	box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.2);
-}
-
-
-@media (min-width: 768px) {
-	.sky {
-		max-height: 600px;
-	}
-	.orbit {
-		width: 700px;
-		height: 700px;
-		margin: 150px auto;
-	}
-}
-
-@media (min-width: 940px) {
-	.orbit {
-		width: 800px;
-		height: 800px;
-	}
-}
-
-@media (min-width: 1200px) {
-	body {
-		--animation-speed: 33s;
-	}
-	.orbit {
-		width: 1000px;
-		height: 1000px;
-		margin: 200px auto;
-	}
-}
-
-@media (min-width: 1500px) {
-	body {
-		--animation-speed: 33s;
-	}
-	.orbit {
-		width: 1300px;
-		height: 1300px;
-	}
-}
-
-
-@keyframes sunrise {
-	from {
-		transform: rotate(-45deg);
-	}
-
-	to {
-		transform: rotate(315deg);
-	}
-}
-
-@keyframes moonrise {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(180deg);
-	}
-}
-
-@keyframes dawn {
-	0% {
-		opacity: 0;
-	}
-	10% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-}
-
-@keyframes noon {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	75% {
-		opacity: 0;
-	}
-}
-
-@keyframes dusk {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 0;
-	}
-	70% {
-		opacity: 1;
-	}
-	90% {
-		opacity: 0;
-	}
-}
-
-@keyframes midnight {
-	0% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 0;
-	}
-	80% {
-		opacity: 1;
-	}
-}
-
