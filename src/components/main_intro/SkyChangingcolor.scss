@@ -1,13 +1,7 @@
 
 @import '../../abstracts/mixins';
 
-body {
-	--animation-speed: 33s;
-	// background-color: rgb(37, 29, 24);
-}
-
 .Mi_container{
-
     height: 80vh;
     @include respond(h800)
     {
@@ -23,7 +17,6 @@ body {
             {
                 height: 85vh; }}}
     @include respond(v800){
-        // height: 70vh;
         @include respond(phone){height: 85vh;}
     }
     @include respond(phone){
@@ -32,15 +25,11 @@ body {
     }
 	.londonfull{
 		background: conic-gradient(at -1% 8%,rgb(255, 255, 255),rgba(225, 255, 0, 0.1)40%), linear-gradient(178deg, #0092d5 ,#65bffb );
+}}
 
-		// animation: 211s infinite day_night;
-	}
-}
 .moon {
-	// border: 99px dashed red;
 	position: absolute;
 	bottom: -1561px;
-	// left: calc(50vw - 40px) ;
 	left: calc(160vw - 40px) ;
 	width: 80px;
 	height: 80px;
@@ -50,7 +39,6 @@ body {
 	transform-origin:-110vw ; 
 	transform: rotateZ(-90deg);
 	background: radial-gradient(circle at 70% 30%, #ffffff, #ffffff 60%,#dbe5e7 60%);
-
 	@include respond(protab-land)
     {
 		bottom: -1131px;
@@ -62,42 +50,22 @@ body {
             {
 				bottom: -421px;
 			}}
-
-	animation:  80s ease-in-out 0s infinite moonrise ;
-	}
-	@keyframes moonrise {
-
-		0% {
-			transform: rotateZ(-60deg);
-		}
-
-		66% {
-			transform: rotateZ(-60deg);
-		}
-
-		100% {
-			transform: rotateZ(-120deg);
-		}
-
+	// animation:  80s ease-in-out 0s infinite moonrise ;
 	}
 .sky__dawn {
 	position: absolute;
 	background:
-	conic-gradient(at -1% 8%,rgb(79, 15, 255),rgba(225, 255, 0, 0.1)40%),
-	linear-gradient(
-		11deg,
-		rgb(191, 8, 130) 0%,
-		rgba(10, 0, 94, 1) 60%);
+	// conic-gradient(at 50% 8%,rgb(17, 0, 64),rgba(225, 255, 0, 0.1)40%),
+	conic-gradient(at 8% 0%,rgb(17, 0, 64),rgba(225, 255, 0, 0.1)40%),
+	conic-gradient(at -1% 95%,rgb(0, 120, 212),rgba(0, 9, 28, 0.562)40%),
+	linear-gradient(11deg,rgb(0, 20, 169) 0%,rgb(1, 0, 12) 60%);
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	// opacity: 0;
-
 	transition: opacity 0.2s;
-	animation:  80s ease-in-out 0s infinite sky__dusk ;
+	// animation:  26s ease-in-out 0s infinite sky__dusk ;
 }
-
 
 @keyframes sky__dusk {
 	0% {

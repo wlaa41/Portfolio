@@ -144,11 +144,11 @@ function chekclass_REMOVE(){
                 <Nav talkbtnCon={talkbtnConRef} title={titleRef} translate={btn_Translate}></Nav>
             <section className='Mi_container'>
                 <div className='sky'>
-                        <div className="sky__phase sky__dawn"></div>
-                        <div className="sky__phase sky__noon"></div>
-                        <div className="sky__phase sky__dusk"></div>
-                        <div className="sky__phase sky__midnight"></div>
-                        <div className="moon"></div>
+                        {/* <div className="sky__phase sky__dawn"></div> */}
+                        {/* <div className="sky__phase sky__noon"></div> */}
+                        {/* <div className="sky__phase sky__dusk"></div> */}
+                        {/* <div className="sky__phase sky__midnight"></div> */}
+                        {/* <div className="moon"></div> */}
                 </div>
                 <div className='londonfull'>
              
