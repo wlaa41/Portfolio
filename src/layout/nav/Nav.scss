@@ -38,7 +38,7 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
             position: relative;
             color: rgba(255, 255, 255, 1);
             text-shadow: 
-            0 3px 4px rgb(48, 48, 48);
+            2px 3px 4px rgb(48, 48, 48);
             transition:all .3s ;
             grid-row: 2/3;
             grid-column: 2/3;
@@ -170,16 +170,10 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
                 display: none;
             }
             .navGrid_BtnCon_button-2{
-    // transform: translate3d(0,0,0);
-    //             margin: 0;
                 height: 65px;
                 width:  65px;
                 border-radius: 50%;
                 font-size: 0;
-                // GREAT IDEA..........
-                // transform: translateX( calc(82.5vw - 111%)) translateY(calc(60vh - 111%));
-
-
                 & > *{
                         transition: all 1.8s ;
                     width:22px;
