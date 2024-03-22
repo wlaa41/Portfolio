@@ -33,15 +33,19 @@
 	left: calc(160vw - 40px) ;
 	width: 80px;
 	height: 80px;
+	// opacity: .5;
+	position: fixed;
+	filter: blur(0px);
 	border-radius: 50%;
 	background-color: #ffffff;
 	box-shadow: 0 0 22px 3px rgba(255, 255, 255, 0.656);
 	transform-origin:-110vw ; 
-	transform: rotateZ(-90deg);
-	background: radial-gradient(circle at 70% 30%, #ffffff, #ffffff 60%,#dbe5e7 60%);
+	transform: rotateZ(-80deg);
+	background: radial-gradient(circle at 60% 30%, #ffffff, #ffffff 60%,#dbe5e7 60%);
+	// background: radial-gradient(circle at 30% 90%, #dbe5e7, #dbe5e7 64%,#ffffff 64%);
 	@include respond(protab-land)
     {
-		bottom: -1131px;
+		bottom: -1000px;
         @include respond(v1000){
 			bottom: -421px;
             @include respond(phone){bottom: -221px;}
@@ -50,7 +54,7 @@
             {
 				bottom: -421px;
 			}}
-	// animation:  80s ease-in-out 0s infinite moonrise ;
+	animation:  465s ease-in-out infinite moonrise ;
 	}
 .sky__dawn {
 	position: absolute;
@@ -66,7 +70,14 @@
 	transition: opacity 0.2s;
 	// animation:  26s ease-in-out 0s infinite sky__dusk ;
 }
-
+@keyframes moonrise {
+	0% {
+		transform: rotateZ(-77deg);
+	}
+	100% {
+		transform: rotateZ(-155deg);
+	}
+}
 @keyframes sky__dusk {
 	0% {
 		opacity: 0;
