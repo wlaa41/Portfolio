@@ -1,7 +1,7 @@
 
 @import '../../abstracts/mixins';
 
-.Mi_container{
+.heroSection{
     height: 80vh;
     @include respond(h800)
     {
@@ -37,11 +37,11 @@
 	position: fixed;
 	filter: blur(0px);
 	border-radius: 50%;
-	background-color: #ffffff;
+	// background-color: #ffffff;
 	box-shadow: 0 0 22px 3px rgba(255, 255, 255, 0.656);
 	transform-origin:-110vw ; 
 	transform: rotateZ(-80deg);
-	background: radial-gradient(circle at 60% 30%, #ffffff, #ffffff 60%,#dbe5e7 60%);
+	background: radial-gradient(circle at 60% 30%, #ffffff 60%, #d5d5d5 60%);
 	// background: radial-gradient(circle at 30% 90%, #dbe5e7, #dbe5e7 64%,#ffffff 64%);
 	@include respond(protab-land)
     {
@@ -56,18 +56,58 @@
 			}}
 	animation:  465s ease-in-out infinite moonrise ;
 	}
-.sky__dawn {
-	position: absolute;
+
+	.night{
+		background: linear-gradient(9deg,rgba(0, 0, 0, .5),rgba(0, 0, 0, 0.21) 40%,rgba(0, 0, 0, 0));
+	}
+	.night_hide{
+		opacity: 0;
+		transition: all 2s;
+
+	}
+	.night_show{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		transform: translateZ(1px);
+		pointer-events: none;
+		opacity: 1;
+		transition: all 2s;
+		z-index: 13;
+
+	}
+.sky_phase{
+	transition: all 2s;
+
 	background:
-	// conic-gradient(at 50% 8%,rgb(17, 0, 64),rgba(225, 255, 0, 0.1)40%),
-	conic-gradient(at 8% 0%,rgb(17, 0, 64),rgba(225, 255, 0, 0.1)40%),
-	conic-gradient(at -1% 95%,rgb(0, 120, 212),rgba(0, 9, 28, 0.562)40%),
-	linear-gradient(11deg,rgb(0, 20, 169) 0%,rgb(1, 0, 12) 60%);
+	// conic-gradient(at 8% 0%,rgb(17, 0, 64),rgba(73, 0, 86, 0.13)40%,rgba(73, 0, 86, 0.13)80%),
+	radial-gradient(at -1% 95%,rgba(0, 120, 212, 0.79),rgba(0, 9, 28, 0.262)40%,rgba(0, 9, 28, 0)),
+	radial-gradient(at 97% 95%,rgba(0, 95, 212, 0.271),rgba(0, 9, 28, 0.2)40%),
+	radial-gradient(at center 95%,rgb(111, 0, 74),rgb(0, 29, 90)40% ,rgb(0, 15, 46)90% , rgba(0, 0, 0, 1)100%);
+	opacity: 1;
+}
+
+
+.sky_dusk {
+	transition: all 2s;
+	opacity: 1;
+	position: absolute;
+
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	transition: opacity 0.2s;
+	// animation:  26s ease-in-out 0s infinite sky__dusk ;
+}
+.sky_dusk_remove {
+	transition: all 2s;
+	opacity: 0;
+	position: absolute;
+
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 	// animation:  26s ease-in-out 0s infinite sky__dusk ;
 }
 @keyframes moonrise {

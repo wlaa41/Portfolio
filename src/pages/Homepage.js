@@ -1,5 +1,5 @@
 import React from 'react'
-import Mainintro from '../components/main_intro/Mainintro'
+// import Mainintro from '../components/main_intro/Mainintro'
 import CardStrip from '../components/cardStrip/CardStrip'
 import Feat_proj from '../layout/feat_proj/Feat_proj' 
 import Foot from '../layout/footer/footer'
@@ -9,6 +9,7 @@ import VideoStripe from '../components/VideoStripe/VideoStripe'
 import RoboticProject from '../components/RoboticProject/RoboticProject'
 import { videosList } from '../components/VideoStripe/info/info';
 import EduExpStrip from '../components/educationExperience/educationStrip'
+import HeroSection from '../components/HeroSection/HeroSection'
 
 
 class Homepage extends React.Component{
@@ -16,8 +17,11 @@ class Homepage extends React.Component{
     render(){
         return(
             <div id='homePage'>
+
                 <Brief></Brief>
-                <Mainintro/>
+                {/* <Mainintro/> */}
+
+                <HeroSection/>
                 <CardStrip></CardStrip>
                 <VideoStripe videoData={videosList[0]}/>
                 <CitySpark/>

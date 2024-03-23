@@ -30,14 +30,18 @@
             .vertical_spacer{
                 max-height: calc(60vh - 12vw);
                 flex:1;}
-
+            .myAvatarContainerAvatar{
+                width: 100%;
+                bottom: 0px;
+                position: absolute;
+            }
             .myAvatarContainer{
                 transform-style: preserve-3d;
                 // position: relative;
-                perspective: 400px;
+                perspective: 800px;
                 // outline: 3px dashed deeppink;
                 &::after{
-                    transform-origin: center center -90px;
+                    transform-origin: center center -80px;
                     // perspective-origin:555px 500px -90px; ;
                     transform:translate3d(0,0,44px) ;
                     z-index: 99;
@@ -47,26 +51,27 @@
                     padding: .4rem 1rem;
                     max-width: 22rem;
                     text-shadow: 0 0 1px  rgb(0, 0, 0);
-                    color: rgb(22, 22, 22);
-                    color: rgb(255, 255, 255);
+                    color: rgb(110, 0, 0);
+                    // color: rgb(255, 255, 255);
                     display: grid;
                     justify-items: center;
                     font-size: 1.8vmin;
                     align-items: center;
-                    background-color: rgba(10, 17, 20, 0.3);
+                    background: conic-gradient(at -1% 8%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0.41) 30%, rgba(255, 255, 255, 0.41) 50%, rgba(255, 255, 255, 0.1)), radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.01) 70%, rgba(94, 100, 101, 0.41));
+
                     bottom: 25vmin;
                     border-radius: 9px;
-                    left: 25%;
-                    animation: spining 10s  infinite;
+                    left: 2%;
+                    animation: spining1 10s  infinite;
                     touch-action: none;
                     pointer-events: none;
-                    @include respond(v500){bottom: 38vmin;
+                    @include respond(v400){bottom: 38vmin;
                     transform-origin: center center -60px;
 
-                        left: 28%;}
-                    @include respond(v400){bottom: 52vmin;}
+                        left: 4%;}
+                    @include respond(v500){bottom: 42vmin;}
                     @include respond(h700){
-                        bottom: 30vh;
+                        bottom: 20vh;
                     }
 
                 }
@@ -89,11 +94,9 @@
     @include respond(v800){
     min-height: 333px;
     bottom: -33px;
-
     }
     @include respond(tab-land){
         color: inherit;
-
     }
 }
 
@@ -105,27 +108,39 @@
     animation: eyeanimation 22s infinite alternate;
 }
 
-@keyframes spining {
+@keyframes spining1 {
     0%{
-        transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(.5turn);
+        transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(-.5turn);
     }
     10%{ // SHOW
-        transform: translate3d(0,0,44px) rotateX(-6deg) rotateY(.96turn);
+        transform: translate3d(0,0,44px) rotateX(-6deg) rotateY(0turn);
     }
-    // 30%{
-    //     transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.97turn);
-    // }
-    // 40%{
-    //     transform: translate3d(0,0,44px) rotateX(-4deg) rotateY(.96turn);
-    // }
     50%{
-        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.93turn);
+        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.03turn);
     }
-    60%{ // HIDE
-        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(1.5turn);
+    90%{ // HIDE
+        transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(0turn);
     }
     100%{
-        transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(1.5turn);
+        transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(.5turn);
     }
 
 }
+// @keyframes spining {
+//     0%{
+//         transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(.5turn);
+//     }
+//     10%{ // SHOW
+//         transform: translate3d(0,0,44px) rotateX(-6deg) rotateY(.96turn);
+//     }
+//     50%{
+//         transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(.93turn);
+//     }
+//     60%{ // HIDE
+//         transform: translate3d(0,0,44px) rotateX(-5deg) rotateY(1.5turn);
+//     }
+//     100%{
+//         transform: translate3d(0,0,44px) rotateX(-5deg)  rotateY(1.5turn);
+//     }
+
+// }
