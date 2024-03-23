@@ -1,0 +1,113 @@
+
+@import '../../abstracts/mixins';
+
+.Mi_container{
+    height: 80vh;
+    @include respond(h800)
+    {
+        height: 85vh;
+        @include respond(v800){
+            height: 80vh;
+            @include respond(phone){height: 70vh;}
+        }
+        @include respond(h700)
+        {
+            height: 85vh;
+            @include respond(h600)
+            {
+                height: 85vh; }}}
+    @include respond(v800){
+        @include respond(phone){height: 85vh;}
+    }
+    @include respond(phone){
+        @include respond(h700)
+        {height: 85vh;}
+    }
+	.londonfull{
+		background: conic-gradient(at -1% 8%,rgb(255, 255, 255),rgba(225, 255, 0, 0.1)40%), linear-gradient(178deg, #0092d5 ,#65bffb );
+}}
+
+.moon {
+	position: absolute;
+	bottom: -1561px;
+	left: calc(160vw - 40px) ;
+	width: 80px;
+	height: 80px;
+	// opacity: .5;
+	position: fixed;
+	filter: blur(0px);
+	border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 0 0 22px 3px rgba(255, 255, 255, 0.656);
+	transform-origin:-110vw ; 
+	transform: rotateZ(-80deg);
+	background: radial-gradient(circle at 60% 30%, #ffffff, #ffffff 60%,#dbe5e7 60%);
+	// background: radial-gradient(circle at 30% 90%, #dbe5e7, #dbe5e7 64%,#ffffff 64%);
+	@include respond(protab-land)
+    {
+		bottom: -1000px;
+        @include respond(v1000){
+			bottom: -421px;
+            @include respond(phone){bottom: -221px;}
+        }
+            @include respond(h600)
+            {
+				bottom: -421px;
+			}}
+	animation:  465s ease-in-out infinite moonrise ;
+	}
+.sky__dawn {
+	position: absolute;
+	background:
+	// conic-gradient(at 50% 8%,rgb(17, 0, 64),rgba(225, 255, 0, 0.1)40%),
+	conic-gradient(at 8% 0%,rgb(17, 0, 64),rgba(225, 255, 0, 0.1)40%),
+	conic-gradient(at -1% 95%,rgb(0, 120, 212),rgba(0, 9, 28, 0.562)40%),
+	linear-gradient(11deg,rgb(0, 20, 169) 0%,rgb(1, 0, 12) 60%);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transition: opacity 0.2s;
+	// animation:  26s ease-in-out 0s infinite sky__dusk ;
+}
+@keyframes moonrise {
+	0% {
+		transform: rotateZ(-30deg);
+	}
+	1% {
+		transform: rotateZ(-77deg);
+	}
+	100% {
+		transform: rotateZ(-155deg);
+	}
+}
+@keyframes sky__dusk {
+	0% {
+		opacity: 0;
+	}
+	68% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	98% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.sky {
+    top:0;
+
+    // border: 5px dashed red;
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	// bottom:  -100%;
+    top:0;
+	left: 0;
+	max-height: 600px;
+	overflow: hidden;
+}
