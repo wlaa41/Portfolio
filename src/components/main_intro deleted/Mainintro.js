@@ -1,26 +1,25 @@
-import React, {useState,useRef,useLayoutEffect,useEffect} from 'react'
-import  myavatar_vec  from './assets/myavatar/myavatar'
+import React, {useState,useRef,useLayoutEffect} from 'react'
+import  myavatar_vec  from './media/myavatar/myavatar'
 import Nav from '../../layout/nav/Nav'
-import { ReactComponent as Wheel} from './assets/londonfull_wide/wheel1.svg'
-import   skyline3    from "./assets/londonfull_wide/skyline3.svg"   
-import   skyline2    from "./assets/londonfull_wide/skyline2.svg"   
-import   skyline1    from "./assets/londonfull_wide/skyline1.svg"   
-import   skyline0    from "./assets/londonfull_wide/skyline0.svg"   
-import   floor       from "./assets/londonfull_wide/floor.svg"      
-import   bushes       from "./assets/londonfull_wide/bushes.svg"      
-import   phonebooth  from "./assets/londonfull_wide/phonebooth.svg" 
-import   myBase      from './assets/londonfull_wide/myBase.svg'
-import './HeroSection.scss'
+import { ReactComponent as Wheel} from './media/londonfull/wheel1.svg'
+import   skyline3    from "./media/londonfull_wide/skyline3.svg"   
+import   skyline2    from "./media/londonfull_wide/skyline2.svg"   
+import   skyline1    from "./media/londonfull_wide/skyline1.svg"   
+import   skyline0    from "./media/londonfull_wide/skyline0.1.svg"   
+import   floor       from "./media/londonfull_wide/floor.svg"      
+import   bushes       from "./media/londonfull_wide/bushes.svg"      
+import   phonebooth  from "./media/londonfull_wide/phonebooth.svg" 
+import   myBase      from './media/londonfull_wide/myBase.svg'
+import './Mainintro.scss'
 import './myAvatar.scss'
 import './SkyChangingcolor.scss'
-import Parallax from '../parallaxHook/Parallax'
 
 import Arrow from '../arrow/Arrow'
 
 
 const myAvatar_img_attr =myavatar_vec();
 
-function HeroSection(){
+function Mainintro(){
     
     // const talkbtnConRef = useRef({classList:[]})//LET'S TALK BUTTON ADDING CLASS TO MAKE IT CHANGE CONTENT
     const talkbtnConRef = useRef(null)//LET'S TALK BUTTON ADDING CLASS TO MAKE IT CHANGE CONTENT
@@ -34,23 +33,18 @@ function HeroSection(){
     let classdded=false;
     // this state to move the button of let's talk from the top to corner
     const btn_Translate = [0,0,0]
-    console.log('Starting')
 
-    // // // // // // // // // // // // // // // // // // // // // // // // // for the night
-    const [addClass_nightBackground, setAddClass_nightBackground] = useState(false);
-    useEffect(() => {
-        const interval = setInterval(() => {
-            console.log('up')
-            setAddClass_nightBackground(addClass_nightBackground => !addClass_nightBackground);
-    }, 50000);
-        return () => clearInterval(interval); // Cleanup the interval
-      }, []); 
+    const [YShift, setYShift] = useState({
+        skyline3:       0         ,
+        skyline2:       0         ,
+        skyline1:       0         ,
+        skyline0:       0         ,
+        bushes:         0         ,
+        floor:          0         ,
+        phonebooth:     0         ,
+        myBase:         0                   
+    })
 
-  // Change 5000 to whatever delay you need (in milliseconds)
-    
-      // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
-
-    
     // THESE VARIABLE ARE TO WAIT FOR FOR THE RESIZE FUNCTIONN TO WAIT 
     // UNTIL THE RESIZI IS FINISHED
     var rtime;
@@ -115,7 +109,15 @@ function scrollHeandle(e){
         requestAnimationFrame(  scrollHeandle)     
         const shift=window.scrollY;
         if(shift<LONDON_scrollStopThreshold){      // window.scrollY/window.innerHeight when resizing the window height it is better to estimate the difference
-            
+            setYShift({
+            skyline3:   (  shift  / 1.5   )      ,
+            skyline2:   (  shift  / 1.6   )      ,
+            skyline1:   (  shift  / 1.8   )      ,
+            skyline0:   (  shift  / 2.1   )      ,
+            bushes:     (  shift  / 2.6   )      ,
+            floor:      (  shift  / 3     )      ,
+            phonebooth: (  shift  / 3     )      ,
+            myBase:     (  shift  / 4     )      })
             shift<Title_btn_scrollStopThreshold ? chekclass_REMOVE() : chekclass_ADD()
         }else{
             // the if below is for the Nav which include vanish text by adding foggyVanish class
@@ -140,48 +142,42 @@ function chekclass_REMOVE(){
             <>
                 
                 <Nav talkbtnCon={talkbtnConRef} title={titleRef} translate={btn_Translate}></Nav>
-            <section className='heroSection '>
+            <section className='Mi_container'>
                 <div className='sky'>
                         {/* <div className="sky__phase sky__dawn"></div> */}
                         {/* <div className="sky__phase sky__noon"></div> */}
-                        <div className={'sky_phase' + (addClass_nightBackground ? ' sky_dusk' : '  sky_dusk_remove')}></div>
+                        {/* <div className="sky__phase sky__dusk"></div> */}
                         {/* <div className="sky__phase sky__midnight"></div> */}
-                        <div className="moon "></div>
+                        {/* <div className="moon"></div> */}
                 </div>
                 <div className='londonfull'>
              
                     <div className="londonfull__imgcontainer">
-                        <Parallax className='ParallexContainer' speed={ 0.667 }><img className='londonfull__svg'  src={skyline3}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.625 }><img className='londonfull__svg'  src={skyline2}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.556 }><img className='londonfull__svg'  src={skyline1}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.756 }>
-                        <Wheel alt="London Eye Representation" className='londonfull__svg' ></Wheel>
-                        </Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.576 }><img className='londonfull__svg'  src={skyline0}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.476 }><img className='londonfull__svg'  src={bushes}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.476 }><img className='londonfull__svg'  src={floor}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.476 }><img className='londonfull__svg'  src={phonebooth}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.476 }><img className='londonfull__svg'  src={myBase}  /></Parallax>
+                        <img src={skyline3} alt="London Skyline Far Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline3"]}px,0)` }} />
+                        <img src={skyline2} alt="London Skyline Middle Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline2"]}px,0)` }} />
+                        <img src={skyline1} alt="London Skyline Near Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline1"]}px,0)` }} />
+                        {/* Assuming Wheel is an image or component visually representing the London Eye or similar landmark */}
+                        <Wheel alt="London Eye Representation" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline1"]}px,0)` }}></Wheel>
+                        <img src={skyline0} alt="Foreground of London Skyline" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline0"]}px,0)` }} />
+                        <img src={bushes} alt="Decorative Bushes in Foreground" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["bushes"]}px,0)` }} />
+                        <img src={floor} alt="Foreground Ground Texture" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["floor"]}px,0)` }} />
+                        <img src={phonebooth} alt="Iconic Red Phone Booth" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["phonebooth"]}px,0)` }} />
+                        <img src={myBase} alt="Base Layer for Parallax Effect" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["myBase"]}px,0)` }} />
+                        <div className='night'></div>
                         <div className='myAvatarStrip'>    
                             <div className='myAvatarStrip_spacer-right'></div>
                             <div className='myAvatarStrip_Ava'>
                                 <div className='vertical_spacer'></div>
-                                <Parallax className='myAvatarContainerAvatar' speed={ 0.556 }>
-                                    <div onClick={openBreif} className='myAvatarContainer' >
-                                        {myAvatar_img_attr.map((element) => {
-                                            // Assuming you'll provide a descriptive name for each attribute in your avatar elements
-                                            return <img src={element["img"]} alt={`Avatar detail: ${element['attr'].altDescription}`} key={element['attr'].key} {...element['attr']} />;
-                                        })}
-                                    </div>
-                                </Parallax>
-
+                                <div onClick={openBreif} className='myAvatarContainer' style={{ transform: `translate3d(0,${YShift["myBase"]}px,0)` }}>
+                                    {myAvatar_img_attr.map((element) => {
+                                        // Assuming you'll provide a descriptive name for each attribute in your avatar elements
+                                        return <img src={element["img"]} alt={`Avatar detail: ${element['attr'].altDescription}`} key={element['attr'].key} {...element['attr']} />;
+                                    })}
+                                </div>
                             </div>
                             <div id='targetAncher' className='myAvatarStrip_spacer-left'></div>
                         </div>
                     </div>
-                    <Parallax speed={ 0.556 } ><div className={'night' + (addClass_nightBackground ? '  night_show' : 'night_hide')}></div></Parallax>
-                    {/* <div className={ 'night'}></div> */}
-
                 </div>
 
             </section>
@@ -193,5 +189,5 @@ function chekclass_REMOVE(){
     
 
 }
-export default HeroSection;
+export default Mainintro;
 
