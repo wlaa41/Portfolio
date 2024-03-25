@@ -46,7 +46,7 @@
 	box-shadow: 0 0 22px 3px rgba(255, 255, 255, 0.656);
 	transform-origin:-110vw ; 
 	transform: rotateZ(-80deg);
-	background: radial-gradient(circle at 60% 30%, #ffffff 60%, #d5d5d5 60%);
+	background: radial-gradient(circle at 60% 30%, #ffffff 60%, #c9c9c9 60%);
 	// background: radial-gradient(circle at 30% 90%, #dbe5e7, #dbe5e7 64%,#ffffff 64%);
 	@include respond(protab-land)
     {
@@ -59,9 +59,26 @@
             {
 				bottom: -421px;
 			}}
-	animation:  465s ease-in-out infinite moonrise ;
+	animation:  265s ease-in-out infinite moonrise ;
+	// animation:  15s cubic-bezier(.65,-0.01,.48,.98) infinite forwards moonrise ;
 	}
-
+	@keyframes moonrise {
+		0% {
+			transform: rotateZ(-30deg);
+		}
+		1% {
+			transform: rotateZ(-77deg);
+		}
+		88% {
+			transform: rotateZ(-114deg);
+		}
+		89% {
+			transform: rotateZ(-180deg);
+		}
+		100% {
+			transform: rotateZ(-390deg);
+		}
+	}
 	.night{
 		background: linear-gradient(9deg,rgba(0, 0, 0, .5),rgba(0, 0, 0, 0.21) 40%,rgba(0, 0, 0, 0));
 	}
@@ -115,17 +132,7 @@
 	width: 100%;
 	// animation:  26s ease-in-out 0s infinite sky__dusk ;
 }
-@keyframes moonrise {
-	0% {
-		transform: rotateZ(-30deg);
-	}
-	1% {
-		transform: rotateZ(-77deg);
-	}
-	100% {
-		transform: rotateZ(-155deg);
-	}
-}
+
 @keyframes sky__dusk {
 	0% {
 		opacity: 0;
