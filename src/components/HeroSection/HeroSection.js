@@ -12,7 +12,7 @@ import   phonebooth  from "./assets/londonfull_wide/phonebooth.svg"
 import   myBase      from './assets/londonfull_wide/myBase.svg'
 import './HeroSection.scss'
 import './myAvatar.scss'
-import './SkyChangingcolor.scss'
+import './nightMoon.scss'
 import Parallax from '../parallaxHook/Parallax'
 
 import Arrow from '../arrow/Arrow'
@@ -141,39 +141,40 @@ function chekclass_REMOVE(){
                 
                 <Nav talkbtnCon={talkbtnConRef} title={titleRef} translate={btn_Translate}></Nav>
             <section className='heroSection '>
+
                 <div className='sky'>
                         {/* <div className="sky__phase sky__dawn"></div> */}
                         {/* <div className="sky__phase sky__noon"></div> */}
-                        <div className={'sky_phase' + (addClass_nightBackground ? ' sky_dusk' : '  sky_dusk_remove')}></div>
+                        <Parallax  className='skyParallax' speed={ 0.87 }> <div className={'sky_phase' + (addClass_nightBackground ? ' sky_dusk' : '  sky_dusk_remove')}></div></Parallax>
                         {/* <div className="sky__phase sky__midnight"></div> */}
-                        <div className="moon "></div>
+                        <Parallax className='skyParallax' speed={ 1.3}> <div className="moon "></div></Parallax>
                 </div>
                 <div className='londonfull'>
              
                     <div className="londonfull__imgcontainer">
-                        <Parallax className='ParallexContainer' speed={ 0.667 }><img className='londonfull__svg'  src={skyline3}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.625 }><img className='londonfull__svg'  src={skyline2}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.556 }><img className='londonfull__svg'  src={skyline1}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.9 }><img className='londonfull__svg'  src={skyline3}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.8 }><img className='londonfull__svg'  src={skyline2}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.65 }><img className='londonfull__svg'  src={skyline1}  /></Parallax>
                         <Parallax className='ParallexContainer' speed={ 0.756 }>
-                        <Wheel alt="London Eye Representation" className='londonfull__svg' ></Wheel>
+                        <Wheel className='div_wheelcontainer' alt="London Eye Representation" className='londonfull__svg' ></Wheel>
                         </Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.576 }><img className='londonfull__svg'  src={skyline0}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.6 }><img className='londonfull__svg'  src={skyline0}  /></Parallax>
                         <Parallax className='ParallexContainer' speed={ 0.476 }><img className='londonfull__svg'  src={bushes}  /></Parallax>
                         <Parallax className='ParallexContainer' speed={ 0.476 }><img className='londonfull__svg'  src={floor}  /></Parallax>
                         <Parallax className='ParallexContainer' speed={ 0.476 }><img className='londonfull__svg'  src={phonebooth}  /></Parallax>
                         <Parallax className='ParallexContainer' speed={ 0.476 }><img className='londonfull__svg'  src={myBase}  /></Parallax>
-                        <div className='myAvatarStrip'>    
-                            <div className='myAvatarStrip_spacer-right'></div>
-                            <div className='myAvatarStrip_Ava'>
-                                <div className='vertical_spacer'></div>
-                                <Parallax className='myAvatarContainerAvatar' speed={ 0.556 }>
-                                    <div onClick={openBreif} className='myAvatarContainer' >
-                                        {myAvatar_img_attr.map((element) => {
-                                            // Assuming you'll provide a descriptive name for each attribute in your avatar elements
-                                            return <img src={element["img"]} alt={`Avatar detail: ${element['attr'].altDescription}`} key={element['attr'].key} {...element['attr']} />;
-                                        })}
+                            <div className='myAvatarStrip'>    
+                                <div className='myAvatarStrip_spacer-right'></div>
+                                <div className='myAvatarStrip_Ava'>
+                                    <div className='vertical_spacer'></div>
+                                    <Parallax className='myAvatarContainerAvatar' speed={ 0.556 }>
+                                        <div onClick={openBreif} className='myAvatarContainer' >
+                                            {myAvatar_img_attr.map((element) => {
+                                                // Assuming you'll provide a descriptive name for each attribute in your avatar elements
+                                                return <img src={element["img"]} alt={`Avatar detail: ${element['attr'].altDescription}`} key={element['attr'].key} {...element['attr']} />;
+                                            })}
                                     </div>
-                                </Parallax>
+                        </Parallax>
 
                             </div>
                             <div id='targetAncher' className='myAvatarStrip_spacer-left'></div>
