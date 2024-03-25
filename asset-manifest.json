@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.7d2d7b79.chunk.css",
-    "main.js": "/Portfolio/static/js/main.82cf6a6d.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.82cf6a6d.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.ec632304.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.ec632304.chunk.js.map",
     "reactPlayerPreview.js": "/Portfolio/static/js/reactPlayerPreview.b7e2b563.chunk.js",
     "reactPlayerPreview.js.map": "/Portfolio/static/js/reactPlayerPreview.b7e2b563.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.ce6d878c.js",
@@ -59,7 +59,7 @@
     "static/media/sass_reactjs.f2c677be.webp": "/Portfolio/static/media/sass_reactjs.f2c677be.webp",
     "static/media/sketchup.jpg": "/Portfolio/static/media/sketchup.ca97c37e.jpg",
     "static/media/skyline0.6f5982a4.svg": "/Portfolio/static/media/skyline0.6f5982a4.svg",
-    "static/media/skyline1.ad4fee2d.svg": "/Portfolio/static/media/skyline1.ad4fee2d.svg",
+    "static/media/skyline1.f63b1bd7.svg": "/Portfolio/static/media/skyline1.f63b1bd7.svg",
     "static/media/skyline2.2b2c1125.svg": "/Portfolio/static/media/skyline2.2b2c1125.svg",
     "static/media/skyline3.d2257487.svg": "/Portfolio/static/media/skyline3.d2257487.svg",
     "static/media/sprity.cacd69b7.svg": "/Portfolio/static/media/sprity.cacd69b7.svg",
@@ -74,6 +74,6 @@
     "static/js/runtime-main.ce6d878c.js",
     "static/js/3.7d88ef7b.chunk.js",
     "static/css/main.7d2d7b79.chunk.css",
-    "static/js/main.82cf6a6d.chunk.js"
+    "static/js/main.ec632304.chunk.js"
   ]
 }
