@@ -62,9 +62,12 @@
             height: 80%;
             flex: 1;
             background-color: rgb(37, 138, 196);
-            background: 
-            linear-gradient(to bottom , rgba(13, 66, 97, 0.452),  rgba(58, 176, 245, 0.288),rgba(14, 79, 116, 0.349)),
-            linear-gradient(to right ,  rgb(25, 107, 155),  rgb(37, 138, 196));
+            // background: 
+            // linear-gradient(to bottom , rgba(13, 66, 97, 0.452),  rgba(58, 176, 245, 0.288),rgba(14, 79, 116, 0.349)),
+            // linear-gradient(to right ,  rgb(25, 107, 155),  rgb(37, 138, 196));
+            background: conic-gradient(at -1% 29%,rgba(255, 255, 255, 0.6),rgba(225, 255, 0, 0.1)24%),linear-gradient(178deg, #0092d5 ,#65bffb ),linear-gradient(to right ,  #0092d5, #65bffb);
+            // background: linear-gradient(149.47deg, rgb(111, 159, 255) 6.08%, rgb(86, 145, 255) 11.08%, rgb(88, 86, 249) 50.65%, rgb(128, 43, 255) 75.66%);
+            // #0092d5 ,#65bffb
             transform-origin: left;
             transform: rotateY(-7deg);
             border-bottom-right-radius:  7px;
