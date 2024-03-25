@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.07a6b22d.chunk.css",
-    "main.js": "/Portfolio/static/js/main.42fdf213.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.42fdf213.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.7d2d7b79.chunk.css",
+    "main.js": "/Portfolio/static/js/main.82cf6a6d.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.82cf6a6d.chunk.js.map",
     "reactPlayerPreview.js": "/Portfolio/static/js/reactPlayerPreview.b7e2b563.chunk.js",
     "reactPlayerPreview.js.map": "/Portfolio/static/js/reactPlayerPreview.b7e2b563.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.ce6d878c.js",
@@ -10,7 +10,7 @@
     "static/js/3.7d88ef7b.chunk.js": "/Portfolio/static/js/3.7d88ef7b.chunk.js",
     "static/js/3.7d88ef7b.chunk.js.map": "/Portfolio/static/js/3.7d88ef7b.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.07a6b22d.chunk.css.map": "/Portfolio/static/css/main.07a6b22d.chunk.css.map",
+    "static/css/main.7d2d7b79.chunk.css.map": "/Portfolio/static/css/main.7d2d7b79.chunk.css.map",
     "static/js/3.7d88ef7b.chunk.js.LICENSE.txt": "/Portfolio/static/js/3.7d88ef7b.chunk.js.LICENSE.txt",
     "static/media/1fresh-snow.png": "/Portfolio/static/media/1fresh-snow.1466e802.png",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
@@ -24,7 +24,7 @@
     "static/media/brain-aura.8a3c8e2b.jpg": "/Portfolio/static/media/brain-aura.8a3c8e2b.jpg",
     "static/media/brain-aura.a471b297.jpg": "/Portfolio/static/media/brain-aura.a471b297.jpg",
     "static/media/bright-squares.png": "/Portfolio/static/media/bright-squares.79000482.png",
-    "static/media/bushes.29bbd009.svg": "/Portfolio/static/media/bushes.29bbd009.svg",
+    "static/media/bushes.d140d2ae.svg": "/Portfolio/static/media/bushes.d140d2ae.svg",
     "static/media/chat_black_24dp.acafb7f6.svg": "/Portfolio/static/media/chat_black_24dp.acafb7f6.svg",
     "static/media/citySpark-price-5000-will-jamous-LongArrow.9905233b.png": "/Portfolio/static/media/citySpark-price-5000-will-jamous-LongArrow.9905233b.png",
     "static/media/citySpark-price-5000-will-jamous-ShortArrow.d0f4b313.png": "/Portfolio/static/media/citySpark-price-5000-will-jamous-ShortArrow.d0f4b313.png",
@@ -58,10 +58,10 @@
     "static/media/sass.jpg": "/Portfolio/static/media/sass.4ed74e3a.jpg",
     "static/media/sass_reactjs.f2c677be.webp": "/Portfolio/static/media/sass_reactjs.f2c677be.webp",
     "static/media/sketchup.jpg": "/Portfolio/static/media/sketchup.ca97c37e.jpg",
-    "static/media/skyline0.f7a0fb25.svg": "/Portfolio/static/media/skyline0.f7a0fb25.svg",
-    "static/media/skyline1.bbe06fea.svg": "/Portfolio/static/media/skyline1.bbe06fea.svg",
-    "static/media/skyline2.adc28b00.svg": "/Portfolio/static/media/skyline2.adc28b00.svg",
-    "static/media/skyline3.e9becd8e.svg": "/Portfolio/static/media/skyline3.e9becd8e.svg",
+    "static/media/skyline0.6f5982a4.svg": "/Portfolio/static/media/skyline0.6f5982a4.svg",
+    "static/media/skyline1.ad4fee2d.svg": "/Portfolio/static/media/skyline1.ad4fee2d.svg",
+    "static/media/skyline2.2b2c1125.svg": "/Portfolio/static/media/skyline2.2b2c1125.svg",
+    "static/media/skyline3.d2257487.svg": "/Portfolio/static/media/skyline3.d2257487.svg",
     "static/media/sprity.cacd69b7.svg": "/Portfolio/static/media/sprity.cacd69b7.svg",
     "static/media/subtle-grey.png": "/Portfolio/static/media/subtle-grey.4035b78a.png",
     "static/media/symbol-defs.dc4bc182.svg": "/Portfolio/static/media/symbol-defs.dc4bc182.svg",
@@ -73,7 +73,7 @@
   "entrypoints": [
     "static/js/runtime-main.ce6d878c.js",
     "static/js/3.7d88ef7b.chunk.js",
-    "static/css/main.07a6b22d.chunk.css",
-    "static/js/main.42fdf213.chunk.js"
+    "static/css/main.7d2d7b79.chunk.css",
+    "static/js/main.82cf6a6d.chunk.js"
   ]
 }
