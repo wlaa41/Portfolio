@@ -42,7 +42,7 @@ function HeroSection(){
         const interval = setInterval(() => {
             console.log('up')
             setAddClass_nightBackground(addClass_nightBackground => !addClass_nightBackground);
-    }, 50000);
+    }, 10000);
         return () => clearInterval(interval); // Cleanup the interval
       }, []); 
 
@@ -145,12 +145,13 @@ function chekclass_REMOVE(){
                 <div className='sky'>
                         {/* <div className="sky__phase sky__dawn"></div> */}
                         {/* <div className="sky__phase sky__noon"></div> */}
-                        <Parallax  className='skyParallax' speed={ 0.87 }> <div className={'sky_phase' + (addClass_nightBackground ? ' sky_dusk' : '  sky_dusk_remove')}></div></Parallax>
+                        <div className={'sky_phase' + (addClass_nightBackground ? ' sky_morning' : '  sky_dusk_remove')}></div>
+                       <div className={'sky_phase' + (addClass_nightBackground ? ' sky_dusk' : '  sky_dusk_remove')}></div>
                         {/* <div className="sky__phase sky__midnight"></div> */}
                         <Parallax className='skyParallax' speed={ 1.3}> <div className="moon "></div></Parallax>
                 </div>
-                <div className='londonfull'>
-             
+                <div className={'londonfull' + (addClass_nightBackground ? '  night' : '')}>
+                {/* <div className={'night' + (addClass_nightBackground ? '  night_show' : 'night_hide')}></div> */}
                     <div className="londonfull__imgcontainer">
                         <Parallax className='ParallexContainer' speed={ 0.9 }><img className='londonfull__svg'  src={skyline3}  /></Parallax>
                         <Parallax className='ParallexContainer' speed={ 0.8 }><img className='londonfull__svg'  src={skyline2}  /></Parallax>
@@ -180,7 +181,7 @@ function chekclass_REMOVE(){
                             <div id='targetAncher' className='myAvatarStrip_spacer-left'></div>
                         </div>
                     </div>
-                    <Parallax speed={ 0.556 } ><div className={'night' + (addClass_nightBackground ? '  night_show' : 'night_hide')}></div></Parallax>
+                    {/* <Parallax speed={ 0.556 } ><div className={'night' + (addClass_nightBackground ? '  night_show' : 'night_hide')}></div></Parallax> */}
                     {/* <div className={ 'night'}></div> */}
 
                 </div>

@@ -25,7 +25,8 @@
     }
 	.londonfull{
 		background: conic-gradient(at -1% 8%,rgb(255, 255, 255),rgba(225, 255, 0, 0.1)40%), linear-gradient(178deg, #0092d5 ,#65bffb );
-}}
+}
+}
 .skyParallax{
 	position: absolute;
 	width: 100%;
@@ -79,28 +80,10 @@
 			transform: rotateZ(-390deg);
 		}
 	}
-	.night{
-		background: linear-gradient(9deg,rgba(0, 0, 0, .5),rgba(0, 0, 0, 0.21) 40%,rgba(0, 0, 0, 0));
-	}
-	.night_hide{
-		opacity: 0;
-		transition: all 2s;
 
-	}
-	.night_show{
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		transform: translateZ(1px);
-		pointer-events: none;
-		opacity: 1;
-		transition: all 2s;
-		z-index: 13;
 
-	}
 .sky_phase{
 	transition: all 2s;
-
 	background:
 	// conic-gradient(at 8% 0%,rgb(17, 0, 64),rgba(73, 0, 86, 0.13)40%,rgba(73, 0, 86, 0.13)80%),
 	radial-gradient(at -1% 95%,rgba(0, 120, 212, 0.79),rgba(0, 9, 28, 0.262)40%,rgba(0, 9, 28, 0)),
@@ -114,6 +97,7 @@
 	transition: all 2s;
 	opacity: 1;
 	position: absolute;
+	position: fixed;
 
 	top: 0;
 	left: 0;

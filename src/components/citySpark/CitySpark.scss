@@ -94,7 +94,8 @@
       max-height: 700px;
       position: absolute;
       // transition: .5s;
-      animation: moveArrows 8s ease-in-out infinite;
+      perspective-origin: 40vw 30vh;
+      animation: moveArrows 6s ease-in-out infinite;
     }
     .citysparkImgeArrows_short{
       animation-delay: 2s;
