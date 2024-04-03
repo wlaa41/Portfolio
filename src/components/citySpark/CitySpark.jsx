@@ -1,6 +1,6 @@
-import citySparkimage from './info/citySpark-price-5000-will-jamous-no-arrows-no-shadow.png';
-import citySparkimageArrowslong from './info/citySpark-price-5000-will-jamous-LongArrow.png';
-import citySparkimageArrowsShort from './info/citySpark-price-5000-will-jamous-ShortArrow.png';
+import citySparkimage from './info/citySpark-price-5000-will-jamous-no-arrows-no-shadow.webp';
+import citySparkimageArrowslong from './info/citySpark-price-5000-will-jamous-LongArrow.webp';
+import citySparkimageArrowsShort from './info/citySpark-price-5000-will-jamous-ShortArrow.webp';
 import './CitySpark.scss'
 
 

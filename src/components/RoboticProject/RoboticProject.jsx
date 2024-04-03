@@ -1,5 +1,8 @@
 import "./RoboticProject.scss";
-import projectimage from './info/uniCampus3dgazebo.gif'
+import projectimage from './info/uniCampus3dgazebo-halfSized.gif'
+import projectimage_phoneSizeGif from './info/uniCampus3dgazebo-phoneSize.gif';
+
+
 import React, { useState, useEffect, useRef } from 'react';
 import "./RoboticProject.scss"; // Make sure your CSS is properly set up to see the effect
 
@@ -65,8 +68,10 @@ const RoboticProject = () => {
                 <meta itemProp="duration" content="PT01M22S" />
                 <img
                   itemProp="thumbnailUrl"
-                  src={projectimage}
-                  alt="Robotic Simualtion in Gazebo"
+                  src={projectimage} // Default to the half-sized image
+                  srcset={`${projectimage_phoneSizeGif} 500w, ${projectimage} 800w`} // Define srcset with both versions
+                  sizes="(max-width: 768px) 500px, 800px" // Use the phone size GIF up to 768px width
+                  alt="Robotic Simulation in Gazebo"
                   title="APPITUNITY thumbnail"
                 />
               </div>

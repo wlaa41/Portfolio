@@ -53,8 +53,9 @@
       .rightContainer {
         border-radius: 30px;
         overflow: hidden;
-        box-shadow: 0 5px 11px rgba(0, 0, 0, 0.84);
-        border: 1px solid rgb(63, 62, 58);
+        box-shadow: 0 5px 11px rgba(0, 0, 0, 0.84), 0 5px 11px  rgba(108, 1, 86, 0.84);
+        border: 1px solid rgb(130, 1, 93);
+        border-bottom: 1px solid rgb(176, 155, 36) ;
         height: 319px;
 
         .video {
