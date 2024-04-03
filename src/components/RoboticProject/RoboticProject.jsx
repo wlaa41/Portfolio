@@ -76,7 +76,7 @@ const RoboticProject = () => {
           <div className="rightContainer">
             <div className="text-desc">
               <h2 className="title">
-              City, University of London, Campus
+              City University of London Campus
               </h2>
               <p className="desc">
               A Gazebo simulation project featuring the Jackal robot, utilizing SLAM for mapping and AMCL for localization within a custom Unicampus environment using ROS.              </p>

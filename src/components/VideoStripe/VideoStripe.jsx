@@ -4,11 +4,18 @@ import './VideoStripe.scss';
 
 // The VideoStripe component now accepts props
 const VideoStripe = ({ videoData }) => {
+  
   const stripeStyle = {
     background: videoData.background,
+    // background: 'linear-gradient(to bottom, blue, green)',
+    // background: "linear-gradient(9deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.21) 40%, rgba(0, 0, 0, 0))",
+
+    
   };
+
+  console.log(stripeStyle.background)
   return (
-    <div className="video-stripe" style={stripeStyle}>
+    <div className="video-stripe" style={videoData.style}>
       <div className="main-container">
         <div className="gridLeftRight">
           <div className="leftContainer">
