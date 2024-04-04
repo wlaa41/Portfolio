@@ -2,6 +2,7 @@
 @import '../../abstracts/mixins';
 @import '../../base/animations';
  
+
 .myAvatarStrip{
     position:relative;
 
@@ -31,6 +32,7 @@
                 max-height: calc(60vh - 12vw);
                 flex:1;}
             .myAvatarContainerAvatar{
+                // transition: LondonANDme_transition;
                 width: 100%;
                 bottom: 0px;
                 position: absolute;

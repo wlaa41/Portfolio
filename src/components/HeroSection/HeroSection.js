@@ -153,17 +153,19 @@ function chekclass_REMOVE(){
                 <div className={'londonfull' + (addClass_nightBackground ? '  night' : '')}>
                 {/* <div className={'night' + (addClass_nightBackground ? '  night_show' : 'night_hide')}></div> */}
                     <div className="londonfull__imgcontainer">
-                        <Parallax className='ParallexContainer' speed={ 0.9 }><img loading="lazy" className='londonfull__svg'  src={skyline3}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.8 }><img loading="lazy" className='londonfull__svg'  src={skyline2}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.65 }><img loading="lazy" className='londonfull__svg'  src={skyline1}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.9 }><img   className='londonfull__svg'  src={skyline3}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.8 }><img   className='londonfull__svg'  src={skyline2}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.65 }><img   className='londonfull__svg'  src={skyline1}  /></Parallax>
                         <Parallax className='ParallexContainer' speed={ 0.756 }>
                         <Wheel className='div_wheelcontainer' alt="London Eye Representation" className='londonfull__svg' ></Wheel>
                         </Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.6 }><img loading="lazy" className='londonfull__svg'  src={skyline0}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.476 }><img loading="lazy" className='londonfull__svg'  src={bushes}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.476 }><img loading="lazy" className='londonfull__svg'  src={floor}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.476 }><img loading="lazy" className='londonfull__svg'  src={phonebooth}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.476 }><img loading="lazy" className='londonfull__svg'  src={myBase}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.6 }><img   className='londonfull__svg'  src={skyline0}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.476 }>
+                            <img   className='londonfull__svg'  src={bushes}  />
+                            <img   className='londonfull__svg'  src={floor}  />
+                            <img   className='londonfull__svg'  src={phonebooth}  />
+                            <img   className='londonfull__svg'  src={myBase}  />
+                        </Parallax>
                             <div className='myAvatarStrip'>    
                                 <div className='myAvatarStrip_spacer-right'></div>
                                 <div className='myAvatarStrip_Ava'>
@@ -172,7 +174,7 @@ function chekclass_REMOVE(){
                                         <div onClick={openBreif} className='myAvatarContainer' >
                                             {myAvatar_img_attr.map((element) => {
                                                 // Assuming you'll provide a descriptive name for each attribute in your avatar elements
-                                                return <img loading="lazy" src={element["img"]} alt={`Avatar detail: ${element['attr'].altDescription}`} key={element['attr'].key} {...element['attr']} />;
+                                                return <img   src={element["img"]} alt={`Avatar detail: ${element['attr'].altDescription}`} key={element['attr'].key} {...element['attr']} />;
                                             })}
                                     </div>
                         </Parallax>
