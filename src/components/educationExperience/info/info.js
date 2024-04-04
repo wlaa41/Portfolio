@@ -1,8 +1,8 @@
-import brain from './brain-aura.jpg'
-import robot from './robot-arm.jpg'
-import new_robot_project from './new_robot_project.webp'
-import new_ai_math from './new_ai_math.webp'
-import laptop from './Labtop.jpg'
+import brain from '../../../assets/brain-aura.webp'
+import robot from '../../../assets/robot-arm-with-camera.webp'
+import new_robot_project from '../../../assets/new_robot_project.webp'
+import new_ai_math from '../../../assets/new_ai_math.webp'
+import sass_reactjs from '../../../assets/sass_reactjs.webp'
 import sprite from './ICON_sprite.svg'
 import React from 'react'
 
@@ -46,7 +46,7 @@ export const info = [
         subtitle: "PG With Distinction",
         date: "2021 - 2022",
         brief: "• Specialized in Generative AI, excelling in model innovation. \n• Mastered CNNs and NLP models, applying them to complex datasets. \n• Focused on Multi-Agent Systems, demonstrating advanced problem-solving skills. \n• Proficient in TensorFlow, PyTorch, and Pandas, aligning with high employability standards in AI fields.",
-        image: laptop, // Placeholder image
+        image: new_ai_math, // Placeholder image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-graduation-cap"}></use></svg>
     },
     {
@@ -70,7 +70,7 @@ export const info = [
         date: "2023 - 2024",
         subtitle: "Mastering Modern Deployment",
         brief: "• Mastery in containerization and orchestration with Docker and Kubernetes, enabling scalable and efficient application deployment. • Proficient in infrastructure as code (IaC) using Terraform and Ansible for automated configuration and management. • Extensive experience with Azure and Azure DevOps for seamless cloud integration and deployment pipelines. • Skilled in version control systems, particularly git and GitHub, ensuring robust code management and collaboration.",
-        image: laptop, // Reused image placeholder
+        image: sass_reactjs, // Reused image placeholder
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
     },
     {

@@ -15,9 +15,9 @@ const CitySpark = () => {
 
       </div>
       <div className="citySpark_image-container">
-      <img src={citySparkimageArrowsShort} className='citysparkImgeArrows citysparkImgeArrows_short' alt="CitySpark" />
-      <img src={citySparkimage} className='citysparkImge' alt="CitySpark" />
-      <img src={citySparkimageArrowslong} className='citysparkImgeArrows citysparkImgeArrows_Long' alt="CitySpark" />
+      <img loading="lazy" src={citySparkimageArrowsShort} className='citysparkImgeArrows citysparkImgeArrows_short' alt="CitySpark" />
+      <img loading="lazy" src={citySparkimage} className='citysparkImge' alt="CitySpark" />
+      <img loading="lazy" src={citySparkimageArrowslong} className='citysparkImgeArrows citysparkImgeArrows_Long' alt="CitySpark" />
 
       </div>
       </div>

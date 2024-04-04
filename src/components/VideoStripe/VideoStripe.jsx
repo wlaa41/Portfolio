@@ -32,7 +32,7 @@ const VideoStripe = ({ videoData }) => {
                 <meta itemProp="description" content={videoData.metaDescription} />
                 <meta itemProp="uploadDate" content={videoData.uploadDate} />
                 <meta itemProp="duration" content={videoData.duration} />
-                <img itemProp="thumbnailUrl" src={videoData.thumbnailUrl} alt="Video thumbnail" title="Video thumbnail" />
+                <img loading="lazy" itemProp="thumbnailUrl" src={videoData.thumbnailUrl} alt="Video thumbnail" title="Video thumbnail" />
               </div>
               <ReactPlayer
                 className="react-player"

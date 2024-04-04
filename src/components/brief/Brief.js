@@ -18,7 +18,7 @@ const Brief = ()=>{
 
                    <div className='Brief_Con Brief-show_Con'>
                         <div className='Brief_Con_imgCon'>
-                                {/* <img src={motor}/> */}
+                                {/* <img loading="lazy" src={motor}/> */}
                         </div>
                         <div className='Brief_close'>
                                 <CloseSVG className='Brief_close-btn' onClick={()=>document.getElementById('Brief').classList.remove('Brief-show')}/>

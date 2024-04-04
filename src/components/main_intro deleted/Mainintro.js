@@ -153,16 +153,16 @@ function chekclass_REMOVE(){
                 <div className='londonfull'>
              
                     <div className="londonfull__imgcontainer">
-                        <img src={skyline3} alt="London Skyline Far Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline3"]}px,0)` }} />
-                        <img src={skyline2} alt="London Skyline Middle Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline2"]}px,0)` }} />
-                        <img src={skyline1} alt="London Skyline Near Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline1"]}px,0)` }} />
+                        <img loading="lazy" src={skyline3} alt="London Skyline Far Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline3"]}px,0)` }} />
+                        <img loading="lazy" src={skyline2} alt="London Skyline Middle Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline2"]}px,0)` }} />
+                        <img loading="lazy" src={skyline1} alt="London Skyline Near Background" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline1"]}px,0)` }} />
                         {/* Assuming Wheel is an image or component visually representing the London Eye or similar landmark */}
                         <Wheel alt="London Eye Representation" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline1"]}px,0)` }}></Wheel>
-                        <img src={skyline0} alt="Foreground of London Skyline" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline0"]}px,0)` }} />
-                        <img src={bushes} alt="Decorative Bushes in Foreground" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["bushes"]}px,0)` }} />
-                        <img src={floor} alt="Foreground Ground Texture" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["floor"]}px,0)` }} />
-                        <img src={phonebooth} alt="Iconic Red Phone Booth" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["phonebooth"]}px,0)` }} />
-                        <img src={myBase} alt="Base Layer for Parallax Effect" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["myBase"]}px,0)` }} />
+                        <img loading="lazy" src={skyline0} alt="Foreground of London Skyline" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["skyline0"]}px,0)` }} />
+                        <img loading="lazy" src={bushes} alt="Decorative Bushes in Foreground" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["bushes"]}px,0)` }} />
+                        <img loading="lazy" src={floor} alt="Foreground Ground Texture" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["floor"]}px,0)` }} />
+                        <img loading="lazy" src={phonebooth} alt="Iconic Red Phone Booth" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["phonebooth"]}px,0)` }} />
+                        <img loading="lazy" src={myBase} alt="Base Layer for Parallax Effect" className='londonfull__svg' style={{ transform: `translate3d(0,${YShift["myBase"]}px,0)` }} />
                         <div className='night'></div>
                         <div className='myAvatarStrip'>    
                             <div className='myAvatarStrip_spacer-right'></div>
@@ -171,7 +171,7 @@ function chekclass_REMOVE(){
                                 <div onClick={openBreif} className='myAvatarContainer' style={{ transform: `translate3d(0,${YShift["myBase"]}px,0)` }}>
                                     {myAvatar_img_attr.map((element) => {
                                         // Assuming you'll provide a descriptive name for each attribute in your avatar elements
-                                        return <img src={element["img"]} alt={`Avatar detail: ${element['attr'].altDescription}`} key={element['attr'].key} {...element['attr']} />;
+                                        return <img loading="lazy" src={element["img"]} alt={`Avatar detail: ${element['attr'].altDescription}`} key={element['attr'].key} {...element['attr']} />;
                                     })}
                                 </div>
                             </div>

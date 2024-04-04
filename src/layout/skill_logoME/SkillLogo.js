@@ -27,7 +27,7 @@ const SkillLogo = () => {
                     <div className='SL_SK_Move-1Flex-1' >
                             {images.map((elem,i)=>{
                                 return <div key={`imgCon1${i}`} info={`${keys[i]}`}  className='SL_IMGcontainer'>
-                                <img key={`img1st${keys[i]}`}  src={elem.default} alt={`${keys[i]}`}
+                                <img loading="lazy" key={`img1st${keys[i]}`}  src={elem.default} alt={`${keys[i]}`}
                                  className='SL_IMGcontainer_img' />
 
                                 </div>
@@ -36,7 +36,7 @@ const SkillLogo = () => {
                     <div className='SL_SK_Move-1Flex-2' >
                             {images.map((elem,i)=>{
                                 return <div key={`imgCon11${i}`} info={`${keys[i]}`}  className='SL_IMGcontainer'>
-                                <img key={`img1st1${keys[i]}`}  src={elem.default} alt={`${keys[i]}`}
+                                <img loading="lazy" key={`img1st1${keys[i]}`}  src={elem.default} alt={`${keys[i]}`}
                                  className='SL_IMGcontainer_img' />
 
                                 </div>
@@ -54,7 +54,7 @@ const SkillLogo = () => {
                                 {images.slice(halfLength).map((elem,i)=>{
                                     
                                     return <div key={`imgConsec${i}`} info={`${keys[i+halfLength]}`}  className='SL_IMGcontainer'>
-                                    <img key={`imgsec${i}`} src={elem.default}  className='SL_IMGcontainer_img' />
+                                    <img loading="lazy" key={`imgsec${i}`} src={elem.default}  className='SL_IMGcontainer_img' />
 
                                     </div>
                                 })}
@@ -63,7 +63,7 @@ const SkillLogo = () => {
                         {images.slice(halfLength).map((elem,i)=>{
                             
                             return <div key={`imgConsec${i}`} info={`${keys[i+halfLength]}`}  className='SL_IMGcontainer'>
-                            <img key={`imgsec${i}`} src={elem.default}  className='SL_IMGcontainer_img' />
+                            <img loading="lazy" key={`imgsec${i}`} src={elem.default}  className='SL_IMGcontainer_img' />
 
                             </div>
                         })}

@@ -13,7 +13,7 @@ const CardEdu = () => {
         return (
           <div key={ele.title} className="CardEdu">
             <div className="CardEdu_IMG_Con">
-              <img src={ele.image} alt=""></img>
+              <img loading="lazy" src={ele.image} alt=""></img>
             </div>
 
             <div className="CardEdu_INFO_Con">

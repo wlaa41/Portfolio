@@ -1,13 +1,13 @@
 // import ant from './ant-walking-tree.jpg'
-import neural from './neuraan.jpg'
-import brain from './brain-aura.jpg'
-// import pat from './pat.jpg'
-// import lab from './lab.jpg'
-// import boston from './boston.jpg'
-import mathAI from './mathAI.webp'
-import featureMosaic from './featureMosaic.webp'
-import pathFinding from './path-finding-phone-googlemap.jpg'
-import interactive_web_application from './sass_reactjs.webp'
+import neural from '../../../assets/neuraan.webp'
+import brain from '../../../assets/brain-aura.webp'
+// import pat from './pat.webp'
+// import lab from './lab.webp'
+// import boston from './boston.webp'
+import mathAI from '../../../assets/mathAI.webp'
+import featureMosaic from '../../../assets/featureMosaic.webp'
+import pathFinding from '../../../assets/path-finding-phone-googlemap.webp'
+import interactive_web_application from '../../../assets/sass_reactjs.webp'
 
 
 
@@ -47,7 +47,7 @@ export default function info(){
             title: 'Security Systems  ',
             subtitle: 'IP & Analog',
             brief: 'My specialization in enhancing property safety involves sophisticated security configurations and cutting-edge surveillance solutions. Notable tools include Paradox, Hikvision & Aldaua samsung, philps  for top-tier CCTV systems, and Samsung for comprehensive security coverage. These examples illustrate my capability to deliver peace of mind to clients through comprehensive security systems integration.',
-            image: 'path/to/security-system-image.jpg',
+            image: 'path/to/security-system-image.webp',
             alt: "Security camera and system icons illustrating advanced property safety solutions"
              // Placeholder for an actual image path
         },
