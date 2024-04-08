@@ -1,7 +1,6 @@
 const ScrollComponent = () => {
     const handleScroll = useThrottle(() => {
       if (window.scrollY > 500) { // Your threshold
-        console.log("Threshold passed!");
       }
     }, 500); // Fire every 500 milliseconds
   

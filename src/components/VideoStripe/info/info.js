@@ -12,10 +12,11 @@ export const videosList = [{
     controls: false,
     onDuration: () => 0.5,
     style:{
+      background: 'radial-gradient(at -1% 95%,rgba(0, 120, 212, 0.79),rgba(0, 9, 28, 0.262)40%,rgba(0, 9, 28, 0)), radial-gradient(at -1% 95%,rgba(0, 120, 212, 0.79),rgba(0, 9, 28, 0.262)40%,rgba(0, 9, 28, 0)), radial-gradient(at 97% 95%,rgba(0, 95, 212, 0.271),rgba(0, 9, 28, 0.2)40%), radial-gradient(at center 95%,rgb(111, 0, 74),rgb(0, 29, 90)40% ,rgb(0, 15, 46)90% , rgba(0, 0, 0, 1)100%)',
       // background: "linear-gradient(9deg, rgba(0, 0, 0, 1), rgba(22, 22, 22, 1) , rgba(0, 0, 0, 1))",
       // background: "radial-gradient(at 101% 95%,rgba(0, 60, 132, 0.2),rgba(0, 9, 28, 0.262)40%,rgba(0, 9, 28, 0)), radial-gradient(at 97% 95%,rgba(0, 55, 112, 0.271),rgba(0, 5, 18, 0.2)40%),radial-gradient(at center 95%,rgb(55, 0, 24),rgb(0, 14, 40)40% ,rgb(0, 9, 26)90% , rgba(0, 0, 0, 1)100%)",
       color:'rgb(200,200,200)',
-      background:'rgb(14 14 58)'
+      // background:'rgb(14 14 58)'
       // background: 'linear-gradient(70deg, black, charckol)',
     },
   },

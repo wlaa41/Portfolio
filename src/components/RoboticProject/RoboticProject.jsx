@@ -36,9 +36,7 @@ const RoboticProject = () => {
     const angleRadians = Math.atan(dimensions.width / dimensions.height);
     const angleDegrees = angleRadians * (180 / Math.PI);
     
-    console.log(dimensions.height,' height')
-    console.log(dimensions.width,' width')
-    console.log(angleDegrees,' angleDegrees')
+   
     setAngle(angleDegrees);
   }, [dimensions]);
 

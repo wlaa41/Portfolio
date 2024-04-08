@@ -33,7 +33,6 @@ const ColorPick = () => {
             document.getElementById('Edu_info').style.backgroundSize=` auto`
             document.getElementById('Edu_info').style.backgroundRepeat=`repeat`
         }
-        console.log(i)
         console.log(`%cbg ${images[i].default}}`,'color: deeppink')
 
         document.getElementById('Edu_info').style.background=`url(${images[i].default})`

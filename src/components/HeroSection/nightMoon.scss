@@ -50,18 +50,27 @@
 	transform: rotateZ(-80deg);
 	background: radial-gradient(circle at 60% 30%, #ffffff 60%, #c9c9c9 60%);
 	// background: radial-gradient(circle at 30% 90%, #dbe5e7, #dbe5e7 64%,#ffffff 64%);
+	animation:  148s ease-in-out infinite moonrise ;
+
 	@include respond(protab-land)
     {
 		bottom: -1000px;
+		animation-duration: 130s ;
         @include respond(v1000){
 			bottom: -421px;
-            @include respond(phone){bottom: -221px;}
+			animation-duration: 110s ;
+			transform-origin:-110vw -5vh; 
+
+            @include respond(phone){
+				bottom: -221px;
+				animation-duration: 90s ;
+
+			}
         }
             @include respond(h600)
             {
 				bottom: -421px;
 			}}
-	animation:  265s ease-in-out infinite moonrise ;
 	// animation:  15s cubic-bezier(.65,-0.01,.48,.98) infinite forwards moonrise ;
 	}
 	@keyframes moonrise {
@@ -69,13 +78,13 @@
 			transform: rotateZ(-30deg);
 		}
 		1% {
-			transform: rotateZ(-77deg);
+			transform: rotateZ(-75deg);
 		}
-		88% {
-			transform: rotateZ(-114deg);
+		97% {
+			transform: rotateZ(-108deg);
 		}
-		89% {
-			transform: rotateZ(-180deg);
+		98% {
+			transform: rotateZ(-150deg);
 		}
 		100% {
 			transform: rotateZ(-390deg);

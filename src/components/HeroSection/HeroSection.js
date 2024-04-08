@@ -34,13 +34,12 @@ function HeroSection(){
     let classdded=false;
     // this state to move the button of let's talk from the top to corner
     const btn_Translate = [0,0,0]
-    console.log('Starting')
+    // console.log('Starting')
 
     // // // // // // // // // // // // // // // // // // // // // // // // // for the night
     const [addClass_nightBackground, setAddClass_nightBackground] = useState(false);
     useEffect(() => {
         const interval = setInterval(() => {
-            console.log('up')
             setAddClass_nightBackground(addClass_nightBackground => !addClass_nightBackground);
     }, 10000);
         return () => clearInterval(interval); // Cleanup the interval
@@ -78,11 +77,10 @@ function HeroSection(){
         // we calculate the movement of the Let's talk button bellow
         implementResizeAction()
 
-        console.log('Starting')
+        // console.log('Starting')
 
         return () => {
             window.removeEventListener('scroll',scrollHeandle)
-            console.log('terminating')
         }
     }, [])
 
@@ -106,7 +104,7 @@ function HeroSection(){
         const shift=window.scrollY
         console.log(classdded,shift,Title_btn_scrollStopThreshold )
         if(shift>=Title_btn_scrollStopThreshold && classdded){
-            console.log('MOVEEE')
+            // console.log('MOVEEE')
             document.getElementById('tlkbtn').style=`transform: translate3d(${btnCon_Width}px,${btnCon_Height}px,0);`
         }}
 
@@ -153,18 +151,18 @@ function chekclass_REMOVE(){
                 <div className={'londonfull' + (addClass_nightBackground ? '  night' : '')}>
                 {/* <div className={'night' + (addClass_nightBackground ? '  night_show' : 'night_hide')}></div> */}
                     <div className="londonfull__imgcontainer">
-                        <Parallax className='ParallexContainer' speed={ 0.9 }><img   className='londonfull__svg'  src={skyline3}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.8 }><img   className='londonfull__svg'  src={skyline2}  /></Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.65 }><img   className='londonfull__svg'  src={skyline1}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.9 }><img  alt='skyline3' className='londonfull__svg'  src={skyline3}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.8 }><img  alt='skyline2' className='londonfull__svg'  src={skyline2}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.65 }><img  alt='skyline1' className='londonfull__svg'  src={skyline1}  /></Parallax>
                         <Parallax className='ParallexContainer' speed={ 0.756 }>
-                        <Wheel className='div_wheelcontainer' alt="London Eye Representation" className='londonfull__svg' ></Wheel>
+                        <Wheel className='div_wheelcontainer londonfull__svg' alt="London Eye Representation"  ></Wheel>
                         </Parallax>
-                        <Parallax className='ParallexContainer' speed={ 0.6 }><img   className='londonfull__svg'  src={skyline0}  /></Parallax>
+                        <Parallax className='ParallexContainer' speed={ 0.6 }><img   alt='skyline0' className='londonfull__svg'  src={skyline0}  /></Parallax>
                         <Parallax className='ParallexContainer' speed={ 0.476 }>
-                            <img   className='londonfull__svg'  src={bushes}  />
-                            <img   className='londonfull__svg'  src={floor}  />
-                            <img   className='londonfull__svg'  src={phonebooth}  />
-                            <img   className='londonfull__svg'  src={myBase}  />
+                            <img  alt='bushes' className='londonfull__svg'  src={bushes}  />
+                            <img  alt='floor' className='londonfull__svg'  src={floor}  />
+                            <img  alt='phonebooth' className='londonfull__svg'  src={phonebooth}  />
+                            <img  alt='myBase' className='londonfull__svg'  src={myBase}  />
                         </Parallax>
                             <div className='myAvatarStrip'>    
                                 <div className='myAvatarStrip_spacer-right'></div>

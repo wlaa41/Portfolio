@@ -70,17 +70,17 @@
 	transition: opacity 0.2s;
 	// animation:  26s ease-in-out 0s infinite sky__dusk ;
 }
-@keyframes moonrise {
-	0% {
-		transform: rotateZ(-30deg);
-	}
-	1% {
-		transform: rotateZ(-77deg);
-	}
-	100% {
-		transform: rotateZ(-155deg);
-	}
-}
+// @keyframes moonrise {
+// 	0% {
+// 		transform: rotateZ(-30deg);
+// 	}
+// 	1% {
+// 		transform: rotateZ(-77deg);
+// 	}
+// 	100% {
+// 		transform: rotateZ(-155deg);
+// 	}
+// }
 @keyframes sky__dusk {
 	0% {
 		opacity: 0;

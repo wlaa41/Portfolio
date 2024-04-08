@@ -44,8 +44,6 @@ export default function Feat_proj() {
   }
 
   function onMatChange(value, index) {
-    console.log('hello00000000');
-    console.log(value, '  index :', index);
     let temp = [...mulMatrix];
     temp[index] = value;
     setMulMatrix(temp);

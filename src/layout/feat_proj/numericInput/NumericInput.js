@@ -17,7 +17,7 @@ useEffect(() => {
         else{ 
             if(e.target.name === 'inc'){
 
-                console.log((parseFloat(element.current.value)).toFixed(0))
+            // console.log((parseFloat(element.current.value)).toFixed(0))
             change((parseFloat(element.current.value)+.1).toFixed(2),index)
             }
             else { 
