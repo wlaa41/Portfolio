@@ -51,12 +51,15 @@
 	background: radial-gradient(circle at 60% 30%, #ffffff 60%, #c9c9c9 60%);
 	// background: radial-gradient(circle at 30% 90%, #dbe5e7, #dbe5e7 64%,#ffffff 64%);
 	animation:  148s ease-in-out infinite moonrise ;
+	@include respond(big-desktop)
+    { 
+		bottom: -70vw;
 
 	@include respond(protab-land)
     {
-		bottom: -1000px;
+		// bottom: -1000px;
 		animation-duration: 130s ;
-        @include respond(v1000){
+        @include respond(tab-port){
 			bottom: -421px;
 			animation-duration: 110s ;
 			transform-origin:-110vw -5vh; 
@@ -73,6 +76,7 @@
 			}}
 	// animation:  15s cubic-bezier(.65,-0.01,.48,.98) infinite forwards moonrise ;
 	}
+}
 	@keyframes moonrise {
 		0% {
 			transform: rotateZ(-30deg);
