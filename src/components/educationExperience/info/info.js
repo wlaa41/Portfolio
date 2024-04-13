@@ -1,5 +1,5 @@
 import brain from '../../../assets/brain-aura.webp'
-import robot from '../../../assets/robot-arm-with-camera.webp'
+import chatgptMath from '../../../assets/chatgptMath.webp'
 import new_robot_project from '../../../assets/new_robot_project.webp'
 import new_ai_math from '../../../assets/new_ai_math.webp'
 import sass_reactjs from '../../../assets/sass_reactjs.webp'
@@ -30,7 +30,7 @@ export const info = [
         subtitle: "CTO & Bid Manager",
         date: "Jan 2018 - Jan 2022",
         brief: "• Led 30+ digital marketing and web optimization projects, achieving a 40% increase in web traffic and 25% in conversion rates. \n• Directed a team of 15+ software developers and engineers using Azure boards and Scrum. \n• Deployed 150+ embedded systems and cloud projects, enhancing operational efficiencies. \n• Managed 20+ member cross-functional teams, fostering collaboration in complex tech environments.",
-        image: robot, // Placeholder image for tech leadership and project management
+        image: brain, // Placeholder image for tech leadership and project management
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-blackboard"}></use></svg>
     },
     {
@@ -54,7 +54,7 @@ export const info = [
         date: "2020 - 2022",
         subtitle: "Extensive Learning & Application",
         brief: "• Completed 25+ courses in AI, mathematics, and Full-Stack development.\n• Applied skills in JavaScript, ReactJS, and AI in freelance projects, demonstrating versatility.",
-        image: robot, // Placeholder for the actual image
+        image: chatgptMath, // Placeholder for the actual image
         icon: <svg className="CardEdu_header_icon"><use href={sprite+"#icon-layers"}></use></svg>
     },
     {
