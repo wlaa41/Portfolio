@@ -53,14 +53,14 @@
 	animation:  148s ease-in-out infinite moonrise ;
 	@include respond(big-desktop)
     { 
-		bottom: -70vw;
+		bottom: -75vw;
 
 	@include respond(protab-land)
     {
 		// bottom: -1000px;
 		animation-duration: 130s ;
         @include respond(tab-port){
-			bottom: -421px;
+			bottom: -521px;
 			animation-duration: 110s ;
 			transform-origin:-110vw -5vh; 
 
@@ -72,7 +72,7 @@
         }
             @include respond(h600)
             {
-				bottom: -421px;
+				bottom: -521px;
 			}}
 	// animation:  15s cubic-bezier(.65,-0.01,.48,.98) infinite forwards moonrise ;
 	}

@@ -95,7 +95,9 @@ $buttonTranslateTime:transform 1.8s ,font-size 1.8s, border-radius 1.8s, width 1
                     box-shadow: none;}
                 &-1{
                     position: absolute;
+                    background: rgba(0, 22, 36, 0.2);
                     transform: translate3d(88%,2px,0);
+                    backdrop-filter: blur(11px);
                 @include respond(v400){
                     display: none;
                 }

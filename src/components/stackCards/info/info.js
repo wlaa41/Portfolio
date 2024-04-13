@@ -4,6 +4,7 @@ import brain from '../../../assets/brain-aura.webp'
 // import pat from './pat.webp'
 // import lab from './lab.webp'
 // import boston from './boston.webp'
+import robotArm from '../../../assets/new_robot_project.webp'
 import mathAI from '../../../assets/mathAI.webp'
 import featureMosaic from '../../../assets/featureMosaic.webp'
 import pathFinding from '../../../assets/path-finding-phone-googlemap.webp'
@@ -33,7 +34,7 @@ export default function info(){
             title: 'AI & ML Python Projects',
             subtitle: 'Python',
             brief: "Featuring key Python projects: Ant Colony for efficient pathfinding, ANN Simulation with 92% MNIST accuracy, optimized pathfinding with Dijkstra's and A*, innovative My Path Finding Algorithm, 92% accurate House Price Prediction on the Boston dataset, and the application of the Rescorla–Wagner model for psychological learning simulations. Examples showcasing the fusion of theory and practice in AI, highlighting adept problem-solving:",
-            image: interactive_web_application,
+            image: robotArm,
             alt: "Interactive web application interface depicting AI & ML projects in Python"
         },
         {

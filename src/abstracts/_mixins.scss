@@ -67,6 +67,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == v500 {
         @media only screen and (max-width: 31.25em) { @content };    //600px
     }
+    @if $breakpoint == v650 {
+        @media only screen and (max-width: 39.75em) { @content };    //660px
+    }
     @if $breakpoint == v1000 {
         @media only screen and (max-width: 71.75em) { @content };    //600px
     }

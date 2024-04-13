@@ -13,13 +13,12 @@
     align-items:  center;
     perspective:600px;
     overflow: hidden;
-
     //BOARDER TOP
-    border-top: 4px solid;
+    border-top: 6px solid;
     border-image-slice: 1;
     border-image-source: radial-gradient(circle at center, #48828b  35%, #cddada 100%);
     // perspective-origin:  50% 20%;
-    
+    box-shadow: 0 -5px 31px rgba(0, 0, 0, 0.468);
     &_BACKGround{
         position: absolute;
         height: 90%;
