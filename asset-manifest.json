@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0074ff12.chunk.css",
-    "main.js": "/Portfolio/static/js/main.a1775c45.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.a1775c45.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.5ee0e5c7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.25553543.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.25553543.chunk.js.map",
     "reactPlayerPreview.js": "/Portfolio/static/js/reactPlayerPreview.b7e2b563.chunk.js",
     "reactPlayerPreview.js.map": "/Portfolio/static/js/reactPlayerPreview.b7e2b563.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.ce6d878c.js",
@@ -10,7 +10,7 @@
     "static/js/3.fb5ea784.chunk.js": "/Portfolio/static/js/3.fb5ea784.chunk.js",
     "static/js/3.fb5ea784.chunk.js.map": "/Portfolio/static/js/3.fb5ea784.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.0074ff12.chunk.css.map": "/Portfolio/static/css/main.0074ff12.chunk.css.map",
+    "static/css/main.5ee0e5c7.chunk.css.map": "/Portfolio/static/css/main.5ee0e5c7.chunk.css.map",
     "static/js/3.fb5ea784.chunk.js.LICENSE.txt": "/Portfolio/static/js/3.fb5ea784.chunk.js.LICENSE.txt",
     "static/media/1fresh-snow.png": "/Portfolio/static/media/1fresh-snow.1466e802.png",
     "static/media/ICON_sprite.e72e4f39.svg": "/Portfolio/static/media/ICON_sprite.e72e4f39.svg",
@@ -25,6 +25,7 @@
     "static/media/bright-squares.png": "/Portfolio/static/media/bright-squares.79000482.png",
     "static/media/bushes.0e708bf6.svg": "/Portfolio/static/media/bushes.0e708bf6.svg",
     "static/media/chat_black_24dp.acafb7f6.svg": "/Portfolio/static/media/chat_black_24dp.acafb7f6.svg",
+    "static/media/chatgptMath.f688e238.webp": "/Portfolio/static/media/chatgptMath.f688e238.webp",
     "static/media/citySpark-price-5000-will-jamous-LongArrow.e8a2b9f7.webp": "/Portfolio/static/media/citySpark-price-5000-will-jamous-LongArrow.e8a2b9f7.webp",
     "static/media/citySpark-price-5000-will-jamous-ShortArrow.0ea19b6a.webp": "/Portfolio/static/media/citySpark-price-5000-will-jamous-ShortArrow.0ea19b6a.webp",
     "static/media/citySpark-price-5000-will-jamous-no-arrows-no-shadow.da863ead.webp": "/Portfolio/static/media/citySpark-price-5000-will-jamous-no-arrows-no-shadow.da863ead.webp",
@@ -53,7 +54,6 @@
     "static/media/path-finding-phone-googlemap.9e3a7f87.webp": "/Portfolio/static/media/path-finding-phone-googlemap.9e3a7f87.webp",
     "static/media/phonebooth.1ce2b246.svg": "/Portfolio/static/media/phonebooth.1ce2b246.svg",
     "static/media/retina-wood.png": "/Portfolio/static/media/retina-wood.d7a2002c.png",
-    "static/media/robot-arm-with-camera.f688e238.webp": "/Portfolio/static/media/robot-arm-with-camera.f688e238.webp",
     "static/media/sass.jpg": "/Portfolio/static/media/sass.4ed74e3a.jpg",
     "static/media/sass_reactjs.aabc904a.webp": "/Portfolio/static/media/sass_reactjs.aabc904a.webp",
     "static/media/sketchup.jpg": "/Portfolio/static/media/sketchup.ca97c37e.jpg",
@@ -73,7 +73,7 @@
   "entrypoints": [
     "static/js/runtime-main.ce6d878c.js",
     "static/js/3.fb5ea784.chunk.js",
-    "static/css/main.0074ff12.chunk.css",
-    "static/js/main.a1775c45.chunk.js"
+    "static/css/main.5ee0e5c7.chunk.css",
+    "static/js/main.25553543.chunk.js"
   ]
 }
