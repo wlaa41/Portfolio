@@ -91,14 +91,21 @@
           let scrollPercentages = [];
           setInterval(() => {
               const totalHeight = document.body.scrollHeight - window.innerHeight;
-              const scrollPercentage = ((window.scrollY / totalHeight) * 100).toFixed(2);
+              const scrollPercentage = parseInt((window.scrollY / totalHeight) * 100);
               scrollPercentages.push(scrollPercentage);
           }, 1000);
   
-          // Optionally get location
-          getLocation(location => {
-              console.log(location); // Handle location info
-          });
+      // Send data on arrival
+      const dataToSendOnEnter = JSON.stringify({
+        event: 'enter',
+        timestamp: new Date().toISOString(),
+        scrolls: scrollPercentages, // Initially, this will just be an empty array
+        deviceType: getDeviceType(),
+        operatingSystem: getOperatingSystem(),
+        browser: getBrowser(),
+    });
+    navigator.sendBeacon('https://eoatcvoapv04l57.m.pipedream.net', dataToSendOnEnter);
+
   
           window.addEventListener('beforeunload', function() {
               const dataToSend = JSON.stringify({
