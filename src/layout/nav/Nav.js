@@ -46,7 +46,7 @@ const Nav = ({ talkbtnCon, title, translate }) => {
             mode: "cors",
             body: JSON.stringify(body),
         }
-        let promise = fetch("https://en6gthld5q6w7jf.m.pipedream.net", options);
+        let promise = fetch("https://eow07mywt7rg0vr.m.pipedream.net", options);
         promise.then((value) => {
             // console.log('weeeeee did    it');
             setStatusMsg(`Thanks ${name}. Talk to you soon.`);

@@ -39,11 +39,81 @@
       ]
     }
   </script>
+  <script>
+    // Utility functions here
+    function getDeviceType() {
+        const userAgent = navigator.userAgent;
+        return /mobile/i.test(userAgent) ? 'Mobile' : 'Desktop';
+    }
+
+    function getOperatingSystem() {
+        const userAgent = navigator.userAgent;
+        if (/Windows/i.test(userAgent)) return 'Windows';
+        else if (/Android/i.test(userAgent)) return 'Android';
+        else if (/Linux/i.test(userAgent)) return 'Linux';
+        else if (/iPhone|iPad|iPod/i.test(userAgent)) return 'iOS';
+        else if (/Mac OS/i.test(userAgent)) return 'macOS';
+        else return 'Other';
+    }
+
+    function getBrowser() {
+        const userAgent = navigator.userAgent;
+        if (/Chrome/i.test(userAgent)) return 'Chrome';
+        else if (/Firefox/i.test(userAgent)) return 'Firefox';
+        else if (/Safari/i.test(userAgent) && !/Chrome/i.test(userAgent)) return 'Safari';
+        else if (/Opera|OPR/i.test(userAgent)) return 'Opera';
+        else if (/Edge/i.test(userAgent)) return 'Edge';
+        else if (/MSIE|Trident/i.test(userAgent)) return 'Internet Explorer';
+        else return 'Other';
+    }
+
+    function getLocation(callback) {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+                callback(`Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`);
+            }, error => {
+                console.error(error);
+                callback('Location access denied');
+            });
+        } else {
+            callback('Geolocation is not supported by this browser.');
+        }
+    }
+    </script>
 </head>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
+    <script>
+      // Scroll and session tracking script here
+      document.addEventListener('DOMContentLoaded', function() {
+          let scrollPercentages = [];
+          setInterval(() => {
+              const totalHeight = document.body.scrollHeight - window.innerHeight;
+              const scrollPercentage = ((window.scrollY / totalHeight) * 100).toFixed(2);
+              scrollPercentages.push(scrollPercentage);
+          }, 1000);
+  
+          // Optionally get location
+          getLocation(location => {
+              console.log(location); // Handle location info
+          });
+  
+          window.addEventListener('beforeunload', function() {
+              const dataToSend = JSON.stringify({
+                  event: 'exit',
+                  timestamp: new Date().toISOString(),
+                  sessionLenght_seconds: scrollPercentages.length,
+                  scrolls: scrollPercentages,
+                  deviceType: getDeviceType(),
+                  operatingSystem: getOperatingSystem(),
+                  browser: getBrowser(),
+                  
+              });
+              navigator.sendBeacon('https://eoav3ymidbb06y.m.pipedream.net', dataToSend);
+          });
+      });
+      </script>
   </body>
 </html>
