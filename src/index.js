@@ -5,16 +5,16 @@ import Homepage from './pages/Homepage';
 
 // Function to update meta tags and document title
 function updateMetaTags() {
-  document.title = "Walaa Will Jamous - AI & Robotics Professional";
+  document.title = " Will Jamous - AI & Robotics Professional";
 
   // Update meta description
   const metaDescription = document.querySelector('meta[name="description"]');
   if (metaDescription) {
-    metaDescription.content = "Walaa Will Jamous's portfolio showcasing expertise in AI, robotics, and smart home automation. Discover innovative projects and professional insights.";
+    metaDescription.content = " Will Jamous's portfolio showcasing expertise in AI, robotics, and smart home automation. Discover innovative projects and professional insights.";
   } else {
     const descriptionMeta = document.createElement('meta');
     descriptionMeta.name = 'description';
-    descriptionMeta.content = "Walaa Will Jamous's portfolio showcasing expertise in AI, robotics, and smart home automation. Discover innovative projects and professional insights.";
+    descriptionMeta.content = " Will Jamous's portfolio showcasing expertise in AI, robotics, and smart home automation. Discover innovative projects and professional insights.";
     document.head.appendChild(descriptionMeta);
   }
 
@@ -26,7 +26,7 @@ function updateMetaTags() {
 
   const authorMeta = document.createElement('meta');
   authorMeta.name = 'author';
-  authorMeta.content = 'Walaa Will Jamous';
+  authorMeta.content = ' Will Jamous';
   document.head.appendChild(authorMeta);
 
   // Add canonical URL

@@ -27,7 +27,7 @@ const Brief = ()=>{
                         <div className='Brief_info'>
 
                                 <div className='Brief_info-Parag'>
-                                        <h2 className='Brief_info-Parag_Hello'>Walaa Will Jamous: Guiding and Growing in Technology</h2>
+                                        <h2 className='Brief_info-Parag_Hello'> Will Jamous: Guiding and Growing in Technology</h2>
                                         <Paragraph />
 
                                 </div>
@@ -35,7 +35,7 @@ const Brief = ()=>{
                                 <div className="dynamic">
                                 <ul className="dynamic_Con">
                                         <li></li>
-                                        <li>Welcome, I'm Walaa Will. Docker, DevOps and more....</li>
+                                        <li>Welcome, I'm  Will. Docker, DevOps and more....</li>
                                         <li>Front to backend, in the cloud, with IaC want to learn more...</li>
                                         <li>With 3D simulations, robotics, AI I explore.</li>
                                         {/* <li>Web, software's shine, robotics, AI's line, motorbike's vine.</li> */}

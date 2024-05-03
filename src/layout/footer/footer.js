@@ -42,10 +42,10 @@ export const Foot = (props) => {
                 </a>   
         </div>    
             <div className="ft_details" >
-                <div className="ft_details-name" > Walaa Will Jam </div>
+                <div className="ft_details-name" >  Will Jam </div>
                 <a className="ft_details-email"  href="mailto:walaa.jamous@city.ac.uk" target="_blank"  >  walaa.jamous@city.ac.uk</a>
                 <div className="ft_details-location" >London, UK IG1 </div>
-                <div className="ft_details-location" >© 2024 Walaa Will. All rights reserved.
+                <div className="ft_details-location" >© 2024  Will. All rights reserved.
 </div>
 
              </div>

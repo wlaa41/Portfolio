@@ -53,7 +53,7 @@ const RoboticProject = () => {
                
                 <meta
                   itemProp="name"
-                  content="Walaa Will Profile"
+                  content=" Will Profile"
                 />
                 <meta
                   itemProp="description"
