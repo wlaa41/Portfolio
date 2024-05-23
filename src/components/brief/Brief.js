@@ -27,7 +27,7 @@ const Brief = ()=>{
                         <div className='Brief_info'>
 
                                 <div className='Brief_info-Parag'>
-                                        <h2 className='Brief_info-Parag_Hello'> Will Jamous: Guiding and Growing in Technology</h2>
+                                        <h2 className='Brief_info-Parag_Hello'> Will Jam: Guiding and Growing in Technology</h2>
                                         <Paragraph />
 
                                 </div>
