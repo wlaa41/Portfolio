@@ -1,5 +1,5 @@
 
-# WalaaWill Portfolio
+# Will Portfolio
 
 ## About Me
 DevOps Engineer || Electrical (Automation) Engineer || AI & Robotic Researcher 
