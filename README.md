@@ -18,7 +18,7 @@ DevOps Engineer || Electrical (Automation) Engineer || AI & Robotic Researcher
 
 # Table of Contents
 
-- [WalaaWill Portfolio](#walaawill-portfolio)
+- [Will Portfolio](#walaawill-portfolio)
   - [About Me](#about-me)
   - [Table of Contents](#table-of-contents)
 - [Table of Contents](#table-of-contents-1)
